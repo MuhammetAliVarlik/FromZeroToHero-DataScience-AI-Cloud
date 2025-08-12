@@ -1,0 +1,105 @@
+# Section 1 - Python basics & essentials
+ipython
+jupyterlab
+
+# Section 2 - Numpy & Pandas
+numpy>=1.25.0
+pandas>=2.0.0
+
+# Section 3 - Mathematics & Statistics (with R - optional)
+# (Python alternatives)
+scipy>=1.11.0
+statsmodels>=0.14.0
+
+# Section 4 - SQL & NoSQL Databases
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.6  # PostgreSQL driver
+pymongo>=4.4.0           # MongoDB driver
+
+# Section 5 - Feature Engineering & Data Preprocessing
+scikit-learn>=1.3.0
+category_encoders>=2.6.0
+missingno>=0.5.1
+
+# Section 6 - Data Visualization & Tableau
+matplotlib>=3.8.0
+seaborn>=0.12.2
+plotly>=5.15.0
+tableau-api-lib>=0.1.10
+
+# Section 7 - Machine Learning Fundamentals
+scikit-learn>=1.3.0
+
+# Section 8 - Deep Learning
+torch>=2.0.0
+tensorflow>=2.12.0
+
+# Section 9 - Natural Language Processing (NLP)
+transformers>=4.35.0
+nltk>=3.8.1
+spacy>=3.6.0
+sentence-transformers>=2.2.2
+
+# Section 10 - Computer Vision
+opencv-python>=4.7.0.72
+Pillow>=10.0.0
+torchvision>=0.15.2
+
+# Section 11 - Generative Adversarial Networks (GANs)
+# GANs are usually implemented with PyTorch or TensorFlow, already included
+
+# Section 12 - Large Language Models (LLMs) & Transformers
+transformers>=4.35.0
+datasets>=2.13.1
+accelerate>=0.20.3
+
+# Section 13 - Time Series Analysis & Forecasting
+prophet>=1.1.4
+tsfresh>=0.20.0
+
+# Section 14 - Graph Data Science & Network Analysis
+networkx>=3.1
+pygraphviz>=1.10
+stellargraph>=1.3.1
+
+# Section 15 - PySpark & Big Data Processing
+pyspark>=3.5.0
+
+# Section 16 - Data Engineering & ETL Pipelines
+apache-airflow>=2.7.1
+great-expectations>=0.17.9
+
+# Section 17 - Cloud Computing & AI Services
+boto3>=1.26.153    # AWS SDK
+google-cloud-storage>=2.12.0
+azure-ai-ml>=1.3.0
+
+# Section 18 - Edge AI & TinyML
+tensorflow-lite>=2.12.0
+tflite-runtime>=2.12.0
+
+# Section 19 - Reinforcement Learning
+stable-baselines3>=2.0.0
+gym>=0.26.0
+
+# Section 20 - Explainable AI (XAI) & Ethics
+shap>=0.42.0
+lime>=0.2.0.1
+ethics>=0.1.0  # hypothetical, ethics packages are sparse
+
+# Section 21 - AutoML & Model Optimization
+optuna>=3.1.1
+auto-sklearn>=0.15.1
+
+# Section 22 - MLOps, Model Deployment, Docker & MCP
+mlflow>=2.7.0
+kubeflow>=1.8.1
+tfx>=1.12.0
+docker>=6.0.1
+kubernetes>=26.1.0
+model-context-protocol>=0.2.3  # if available on PyPI or replace with a placeholder
+
+# General utilities
+tqdm>=4.65.0
+joblib>=1.3.1
+python-dotenv>=1.0.0
