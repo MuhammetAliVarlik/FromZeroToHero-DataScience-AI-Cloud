@@ -4,30 +4,32 @@ This repository contains my personal Data Science, AI, Cloud and Big Data notes 
 
 ## 🛣️ Roadmap Plan
 
-| Section | Title                                                                | Number of Notes |       Status        | Common Tools & Technologies                 |
-| :-----: | :------------------------------------------------------------------- | :-------------: | :-----------------: | :-----------------------------------------: |
-|    1    | 🐍 Python Programming                                                |       16        |    🟡 Done, Not Published  | Python                                     |
-|    2    | 📊 Numpy & Pandas                                                   |       14        |      🟡 Done, Not Published | NumPy, Pandas                              |
-|    3    | 📏 Mathematics & Statistics with R                                  |      TBD        |    🔄 On Progress   | R, RStudio                                 |
-|    4    | 🗄️ SQL & NoSQL Databases                                            |      TBD        |    🔄 On Progress   | MySQL, MongoDB                             |
-|    5    | 🔍 Feature Engineering & Data Preprocessing                         |      TBD        |    🔄 On Progress   | Python, Pandas                            |
-|    6    | 📊 Data Visualization & Tableau                                     |      TBD        |    🔄 On Progress   | Tableau, Matplotlib, Seaborn                |
-|    7    | 🤖 Machine Learning Fundamentals                                    |      TBD        |    🔄 On Progress   | scikit-learn, Python                       |
-|    8    | 🧠 Deep Learning                                                    |      TBD        |    🔄 On Progress   | TensorFlow, PyTorch                        |
-|    9    | 🗣️ Natural Language Processing (NLP)                               |      TBD        |    🔄 On Progress   | spaCy, NLTK, Hugging Face                  |
-|   10    | 👀 Computer Vision                                                  |      TBD        |    🔄 On Progress   | OpenCV                                    |
-|   11    | 🎭 Generative Adversarial Networks (GANs)                         |      TBD        |    🔄 On Progress   | TensorFlow, PyTorch                        |
-|   12    | 📜 Large Language Models (LLMs) & Transformers                      |      TBD        |    🔄 On Progress   | Hugging Face, TensorFlow                   |
-|   13    | ⏳ Time Series Analysis & Forecasting                               |      TBD        |    ⚪ Not Started   | Prophet, statsmodels                       |
-|   14    | 🕸️ Graph Data Science & Network Analysis                            |      TBD        |    ⚪ Not Started   | NetworkX, Neo4j                           |
-|   15    | ⚡ PySpark & Big Data Processing                                    |      TBD        |    🔄 On Progress   | Apache Spark                              |
-|   16    | 🏗️ Data Engineering & ETL Pipelines                               |      TBD        |    ⚪ Not Started   | Apache Airflow                            |
-|   17    | ☁️ Cloud Computing & AI Services                                   |      TBD        |    🔄 On Progress   | AWS, Azure, GCP                           |
-|   18    | 📱 Edge AI & TinyML                                                |      TBD        |    ⚪ Not Started   | TensorFlow Lite                           |
-|   19    | 🎮 Reinforcement Learning                                          |      TBD        |    ⚪ Not Started   | OpenAI Gym                               |
-|   20    | 🔦 Explainable AI (XAI) & Ethics                                   |      TBD        |    ⚪ Not Started   | LIME, SHAP                               |
-|   21    | ⚙️ AutoML & Model Optimization                                    |      TBD        |    ⚪ Not Started   | Auto-sklearn                             |
-|   22    | 🚀 MLOps, Model Deployment, Docker & Model Context Protocol (MCP) CI/CD |      TBD    |    ⚪ Not Started   | Docker, Kubernetes                       |
+## Roadmap Plan
+
+| Section | Title                                                                | Number of Notes |       Status        | Common Tools & Technologies                 | Description |
+| :-----: | :------------------------------------------------------------------- | :-------------: | :-----------------: | :------------------------------------------: | ----------- |
+|    1    | 🐍 Python Programming                                                |       16        | 🟡 Done,Not Published    | Python                                      | Foundational Python knowledge is essential before progressing further. |
+|    2    | 📊 Numpy & Pandas                                                    |       14        | 🟡 Done,Not Published              | NumPy, Pandas                               | Builds the foundation for data manipulation and processing. |
+|    3    | 📏 Mathematics & Statistics with R                                   |      TBD        | 🔄 On Progress      | R, RStudio                                  | Core statistics and mathematics for data-driven decision-making. |
+|    4    | 🗄️ SQL & NoSQL Databases                                             |      TBD        | 🔄 On Progress      | MySQL, MongoDB                              | Learn database queries and structures early on. |
+|    5    | 🔍 Feature Engineering & Data Preprocessing                          |      TBD        | 🔄 On Progress      | Python, Pandas                              | Proper data preparation is essential for model success. |
+|    6    | 📊 Data Visualization & Tableau                                      |      TBD        | 🔄 On Progress      | Tableau, Matplotlib, Seaborn                | Present analytical results effectively. |
+|    7    | 🤖 Machine Learning Fundamentals                                     |      TBD        | 🔄 On Progress      | scikit-learn, Python                        | Start modeling with basic ML algorithms. |
+|    8    | 🧠 Deep Learning                                                     |      TBD        | 🔄 On Progress      | TensorFlow, PyTorch                         | Transition into deep learning after ML basics. |
+|    9    | 🗣️ Natural Language Processing (NLP)                                 |      TBD        | 🔄 On Progress      | spaCy, NLTK, Hugging Face                   | One of the most in-demand AI fields today. |
+|   10    | 👀 Computer Vision                                                   |      TBD        | 🔄 On Progress      | OpenCV, TensorFlow, PyTorch                  | Gain expertise in image processing after NLP. |
+|   11    | 🎭 Generative Adversarial Networks (GANs)                            |      TBD        | 🔄 On Progress      | TensorFlow, PyTorch                         | An advanced application of deep learning. |
+|   12    | 📜 Large Language Models (LLMs) & Transformers                       |      TBD        | 🔄 On Progress      | Hugging Face, TensorFlow, PyTorch           | 2025’s hottest area – GPT, BERT, and Transformers. |
+|   13    | ⏳ Time Series Analysis & Forecasting                                |      TBD        | ⚪ Not Started      | Prophet, statsmodels                        | Crucial for finance, IoT, and temporal data. |
+|   14    | 🕸️ Graph Data Science & Network Analysis                             |      TBD        | ⚪ Not Started      | NetworkX, Neo4j                             | Used in social media analytics, fraud detection, and more. |
+|   15    | ⚡ PySpark & Big Data Processing                                     |      TBD        | 🔄 On Progress      | Apache Spark                                | Handle big data and fast processing workloads. |
+|   16    | 🏗️ Data Engineering & ETL Pipelines                                 |      TBD        | ⚪ Not Started      | Apache Airflow                              | Build strong and scalable data infrastructure. |
+|   17    | ☁️ Cloud Computing & AI Services                                    |      TBD        | 🔄 On Progress      | AWS, Azure, GCP                             | Master cloud services and AI architectures. |
+|   18    | 📱 Edge AI & TinyML                                                  |      TBD        | ⚪ Not Started      | TensorFlow Lite, Edge Impulse               | Deploy AI on edge devices efficiently. |
+|   19    | 🎮 Reinforcement Learning                                            |      TBD        | ⚪ Not Started      | OpenAI Gym, Stable Baselines                | A different approach to learning via environment interaction. |
+|   20    | 🔦 Explainable AI (XAI) & Ethics                                     |      TBD        | ⚪ Not Started      | LIME, SHAP                                  | Interpret model decisions and address ethical concerns. |
+|   21    | ⚙️ AutoML & Model Optimization                                       |      TBD        | ⚪ Not Started      | Auto-sklearn, H2O.ai                         | Speed up model development with automation. |
+|   22    | 🚀 MLOps, Model Deployment, Docker & Model Context Protocol (MCP) CI/CD |      TBD    | ⚪ Not Started      | MLflow, Kubeflow, TFX, Docker, Kubernetes   | CI/CD, containerization, orchestration, and full model lifecycle management. |
 
 
 
