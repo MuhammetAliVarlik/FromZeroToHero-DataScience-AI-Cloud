@@ -183,4 +183,5 @@ cython_debug/
 # Other Files
 /images
 /medium
+/utilities
 course_schedule.txt
