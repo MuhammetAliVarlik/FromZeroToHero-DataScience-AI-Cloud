@@ -185,3 +185,4 @@ cython_debug/
 /medium
 /utilities
 course_schedule.txt
+.vscode
