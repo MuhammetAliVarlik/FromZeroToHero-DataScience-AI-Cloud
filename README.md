@@ -136,58 +136,66 @@ The roadmap below shows the full learning path. Sections 1-3 are implemented in 
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-Data Profiling and Quality Checks | Data types, uniqueness, duplicates, nulls, and summary statistics. | | <span style="color:green;">Beginner 🟢</span> |
-| 02-Missing Value Treatment | Deletion, imputation, and model-specific strategies for nulls. | | <span style="color:green;">Beginner 🟢</span> |
-| 03-Outlier Detection and Robust Handling | IQR, z-score, winsorization, and anomaly-aware preprocessing. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 04-Scaling and Normalization | Standardization, min-max scaling, robust scaling, and their tradeoffs. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 05-Categorical Encoding | One-hot, ordinal, target, hashing, and embedding-style encoding. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 06-Feature Construction | Polynomial terms, interactions, ratios, and domain-driven features. | | <span style="color:orange;">Advanced 🟠</span> |
-| 07-Feature Selection | Filter, wrapper, and embedded methods for reducing dimensionality. | | <span style="color:orange;">Advanced 🟠</span> |
-| 08-Target Leakage Prevention | Leakage patterns, time-aware splits, and safer pipeline design. | | <span style="color:orange;">Advanced 🟠</span> |
-| 09-Pipeline Engineering | Reusable transformations, train/test consistency, and reproducibility. | | <span style="color:orange;">Advanced 🟠</span> |
-| 10-Handling Imbalanced Data | Resampling, class weights, and preprocessing for skewed targets. | | <span style="color:red;">Expert 🔴</span> |
-| 11-Temporal Feature Engineering | Lag features, rolling statistics, and date-derived signals. | | <span style="color:orange;">Advanced 🟠</span> |
-| 12-Binning and Discretization | Turning continuous variables into informative buckets. | | <span style="color:orange;">Advanced 🟠</span> |
-| 13-Text and Categorical Cleaning | Standardizing labels, handling rare categories, and normalization. | | <span style="color:red;">Expert 🔴</span> |
-| 14-Feature Stores and Reuse | Persisting engineered features for repeatable model training. | | <span style="color:red;">Expert 🔴</span> |
+| [01-Data Profiling and Quality Checks](/Section%2005-Feature%20Engineering%20&%20Data%20Preprocessing/01-Data%20Profiling%20and%20Quality%20Checks.ipynb) | Data types, uniqueness, duplicates, nulls, and summary statistics. | | <span style="color:green;">Beginner 🟢</span> |
+| [02-Missing Value Treatment](/Section%2005-Feature%20Engineering%20&%20Data%20Preprocessing/02-Missing%20Value%20Treatment.ipynb) | Deletion, imputation, and model-specific strategies for nulls. | | <span style="color:green;">Beginner 🟢</span> |
+| [03-Outlier Detection and Robust Handling](/Section%2005-Feature%20Engineering%20&%20Data%20Preprocessing/03-Outlier%20Detection%20and%20Robust%20Handling.ipynb) | IQR, z-score, winsorization, and anomaly-aware preprocessing. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [04-Scaling and Normalization](/Section%2005-Feature%20Engineering%20&%20Data%20Preprocessing/04-Scaling%20and%20Normalization.ipynb) | Standardization, min-max scaling, robust scaling, and their tradeoffs. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [05-Categorical Encoding](/Section%2005-Feature%20Engineering%20&%20Data%20Preprocessing/05-Categorical%20Encoding.ipynb) | One-hot, ordinal, target, hashing, and embedding-style encoding. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [06-Binning and Discretization](/Section%2005-Feature%20Engineering%20&%20Data%20Preprocessing/06-Binning%20and%20Discretization.ipynb) | Turning continuous variables into informative buckets. | | <span style="color:orange;">Advanced 🟠</span> |
+| [07-Feature Construction](/Section%2005-Feature%20Engineering%20&%20Data%20Preprocessing/07-Feature%20Construction.ipynb) | Polynomial terms, interactions, ratios, and domain-driven features. | | <span style="color:orange;">Advanced 🟠</span> |
+| [08-Feature Selection & PCA](/Section%2005-Feature%20Engineering%20&%20Data%20Preprocessing/08-Feature%20Selection%20&%20PCA.ipynb) | Filter, wrapper, and embedded methods for reducing dimensionality. | | <span style="color:orange;">Advanced 🟠</span> |
+| [09-Target Leakage Prevention](/Section%2005-Feature%20Engineering%20&%20Data%20Preprocessing/09-Target%20Leakage%20Prevention.ipynb) | Leakage patterns, time-aware splits, and safer pipeline design. | | <span style="color:orange;">Advanced 🟠</span> |
+| [10-Pipeline Engineering (scikit-learn)](/Section%2005-Feature%20Engineering%20&%20Data%20Preprocessing/10-Pipeline%20Engineering%20%28scikit-learn%29.ipynb) | Reusable transformations, train/test consistency, and reproducibility. | | <span style="color:orange;">Advanced 🟠</span> |
+| [11-Handling Imbalanced Data](/Section%2005-Feature%20Engineering%20&%20Data%20Preprocessing/11-Handling%20Imbalanced%20Data.ipynb) | Resampling, class weights, and preprocessing for skewed targets. | | <span style="color:red;">Expert 🔴</span> |
+| [12-Temporal Feature Engineering](/Section%2005-Feature%20Engineering%20&%20Data%20Preprocessing/12-Temporal%20Feature%20Engineering.ipynb) | Lag features, rolling statistics, and date-derived signals. | | <span style="color:orange;">Advanced 🟠</span> |
+| [13-Text and Categorical Cleaning (Advanced)](/Section%2005-Feature%20Engineering%20&%20Data%20Preprocessing/13-Text%20and%20Categorical%20Cleaning%20%28Advanced%29.ipynb) | Standardizing labels, handling rare categories, and normalization. | | <span style="color:red;">Expert 🔴</span> |
+| [14-Feature Stores and Reuse](/Section%2005-Feature%20Engineering%20&%20Data%20Preprocessing/14-Feature%20Stores%20and%20Reuse.ipynb) | Persisting engineered features for repeatable model training. | | <span style="color:red;">Expert 🔴</span> |
 
 #### 📊 Section 6 - Data Visualization & Business Intelligence
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-Visualization Principles | Chart selection, visual hierarchy, and reducing noise. | | <span style="color:green;">Beginner 🟢</span> |
-| 02-Exploratory Visual Analysis | Distribution, relationship, and comparison plots for EDA. | | <span style="color:green;">Beginner 🟢</span> |
-| 03-Color, Layout, and Accessibility | Palette choice, contrast, annotations, and readability. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 04-Storytelling with Dashboards | Sequencing insights and building stakeholder-ready narratives. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 05-Tableau Calculated Fields | Table calculations, parameters, and reusable logic in Tableau. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 06-Interactive Dashboards | Filters, actions, drill-downs, and interactive exploration. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 07-Operational Reporting | KPI design, refresh cadence, and executive reporting patterns. | | <span style="color:orange;">Advanced 🟠</span> |
-| 08-Advanced Chart Types | Heatmaps, small multiples, network visuals, and layered plots. | | <span style="color:orange;">Advanced 🟠</span> |
-| 09-Publishing and Sharing | Deployment, permissions, and governance for visual assets. | | <span style="color:orange;">Advanced 🟠</span> |
-| 10-Visualization QA and UX | Validation, labeling, and dashboard usability checks. | | <span style="color:red;">Expert 🔴</span> |
-| 11-Exploratory Storyboarding | Structuring plots into a coherent analytical flow. | | <span style="color:orange;">Advanced 🟠</span> |
-| 12-Geospatial Visualization | Maps, coordinates, and location-aware storytelling. | | <span style="color:orange;">Advanced 🟠</span> |
-| 13-Advanced Tableau Modeling | Data blending, extracts, and performance-aware dashboard design. | | <span style="color:red;">Expert 🔴</span> |
-| 14-Visual Analytics Governance | Definition of KPIs, source-of-truth control, and dashboard maintenance. | | <span style="color:red;">Expert 🔴</span> |
+| [01-Visualization Principles](/Section%2006-Data%20Visualization%20&%20Business%20Intelligence/01-Visualization%20Principles.ipynb) | Chart selection, visual hierarchy, and reducing noise. | | <span style="color:green;">Beginner 🟢</span> |
+| [02-Exploratory Visual Analysis](/Section%2006-Data%20Visualization%20&%20Business%20Intelligence/02-Exploratory%20Visual%20Analysis.ipynb) | Distribution, relationship, and comparison plots for EDA. | | <span style="color:green;">Beginner 🟢</span> |
+| [03-Color, Layout, and Accessibility](/Section%2006-Data%20Visualization%20&%20Business%20Intelligence/03-Color%2C%20Layout%2C%20and%20Accessibility.ipynb) | Palette choice, contrast, annotations, and readability. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [04-Advanced Chart Types](/Section%2006-Data%20Visualization%20&%20Business%20Intelligence/04-Advanced%20Chart%20Types.ipynb) | Heatmaps, small multiples, network visuals, and layered plots. | | <span style="color:orange;">Advanced 🟠</span> |
+| [05-Geospatial Visualization](/Section%2006-Data%20Visualization%20&%20Business%20Intelligence/05-Geospatial%20Visualization.ipynb) | Maps, coordinates, and location-aware storytelling. | | <span style="color:orange;">Advanced 🟠</span> |
+| [06-Exploratory Storyboarding](/Section%2006-Data%20Visualization%20&%20Business%20Intelligence/06-Exploratory%20Storyboarding.ipynb) | Structuring plots into a coherent analytical flow. | | <span style="color:orange;">Advanced 🟠</span> |
+| [07-Storytelling with Dashboards](/Section%2006-Data%20Visualization%20&%20Business%20Intelligence/07-Storytelling%20with%20Dashboards.ipynb) | Sequencing insights and building stakeholder-ready narratives. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [08-Tableau Calculated Fields](/Section%2006-Data%20Visualization%20&%20Business%20Intelligence/08-Tableau%20Calculated%20Fields.ipynb) | Table calculations, parameters, and reusable logic in Tableau. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [09-Interactive Dashboards](/Section%2006-Data%20Visualization%20&%20Business%20Intelligence/09-Interactive%20Dashboards.ipynb) | Filters, actions, drill-downs, and interactive exploration. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [10-Advanced Tableau Modeling](/Section%2006-Data%20Visualization%20&%20Business%20Intelligence/10-Advanced%20Tableau%20Modeling.ipynb) | Data blending, extracts, and performance-aware dashboard design. | | <span style="color:red;">Expert 🔴</span> |
+| [11-Operational Reporting](/Section%2006-Data%20Visualization%20&%20Business%20Intelligence/11-Operational%20Reporting.ipynb) | KPI design, refresh cadence, and executive reporting patterns. | | <span style="color:orange;">Advanced 🟠</span> |
+| [12-Publishing and Sharing](/Section%2006-Data%20Visualization%20&%20Business%20Intelligence/12-Publishing%20and%20Sharing.ipynb) | Deployment, permissions, and governance for visual assets. | | <span style="color:orange;">Advanced 🟠</span> |
+| [13-Visualization QA and UX](/Section%2006-Data%20Visualization%20&%20Business%20Intelligence/13-Visualization%20QA%20and%20UX.ipynb) | Validation, labeling, and dashboard usability checks. | | <span style="color:red;">Expert 🔴</span> |
+| [14-Visual Analytics Governance](/Section%2006-Data%20Visualization%20&%20Business%20Intelligence/14-Visual%20Analytics%20Governance.ipynb) | Definition of KPIs, source-of-truth control, and dashboard maintenance. | | <span style="color:red;">Expert 🔴</span> |
 
 #### 🤖 Section 7 - Machine Learning Fundamentals
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-ML Problem Framing | Targets, metrics, baselines, and business objective alignment. | | <span style="color:green;">Beginner 🟢</span> |
-| 02-Supervised Learning Basics | Regression, classification, and the supervised learning workflow. | | <span style="color:green;">Beginner 🟢</span> |
-| 03-Unsupervised Learning Basics | Clustering, dimensionality reduction, and anomaly detection. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 04-Model Evaluation and Validation | Train/validation/test splits, cross-validation, and metrics. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 05-Bias-Variance Tradeoff | Underfitting, overfitting, and generalization control. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 06-Feature Engineering for ML | Categorical, numeric, temporal, and leakage-safe feature design. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 07-Model Selection | Comparing candidate models with consistent evaluation. | | <span style="color:orange;">Advanced 🟠</span> |
-| 08-Hyperparameter Tuning | Grid, random, and intelligent search strategies. | | <span style="color:orange;">Advanced 🟠</span> |
-| 09-Pipelines and Reproducibility | End-to-end pipeline design, serialization, and versioning. | | <span style="color:orange;">Advanced 🟠</span> |
-| 10-Interpretability Basics | Feature importance, partial dependence, and error analysis. | | <span style="color:red;">Expert 🔴</span> |
-| 11-Ensemble Learning | Bagging, boosting, stacking, and blended decision systems. | | <span style="color:orange;">Advanced 🟠</span> |
-| 12-Probability Calibration | Reliability curves, calibration methods, and thresholding. | | <span style="color:orange;">Advanced 🟠</span> |
-| 13-Multiclass and Multilabel Learning | Problem formulations and evaluation differences across label structures. | | <span style="color:red;">Expert 🔴</span> |
-| 14-ML Experiment Design | Baselines, ablations, reproducibility, and statistical comparison. | | <span style="color:red;">Expert 🔴</span> |
+| [01-ML Problem Framing](/Section%2007-Machine%20Learning%20Fundamentals/01-ML%20Problem%20Framing.ipynb) | Problem definition, success metrics, and business alignment. | | <span style="color:green;">Beginner 🟢</span> |
+| [02-Gradient Descent & Optimization](/Section%2007-Machine%20Learning%20Fundamentals/02-Gradient%20Descent%20&%20Optimization.ipynb) | Optimization algorithms, learning rates, and convergence. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [03-Linear Regression](/Section%2007-Machine%20Learning%20Fundamentals/03-Linear%20Regression.ipynb) | Regression basics, least squares, and interpretation. | | <span style="color:green;">Beginner 🟢</span> |
+| [04-Logistic Regression](/Section%2007-Machine%20Learning%20Fundamentals/04-Logistic%20Regression.ipynb) | Binary classification, odds, and probability calibration. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [05-Distance Models (KNN)](/Section%2007-Machine%20Learning%20Fundamentals/05-Distance%20Models%20%28KNN%29.ipynb) | Instance-based learning, distance metrics, and KNN. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [06-Support Vector Machines](/Section%2007-Machine%20Learning%20Fundamentals/06-Support%20Vector%20Machines.ipynb) | Margin maximization, kernels, and SVM workflows. | | <span style="color:orange;">Advanced 🟠</span> |
+| [07-Naive Bayes](/Section%2007-Machine%20Learning%20Fundamentals/07-Naive%20Bayes.ipynb) | Probabilistic classification and conditional independence. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [08-Decision Trees](/Section%2007-Machine%20Learning%20Fundamentals/08-Decision%20Trees.ipynb) | Tree construction, splitting criteria, and interpretability. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [09-Bias-Variance & Regularization](/Section%2007-Machine%20Learning%20Fundamentals/09-Bias-Variance%20&%20Regularization.ipynb) | Underfitting, overfitting, and generalization control. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [10-Ensemble: Bagging](/Section%2007-Machine%20Learning%20Fundamentals/10-Ensemble%3A%20Bagging.ipynb) | Bootstrap aggregating and parallel ensemble methods. | | <span style="color:orange;">Advanced 🟠</span> |
+| [11-Ensemble: Boosting](/Section%2007-Machine%20Learning%20Fundamentals/11-Ensemble%3A%20Boosting.ipynb) | Sequential ensemble building and gradient boosting. | | <span style="color:orange;">Advanced 🟠</span> |
+| [12-Unsupervised: Clustering](/Section%2007-Machine%20Learning%20Fundamentals/12-Unsupervised%3A%20Clustering.ipynb) | K-means, hierarchical clustering, and cluster evaluation. | | <span style="color:orange;">Advanced 🟠</span> |
+| [13-Unsupervised: Dimensionality](/Section%2007-Machine%20Learning%20Fundamentals/13-Unsupervised%3A%20Dimensionality.ipynb) | PCA, manifold learning, and dimensionality reduction. | | <span style="color:orange;">Advanced 🟠</span> |
+| [14-Model Evaluation & Validation](/Section%2007-Machine%20Learning%20Fundamentals/14-Model%20Evaluation%20&%20Validation.ipynb) | Cross-validation, metrics, and model selection. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [15-Classification Metrics](/Section%2007-Machine%20Learning%20Fundamentals/15-Classification%20Metrics.ipynb) | Precision, recall, F1, ROC-AUC, and threshold selection. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [16-Hyperparameter Tuning](/Section%2007-Machine%20Learning%20Fundamentals/16-Hyperparameter%20Tuning.ipynb) | Grid search, random search, and Bayesian optimization. | | <span style="color:orange;">Advanced 🟠</span> |
+| [17-Multiclass and Multilabel](/Section%2007-Machine%20Learning%20Fundamentals/17-Multiclass%20and%20Multilabel.ipynb) | Multi-class classification and multilabel strategies. | | <span style="color:orange;">Advanced 🟠</span> |
+| [18-Probability Calibration](/Section%2007-Machine%20Learning%20Fundamentals/18-Probability%20Calibration.ipynb) | Calibration methods and reliability diagrams. | | <span style="color:orange;">Advanced 🟠</span> |
+| [19-Building ML Pipelines](/Section%2007-Machine%20Learning%20Fundamentals/19-Building%20ML%20Pipelines.ipynb) | End-to-end pipeline design and reproducibility. | | <span style="color:orange;">Advanced 🟠</span> |
+| [20-Model Interpretability](/Section%2007-Machine%20Learning%20Fundamentals/20-Model%20Interpretability.ipynb) | Feature importance, SHAP, LIME, and explainability. | | <span style="color:red;">Expert 🔴</span> |
+| [21-MLOps: Serialization](/Section%2007-Machine%20Learning%20Fundamentals/21-MLOps%3A%20Serialization.ipynb) | Model saving, loading, and deployment packaging. | | <span style="color:orange;">Advanced 🟠</span> |
+| [22-MLOps: Experiment Tracking](/Section%2007-Machine%20Learning%20Fundamentals/22-MLOps%3A%20Experiment%20Tracking.ipynb) | MLflow, experiment logging, and model versioning. | | <span style="color:orange;">Advanced 🟠</span> |
 
 #### ⏳ Section 8 - Time Series Analysis & Forecasting
 
@@ -582,6 +590,12 @@ This roadmap will continue to be updated as I explore more topics in Data Scienc
 
 ---
 
-Feel free to explore and contribute!  
-> **Disclaimer:** These notes are created with no financial expectation and are intended purely for educational purposes.  
-> Sources and references are credited where applicable. If any unintentional copyright infringement is found, it will be addressed and resolved immediately.
+## Disclaimer
+
+This repository contains AI-assisted notes and personally curated learning materials.
+
+* The content is created for **educational purposes only**.
+* All explanations are reviewed and structured based on my own understanding.
+* Any referenced materials belong to their respective owners and are credited where applicable.
+
+If any unintentional copyright issue arises, please contact me and it will be promptly resolved.
