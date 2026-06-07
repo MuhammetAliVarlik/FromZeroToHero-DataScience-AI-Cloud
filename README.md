@@ -201,58 +201,80 @@ The roadmap below shows the full learning path. Sections 1-3 are implemented in 
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-Time Series Fundamentals | Trend, seasonality, stationarity, and temporal dependence. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 02-Temporal Feature Engineering | Lags, rolling windows, holidays, and calendar signals. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 03-Exploratory Time Series Analysis | Decomposition, autocorrelation, and variance patterns. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 04-Classic Forecasting Models | ARIMA, ETS, and decomposition-based methods. | | <span style="color:orange;">Advanced 🟠</span> |
-| 05-Exogenous Variables | External drivers, regressors, and multivariate forecasting. | | <span style="color:orange;">Advanced 🟠</span> |
-| 06-Validation for Forecasts | Walk-forward validation, backtesting, and horizon analysis. | | <span style="color:orange;">Advanced 🟠</span> |
-| 07-Machine Learning Forecasting | Tree-based models and feature-driven prediction. | | <span style="color:orange;">Advanced 🟠</span> |
-| 08-Deep Learning Forecasting | RNN, LSTM, attention, and sequence forecasting. | | <span style="color:orange;">Advanced 🟠</span> |
-| 09-Hierarchical Forecasting | Multiple series, aggregation, and reconciliation. | | <span style="color:red;">Expert 🔴</span> |
-| 10-Forecast Monitoring | Drift detection, accuracy tracking, and retraining triggers. | | <span style="color:red;">Expert 🔴</span> |
-| 11-Seasonal Decomposition | Additive and multiplicative decomposition techniques. | | <span style="color:orange;">Advanced 🟠</span> |
-| 12-Multiple Time Series | Cross-series relationships and panel forecasting workflows. | | <span style="color:red;">Expert 🔴</span> |
-| 13-Uncertainty Quantification | Prediction intervals, quantile forecasts, and risk-aware outputs. | | <span style="color:red;">Expert 🔴</span> |
-| 14-Operational Forecasting | Alerting, dashboards, and business-facing forecast integration. | | <span style="color:red;">Expert 🔴</span> |
+| [01-Time Series Problem Framing](/Section%2008-Time%20Series%20Analysis%20%26%20Forecasting/01-Time%20Series%20Problem%20Framing.ipynb) | Problem definition, horizons, and baseline strategies. | | <span style="color:green;">Beginner 🟢</span> |
+| [02-Components & Decomposition](/Section%2008-Time%20Series%20Analysis%20%26%20Forecasting/02-Components%20%26%20Decomposition.ipynb) | Trend/seasonality decomposition and component analysis. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [03-Exploratory Time Series Analysis](/Section%2008-Time%20Series%20Analysis%20%26%20Forecasting/03-Exploratory%20Time%20Series%20Analysis.ipynb) | Decomposition, ACF/PACF inspection, and diagnostics. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [04-Autocorrelation (ACF-PACF)](/Section%2008-Time%20Series%20Analysis%20%26%20Forecasting/04-Autocorrelation%20%28ACF-PACF%29.ipynb) | ACF/PACF interpretation and lag selection. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [05-Stationarity & Differencing](/Section%2008-Time%20Series%20Analysis%20%26%20Forecasting/05-Stationarity%20%26%20Differencing.ipynb) | Unit roots, tests, and differencing strategies. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [06-Temporal Feature Engineering](/Section%2008-Time%20Series%20Analysis%20%26%20Forecasting/06-Temporal%20Feature%20Engineering.ipynb) | Lag/window features, calendar effects, and encodings. | | <span style="color:orange;">Advanced 🟠</span> |
+| [07-Lag & Window Features](/Section%2008-Time%20Series%20Analysis%20%26%20Forecasting/07-Lag%20%26%20Window%20Features.ipynb) | Rolling statistics, expanding windows, and feature lags. | | <span style="color:orange;">Advanced 🟠</span> |
+| [08-Classic: Exponential Smoothing](/Section%2008-Time%20Series%20Analysis%20%26%20Forecasting/08-Classic%3A%20Exponential%20Smoothing.ipynb) | Simple/seasonal exponential smoothing and Holt-Winters. | | <span style="color:orange;">Advanced 🟠</span> |
+| [09-Classic: ARIMA Models](/Section%2008-Time%20Series%20Analysis%20%26%20Forecasting/09-Classic%3A%20ARIMA%20Models.ipynb) | ARIMA identification, estimation, and forecasting. | | <span style="color:orange;">Advanced 🟠</span> |
+| [10-Classic: SARIMAX](/Section%2008-Time%20Series%20Analysis%20%26%20Forecasting/10-Classic%3A%20SARIMAX.ipynb) | Seasonal ARIMA with exogenous regressors. | | <span style="color:orange;">Advanced 🟠</span> |
+| [11-Time Series Validation Strategies](/Section%2008-Time%20Series%20Analysis%20%26%20Forecasting/11-Time%20Series%20Validation%20Strategies.ipynb) | Walk-forward validation, backtesting, and horizons. | | <span style="color:orange;">Advanced 🟠</span> |
+| [12-Forecasting Metrics](/Section%2008-Time%20Series%20Analysis%20%26%20Forecasting/12-Forecasting%20Metrics.ipynb) | MAPE, RMSE, MAE, and probabilistic metrics. | | <span style="color:orange;">Advanced 🟠</span> |
+| [13-ML Forecasting (Tabularization)](/Section%2008-Time%20Series%20Analysis%20%26%20Forecasting/13-ML%20Forecasting%20%28Tabularization%29.ipynb) | Converting series to supervised tabular format for ML. | | <span style="color:orange;">Advanced 🟠</span> |
+| [14-Global vs. Local Models](/Section%2008-Time%20Series%20Analysis%20%26%20Forecasting/14-Global%20vs.%20Local%20Models.ipynb) | Model per-series vs pooled/global approaches. | | <span style="color:orange;">Advanced 🟠</span> |
+| [15-Multivariate Forecasting (VAR)](/Section%2008-Time%20Series%20Analysis%20%26%20Forecasting/15-Multivariate%20Forecasting%20%28VAR%29.ipynb) | VAR models and multivariate temporal dependencies. | | <span style="color:orange;">Advanced 🟠</span> |
+| [16-Deep Learning: LSTMs](/Section%2008-Time%20Series%20Analysis%20%26%20Forecasting/16-Deep%20Learning%3A%20LSTMs.ipynb) | Sequence models, LSTM architectures, and training tips. | | <span style="color:orange;">Advanced 🟠</span> |
+| [17-Deep Learning: Transformers](/Section%2008-Time%20Series%20Analysis%20%26%20Forecasting/17-Deep%20Learning%3A%20Transformers.ipynb) | Transformer-based time series models and attention. | | <span style="color:orange;">Advanced 🟠</span> |
+| [18-Hierarchical Forecasting](/Section%2008-Time%20Series%20Analysis%20%26%20Forecasting/18-Hierarchical%20Forecasting.ipynb) | Reconciliation, aggregation, and bottom-up/top-down methods. | | <span style="color:red;">Expert 🔴</span> |
+| [19-Uncertainty Quantification](/Section%2008-Time%20Series%20Analysis%20%26%20Forecasting/19-Uncertainty%20Quantification.ipynb) | Prediction intervals, quantiles, and probabilistic forecasts. | | <span style="color:red;">Expert 🔴</span> |
+| [20-Anomaly Detection in Time](/Section%2008-Time%20Series%20Analysis%20%26%20Forecasting/20-Anomaly%20Detection%20in%20Time.ipynb) | Detecting temporal anomalies and change points. | | <span style="color:red;">Expert 🔴</span> |
+| [21-MLOps: Continuous Backtesting](/Section%2008-Time%20Series%20Analysis%20%26%20Forecasting/21-MLOps%3A%20Continuous%20Backtesting.ipynb) | Automated backtests, scheduling, and monitoring. | | <span style="color:red;">Expert 🔴</span> |
+| [22-MLOps: Operationalization](/Section%2008-Time%20Series%20Analysis%20%26%20Forecasting/22-MLOps%3A%20Operationalization.ipynb) | Serving, retraining, and production considerations. | | <span style="color:red;">Expert 🔴</span> |
 
 #### 🧠 Section 9 - Deep Learning & Neural Networks
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-Neural Network Foundations | Perceptrons, activations, losses, and forward propagation. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 02-Backpropagation and Gradients | Gradient descent, chain rule, and optimization dynamics. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 03-Regularization Techniques | Dropout, batch norm, early stopping, and weight decay. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 04-Convolutional Neural Networks | Convolutions, pooling, and vision-specific architecture design. | | <span style="color:orange;">Advanced 🟠</span> |
-| 05-Sequence Modeling | RNN, LSTM, GRU, and sequence learning basics. | | <span style="color:orange;">Advanced 🟠</span> |
-| 06-Attention Mechanisms | Attention intuition, context aggregation, and modern sequence modeling. | | <span style="color:orange;">Advanced 🟠</span> |
-| 07-Optimization at Scale | Learning rates, schedulers, mixed precision, and batching. | | <span style="color:orange;">Advanced 🟠</span> |
-| 08-Training Diagnostics | Loss curves, gradient issues, and convergence troubleshooting. | | <span style="color:orange;">Advanced 🟠</span> |
-| 09-Transfer Learning in Deep Learning | Pretrained backbones and task-specific fine-tuning. | | <span style="color:red;">Expert 🔴</span> |
-| 10-Deployment Considerations | Inference latency, memory use, and model compression basics. | | <span style="color:red;">Expert 🔴</span> |
-| 11-Transformer Architecture in NLP | Attention blocks, tokenization flow, and context modeling. | | <span style="color:orange;">Advanced 🟠</span> |
-| 12-Instruction Tuning Basics | Task adaptation and supervised fine-tuning for assistant behavior. | | <span style="color:orange;">Advanced 🟠</span> |
-| 13-RAG for NLP Systems | Retrieval-grounded generation and faithfulness controls. | | <span style="color:red;">Expert 🔴</span> |
-| 14-LLM Evaluation and Safety | Robustness checks, hallucination analysis, and guardrail testing. | | <span style="color:red;">Expert 🔴</span> |
+| [01-Tensor Mathematics](/Section%2009-Deep%20Learning%20%26%20Neural%20Networks/01-Tensor%20Mathematics.ipynb) | Tensor operations and linear algebra foundations for DL. | | <span style="color:green;">Beginner 🟢</span> |
+| [02-The Artificial Neuron](/Section%2009-Deep%20Learning%20%26%20Neural%20Networks/02-The%20Artificial%20Neuron.ipynb) | Neuron model, weights, bias, and activation intuition. | | <span style="color:green;">Beginner 🟢</span> |
+| [03-Activation Functions](/Section%2009-Deep%20Learning%20%26%20Neural%20Networks/03-Activation%20Functions.ipynb) | Common activations and their properties. | | <span style="color:green;">Beginner 🟢</span> |
+| [04-Multi-Layer Perceptrons](/Section%2009-Deep%20Learning%20%26%20Neural%20Networks/04-Multi-Layer%20Perceptrons.ipynb) | MLP architectures and feedforward networks. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [05-Loss Functions](/Section%2009-Deep%20Learning%20%26%20Neural%20Networks/05-Loss%20Functions.ipynb) | Loss choices and their effects on training. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [06-Gradient Descent](/Section%2009-Deep%20Learning%20%26%20Neural%20Networks/06-Gradient%20Descent.ipynb) | Optimization basics and learning dynamics. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [07-Backpropagation](/Section%2009-Deep%20Learning%20%26%20Neural%20Networks/07-Backpropagation.ipynb) | Backprop algorithm and computational graph derivatives. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [08-Auto-Differentiation](/Section%2009-Deep%20Learning%20%26%20Neural%20Networks/08-Auto-Differentiation.ipynb) | Autograd mechanics and practical tips. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [09-Batches & DataLoaders](/Section%2009-Deep%20Learning%20%26%20Neural%20Networks/09-Batches%20%26%20DataLoaders.ipynb) | Mini-batching, loaders, and efficient data pipelines. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [10-Advanced Optimizers](/Section%2009-Deep%20Learning%20%26%20Neural%20Networks/10-Advanced%20Optimizers.ipynb) | Adam, RMSProp, and optimizer variants. | | <span style="color:orange;">Advanced 🟠</span> |
+| [11-The Training Loop](/Section%2009-Deep%20Learning%20%26%20Neural%20Networks/11-The%20Training%20Loop.ipynb) | Epochs, steps, evaluation, and debugging loops. | | <span style="color:orange;">Advanced 🟠</span> |
+| [12-Gradient Instability](/Section%2009-Deep%20Learning%20%26%20Neural%20Networks/12-Gradient%20Instability.ipynb) | Vanishing/exploding gradients and remedies. | | <span style="color:orange;">Advanced 🟠</span> |
+| [13-Weight Initialization](/Section%2009-Deep%20Learning%20%26%20Neural%20Networks/13-Weight%20Initialization.ipynb) | Initialization schemes and their impact. | | <span style="color:orange;">Advanced 🟠</span> |
+| [14-Regularization: Dropout](/Section%2009-Deep%20Learning%20%26%20Neural%20Networks/14-Regularization%3A%20Dropout.ipynb) | Dropout and other regularization techniques. | | <span style="color:orange;">Advanced 🟠</span> |
+| [15-Normalization Layers](/Section%2009-Deep%20Learning%20%26%20Neural%20Networks/15-Normalization%20Layers.ipynb) | BatchNorm, LayerNorm and training stability. | | <span style="color:orange;">Advanced 🟠</span> |
+| [16-Learning Rate Scheduling](/Section%2009-Deep%20Learning%20%26%20Neural%20Networks/16-Learning%20Rate%20Scheduling.ipynb) | Schedulers, warmup, and cyclic strategies. | | <span style="color:orange;">Advanced 🟠</span> |
+| [17-Handling Imbalanced Data](/Section%2009-Deep%20Learning%20%26%20Neural%20Networks/17-Handling%20Imbalanced%20Data.ipynb) | Techniques for class imbalance in DL. | | <span style="color:orange;">Advanced 🟠</span> |
+| [18-Deep Learning Diagnostics](/Section%2009-Deep%20Learning%20%26%20Neural%20Networks/18-Deep%20Learning%20Diagnostics.ipynb) | Training diagnostics, visualizations, and fixes. | | <span style="color:orange;">Advanced 🟠</span> |
+| [19-Hardware Acceleration](/Section%2009-Deep%20Learning%20%26%20Neural%20Networks/19-Hardware%20Acceleration.ipynb) | GPUs, mixed precision, and performance tips. | | <span style="color:red;">Expert 🔴</span> |
+| [20-Callbacks & Checkpointing](/Section%2009-Deep%20Learning%20%26%20Neural%20Networks/20-Callbacks%20%26%20Checkpointing.ipynb) | Checkpoints, callbacks, and training utilities. | | <span style="color:orange;">Advanced 🟠</span> |
+| [21-Model Serialization](/Section%2009-Deep%20Learning%20%26%20Neural%20Networks/21-Model%20Serialization.ipynb) | Saving/loading models and portable formats. | | <span style="color:orange;">Advanced 🟠</span> |
+| [22-Multi-Task Architectures](/Section%2009-Deep%20Learning%20%26%20Neural%20Networks/22-Multi-Task%20Architectures.ipynb) | Multi-head and multi-task model designs. | | <span style="color:orange;">Advanced 🟠</span> |
 
 #### 👀 Section 10 - Computer Vision & Generative Models
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-Image Processing Basics | Pixels, color spaces, transformations, and filtering. | | <span style="color:green;">Beginner 🟢</span> |
-| 02-Classical CV Features | Edges, corners, descriptors, and histogram-based features. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 03-CNNs for Vision | Conv layers, pooling, and image classification workflows. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 04-Object Detection | Bounding boxes, anchors, and detection architecture families. | | <span style="color:orange;">Advanced 🟠</span> |
-| 05-Segmentation | Semantic, instance, and panoptic segmentation concepts. | | <span style="color:orange;">Advanced 🟠</span> |
-| 06-Transfer Learning | Fine-tuning pretrained vision backbones. | | <span style="color:orange;">Advanced 🟠</span> |
-| 07-Vision Data Pipelines | Augmentation, dataset versioning, and data loading. | | <span style="color:orange;">Advanced 🟠</span> |
-| 08-Evaluation Metrics | Precision/recall, IoU, mAP, and visual inspection. | | <span style="color:orange;">Advanced 🟠</span> |
-| 09-Vision Deployment | Runtime optimization and inference serving. | | <span style="color:red;">Expert 🔴</span> |
-| 10-Edge Vision Systems | On-device vision constraints and compression strategies. | | <span style="color:red;">Expert 🔴</span> |
-| 11-Generative Vision Foundations | GAN and diffusion basics for image generation workflows. | | <span style="color:orange;">Advanced 🟠</span> |
-| 12-Image-to-Image Generation | Translation, inpainting, and conditional generation patterns. | | <span style="color:red;">Expert 🔴</span> |
-| 13-Synthetic Data Generation | Creating task-ready synthetic datasets for robust model training. | | <span style="color:red;">Expert 🔴</span> |
-| 14-Generative Model Evaluation | Quality, diversity, and safety evaluation for generated outputs. | | <span style="color:red;">Expert 🔴</span> |
+| [01-Pixels](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/01-Pixels.ipynb) | Image representation, color spaces, and pixel operations. | | <span style="color:green;">Beginner 🟢</span> |
+| [02-The Math of Convolutions](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/02-The%20Math%20of%20Convolutions.ipynb) | Convolution math and filter interpretation. | | <span style="color:green;">Beginner 🟢</span> |
+| [03-Pooling & Receptive Fields](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/03-Pooling%20%26%20Receptive%20Fields.ipynb) | Pooling operations and receptive field concepts. | | <span style="color:green;">Beginner 🟢</span> |
+| [04-Architecting CNNs in PyTorch](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/04-Architecting%20CNNs%20in%20PyTorch.ipynb) | Building CNNs and best practices in PyTorch. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [05-Enterprise Backbones](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/05-Enterprise%20Backbones.ipynb) | Backbone architectures and pretrained models. | | <span style="color:orange;">Advanced 🟠</span> |
+| [06-Transfer Learning & Fine-Tuning](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/06-Transfer%20Learning%20%26%20Fine-Tuning.ipynb) | Fine-tuning strategies and transfer learning workflows. | | <span style="color:orange;">Advanced 🟠</span> |
+| [07-Vision Data Pipelines](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/07-Vision%20Data%20Pipelines.ipynb) | Augmentation, dataset versioning, and loaders. | | <span style="color:orange;">Advanced 🟠</span> |
+| [08-Object Detection I: Metrics](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/08-Object%20Detection%20I%3A%20Metrics.ipynb) | Detection metrics, IoU, and evaluation. | | <span style="color:orange;">Advanced 🟠</span> |
+| [09-Object Detection II: Architectures](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/09-Object%20Detection%20II%3A%20Architectures.ipynb) | One-stage vs two-stage detectors and modern models. | | <span style="color:orange;">Advanced 🟠</span> |
+| [10-Semantic Segmentation](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/10-Semantic%20Segmentation.ipynb) | Pixel-wise labeling and segmentation architectures. | | <span style="color:orange;">Advanced 🟠</span> |
+| [11-Vision Transformers (ViT).](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/11-Vision%20Transformers%20%28ViT%29.ipynb) | Transformer models for vision tasks. | | <span style="color:orange;">Advanced 🟠</span> |
+| [12-Autoencoders & Latent Space](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/12-Autoencoders%20%26%20Latent%20Space.ipynb) | Representation learning with autoencoders. | | <span style="color:orange;">Advanced 🟠</span> |
+| [13-Variational Autoencoders (VAEs).](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/13-Variational%20Autoencoders%20%28VAEs%29.ipynb) | Probabilistic autoencoders and latent sampling. | | <span style="color:orange;">Advanced 🟠</span> |
+| [14-Generative Adversarial Networks](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/14-Generative%20Adversarial%20Networks.ipynb) | GAN training, loss dynamics, and stability. | | <span style="color:orange;">Advanced 🟠</span> |
+| [15-Advanced GANs & Pitfalls](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/15-Advanced%20GANs%20%26%20Pitfalls.ipynb) | Improved architectures and common failure modes. | | <span style="color:red;">Expert 🔴</span> |
+| [16-Diffusion Models I: The Math](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/16-Diffusion%20Models%20I%3A%20The%20Math.ipynb) | Theory of diffusion-based generative models. | | <span style="color:red;">Expert 🔴</span> |
+| [17-Diffusion Models II: Latent Diffusion](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/17-Diffusion%20Models%20II%3A%20Latent%20Diffusion.ipynb) | Practical latent diffusion pipelines and training. | | <span style="color:red;">Expert 🔴</span> |
+| [18-Image-to-Image & ControlNet](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/18-Image-to-Image%20%26%20ControlNet.ipynb) | Conditional generation and control mechanisms. | | <span style="color:red;">Expert 🔴</span> |
+| [19-Generative Evaluation](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/19-Generative%20Evaluation.ipynb) | Metrics for generative model quality and diversity. | | <span style="color:red;">Expert 🔴</span> |
+| [20-Edge Vision & Quantization](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/20-Edge%20Vision%20%26%20Quantization.ipynb) | Compression, quantization, and on-device inference. | | <span style="color:red;">Expert 🔴</span> |
 
 #### 🗣️ Section 11 - NLP, Transformers & LLMs
 
