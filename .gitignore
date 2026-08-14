@@ -180,9 +180,44 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
-# Other Files
+# ---------------------------------------------------------------------------
+# Author's private workspace — supplementary/reference material, not part of
+# the published curriculum (see "Notes on Supporting Material" in README.md)
+# ---------------------------------------------------------------------------
 /images
 /medium
 /utilities
 course_schedule.txt
 .vscode
+.env
+.*env
+*/pdf
+
+# ---------------------------------------------------------------------------
+# Notebook run artifacts — created locally when lesson notebooks are executed
+# (local databases, mock warehouses/lakehouses, model checkpoints, scratch
+# sandboxes). These regenerate on re-run and should never be published;
+# course data belongs in each section's small, tracked files/ examples.
+# ---------------------------------------------------------------------------
+*_sandbox/
+*_storage/
+*warehouse*/
+*_landing_zone/
+*_model_repository/
+raw_landing_*.json
+AutogluonModels/
+*.db
+*.db.wal
+*.db-wal
+*.db-shm
+*.duckdb
+*.sqlite
+*.sqlite3
+*.onnx
+*.onnx.data
+*.gguf
+Section 21-Explainable AI, Ethics & Responsible AI/config/
+
+# Stray markdown drafts left over from authoring a notebook (superseded by
+# the notebook itself — every lesson's real content lives in the .ipynb)
+Section */*.md

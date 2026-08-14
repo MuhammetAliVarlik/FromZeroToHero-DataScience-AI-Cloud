@@ -1,105 +1,177 @@
-# Section 1 - Python basics & essentials
-ipython
-jupyterlab
+# requirements.txt - FromZeroToHero: Data Science, AI & Cloud
+# Grouped by the course section that first introduces each package (matches the current 27-section curriculum).
+# Some packages need vendor-specific install steps rather than a plain `pip install -r requirements.txt` --
+# notably CUDA/GPU-linked packages (torch, deepspeed, dgl, torch-geometric, tensorrt, vllm) and
+# platform-specific runtimes (openvino, GPU builds of onnxruntime). Check each one's own install docs
+# for your OS/GPU before running the notebooks in Sections 09, 20, and 22-27.
 
-# Section 2 - Numpy & Pandas
-numpy>=1.25.0
-pandas>=2.0.0
+# Section 01 - Python Programming, Git & Environment Management
+ipython>=8.14.0
+jupyterlab>=4.0.0
 
-# Section 3 - Mathematics & Statistics (with R - optional)
-# (Python alternatives)
+# Section 02 - Mathematics & Statistics with R
+# (R itself is installed separately; Python-side notebooks use:)
 scipy>=1.11.0
 statsmodels>=0.14.0
 
-# Section 4 - SQL & NoSQL Databases
+# Section 03 - SQL & NoSQL Databases
 sqlalchemy>=2.0.0
-psycopg2-binary>=2.9.6  # PostgreSQL driver
-pymongo>=4.4.0           # MongoDB driver
+mongomock>=4.1.2
 
-# Section 5 - Feature Engineering & Data Preprocessing
+# Section 04 - NumPy & Pandas
+numpy>=1.25.0
+pandas>=2.0.0
+
+# Section 05 - Feature Engineering & Data Preprocessing
 scikit-learn>=1.3.0
-category_encoders>=2.6.0
-missingno>=0.5.1
+imbalanced-learn>=0.11.0
 
-# Section 6 - Data Visualization & Tableau
+# Section 06 - Data Visualization & Business Intelligence
 matplotlib>=3.8.0
 seaborn>=0.12.2
 plotly>=5.15.0
-tableau-api-lib>=0.1.10
+ipywidgets>=8.1.0
 
-# Section 7 - Machine Learning Fundamentals
-scikit-learn>=1.3.0
+# Section 07 - Machine Learning Fundamentals
+joblib>=1.3.1
 
-# Section 8 - Deep Learning
+# Section 08 - Time Series Analysis & Forecasting
+prophet>=1.1.4
+
+# Section 09 - Deep Learning & Neural Networks
 torch>=2.0.0
 tensorflow>=2.12.0
+onnx>=1.14.0
 
-# Section 9 - Natural Language Processing (NLP)
+# Section 10 - Computer Vision & Generative Models
+scikit-image>=0.21.0
+torchvision>=0.15.2
+
+# Section 11 - NLP, Transformers & LLMs
 transformers>=4.35.0
+
+# Section 12 - REST APIs, FastAPI & AI Prototyping
+fastapi>=0.104.0
+uvicorn>=0.24.0
+pydantic>=2.4.0
+starlette>=0.32.0
+requests>=2.31.0
+gradio>=4.0.0
+streamlit>=1.28.0
+Pillow>=10.0.0
+
+# Section 13 - RAG, Vector Databases & Retrieval Systems
+# (builds on transformers/torch above for embeddings + retrieval demos)
+
+# Section 14 - LangChain, LangGraph & Multi-Agent Orchestration
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-ollama>=0.1.0
+langgraph>=0.0.30
+python-dotenv>=1.0.0
+
+# Section 15 - Data Engineering & ETL Pipelines
+apache-airflow>=2.7.1
+great-expectations>=0.17.9
+duckdb>=0.9.0
+pyarrow>=14.0.0
+fastavro>=1.9.0
+confluent-kafka>=2.3.0
+openlineage-python>=1.9.0
+jinja2>=3.1.2
+
+# Section 16 - PySpark & Big Data Processing
+pyspark>=3.5.0
+delta-spark>=3.0.0
+psutil>=5.9.5
+
+# Section 17 - Cloud Computing & AI Services
+boto3>=1.26.153
+
+# Section 18 - Linux, Bash Foundations & MLOps
+mlflow>=2.7.0
+prometheus_client>=0.17.1
+pyyaml>=6.0.1
+pytest>=7.4.0
+black>=23.9.0
+flake8>=6.1.0
+
+# Section 19 - Model Evaluation & Monitoring
+evaluate>=0.4.1
+rouge_score>=0.1.2
+bert-score>=0.3.13
 nltk>=3.8.1
 spacy>=3.6.0
 sentence-transformers>=2.2.2
+evidently>=0.4.5
+nannyml>=0.10.0
+opentelemetry-api>=1.21.0
+opentelemetry-sdk>=1.21.0
+opentelemetry-exporter-otlp-proto-grpc>=1.21.0
 
-# Section 10 - Computer Vision
-opencv-python>=4.7.0.72
-Pillow>=10.0.0
-torchvision>=0.15.2
+# Section 20 - AutoML & Model Optimization
+optuna>=3.1.1
+autogluon>=1.0.0
+flaml[automl]>=2.1.1
+xgboost>=2.0.0
+accelerate>=0.24.0
+bitsandbytes>=0.41.0
+onnxruntime>=1.16.0
+openvino>=2023.2.0
 
-# Section 11 - Generative Adversarial Networks (GANs)
-# GANs are usually implemented with PyTorch or TensorFlow, already included
-
-# Section 12 - Large Language Models (LLMs) & Transformers
-transformers>=4.35.0
-datasets>=2.13.1
-accelerate>=0.20.3
-
-# Section 13 - Time Series Analysis & Forecasting
-prophet>=1.1.4
-tsfresh>=0.20.0
-
-# Section 14 - Graph Data Science & Network Analysis
-networkx>=3.1
-pygraphviz>=1.10
-stellargraph>=1.3.1
-
-# Section 15 - PySpark & Big Data Processing
-pyspark>=3.5.0
-
-# Section 16 - Data Engineering & ETL Pipelines
-apache-airflow>=2.7.1
-great-expectations>=0.17.9
-
-# Section 17 - Cloud Computing & AI Services
-boto3>=1.26.153    # AWS SDK
-google-cloud-storage>=2.12.0
-azure-ai-ml>=1.3.0
-
-# Section 18 - Edge AI & TinyML
-tensorflow-lite>=2.12.0
-tflite-runtime>=2.12.0
-
-# Section 19 - Reinforcement Learning
-stable-baselines3>=2.0.0
-gym>=0.26.0
-
-# Section 20 - Explainable AI (XAI) & Ethics
+# Section 21 - Explainable AI, Ethics & Responsible AI
 shap>=0.42.0
 lime>=0.2.0.1
-ethics>=0.1.0  # hypothetical, ethics packages are sparse
+aif360>=0.6.1
+fairlearn>=0.10.0
+alibi>=0.9.4
+interpret>=0.5.1
+captum>=0.7.0
+opacus>=1.4.0
+presidio-analyzer>=2.2.34
+presidio-anonymizer>=2.2.34
+nemoguardrails>=0.7.1
+trulens-eval>=0.20.0
+huggingface_hub>=0.19.0
+openai>=1.3.0
 
-# Section 21 - AutoML & Model Optimization
-optuna>=3.1.1
-auto-sklearn>=0.15.1
+# Section 22 - Graph Data Science & Network Analysis
+networkx>=3.1
+neo4j>=5.14.0
+graphdatascience>=1.8
+python-igraph>=0.11.2
+leidenalg>=0.10.1
+node2vec>=0.4.6
+gensim>=4.3.2
+pyvis>=0.3.2
+torch-geometric>=2.4.0
+torch-geometric-temporal>=0.54.0
+dgl>=1.1.2
 
-# Section 22 - MLOps, Model Deployment, Docker & MCP
-mlflow>=2.7.0
-kubeflow>=1.8.1
-tfx>=1.12.0
-docker>=6.0.1
-kubernetes>=26.1.0
-model-context-protocol>=0.2.3  # if available on PyPI or replace with a placeholder
+# Section 23 - Kubernetes & Distributed Training
+kubernetes>=28.1.0
+deepspeed>=0.12.3
+kfp>=2.4.0
+ray>=2.8.0
 
-# General utilities
-tqdm>=4.65.0
-joblib>=1.3.1
-python-dotenv>=1.0.0
+# Section 24 - Statistical Deep Learning
+pymc>=5.9.0
+arviz>=0.16.1
+pyro-ppl>=1.8.6
+blitz-bayesian-pytorch>=0.2.8
+torchuncertainty>=0.2.0
+tensorflow-probability>=0.22.0
+diffusers>=0.24.0
+
+# Section 25 - Edge AI, TinyML & Reinforcement Learning
+gymnasium>=0.29.1
+stable-baselines3>=2.2.1
+edgeimpulse>=1.0.9
+
+# Section 26 - System Programming & LLM Serving
+tokenizers>=0.15.0
+tensorrt>=8.6.1
+vllm>=0.2.5
+
+# Section 27 - GPU Systems, CUDA & Attention Optimization
+triton>=2.1.0

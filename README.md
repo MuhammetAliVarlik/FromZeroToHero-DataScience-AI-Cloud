@@ -1,10 +1,119 @@
 # 📊🧠☁️ FromZeroToHero-DataScience-AI-Cloud
 
-This repository contains my personal Data Science, AI, Cloud and Big Data notes compiled from various resources. It serves as a structured learning path covering essential topics in Data Science, including programming, data manipulation, machine learning, deep learning, and cloud computing.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Sections](https://img.shields.io/badge/sections-27-blue)
+![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11-blue)
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#-about-this-project)
+
+A free, self-authored, end-to-end curriculum covering **Data Science, AI, and Cloud** — from Python fundamentals and statistics through deep learning, LLM engineering, and GPU kernel programming. Every lesson is a runnable Jupyter notebook. Built as both a structured personal learning path and a public resource for anyone learning this stack from scratch.
+
+## 📚 Table of Contents
+
+- [About This Project](#-about-this-project)
+- [Why This Course Exists](#-why-this-course-exists)
+- [Choose Your Path](#-choose-your-path)
+- [Getting Started](#-getting-started)
+- [Roadmap Plan](#-roadmap-plan)
+- [Full Curriculum (Section by Section)](#-programming--data-manipulation)
+- [Disclaimer](#disclaimer)
+
+## 📌 About This Project
+
+- **What this is:** a personal, non-commercial crash course — free for anyone to read, learn from, and reuse. There's no paywall, no sign-up, and no monetization plan; this is a charity/learning project, not a product.
+- **How it was made:** lesson content was generated with AI assistance (Google Gemini and Claude Code) and then reviewed, curated, and structured by me. I'm disclosing this explicitly so nothing here is mistaken for hand-written-from-scratch prose or official vendor documentation — treat it as a curated, AI-assisted study guide, and always sanity-check anything safety- or production-critical against primary sources.
+- **Why it exists:** I use these notebooks as my own study material (I also compile them into PDF for offline reading), and I'm sharing the repository publicly in case the same structured path is useful to someone else on the same journey.
+- **Contributing:** the repository is MIT-licensed and I'm happy to receive issues or pull requests — typo fixes, corrections, or suggestions for topics worth covering are all welcome.
+
+## 🎯 Why This Course Exists
+
+Most Data Science/AI learning material is fragmented: one course covers pandas, another covers a single ML algorithm, a bootcamp covers "AI" but skips the SQL and infrastructure underneath it, and by the time GPUs or Kubernetes show up you're back to piecing together blog posts. Meanwhile the industry has splintered into a handful of distinct roles — Analyst, Data Scientist, Data Engineer, ML/AI Engineer, LLM/GenAI Engineer — that all draw on an overlapping but not identical slice of the same foundation.
+
+This repository exists to be **one continuous, ordered pipeline** instead of a pile of disconnected tutorials:
+
+- **Linear where it matters.** Sections build on each other — Python (01) underpins everything, NumPy/Pandas (04) underpins Feature Engineering (05), which underpins Machine Learning (07), which underpins Deep Learning (09), which underpins Computer Vision (10) and NLP/LLMs (11), and so on through to GPU kernels (27).
+- **Modular where it helps.** You rarely need all 27 sections for one job. The [Choose Your Path](#-choose-your-path) section below maps this same content to role-specific orderings, so a Data Analyst and an LLM Engineer can both start here and stop at different points.
+- **Depth-tagged.** Every lesson in every section table carries a level (🟢 Beginner → 🟡 Intermediate → 🟠 Advanced → 🔴 Expert), so you can gauge how far into a topic you're going before you open the notebook.
+- **Honest about its own limits.** This is an AI-assisted, self-taught study guide, not vendor documentation — see [Disclaimer](#disclaimer).
+
+## 🧭 Choose Your Path
+
+Same 27 sections, different routes through them depending on the role you're aiming for. Numbers refer to the **Section** column in the [Roadmap Plan](#-roadmap-plan) table below — click through to a section's row there, then scroll down to its lesson table for the individual notebooks.
+
+| Path | Recommended Order | Focus |
+| :--- | :--- | :--- |
+| 📈 **Data Analyst** | 01 → 03 → 04 → 02 → 06 → 05 | Query, clean, and visualize data; turn it into decisions and dashboards. |
+| 🔬 **Data Scientist** | 01 → 02 → 04 → 03 → 05 → 06 → 07 → 08 → 09 → 19 → 21 | The full statistical + ML modeling lifecycle, from EDA to responsible evaluation. |
+| 🏗️ **Data Engineer** | 01 → 03 → 04 → 15 → 16 → 17 → 18 → 22 | Build and operate the pipelines, warehouses, and cloud infra data teams depend on. |
+| 🤖 **AI / ML Engineer** | 01 → 04 → 05 → 07 → 09 → 19 → 20 → 12 → 17 → 23 | Train, evaluate, optimize, and ship ML models into production systems. |
+| 🧠 **LLM / GenAI Engineer** | 01 → 04 → 11 → 12 → 13 → 14 → 19 → 21 → 26 → 27 | Build, retrieve, orchestrate, evaluate, and serve LLM-powered applications. |
+| ☁️ **MLOps / Platform Engineer** | 01 → 18 → 17 → 23 → 19 → 20 → 26 → 27 | Own the infrastructure, observability, and scaling behind every model in production. |
+
+None of these are exclusive — most real careers end up borrowing from two or three of them. When in doubt, start with **01 → 03 → 04**; almost every path needs that base.
+
+## 🚀 Getting Started
+
+A first-time setup walkthrough. Section 01 also has its own [00-Python & Anaconda Installation](</Section%2001-Python%20Programming,%20Git%20&%20Environment%20Management/00-Python%20&%20Anaconda%20Installation.ipynb>) notebook that covers the same ground interactively, if you'd rather learn it as a lesson.
+
+### 1. Prerequisites
+
+- **Python 3.10 or 3.11**
+- **Git**
+- *(Optional)* R + RStudio, or the R extension for VS Code — for Section 02
+- *(Optional)* Docker — for Section 18 onward, where containers show up
+- *(Optional)* An NVIDIA GPU + CUDA toolkit — for Sections 09, 20, 23, and 25–27; every notebook up through Section 08 runs fine on CPU
+
+### 2. Clone the repository
+
+```bash
+git clone https://github.com/MuhammetAliVarlik/FromZeroToHero-DataScience-AI-Cloud.git
+cd FromZeroToHero-DataScience-AI-Cloud
+```
+
+### 3. Create an isolated environment
+
+Pick one — conda/mamba or plain venv both work.
+
+```bash
+# conda / mamba
+conda create -n ds python=3.11 -y
+conda activate ds
+```
+
+```bash
+# venv
+python -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+```
+
+### 4. Install the dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+`requirements.txt` is grouped by the section that first introduces each package. A handful of packages in Sections 09, 20, and 22–27 (`torch`, `deepspeed`, `dgl`, `torch-geometric`, `tensorrt`, `vllm`, `openvino`, GPU builds of `onnxruntime`) need a vendor-specific install matched to your OS/GPU — check each one's own docs before running notebooks in those sections. You don't need them to work through Sections 01–08.
+
+### 5. Launch Jupyter and start learning
+
+```bash
+jupyter lab
+```
+
+Open any `.ipynb` file directly — every lesson is self-contained. Follow the [Roadmap Plan](#-roadmap-plan) top to bottom, or jump to your [path](#-choose-your-path) above.
+
+### 6. (Optional) Configure environment variables
+
+Only Section 14 (LangChain/LangSmith tracing) reads a `.env` file — every other section runs without one:
+
+```bash
+cp .env.example .env
+# then fill in your own LangSmith key(s) in .env
+```
 
 ## 🛣️ Roadmap Plan
 
-The roadmap below shows the full learning path. Sections 1-3 are implemented in this repository; the remaining sections are planned and documented here to keep the long-term structure visible.
+The roadmap below shows the full learning path. All 27 sections now have authored lesson content in this repository (see each section's table further down for the full lesson list).
 
 | Section | Title | Number of Notes | Status | Common Tools & Technologies | Description |
 | :-----: | :--- | :-------------: | :---: | :--- | :--- |
@@ -12,30 +121,29 @@ The roadmap below shows the full learning path. Sections 1-3 are implemented in 
 | 02 | 📏 Mathematics & Statistics with R | 25 | 🟡 Done,Not Published | R, RStudio | Linear algebra, probability, hypothesis testing, and statistical reasoning for data science. |
 | 03 | 🗄️ SQL & NoSQL Databases | 14 | 🟡 Done,Not Published | MySQL, MongoDB | Relational querying, MongoDB fundamentals, CRUD workflows, and practical data modeling. |
 | 04 | 📊 NumPy & Pandas | 14 | 🟡 Done,Not Published | NumPy, Pandas | Vectorized computation, tabular manipulation, and efficient exploratory data workflows. |
-| 05 | 🔍 Feature Engineering & Data Preprocessing | TBD | 🔄 On Progress | Python, Pandas, scikit-learn | Missing-value handling, scaling, transformations, and dimensionality reduction including PCA. |
-| 06 | 📊 Data Visualization & Business Intelligence | TBD | 🔄 On Progress | Matplotlib, Seaborn, Tableau | Exploratory and executive-focused visualization, dashboarding, and data storytelling. |
-| 07 | 🤖 Machine Learning Fundamentals | TBD | 🔄 On Progress | scikit-learn, Python | Regression, classification, model selection, and end-to-end baseline ML workflows. |
-| 08 | ⏳ Time Series Analysis & Forecasting | TBD | ⚪ Not Started | statsmodels, Prophet | Trend/seasonality analysis, ARIMA-family methods, and forecasting evaluation patterns. |
-| 09 | 🧠 Deep Learning & Neural Networks | TBD | 🔄 On Progress | PyTorch, TensorFlow | MLPs, backpropagation, optimization, and neural network training fundamentals. |
-| 10 | 👀 Computer Vision & Generative Models | TBD | 🔄 On Progress | OpenCV, PyTorch, TensorFlow | CNNs, image processing pipelines, generative modeling, and GAN-based workflows. |
-| 11 | 🗣️ NLP, Transformers & LLMs | TBD | 🔄 On Progress | Hugging Face, spaCy, NLTK | Text preprocessing, transformer attention mechanics, and modern LLM application patterns. |
-| 12 | 🌐 REST APIs, FastAPI & AI Prototyping | TBD | ⚪ Not Started | FastAPI, Streamlit, Gradio | API endpoint design, AI app prototyping, validation, and rapid model-facing interfaces. |
-| 13 | 🔎 RAG, Vector Databases & Retrieval Systems | TBD | ⚪ Not Started | Pinecone, Qdrant, FAISS | Embeddings, indexing, retrieval pipelines, and grounded generation system design. |
-| 14 | 🧩 LangChain, LangGraph & Multi-Agent Orchestration | TBD | ⚪ Not Started | LangChain, LangGraph, AutoGen, CrewAI | Autonomous agent orchestration, memory/state management, and multi-agent interaction design. |
-| 15 | 🏗️ Data Engineering & ETL Pipelines | TBD | ⚪ Not Started | Apache Airflow, SQL | Pipeline orchestration, warehouse-oriented ETL/ELT, and reliable data movement patterns. |
-| 16 | ⚡ PySpark & Big Data Processing | TBD | 🔄 On Progress | Apache Spark, Spark SQL | Distributed data processing, partition-aware transformations, and scalable analytics workloads. |
-| 17 | ☁️ Cloud Computing & AI Services | TBD | 🔄 On Progress | AWS, Azure, GCP | Cloud architecture, managed AI/ML services, and deployment-ready infrastructure foundations. |
-| 18 | 🐧 Linux, Bash Foundations & MLOps | TBD | ⚪ Not Started | Linux, Bash, Docker, MLflow, CI/CD | Terminal-first engineering workflows, automation, packaging, and reproducible ML operations. |
-| 19 | 📏 Model Evaluation & Monitoring | TBD | ⚪ Not Started | Prometheus, Grafana, MLflow | Online/offline evaluation, observability, alerting, and production model quality tracking. |
-| 20 | ⚙️ AutoML & Model Optimization | TBD | ⚪ Not Started | Auto-sklearn, Optuna, H2O.ai | Hyperparameter optimization, automated model search, and inference/training efficiency tuning. |
-| 21 | 🔦 Explainable AI, Ethics & Responsible AI | TBD | ⚪ Not Started | SHAP, LIME | Transparency, fairness, interpretability, and governance-oriented responsible AI practices. |
-| 22 | 🕸️ Graph Data Science & Network Analysis | TBD | ⚪ Not Started | Neo4j, NetworkX | Graph modeling, network metrics, traversal, and graph-based analytical applications. |
-| 23 | ☸️ Kubernetes & Distributed Training | TBD | ⚪ Not Started | Kubernetes, DeepSpeed, PyTorch Distributed | Container orchestration, distributed training, and data/model parallel scaling strategies. |
-| 24 | 📐 Statistical Deep Learning | TBD | ⚪ Not Started | PyTorch, Bayesian methods, VAE, diffusion | Bayesian deep learning, uncertainty modeling, VAEs, and diffusion-based generative methods. |
-| 25 | 📱 Edge AI, TinyML & Reinforcement Learning | TBD | ⚪ Not Started | TensorFlow Lite, Edge Impulse, OpenAI Gym | Embedded inference, constrained-device deployment, and agent training workflows. |
-| 26 | 🖥️ System Programming & LLM Serving | TBD | ⚪ Not Started | Modern C++, Rust, vLLM, TensorRT-LLM | Systems-level memory/performance engineering and high-throughput LLM inference serving. |
-| 27 | ⚙️ GPU Systems, CUDA & Attention Optimization | TBD | ⚪ Not Started | CUDA, Triton, C++, Rust, Flash Attention | Kernel programming, low-level acceleration, and attention/runtime optimization for scale. |
-
+| 05 | 🔍 Feature Engineering & Data Preprocessing | 14 | 🟡 Done,Not Published | Python, Pandas, scikit-learn | Missing-value handling, scaling, transformations, and dimensionality reduction including PCA. |
+| 06 | 📊 Data Visualization & Business Intelligence | 14 | 🟡 Done,Not Published | Matplotlib, Seaborn, Tableau | Exploratory and executive-focused visualization, dashboarding, and data storytelling. |
+| 07 | 🤖 Machine Learning Fundamentals | 22 | 🟡 Done,Not Published | scikit-learn, Python | Regression, classification, model selection, and end-to-end baseline ML workflows. |
+| 08 | ⏳ Time Series Analysis & Forecasting | 22 | 🟡 Done,Not Published | statsmodels, Prophet | Trend/seasonality analysis, ARIMA-family methods, and forecasting evaluation patterns. |
+| 09 | 🧠 Deep Learning & Neural Networks | 22 | 🟡 Done,Not Published | PyTorch, TensorFlow | MLPs, backpropagation, optimization, and neural network training fundamentals. |
+| 10 | 👀 Computer Vision & Generative Models | 20 | 🟡 Done,Not Published | OpenCV, PyTorch, TensorFlow | CNNs, image processing pipelines, generative modeling, and GAN-based workflows. |
+| 11 | 🗣️ NLP, Transformers & LLMs | 15 | 🟡 Done,Not Published | Hugging Face, spaCy, NLTK | Text preprocessing, transformer attention mechanics, and modern LLM application patterns. |
+| 12 | 🌐 REST APIs, FastAPI & AI Prototyping | 12 | 🟡 Done,Not Published | FastAPI, Streamlit, Gradio | API endpoint design, AI app prototyping, validation, and rapid model-facing interfaces. |
+| 13 | 🔎 RAG, Vector Databases & Retrieval Systems | 12 | 🟡 Done,Not Published | Pinecone, Qdrant, FAISS | Embeddings, indexing, retrieval pipelines, and grounded generation system design. |
+| 14 | 🧩 LangChain, LangGraph & Multi-Agent Orchestration | 13 | 🟡 Done,Not Published | LangChain, LangGraph, AutoGen, CrewAI | Autonomous agent orchestration, memory/state management, and multi-agent interaction design. |
+| 15 | 🏗️ Data Engineering & ETL Pipelines | 12 | 🟡 Done,Not Published | Apache Airflow, SQL | Pipeline orchestration, warehouse-oriented ETL/ELT, and reliable data movement patterns. |
+| 16 | ⚡ PySpark & Big Data Processing | 10 | 🟡 Done,Not Published | Apache Spark, Spark SQL | Distributed data processing, partition-aware transformations, and scalable analytics workloads. |
+| 17 | ☁️ Cloud Computing & AI Services | 10 | 🟡 Done,Not Published | AWS, Azure, GCP | Cloud architecture, managed AI/ML services, and deployment-ready infrastructure foundations. |
+| 18 | 🐧 Linux, Bash Foundations & MLOps | 15 | 🟡 Done,Not Published | Linux, Bash, Docker, MLflow, CI/CD | Terminal-first engineering workflows, automation, packaging, and reproducible ML operations. |
+| 19 | 📏 Model Evaluation & Monitoring | 13 | 🟡 Done,Not Published | Prometheus, Grafana, MLflow | Online/offline evaluation, observability, alerting, and production model quality tracking. |
+| 20 | ⚙️ AutoML & Model Optimization | 10 | 🟡 Done,Not Published | Auto-sklearn, Optuna, H2O.ai | Hyperparameter optimization, automated model search, and inference/training efficiency tuning. |
+| 21 | 🔦 Explainable AI, Ethics & Responsible AI | 12 | 🟡 Done,Not Published | SHAP, LIME | Transparency, fairness, interpretability, and governance-oriented responsible AI practices. |
+| 22 | 🕸️ Graph Data Science & Network Analysis | 12 | 🟡 Done,Not Published | Neo4j, NetworkX | Graph modeling, network metrics, traversal, and graph-based analytical applications. |
+| 23 | ☸️ Kubernetes & Distributed Training | 12 | 🟡 Done,Not Published | Kubernetes, DeepSpeed, PyTorch Distributed | Container orchestration, distributed training, and data/model parallel scaling strategies. |
+| 24 | 📐 Statistical Deep Learning | 12 | 🟡 Done,Not Published | PyTorch, Bayesian methods, VAE, diffusion | Bayesian deep learning, uncertainty modeling, VAEs, and diffusion-based generative methods. |
+| 25 | 📱 Edge AI, TinyML & Reinforcement Learning | 13 | 🟡 Done,Not Published | TensorFlow Lite, Edge Impulse, OpenAI Gym | Embedded inference, constrained-device deployment, and agent training workflows. |
+| 26 | 🖥️ System Programming & LLM Serving | 12 | 🟡 Done,Not Published | Modern C++, Rust, vLLM, TensorRT-LLM | Systems-level memory/performance engineering and high-throughput LLM inference serving. |
+| 27 | ⚙️ GPU Systems, CUDA & Attention Optimization | 11 | 🟡 Done,Not Published | CUDA, Triton, C++, Rust, Flash Attention | Kernel programming, low-level acceleration, and attention/runtime optimization for scale. |
 ### 🔹 Programming & Data Manipulation
 
 #### 🐍 Section 1 - Python Programming, Git & Environment Management
@@ -255,7 +363,7 @@ The roadmap below shows the full learning path. Sections 1-3 are implemented in 
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| [01-Pixels](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/01-Pixels.ipynb) | Image representation, color spaces, and pixel operations. | | <span style="color:green;">Beginner 🟢</span> |
+| [01-Pixels, Tensors & Color Spaces](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/01-Pixels,%20Tensors%20%26%20Color%20Spaces.ipynb) | Image representation, color spaces, and pixel operations. | | <span style="color:green;">Beginner 🟢</span> |
 | [02-The Math of Convolutions](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/02-The%20Math%20of%20Convolutions.ipynb) | Convolution math and filter interpretation. | | <span style="color:green;">Beginner 🟢</span> |
 | [03-Pooling & Receptive Fields](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/03-Pooling%20%26%20Receptive%20Fields.ipynb) | Pooling operations and receptive field concepts. | | <span style="color:green;">Beginner 🟢</span> |
 | [04-Architecting CNNs in PyTorch](/Section%2010-Computer%20Vision%20%26%20Generative%20Models/04-Architecting%20CNNs%20in%20PyTorch.ipynb) | Building CNNs and best practices in PyTorch. | | <span style="color:yellow;">Intermediate 🟡</span> |
@@ -280,328 +388,295 @@ The roadmap below shows the full learning path. Sections 1-3 are implemented in 
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-Text Preprocessing | Tokenization, normalization, stemming, and lemmatization. | | <span style="color:green;">Beginner 🟢</span> |
-| 02-Text Representation | Bag-of-words, TF-IDF, and sparse feature spaces. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 03-Embeddings | Word, sentence, and contextual embedding strategies. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 04-Classic NLP Models | Naive Bayes, logistic regression, and SVM for text tasks. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 05-Sequence Models | RNN-based text modeling and sequential prediction. | | <span style="color:orange;">Advanced 🟠</span> |
-| 06-Transformer NLP | Attention, encoders/decoders, and transformer stacks. | | <span style="color:orange;">Advanced 🟠</span> |
-| 07-Task Fine-Tuning | Classification, NER, summarization, and question answering. | | <span style="color:orange;">Advanced 🟠</span> |
-| 08-Evaluation and Error Analysis | Metrics, confusion analysis, and systematic debugging. | | <span style="color:orange;">Advanced 🟠</span> |
-| 09-Information Retrieval Basics | Search, ranking, relevance, and similarity matching. | | <span style="color:red;">Expert 🔴</span> |
-| 10-Production NLP Systems | Guardrails, monitoring, and retrieval-augmented workflows. | | <span style="color:red;">Expert 🔴</span> |
-| 11-Transformer Architecture in NLP | Attention blocks, tokenization flow, and context modeling. | | <span style="color:orange;">Advanced 🟠</span> |
-| 12-Instruction Tuning Basics | Task adaptation and supervised fine-tuning for assistant behavior. | | <span style="color:orange;">Advanced 🟠</span> |
-| 13-RAG for NLP Systems | Retrieval-grounded generation and faithfulness controls. | | <span style="color:red;">Expert 🔴</span> |
-| 14-LLM Evaluation and Safety | Robustness checks, hallucination analysis, and guardrail testing. | | <span style="color:red;">Expert 🔴</span> |
+| [01-Tokenization & Text Math](/Section%2011-NLP,%20Transformers%20%26%20LLMs/01-Tokenization%20%26%20Text%20Math.ipynb) | Tokenization, vocab, and text-to-token math. | | <span style="color:green;">Beginner 🟢</span> |
+| [02-Vector Semantics](/Section%2011-NLP,%20Transformers%20%26%20LLMs/02-Vector%20Semantics.ipynb) | Embedding spaces, similarity, and semantic search basics. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [03-RNNs & Vanishing Gradients](/Section%2011-NLP,%20Transformers%20%26%20LLMs/03-RNNs%20%26%20Vanishing%20Gradients.ipynb) | Sequence models and gradient stability issues. | | <span style="color:orange;">Advanced 🟠</span> |
+| [04-Seq2Seq & Early Attention](/Section%2011-NLP,%20Transformers%20%26%20LLMs/04-Seq2Seq%20%26%20Early%20Attention.ipynb) | Encoder-decoder workflows and attention intro. | | <span style="color:orange;">Advanced 🟠</span> |
+| [05-Transformers I: Self-Attention](/Section%2011-NLP,%20Transformers%20%26%20LLMs/05-Transformers%20I%3A%20Self-Attention.ipynb) | Self-attention mechanisms and scaled dot-product math. | | <span style="color:orange;">Advanced 🟠</span> |
+| [06-Transformers II: Architecture](/Section%2011-NLP,%20Transformers%20%26%20LLMs/06-Transformers%20II%3A%20Architecture.ipynb) | Full transformer stacks, positional encodings, and blocks. | | <span style="color:orange;">Advanced 🟠</span> |
+| [07-Encoder Models (BERT).](/Section%2011-NLP,%20Transformers%20%26%20LLMs/07-Encoder%20Models%20%28BERT%29.ipynb) | Encoder-only models and masked-language pretraining. | | <span style="color:orange;">Advanced 🟠</span> |
+| [08-Decoder Models (GPT).](/Section%2011-NLP,%20Transformers%20%26%20LLMs/08-Decoder%20Models%20%28GPT%29.ipynb) | Causal decoding, autoregression, and next-token modelling. | | <span style="color:orange;">Advanced 🟠</span> |
+| [09-Decoding Strategies](/Section%2011-NLP,%20Transformers%20%26%20LLMs/09-Decoding%20Strategies.ipynb) | Greedy, beam, sampling, temperature and practical tradeoffs. | | <span style="color:orange;">Advanced 🟠</span> |
+| [10-Task Fine-Tuning](/Section%2011-NLP,%20Transformers%20%26%20LLMs/10-Task%20Fine-Tuning.ipynb) | Supervised fine-tuning patterns for downstream tasks. | | <span style="color:orange;">Advanced 🟠</span> |
+| [11-PEFT & LoRA Mathematics](/Section%2011-NLP,%20Transformers%20%26%20LLMs/11-PEFT%20%26%20LoRA%20Mathematics.ipynb) | Parameter-efficient fine-tuning techniques and math. | | <span style="color:orange;">Advanced 🟠</span> |
+| [12-Quantized LLMs (QLoRA).](/Section%2011-NLP,%20Transformers%20%26%20LLMs/12-Quantized%20LLMs%20%28QLoRA%29.ipynb) | Quantization strategies for LLM inference. | | <span style="color:red;">Expert 🔴</span> |
+| [13-Instruction Tuning (SFT).](/Section%2011-NLP,%20Transformers%20%26%20LLMs/13-Instruction%20Tuning%20%28SFT%29.ipynb) | Supervised instruction datasets and tuning workflows. | | <span style="color:red;">Expert 🔴</span> |
+| [14-LLM Alignment (RLHF & DPO).](/Section%2011-NLP,%20Transformers%20%26%20LLMs/14-LLM%20Alignment%20%28RLHF%20%26%20DPO%29.ipynb) | Alignment strategies using RLHF and direct policy optimization. | | <span style="color:red;">Expert 🔴</span> |
+| [15-NLP Evaluation Metrics](/Section%2011-NLP,%20Transformers%20%26%20LLMs/15-NLP%20Evaluation%20Metrics.ipynb) | BLEU, ROUGE, BERTScore and human-eval practices. | | <span style="color:orange;">Advanced 🟠</span> |
 
 #### 🌐 Section 12 - REST APIs, FastAPI & AI Prototyping
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-HTTP and REST Fundamentals | HTTP methods, status codes, headers, and REST design basics. | | <span style="color:green;">Beginner 🟢</span> |
-| 02-FastAPI Project Structure | App layout, routers, settings, and clean package organization. | | <span style="color:green;">Beginner 🟢</span> |
-| 03-Request and Response Models | Pydantic validation, typing, serialization, and response shaping. | | <span style="color:green;">Beginner 🟢</span> |
-| 04-Async Endpoints | Async/await behavior, concurrency, and background tasks. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 05-Dependency Injection | Shared services, request-scoped dependencies, and reusability. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 06-Middleware and Cross-Cutting Concerns | Logging, headers, compression, and request lifecycle hooks. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 07-Authentication and Authorization | API keys, OAuth2, JWT, and role-based access control. | | <span style="color:orange;">Advanced 🟠</span> |
-| 08-Testing APIs | Unit tests, integration tests, and TestClient workflows. | | <span style="color:orange;">Advanced 🟠</span> |
-| 09-Error Handling and Validation Strategy | Exception handlers, custom errors, and consistent API responses. | | <span style="color:orange;">Advanced 🟠</span> |
-| 10-Deployment Considerations | Uvicorn/Gunicorn, environment config, and production packaging. | | <span style="color:orange;">Advanced 🟠</span> |
-| 11-API Versioning and Lifecycle | Versioning strategies, deprecation policy, and backward compatibility planning. | | <span style="color:red;">Expert 🔴</span> |
-| 12-Rate Limiting and Throttling | Request quotas, abuse prevention, and fair usage controls. | | <span style="color:red;">Expert 🔴</span> |
-| 13-Observability for APIs | Structured logs, tracing, metrics, and endpoint health analytics. | | <span style="color:red;">Expert 🔴</span> |
-| 14-Production Security Hardening | CORS, CSRF strategy, secret handling, and zero-trust API posture. | | <span style="color:red;">Expert 🔴</span> |
+| [01-Rapid Prototyping (Gradio).](/Section%2012-REST%20APIs,%20FastAPI%20%26%20AI%20Prototyping/01-Rapid%20Prototyping%20%28Gradio%29.ipynb) | Quick demo UIs and interactive prototyping with Gradio. | | <span style="color:green;">Beginner 🟢</span> |
+| [02-Stateful AI UIs (Streamlit).](/Section%2012-REST%20APIs,%20FastAPI%20%26%20AI%20Prototyping/02-Stateful%20AI%20UIs%20%28Streamlit%29.ipynb) | Building stateful interfaces for model interaction. | | <span style="color:green;">Beginner 🟢</span> |
+| [03-FastAPI & REST Physics](/Section%2012-REST%20APIs,%20FastAPI%20%26%20AI%20Prototyping/03-FastAPI%20%26%20REST%20Physics.ipynb) | FastAPI design patterns, routers, and endpoint best practices. | | <span style="color:green;">Beginner 🟢</span> |
+| [04-Pydantic for Machine Learning](/Section%2012-REST%20APIs,%20FastAPI%20%26%20AI%20Prototyping/04-Pydantic%20for%20Machine%20Learning.ipynb) | Validation models, schemas, and serialization for ML payloads. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [05-Model Memory & Lifespans](/Section%2012-REST%20APIs,%20FastAPI%20%26%20AI%20Prototyping/05-Model%20Memory%20%26%20Lifespans.ipynb) | Managing model lifecycle, in-memory caches and warmup strategies. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [06-Concurrency & Blocking Inference](/Section%2012-REST%20APIs,%20FastAPI%20%26%20AI%20Prototyping/06-Concurrency%20%26%20Blocking%20Inference.ipynb) | Async endpoints, thread pools, and safe inference patterns. | | <span style="color:orange;">Advanced 🟠</span> |
+| [07-Token Streaming (Server-Sent Events).](/Section%2012-REST%20APIs,%20FastAPI%20%26%20AI%20Prototyping/07-Token%20Streaming%20%28Server-Sent%20Events%29.ipynb) | Streaming tokens, SSE, and chunked responses. | | <span style="color:orange;">Advanced 🟠</span> |
+| [08-Vision Endpoints (File I-O)](/Section%2012-REST%20APIs,%20FastAPI%20%26%20AI%20Prototyping/08-Vision%20Endpoints%20%28File%20I-O%29.ipynb) | File uploads, preprocessing, and image model endpoints. | | <span style="color:orange;">Advanced 🟠</span> |
+| [09-Decoupled Systems](/Section%2012-REST%20APIs,%20FastAPI%20%26%20AI%20Prototyping/09-Decoupled%20Systems.ipynb) | Producer-consumer patterns and traffic shaping for ML services. | | <span style="color:orange;">Advanced 🟠</span> |
+| [10-Securing GPU Endpoints](/Section%2012-REST%20APIs,%20FastAPI%20%26%20AI%20Prototyping/10-Securing%20GPU%20Endpoints.ipynb) | Auth, isolation, and secure service exposure for GPU-backed endpoints. | | <span style="color:red;">Expert 🔴</span> |
+| [11-Background Batch Processing](/Section%2012-REST%20APIs,%20FastAPI%20%26%20AI%20Prototyping/11-Background%20Batch%20Processing.ipynb) | Offloading heavy jobs and background task orchestration. | | <span style="color:orange;">Advanced 🟠</span> |
+| [12-Mocking & Testing ML APIs](/Section%2012-REST%20APIs,%20FastAPI%20%26%20AI%20Prototyping/12-Mocking%20%26%20Testing%20ML%20APIs.ipynb) | Test patterns, mocking model responses and CI integration. | | <span style="color:orange;">Advanced 🟠</span> |
 
 #### 🔎 Section 13 - RAG, Vector Databases & Retrieval Systems
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-RAG Fundamentals | Retrieval-augmented generation workflow and system goals. | | <span style="color:green;">Beginner 🟢</span> |
-| 02-Chunking Strategies | Document splitting, overlap, semantic segmentation, and granularity. | | <span style="color:green;">Beginner 🟢</span> |
-| 03-Embeddings | Text embeddings, normalization, and similarity spaces. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 04-Vector Databases | Qdrant, Weaviate, Pinecone, FAISS, and storage tradeoffs. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 05-Indexing and ANN Search | HNSW, IVF, approximate nearest neighbor basics, and recall tradeoffs. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 06-Metadata Filtering | Structured filters, hybrid retrieval, and query constraints. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 07-Retrieval Pipeline Design | Query rewriting, candidate retrieval, reranking, and context assembly. | | <span style="color:orange;">Advanced 🟠</span> |
-| 08-Retrieval Evaluation | Recall, precision, hit rate, and retrieval quality checks. | | <span style="color:orange;">Advanced 🟠</span> |
-| 09-Answer Grounding | Source citations, faithfulness, and grounded response generation. | | <span style="color:orange;">Advanced 🟠</span> |
-| 10-Production RAG Design | Latency, caching, indexing updates, and reliability concerns. | | <span style="color:red;">Expert 🔴</span> |
-| 11-Hybrid Retrieval Architectures | Dense-plus-sparse retrieval design and fusion strategies. | | <span style="color:red;">Expert 🔴</span> |
-| 12-Reranking and Relevance Optimization | Cross-encoder reranking and relevance calibration techniques. | | <span style="color:red;">Expert 🔴</span> |
-| 13-Knowledge Base Refresh Strategy | Incremental indexing, freshness windows, and update policies. | | <span style="color:red;">Expert 🔴</span> |
-| 14-RAG Reliability and Guardrails | Grounding checks, refusal policy, and hallucination mitigation controls. | | <span style="color:red;">Expert 🔴</span> |
+| [01-The Physics of RAG](/Section%2013-RAG,%20Vector%20Databases%20%26%20Retrieval%20Systems/01-The%20Physics%20of%20RAG.ipynb) | RAG conceptual workflow and system building blocks. | | <span style="color:green;">Beginner 🟢</span> |
+| [02-Document Parsing & Chunking Math](/Section%2013-RAG,%20Vector%20Databases%20%26%20Retrieval%20Systems/02-Document%20Parsing%20%26%20Chunking%20Math.ipynb) | Chunking strategies, overlap, and semantic segmentation. | | <span style="color:green;">Beginner 🟢</span> |
+| [03-Bi-Encoders & Dense Retrieval](/Section%2013-RAG,%20Vector%20Databases%20%26%20Retrieval%20Systems/03-Bi-Encoders%20%26%20Dense%20Retrieval.ipynb) | Bi-encoder training and dense retrieval pipelines. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [04-Vector Databases & Metadata](/Section%2013-RAG,%20Vector%20Databases%20%26%20Retrieval%20Systems/04-Vector%20Databases%20%26%20Metadata.ipynb) | DB choices, schema, and metadata-driven filtering. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [05-The Mathematics of ANN (HNSW & IVF).](/Section%2013-RAG,%20Vector%20Databases%20%26%20Retrieval%20Systems/05-The%20Mathematics%20of%20ANN%20%28HNSW%20%26%20IVF%29.ipynb) | ANN algorithms and tradeoffs for recall/latency. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [06-Sparse Search & BM25](/Section%2013-RAG,%20Vector%20Databases%20%26%20Retrieval%20Systems/06-Sparse%20Search%20%26%20BM25.ipynb) | BM25 and sparse retrieval techniques. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [07-Hybrid Search & RRF](/Section%2013-RAG,%20Vector%20Databases%20%26%20Retrieval%20Systems/07-Hybrid%20Search%20%26%20RRF.ipynb) | Combining dense and sparse signals for robust retrieval. | | <span style="color:orange;">Advanced 🟠</span> |
+| [08-Reranking (Cross-Encoders).](/Section%2013-RAG,%20Vector%20Databases%20%26%20Retrieval%20Systems/08-Reranking%20%28Cross-Encoders%29.ipynb) | Cross-encoder reranking and relevance calibration. | | <span style="color:orange;">Advanced 🟠</span> |
+| [09-Query Transformation (HyDE).](/Section%2013-RAG,%20Vector%20Databases%20%26%20Retrieval%20Systems/09-Query%20Transformation%20%28HyDE%29.ipynb) | Query augmentation and hallucinated document expansion. | | <span style="color:orange;">Advanced 🟠</span> |
+| [10-Advanced Context Topologies](/Section%2013-RAG,%20Vector%20Databases%20%26%20Retrieval%20Systems/10-Advanced%20Context%20Topologies.ipynb) | Context assembly strategies and slot-filling topologies. | | <span style="color:orange;">Advanced 🟠</span> |
+| [11-GraphRAG Foundations](/Section%2013-RAG,%20Vector%20Databases%20%26%20Retrieval%20Systems/11-GraphRAG%20Foundations.ipynb) | Graph-based retrieval and knowledge augmentation. | | <span style="color:orange;">Advanced 🟠</span> |
+| [12-Evaluating RAG (RAGAS-TruLens).](/Section%2013-RAG,%20Vector%20Databases%20%26%20Retrieval%20Systems/12-Evaluating%20RAG%20%28RAGAS-TruLens%29.ipynb) | Evaluation frameworks and reliability assessments for RAG. | | <span style="color:orange;">Advanced 🟠</span> |
 
 #### 🧩 Section 14 - LangChain, LangGraph & Multi-Agent Orchestration
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-Chains and Prompts | Prompt templates, chain composition, and input/output handling. | | <span style="color:green;">Beginner 🟢</span> |
-| 02-Tools and Tool Calling | External function integration and tool execution patterns. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 03-Agent Basics | Tool-using agents, planning, and iterative reasoning loops. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 04-LangGraph Nodes and Edges | Graph-based workflows, branching, and shared state management. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 05-Supervisor Pattern | Multi-agent coordination and task delegation. | | <span style="color:orange;">Advanced 🟠</span> |
-| 06-State Machines and Memory | Persistent state, checkpoints, and workflow recovery. | | <span style="color:orange;">Advanced 🟠</span> |
-| 07-Structured Output | Schemas, parsers, and reliable machine-readable responses. | | <span style="color:orange;">Advanced 🟠</span> |
-| 08-Observability in Agent Workflows | Traces, logs, runs, and debugging agent behavior. | | <span style="color:orange;">Advanced 🟠</span> |
-| 09-Tool and Retrieval Integration | Connecting RAG systems with chains and agents. | | <span style="color:red;">Expert 🔴</span> |
-| 10-Production Orchestration | Safety, retries, fallbacks, and service reliability. | | <span style="color:red;">Expert 🔴</span> |
-| 11-Memory Architectures | Short-term, long-term, and episodic memory design for agents. | | <span style="color:red;">Expert 🔴</span> |
-| 12-Multi-Agent Coordination Patterns | Routing, arbitration, and role-specialized collaboration flows. | | <span style="color:red;">Expert 🔴</span> |
-| 13-Evaluation and Benchmarking | Task success metrics, latency budgets, and regression testing for agents. | | <span style="color:red;">Expert 🔴</span> |
-| 14-Deployment and Governance | Policy controls, observability, and secure production operation. | | <span style="color:red;">Expert 🔴</span> |
+| [01-The Physics of Agentic Workflows](/Section%2014-LangChain,%20LangGraph%20%26%20Multi-Agent%20Orchestration/01-The%20Physics%20of%20Agentic%20Workflows.ipynb) | Agent lifecycle, planning loops, and orchestration basics. | | <span style="color:green;">Beginner 🟢</span> |
+| [02-Function Calling & Tool Execution](/Section%2014-LangChain,%20LangGraph%20%26%20Multi-Agent%20Orchestration/02-Function%20Calling%20%26%20Tool%20Execution.ipynb) | Safe function calling, tool contracts, and validations. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [03-Structured Output & Pydantic Coercion](/Section%2014-LangChain,%20LangGraph%20%26%20Multi-Agent%20Orchestration/03-Structured%20Output%20%26%20Pydantic%20Coercion.ipynb) | Reliable schema outputs and coercion strategies. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [04-LangGraph Foundations (State & Nodes)](/Section%2014-LangChain,%20LangGraph%20%26%20Multi-Agent%20Orchestration/04-LangGraph%20Foundations%20%28State%20%26%20Nodes%29.ipynb) | Graph-based workflows and node-state modeling. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [05-Cyclic Routing & Conditional Edges](/Section%2014-LangChain,%20LangGraph%20%26%20Multi-Agent%20Orchestration/05-Cyclic%20Routing%20%26%20Conditional%20Edges.ipynb) | Routing patterns, cycles, and guard conditions. | | <span style="color:orange;">Advanced 🟠</span> |
+| [06-Cognitive Memory Architectures](/Section%2014-LangChain,%20LangGraph%20%26%20Multi-Agent%20Orchestration/06-Cognitive%20Memory%20Architectures.ipynb) | Short/long-term memory patterns for agents. | | <span style="color:orange;">Advanced 🟠</span> |
+| [07-Human-in-the-Loop (HITL) Physics](/Section%2014-LangChain,%20LangGraph%20%26%20Multi-Agent%20Orchestration/07-Human-in-the-Loop%20%28HITL%29%20Physics.ipynb) | HITL patterns, gating, and feedback loops. | | <span style="color:orange;">Advanced 🟠</span> |
+| [08-Agentic RAG (CRAG & Self-RAG).](/Section%2014-LangChain,%20LangGraph%20%26%20Multi-Agent%20Orchestration/08-Agentic%20RAG%20%28CRAG%20%26%20Self-RAG%29.ipynb) | Combining RAG with agent orchestration patterns. | | <span style="color:orange;">Advanced 🟠</span> |
+| [09-Multi-Agent Network Topologies](/Section%2014-LangChain,%20LangGraph%20%26%20Multi-Agent%20Orchestration/09-Multi-Agent%20Network%20Topologies.ipynb) | Topologies for agent collaboration and routing. | | <span style="color:orange;">Advanced 🟠</span> |
+| [10-The Supervisor Architecture](/Section%2014-LangChain,%20LangGraph%20%26%20Multi-Agent%20Orchestration/10-The%20Supervisor%20Architecture.ipynb) | Supervisor patterns for orchestration and fault tolerance. | | <span style="color:orange;">Advanced 🟠</span> |
+| [11-Resilient Error Handling (LLM Try-Except).](/Section%2014-LangChain,%20LangGraph%20%26%20Multi-Agent%20Orchestration/11-Resilient%20Error%20Handling%20%28LLM%20Try-Except%29.ipynb) | Robust error handling and retry strategies for agents. | | <span style="color:orange;">Advanced 🟠</span> |
+| [12-LangSmith Observability & Tracing](/Section%2014-LangChain,%20LangGraph%20%26%20Multi-Agent%20Orchestration/12-LangSmith%20Observability%20%26%20Tracing.ipynb) | Observability patterns and tracing agent runs. | | <span style="color:orange;">Advanced 🟠</span> |
+| [13-Evaluating Agentic Trajectories](/Section%2014-LangChain,%20LangGraph%20%26%20Multi-Agent%20Orchestration/13-Evaluating%20Agentic%20Trajectories.ipynb) | Metrics and evaluation for multi-agent runs. | | <span style="color:orange;">Advanced 🟠</span> |
 
 #### 🏗️ Section 15 - Data Engineering & ETL Pipelines
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-Data Pipeline Architecture | Batch, streaming, medallion design, and orchestration basics. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 02-Orchestration with Airflow | DAGs, scheduling, retries, dependencies, and backfills. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 03-ETL vs ELT | Transformation placement, warehouse-first patterns, and tradeoffs. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 04-Data Modeling | Star schema, snowflake schema, fact/dimension modeling. | | <span style="color:orange;">Advanced 🟠</span> |
-| 05-Data Quality Controls | Validation rules, schema checks, and anomaly detection. | | <span style="color:orange;">Advanced 🟠</span> |
-| 06-Incremental Loading | CDC, watermarking, idempotency, and replay-safe design. | | <span style="color:orange;">Advanced 🟠</span> |
-| 07-Observability | Logs, metrics, lineage, alerts, and incident response. | | <span style="color:orange;">Advanced 🟠</span> |
-| 08-Storage and Warehousing | Lakehouse concepts, warehouses, and table formats. | | <span style="color:orange;">Advanced 🟠</span> |
-| 09-Data Contracts | Interface expectations, schema ownership, and change management. | | <span style="color:red;">Expert 🔴</span> |
-| 10-Operational Reliability | SLAs, testing, recovery plans, and deployment discipline. | | <span style="color:red;">Expert 🔴</span> |
-| 11-CDC and Event-Driven Pipelines | Change data capture, event streaming, and reactive ingestion. | | <span style="color:red;">Expert 🔴</span> |
-| 12-Data Governance and Catalogs | Metadata, ownership, stewardship, and catalog-driven discovery. | | <span style="color:red;">Expert 🔴</span> |
-| 13-ETL Testing Strategies | Unit, integration, contract, and data regression tests. | | <span style="color:red;">Expert 🔴</span> |
-| 14-Cross-System Integration | API ingestion, warehouse sync, and downstream interoperability. | | <span style="color:red;">Expert 🔴</span> |
+| [01-The Modern Data Stack & ELT Physics](/Section%2015-Data%20Engineering%20%26%20ETL%20Pipelines/01-The%20Modern%20Data%20Stack%20%26%20ELT%20Physics.ipynb) | Modern ELT stacks and data flow architectures. | | <span style="color:green;">Beginner 🟢</span> |
+| [02-Dimensional Data Modeling (Kimball).](/Section%2015-Data%20Engineering%20%26%20ETL%20Pipelines/02-Dimensional%20Data%20Modeling%20%28Kimball%29.ipynb) | Star schemas, facts, dimensions, and modeling tradeoffs. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [03-Transformations with dbt (Data Build Tool).](/Section%2015-Data%20Engineering%20%26%20ETL%20Pipelines/03-Transformations%20with%20dbt%20%28Data%20Build%20Tool%29.ipynb) | dbt patterns, models, testing and CI. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [04-Apache Airflow Foundations](/Section%2015-Data%20Engineering%20%26%20ETL%20Pipelines/04-Apache%20Airflow%20Foundations.ipynb) | DAG design, scheduling, and orchestration basics. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [05-Advanced Airflow Orchestration](/Section%2015-Data%20Engineering%20%26%20ETL%20Pipelines/05-Advanced%20Airflow%20Orchestration.ipynb) | Complex DAG patterns, sensors, and backfills. | | <span style="color:orange;">Advanced 🟠</span> |
+| [06-Incremental Data Loading Physics](/Section%2015-Data%20Engineering%20%26%20ETL%20Pipelines/06-Incremental%20Data%20Loading%20Physics.ipynb) | CDC, idempotency, and incremental ingestion techniques. | | <span style="color:orange;">Advanced 🟠</span> |
+| [07-Data Quality via Great Expectations](/Section%2015-Data%20Engineering%20%26%20ETL%20Pipelines/07-Data%20Quality%20via%20Great%20Expectations.ipynb) | Data validation, expectations, and test-driven QA. | | <span style="color:orange;">Advanced 🟠</span> |
+| [08-Change Data Capture (CDC) with Debezium](/Section%2015-Data%20Engineering%20%26%20ETL%20Pipelines/08-Change%20Data%20Capture%20%28CDC%29%20with%20Debezium.ipynb) | CDC patterns and Debezium integration. | | <span style="color:orange;">Advanced 🟠</span> |
+| [09-Event Streaming with Apache Kafka](/Section%2015-Data%20Engineering%20%26%20ETL%20Pipelines/09-Event%20Streaming%20with%20Apache%20Kafka.ipynb) | Kafka topics, partitions, and stream processing basics. | | <span style="color:orange;">Advanced 🟠</span> |
+| [10-The Lakehouse Architecture (Iceberg - Delta).](/Section%2015-Data%20Engineering%20%26%20ETL%20Pipelines/10-The%20Lakehouse%20Architecture%20%28Iceberg%20-%20Delta%29.ipynb) | Lakehouse design, ACID tables and formats. | | <span style="color:red;">Expert 🔴</span> |
+| [11-Data Contracts & Schema Registries](/Section%2015-Data%20Engineering%20%26%20ETL%20Pipelines/11-Data%20Contracts%20%26%20Schema%20Registries.ipynb) | Contracts, schema evolution, and governance patterns. | | <span style="color:red;">Expert 🔴</span> |
+| [12-Data Observability & Lineage](/Section%2015-Data%20Engineering%20%26%20ETL%20Pipelines/12-Data%20Observability%20%26%20Lineage.ipynb) | Lineage, observability tooling and alerting for data. | | <span style="color:red;">Expert 🔴</span> |
 
 #### ⚡ Section 16 - PySpark & Big Data Processing
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-Distributed Computing Basics | Clusters, executors, partitions, and fault tolerance. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 02-Spark DataFrames | Schema, transformations, actions, and lazy evaluation. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 03-Spark SQL | Querying data with SQL semantics in Spark. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 04-Partitioning and Shuffling | Data movement, skew, and partition strategies. | | <span style="color:orange;">Advanced 🟠</span> |
-| 05-Window Functions | Analytic windows, ranking, and time-aware aggregations. | | <span style="color:orange;">Advanced 🟠</span> |
-| 06-Optimization and Caching | Broadcast joins, caching, persistence, and query plans. | | <span style="color:orange;">Advanced 🟠</span> |
-| 07-Structured Streaming | Streaming sources, watermarks, and event-time processing. | | <span style="color:orange;">Advanced 🟠</span> |
-| 08-Big Data File Formats | Parquet, Delta, ORC, and file layout considerations. | | <span style="color:orange;">Advanced 🟠</span> |
-| 09-Cluster Resource Management | Memory, CPU, autoscaling, and execution tuning. | | <span style="color:red;">Expert 🔴</span> |
-| 10-Production Data Pipelines | Reliability, monitoring, and data quality at scale. | | <span style="color:red;">Expert 🔴</span> |
-| 11-Data Skew and Hot Keys | Detecting bottlenecks and repartitioning strategies. | | <span style="color:red;">Expert 🔴</span> |
-| 12-UDFs and Pandas UDFs | Extending Spark with custom functions and vectorized execution. | | <span style="color:red;">Expert 🔴</span> |
-| 13-Streaming State Management | Stateful aggregations, checkpoints, and recovery semantics. | | <span style="color:red;">Expert 🔴</span> |
-| 14-Lakehouse Workflows | Medallion architecture, ACID tables, and large-scale analytics patterns. | | <span style="color:red;">Expert 🔴</span> |
+| [01-The Physics of Distributed Compute](/Section%2016-PySpark%20%26%20Big%20Data%20Processing/01-The%20Physics%20of%20Distributed%20Compute.ipynb) | Cluster compute fundamentals and execution models. | | <span style="color:green;">Beginner 🟢</span> |
+| [02-The Catalyst Optimizer & Execution Plans](/Section%2016-PySpark%20%26%20Big%20Data%20Processing/02-The%20Catalyst%20Optimizer%20%26%20Execution%20Plans.ipynb) | Query planning, logical/physical plans and optimization. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [03-Partitioning & The Shuffle Penalty](/Section%2016-PySpark%20%26%20Big%20Data%20Processing/03-Partitioning%20%26%20The%20Shuffle%20Penalty.ipynb) | Partitioning strategies and the cost of shuffles. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [04-Distributed Joins & Broadcast Physics](/Section%2016-PySpark%20%26%20Big%20Data%20Processing/04-Distributed%20Joins%20%26%20Broadcast%20Physics.ipynb) | Join strategies and broadcast join tradeoffs. | | <span style="color:orange;">Advanced 🟠</span> |
+| [05-Vectorized Computation (Apache Arrow).](/Section%2016-PySpark%20%26%20Big%20Data%20Processing/05-Vectorized%20Computation%20%28Apache%20Arrow%29.ipynb) | Arrow-based vectorized execution and IO performance. | | <span style="color:orange;">Advanced 🟠</span> |
+| [06-Window Functions & Stateful Bounding](/Section%2016-PySpark%20%26%20Big%20Data%20Processing/06-Window%20Functions%20%26%20Stateful%20Bounding.ipynb) | Windowed analytics and stateful computation patterns. | | <span style="color:orange;">Advanced 🟠</span> |
+| [07-Data Skew & Cryptographic Salting](/Section%2016-PySpark%20%26%20Big%20Data%20Processing/07-Data%20Skew%20%26%20Cryptographic%20Salting.ipynb) | Skew detection and salting strategies for joins. | | <span style="color:orange;">Advanced 🟠</span> |
+| [08-Structured Streaming & Watermarks](/Section%2016-PySpark%20%26%20Big%20Data%20Processing/08-Structured%20Streaming%20%26%20Watermarks.ipynb) | Streaming processing, watermarks, and time handling. | | <span style="color:orange;">Advanced 🟠</span> |
+| [09-Delta Lake Integration (Lakehouse Scaling).](/Section%2016-PySpark%20%26%20Big%20Data%20Processing/09-Delta%20Lake%20Integration%20%28Lakehouse%20Scaling%29.ipynb) | Delta Lake usage patterns and ACID table integration. | | <span style="color:red;">Expert 🔴</span> |
+| [10-Cluster Optimization & The Spark UI](/Section%2016-PySpark%20%26%20Big%20Data%20Processing/10-Cluster%20Optimization%20%26%20The%20Spark%20UI.ipynb) | Tuning clusters, executors, and using the Spark UI effectively. | | <span style="color:red;">Expert 🔴</span> |
 
 #### ☁️ Section 17 - Cloud Computing & AI Services
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-Cloud Fundamentals | Compute, networking, storage, and identity basics. | | <span style="color:green;">Beginner 🟢</span> |
-| 02-IAM and Security Basics | Permissions, roles, secrets, and least privilege. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 03-Managed ML Services | Comparing AWS, Azure, and GCP ML service offerings. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 04-Cloud-Native Deployment | Containers, endpoints, scaling, and managed inference. | | <span style="color:orange;">Advanced 🟠</span> |
-| 05-Storage and Data Services | Object storage, data warehouses, and managed databases. | | <span style="color:orange;">Advanced 🟠</span> |
-| 06-Cost Optimization | FinOps, resource sizing, lifecycle policies, and budgeting. | | <span style="color:orange;">Advanced 🟠</span> |
-| 07-High Availability | Load balancing, redundancy, backups, and failover. | | <span style="color:orange;">Advanced 🟠</span> |
-| 08-Cloud Networking | VPCs, subnets, routing, private connectivity, and egress control. | | <span style="color:orange;">Advanced 🟠</span> |
-| 09-Compliance and Governance | Auditing, encryption, policy controls, and documentation. | | <span style="color:red;">Expert 🔴</span> |
-| 10-Multi-Cloud Portability | Service abstraction and vendor-neutral architecture patterns. | | <span style="color:red;">Expert 🔴</span> |
-| 11-Serverless AI Patterns | Event-driven compute, managed functions, and cost efficiency. | | <span style="color:red;">Expert 🔴</span> |
-| 12-Cloud Data Platforms | Warehouses, lakes, and managed analytics stacks. | | <span style="color:red;">Expert 🔴</span> |
-| 13-Cloud Security Hardening | Key management, network controls, and workload isolation. | | <span style="color:red;">Expert 🔴</span> |
-| 14-Architecture Reviews | Reference architectures, tradeoff analysis, and design decisions. | | <span style="color:red;">Expert 🔴</span> |
+| [01-Infrastructure as Code (IaC) & Python SDKs](/Section%2017-Cloud%20Computing%20%26%20AI%20Services/01-Infrastructure%20as%20Code%20%28IaC%29%20%26%20Python%20SDKs.ipynb) | IaC patterns, SDK usage, and provisioning workflows. | | <span style="color:green;">Beginner 🟢</span> |
+| [02-Identity & Access Management (IAM) Cryptography](/Section%2017-Cloud%20Computing%20%26%20AI%20Services/02-Identity%20%26%20Access%20Management%20%28IAM%29%20Cryptography.ipynb) | IAM design, keys, and secure identity patterns. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [03-The Physics of Cloud Storage (AWS S3 & EventBridge).](/Section%2017-Cloud%20Computing%20%26%20AI%20Services/03-The%20Physics%20of%20Cloud%20Storage%20%28AWS%20S3%20%26%20EventBridge%29.ipynb) | Storage semantics, eventing, and durable object patterns. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [04-Virtual Private Clouds (VPC) & Network Topologies](/Section%2017-Cloud%20Computing%20%26%20AI%20Services/04-Virtual%20Private%20Clouds%20%28VPC%29%20%26%20Network%20Topologies.ipynb) | VPC design, subnets, routing and secure network patterns. | | <span style="color:orange;">Advanced 🟠</span> |
+| [05-Event-Driven Compute (AWS Lambda & SQS).](/Section%2017-Cloud%20Computing%20%26%20AI%20Services/05-Event-Driven%20Compute%20%28AWS%20Lambda%20%26%20SQS%29.ipynb) | Serverless compute, queues, and event-driven patterns. | | <span style="color:orange;">Advanced 🟠</span> |
+| [06-Serverless Containers (ECR & AWS Fargate).](/Section%2017-Cloud%20Computing%20%26%20AI%20Services/06-Serverless%20Containers%20%28ECR%20%26%20AWS%20Fargate%29.ipynb) | Container-based serverless patterns and orchestration. | | <span style="color:orange;">Advanced 🟠</span> |
+| [07-Ephemeral ML Training (Amazon SageMaker).](/Section%2017-Cloud%20Computing%20%26%20AI%20Services/07-Ephemeral%20ML%20Training%20%28Amazon%20SageMaker%29.ipynb) | Short-lived training jobs, managed services, and cost control. | | <span style="color:orange;">Advanced 🟠</span> |
+| [08-High-Throughput Inference Endpoints](/Section%2017-Cloud%20Computing%20%26%20AI%20Services/08-High-Throughput%20Inference%20Endpoints.ipynb) | Serving at scale, autoscaling, batching and latency tradeoffs. | | <span style="color:red;">Expert 🔴</span> |
+| [09-Enterprise Generative AI (Amazon Bedrock).](/Section%2017-Cloud%20Computing%20%26%20AI%20Services/09-Enterprise%20Generative%20AI%20%28Amazon%20Bedrock%29.ipynb) | Managed generative AI services and enterprise patterns. | | <span style="color:red;">Expert 🔴</span> |
+| [10-Cloud FinOps & Spot Instance Physics](/Section%2017-Cloud%20Computing%20%26%20AI%20Services/10-Cloud%20FinOps%20%26%20Spot%20Instance%20Physics.ipynb) | Cost optimization, spot instances and budgeting practices. | | <span style="color:red;">Expert 🔴</span> |
 
 #### 🐧 Section 18 - Linux, Bash Foundations & MLOps
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-Linux Filesystem and Permissions | Navigate Linux directories, manage users/groups, and control permissions safely. |  | <span style="color:green;">Beginner 🟢</span> |
-| 02-Bash Scripting Essentials | Write reusable shell scripts with variables, loops, conditions, and functions. |  | <span style="color:green;">Beginner 🟢</span> |
-| 03-Process and Resource Management | Monitor CPU, memory, and processes with top, ps, kill, and system tools. |  | <span style="color:green;">Beginner 🟢</span> |
-| 04-Package and Environment Management | Use apt/yum, virtual environments, and dependency pinning for reproducibility. |  | <span style="color:green;">Beginner 🟢</span> |
-| 05-SSH, Remote Access, and Automation | Secure remote workflows with SSH keys, rsync, and scheduled jobs. |  | <span style="color:yellow;">Intermediate 🟡</span> |
-| 06-Data and Log Operations in Bash | Use grep, awk, sed, and jq for parsing logs and data pipelines. |  | <span style="color:yellow;">Intermediate 🟡</span> |
-| 07-ML Project Structure and Reproducibility | Organize ML repos, configs, and artifacts for production-ready handoff. |  | <span style="color:yellow;">Intermediate 🟡</span> |
-| 08-Containerized MLOps Foundations | Package ML workloads with Docker and define consistent runtime environments. |  | <span style="color:yellow;">Intermediate 🟡</span> |
-| 09-Training and Serving Workflow Automation | Automate training, validation, and deployment stages with CI/CD triggers. |  | <span style="color:yellow;">Intermediate 🟡</span> |
-| 10-Monitoring, Alerts, and Incident Response | Track service health, define alerts, and run practical incident playbooks. |  | <span style="color:red;">Advanced 🔴</span> |
-| 11-Security Hardening for ML Systems | Apply secrets handling, least privilege, and audit-friendly operations. |  | <span style="color:red;">Advanced 🔴</span> |
-| 12-MLOps Governance and Documentation | Maintain runbooks, SLAs, and release documentation for team operations. |  | <span style="color:yellow;">Intermediate 🟡</span> |
-| 13-Artifact and Lineage Tracking | Track datasets, models, and experiment lineage across lifecycle stages. |  | <span style="color:red;">Advanced 🔴</span> |
-| 14-Production Reliability Engineering | Design resilient ML services with rollback, failover, and capacity planning. |  | <span style="color:red;">Advanced 🔴</span> |
+| [01-POSIX Storage Physics & Directory Topologies](/Section%2018-Linux,%20Bash%20Foundations%20%26%20MLOps/01-POSIX%20Storage%20Physics%20%26%20Directory%20Topologies.ipynb) | Filesystem hierarchy, permission bits, and inode-level storage mechanics. | | <span style="color:green;">Beginner 🟢</span> |
+| [02-The Linux Stream Matrix (I-O Redirection & Pipes)](/Section%2018-Linux,%20Bash%20Foundations%20%26%20MLOps/02-The%20Linux%20Stream%20Matrix%20%28I-O%20Redirection%20%26%20Pipes%29.ipynb) | stdin/stdout/stderr redirection, pipes, and composing shell commands. | | <span style="color:green;">Beginner 🟢</span> |
+| [03-Hardware Telemetry & Kernel Resource Management](/Section%2018-Linux,%20Bash%20Foundations%20%26%20MLOps/03-Hardware%20Telemetry%20%26%20Kernel%20Resource%20Management.ipynb) | CPU, memory, and process introspection via /proc and kernel resource accounting. | | <span style="color:green;">Beginner 🟢</span> |
+| [04-Text Processing Mechanics (grep, sed, awk)](/Section%2018-Linux,%20Bash%20Foundations%20%26%20MLOps/04-Text%20Processing%20Mechanics%20%28grep,%20sed,%20awk%29.ipynb) | Pattern matching, stream editing, and field-based text processing at the command line. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [05-Structured Log Extraction & Telemetry Parsing (jq)](/Section%2018-Linux,%20Bash%20Foundations%20%26%20MLOps/05-Structured%20Log%20Extraction%20%26%20Telemetry%20Parsing%20%28jq%29.ipynb) | Querying and reshaping JSON log streams directly from the shell. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [06-Automated Batch Scripts & Network Cron Daemon](/Section%2018-Linux,%20Bash%20Foundations%20%26%20MLOps/06-Automated%20Batch%20Scripts%20%26%20Network%20Cron%20Daemon.ipynb) | Scheduling recurring jobs and building resilient batch automation scripts. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [07-Network Socket Physics, SSH & Remote Automation](/Section%2018-Linux,%20Bash%20Foundations%20%26%20MLOps/07-Network%20Socket%20Physics,%20SSH%20%26%20Remote%20Automation.ipynb) | TCP/socket fundamentals, SSH key-based access, and remote command execution. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [08-Immutable Layer Engineering (Dockerfiles & Layer Caching)](/Section%2018-Linux,%20Bash%20Foundations%20%26%20MLOps/08-Immutable%20Layer%20Engineering%20%28Dockerfiles%20%26%20Layer%20Caching%29.ipynb) | Writing efficient Dockerfiles and understanding image layer caching. | | <span style="color:orange;">Advanced 🟠</span> |
+| [09-Multi-Container Grid Topologies (Docker Compose)](/Section%2018-Linux,%20Bash%20Foundations%20%26%20MLOps/09-Multi-Container%20Grid%20Topologies%20%28Docker%20Compose%29.ipynb) | Orchestrating multi-service local stacks with Docker Compose. | | <span style="color:orange;">Advanced 🟠</span> |
+| [10-Experiment Tracking & Artifact Lineage (MLflow Engine)](/Section%2018-Linux,%20Bash%20Foundations%20%26%20MLOps/10-Experiment%20Tracking%20%26%20Artifact%20Lineage%20%28MLflow%20Engine%29.ipynb) | Logging runs, parameters, and artifacts for reproducible experimentation. | | <span style="color:orange;">Advanced 🟠</span> |
+| [11-Local Continuous Integration (GitHub Actions Core Workflows)](/Section%2018-Linux,%20Bash%20Foundations%20%26%20MLOps/11-Local%20Continuous%20Integration%20%28GitHub%20Actions%20Core%20Workflows%29.ipynb) | Writing CI workflows that lint, test, and validate ML code on every push. | | <span style="color:orange;">Advanced 🟠</span> |
+| [12-Production Model Serving Topologies (FastAPI & Docker)](/Section%2018-Linux,%20Bash%20Foundations%20%26%20MLOps/12-Production%20Model%20Serving%20Topologies%20%28FastAPI%20%26%20Docker%29.ipynb) | Packaging and serving a trained model behind a containerized API. | | <span style="color:orange;">Advanced 🟠</span> |
+| [13-High-Throughput Serving & Engine Optimization (vLLM - Triton)](/Section%2018-Linux,%20Bash%20Foundations%20%26%20MLOps/13-High-Throughput%20Serving%20%26%20Engine%20Optimization%20%28vLLM%20-%20Triton%29.ipynb) | Comparing serving engines for high-throughput inference workloads. | | <span style="color:red;">Expert 🔴</span> |
+| [14-Telemetry Scraping & Observability Metrology (Prometheus)](/Section%2018-Linux,%20Bash%20Foundations%20%26%20MLOps/14-Telemetry%20Scraping%20%26%20Observability%20Metrology%20%28Prometheus%29.ipynb) | Instrumenting services with Prometheus metrics for production observability. | | <span style="color:red;">Expert 🔴</span> |
+| [15-Enterprise Secrets Security & Hardening Boundarie](/Section%2018-Linux,%20Bash%20Foundations%20%26%20MLOps/15-Enterprise%20Secrets%20Security%20%26%20Hardening%20Boundarie.ipynb) | Secrets management, least-privilege boundaries, and system hardening practices. | | <span style="color:red;">Expert 🔴</span> |
 
 #### 📏 Section 19 - Model Evaluation & Monitoring
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-Text Evaluation Metrics | BLEU, ROUGE, and language generation quality checks. |  | <span style="color:yellow;">Intermediate 🟡</span> |
-| 02-Semantic Similarity Metrics | BERTScore and embedding-based evaluation. |  | <span style="color:yellow;">Intermediate 🟡</span> |
-| 03-LLM-as-Judge | Using model-based evaluators for scalable assessment. |  | <span style="color:orange;">Advanced 🟠</span> |
-| 04-Hallucination Detection | Factuality checks, grounding, and failure analysis. |  | <span style="color:orange;">Advanced 🟠</span> |
-| 05-Performance Monitoring | Prometheus, Grafana, alerting, and operational KPIs. |  | <span style="color:orange;">Advanced 🟠</span> |
-| 06-SLO and SLI Design | Service objectives, error budgets, and monitoring targets. |  | <span style="color:red;">Expert 🔴</span> |
-| 07-Log Aggregation | Centralized logging, tracing, and incident diagnostics. |  | <span style="color:red;">Expert 🔴</span> |
-| 08-Model Drift | Data drift, concept drift, and retraining triggers. |  | <span style="color:red;">Expert 🔴</span> |
-| 09-Evaluation Frameworks | Evals pipelines, benchmarks, and systematic comparisons. |  | <span style="color:red;">Expert 🔴</span> |
-| 10-Release Metrics Review | Comparing model revisions before and after deployment. |  | <span style="color:red;">Expert 🔴</span> |
-| 11-Canary Evaluation Workflows | Progressive rollout checks and metric-based release gating. |  | <span style="color:red;">Expert 🔴</span> |
-| 12-Root Cause Analysis for Regressions | Diagnosing performance drops across data, model, and infrastructure. |  | <span style="color:red;">Expert 🔴</span> |
-| 13-Business KPI Alignment | Mapping technical metrics to product and operational outcomes. |  | <span style="color:red;">Expert 🔴</span> |
-| 14-Continuous Evaluation Automation | Scheduled evals, alert thresholds, and auto-generated quality reports. |  | <span style="color:red;">Expert 🔴</span> |
+| [01-Lexical & Statistical NLP Metrics](/Section%2019-Model%20Evaluation%20%26%20Monitoring/01-Lexical%20%26%20Statistical%20NLP%20Metrics.ipynb) | BLEU, ROUGE, and other n-gram-overlap text evaluation metrics. | | <span style="color:green;">Beginner 🟢</span> |
+| [02-Semantic Similarity & Cross-Encoders](/Section%2019-Model%20Evaluation%20%26%20Monitoring/02-Semantic%20Similarity%20%26%20Cross-Encoders.ipynb) | Embedding-based similarity and cross-encoder scoring for text evaluation. | | <span style="color:green;">Beginner 🟢</span> |
+| [03-The RAG Triad & LLM-as-a-Judge](/Section%2019-Model%20Evaluation%20%26%20Monitoring/03-The%20RAG%20Triad%20%26%20LLM-as-a-Judge.ipynb) | Context relevance, groundedness, and answer relevance scored via an LLM judge. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [04-Hallucination Detection & Factuality](/Section%2019-Model%20Evaluation%20%26%20Monitoring/04-Hallucination%20Detection%20%26%20Factuality.ipynb) | Detecting unsupported claims and factuality gaps in generated text. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [05-Data Drift & Concept Drift (Evidently AI)](/Section%2019-Model%20Evaluation%20%26%20Monitoring/05-Data%20Drift%20%26%20Concept%20Drift%20%28Evidently%20AI%29.ipynb) | Detecting distributional shift in features and model inputs over time. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [06-Unlabeled Performance Estimation (NannyML)](/Section%2019-Model%20Evaluation%20%26%20Monitoring/06-Unlabeled%20Performance%20Estimation%20%28NannyML%29.ipynb) | Estimating model performance in production without ground-truth labels. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [07-Distributed Tracing & Latency (OpenTelemetry + Jaeger)](/Section%2019-Model%20Evaluation%20%26%20Monitoring/07-Distributed%20Tracing%20%26%20Latency%20%28OpenTelemetry%20+%20Jaeger%29.ipynb) | Tracing requests across services to localize latency bottlenecks. | | <span style="color:orange;">Advanced 🟠</span> |
+| [08-Custom ML Metric Scraping (Prometheus)](/Section%2019-Model%20Evaluation%20%26%20Monitoring/08-Custom%20ML%20Metric%20Scraping%20%28Prometheus%29.ipynb) | Exposing custom model-quality metrics for Prometheus scraping. | | <span style="color:orange;">Advanced 🟠</span> |
+| [09-High-Definition Observability (Grafana)](/Section%2019-Model%20Evaluation%20%26%20Monitoring/09-High-Definition%20Observability%20%28Grafana%29.ipynb) | Building dashboards that surface model health at a glance. | | <span style="color:orange;">Advanced 🟠</span> |
+| [10-High-Volume Log Aggregation (Grafana Loki)](/Section%2019-Model%20Evaluation%20%26%20Monitoring/10-High-Volume%20Log%20Aggregation%20%28Grafana%20Loki%29.ipynb) | Centralizing and querying logs at scale with Loki. | | <span style="color:orange;">Advanced 🟠</span> |
+| [11-SLOs, Error Budgets & Alerting (Alertmanager)](/Section%2019-Model%20Evaluation%20%26%20Monitoring/11-SLOs,%20Error%20Budgets%20%26%20Alerting%20%28Alertmanager%29.ipynb) | Defining service-level objectives and routing alerts on error-budget burn. | | <span style="color:red;">Expert 🔴</span> |
+| [12-Shadow Deployments & Traffic Mirroring](/Section%2019-Model%20Evaluation%20%26%20Monitoring/12-Shadow%20Deployments%20%26%20Traffic%20Mirroring.ipynb) | Testing new models against production traffic without serving live responses. | | <span style="color:red;">Expert 🔴</span> |
+| [13-Statistical Canary Testing & Rollbacks](/Section%2019-Model%20Evaluation%20%26%20Monitoring/13-Statistical%20Canary%20Testing%20%26%20Rollbacks.ipynb) | Statistically validating canary releases before a full rollout. | | <span style="color:red;">Expert 🔴</span> |
 
 #### ⚙️ Section 20 - AutoML & Model Optimization
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-AutoML Fundamentals | Search spaces, automated pipelines, and problem framing. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 02-Feature Search Automation | Automated feature construction and selection workflows. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 03-Hyperparameter Optimization | Bayesian search, Hyperband, and adaptive tuning. | | <span style="color:orange;">Advanced 🟠</span> |
-| 04-Model Selection Automation | Candidate comparison, ensemble search, and ranking. | | <span style="color:orange;">Advanced 🟠</span> |
-| 05-Stacking and Ensembling | Combining models to improve robustness and accuracy. | | <span style="color:orange;">Advanced 🟠</span> |
-| 06-Inference Optimization | Quantization, distillation, pruning, and latency control. | | <span style="color:orange;">Advanced 🟠</span> |
-| 07-Search Budget Management | Time, compute, and experiment budget tradeoffs. | | <span style="color:orange;">Advanced 🟠</span> |
-| 08-AutoML Governance | Reproducibility, auditability, and controlled deployment. | | <span style="color:red;">Expert 🔴</span> |
-| 09-Production Monitoring | Post-deploy tracking, drift detection, and rollback triggers. | | <span style="color:red;">Expert 🔴</span> |
-| 10-Operational Integration | Integrating AutoML outputs into ML and data workflows. | | <span style="color:red;">Expert 🔴</span> |
-| 11-Feature Pruning | Removing redundant variables to improve compactness and speed. | | <span style="color:red;">Expert 🔴</span> |
-| 12-Model Compression Workflows | Distillation, quantization, and pruning as optimization toolkits. | | <span style="color:red;">Expert 🔴</span> |
-| 13-AutoML for Structured Data | Tabular pipelines, categorical handling, and model comparisons. | | <span style="color:red;">Expert 🔴</span> |
-| 14-AutoML in Production | Monitoring search outputs and keeping automated systems governed. | | <span style="color:red;">Expert 🔴</span> |
+| [01-Advanced HPO & Bayesian Search (Optuna)](/Section%2020-AutoML%20%26%20Model%20Optimization/01-Advanced%20HPO%20%26%20Bayesian%20Search%20%28Optuna%29.ipynb) | Bayesian hyperparameter search beyond grid and random search. | | <span style="color:green;">Beginner 🟢</span> |
+| [02-High-Speed Tabular AutoML (FLAML)](/Section%2020-AutoML%20%26%20Model%20Optimization/02-High-Speed%20Tabular%20AutoML%20%28FLAML%29.ipynb) | Fast, resource-aware automated model selection for tabular data. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [03-State-of-the-Art Ensembling (AutoGluon)](/Section%2020-AutoML%20%26%20Model%20Optimization/03-State-of-the-Art%20Ensembling%20%28AutoGluon%29.ipynb) | Automated stacked ensembling for maximal predictive performance. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [04-Neural Architecture Search & Hyperband](/Section%2020-AutoML%20%26%20Model%20Optimization/04-Neural%20Architecture%20Search%20%26%20Hyperband.ipynb) | Automated architecture search with early-stopping-based budget allocation. | | <span style="color:orange;">Advanced 🟠</span> |
+| [05-Graph Compilation & Execution (ONNX Runtime)](/Section%2020-AutoML%20%26%20Model%20Optimization/05-Graph%20Compilation%20%26%20Execution%20%28ONNX%20Runtime%29.ipynb) | Compiling models to a portable graph format for optimized inference. | | <span style="color:orange;">Advanced 🟠</span> |
+| [06-Post-Training Quantization (PTQ & INT8)](/Section%2020-AutoML%20%26%20Model%20Optimization/06-Post-Training%20Quantization%20%28PTQ%20%26%20INT8%29.ipynb) | Reducing model precision after training for faster, smaller inference. | | <span style="color:orange;">Advanced 🟠</span> |
+| [07-Network Pruning & Sparsity Mechanics](/Section%2020-AutoML%20%26%20Model%20Optimization/07-Network%20Pruning%20%26%20Sparsity%20Mechanics.ipynb) | Removing redundant weights and connections to shrink and speed up models. | | <span style="color:orange;">Advanced 🟠</span> |
+| [08-Knowledge Distillation (Teacher-Student)](/Section%2020-AutoML%20%26%20Model%20Optimization/08-Knowledge%20Distillation%20%28Teacher-Student%29.ipynb) | Training a compact student model to mimic a larger teacher model. | | <span style="color:red;">Expert 🔴</span> |
+| [09-Massive Model Compression (bitsandbytes & GGUF)](/Section%2020-AutoML%20%26%20Model%20Optimization/09-Massive%20Model%20Compression%20%28bitsandbytes%20%26%20GGUF%29.ipynb) | Extreme quantization and compact serialization formats for large models. | | <span style="color:red;">Expert 🔴</span> |
+| [10-Bare-Metal Hardware Acceleration (OpenVINO)](/Section%2020-AutoML%20%26%20Model%20Optimization/10-Bare-Metal%20Hardware%20Acceleration%20%28OpenVINO%29.ipynb) | Compiling models for optimized inference on specific hardware targets. | | <span style="color:red;">Expert 🔴</span> |
 
 #### 🔦 Section 21 - Explainable AI, Ethics & Responsible AI
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-Responsible AI Foundations | Fairness, transparency, accountability, and governance. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 02-Global Explainability | Model-level summaries and overall behavior understanding. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 03-Local Explainability | Instance-level explanation and decision tracing. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 04-SHAP and LIME | Model-agnostic explanation methods and interpretation workflows. | | <span style="color:orange;">Advanced 🟠</span> |
-| 05-Bias Detection | Data bias, model bias, and outcome fairness evaluation. | | <span style="color:orange;">Advanced 🟠</span> |
-| 06-Bias Mitigation | Pre-processing, in-processing, and post-processing methods. | | <span style="color:orange;">Advanced 🟠</span> |
-| 07-Model Governance | Documentation, approvals, and policy controls for AI systems. | | <span style="color:orange;">Advanced 🟠</span> |
-| 08-Ethical Risk Assessment | Harm analysis, misuse risks, and impact evaluation. | | <span style="color:orange;">Advanced 🟠</span> |
-| 09-Monitoring and Auditability | Traceability, logging, and compliance evidence. | | <span style="color:red;">Expert 🔴</span> |
-| 10-Communication of AI Decisions | Explaining outputs to technical and non-technical stakeholders. | | <span style="color:red;">Expert 🔴</span> |
-| 11-Fairness Metrics | Group metrics, disparity checks, and threshold analysis. | | <span style="color:red;">Expert 🔴</span> |
-| 12-Counterfactual Explanations | What-if reasoning and action-oriented explanations. | | <span style="color:red;">Expert 🔴</span> |
-| 13-AI Policy and Regulation | Compliance trends, governance frameworks, and organizational controls. | | <span style="color:red;">Expert 🔴</span> |
-| 14-Risk Communication | Communicating model limits, uncertainty, and responsibility boundaries. | | <span style="color:red;">Expert 🔴</span> |
+| [01-Interpretable Glassbox Models (InterpretML)](/Section%2021-Explainable%20AI,%20Ethics%20%26%20Responsible%20AI/01-Interpretable%20Glassbox%20Models%20%28InterpretML%29.ipynb) | Inherently interpretable model families and their transparency tradeoffs. | | <span style="color:green;">Beginner 🟢</span> |
+| [02-Game Theory XAI (SHAP)](/Section%2021-Explainable%20AI,%20Ethics%20%26%20Responsible%20AI/02-Game%20Theory%20XAI%20%28SHAP%29.ipynb) | Shapley-value-based feature attribution grounded in cooperative game theory. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [03-Local Surrogate Perturbation (LIME)](/Section%2021-Explainable%20AI,%20Ethics%20%26%20Responsible%20AI/03-Local%20Surrogate%20Perturbation%20%28LIME%29.ipynb) | Explaining individual predictions via local surrogate models. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [04-Deep Learning Attribution (Captum)](/Section%2021-Explainable%20AI,%20Ethics%20%26%20Responsible%20AI/04-Deep%20Learning%20Attribution%20%28Captum%29.ipynb) | Gradient- and attribution-based explainability for neural networks. | | <span style="color:orange;">Advanced 🟠</span> |
+| [05-Counterfactual Reasoning (Alibi Explain)](/Section%2021-Explainable%20AI,%20Ethics%20%26%20Responsible%20AI/05-Counterfactual%20Reasoning%20%28Alibi%20Explain%29.ipynb) | Generating counterfactual examples to explain decision boundaries. | | <span style="color:orange;">Advanced 🟠</span> |
+| [06-Statistical Fairness Auditing (Fairlearn)](/Section%2021-Explainable%20AI,%20Ethics%20%26%20Responsible%20AI/06-Statistical%20Fairness%20Auditing%20%28Fairlearn%29.ipynb) | Measuring and auditing fairness metrics across protected groups. | | <span style="color:orange;">Advanced 🟠</span> |
+| [07-Algorithmic Bias Mitigation (AIF360)](/Section%2021-Explainable%20AI,%20Ethics%20%26%20Responsible%20AI/07-Algorithmic%20Bias%20Mitigation%20%28AIF360%29.ipynb) | Bias mitigation techniques applied pre-, in-, and post-processing. | | <span style="color:orange;">Advanced 🟠</span> |
+| [08-Differential Privacy in DL (Opacus)](/Section%2021-Explainable%20AI,%20Ethics%20%26%20Responsible%20AI/08-Differential%20Privacy%20in%20DL%20%28Opacus%29.ipynb) | Training neural networks with differential privacy guarantees. | | <span style="color:red;">Expert 🔴</span> |
+| [09-Real-Time PII Sanitization (Presidio)](/Section%2021-Explainable%20AI,%20Ethics%20%26%20Responsible%20AI/09-Real-Time%20PII%20Sanitization%20%28Presidio%29.ipynb) | Detecting and anonymizing personally identifiable information in text. | | <span style="color:red;">Expert 🔴</span> |
+| [10-LLM Guardrails & Jailbreak Defense (NeMo)](/Section%2021-Explainable%20AI,%20Ethics%20%26%20Responsible%20AI/10-LLM%20Guardrails%20%26%20Jailbreak%20Defense%20%28NeMo%29.ipynb) | Guardrail policies and jailbreak-resistant LLM application design. | | <span style="color:red;">Expert 🔴</span> |
+| [11-RAG Hallucination Detection (TruLens)](/Section%2021-Explainable%20AI,%20Ethics%20%26%20Responsible%20AI/11-RAG%20Hallucination%20Detection%20%28TruLens%29.ipynb) | Detecting and quantifying hallucinations in retrieval-augmented LLM outputs. | | <span style="color:red;">Expert 🔴</span> |
+| [12-Automated Model Governance (Model Cards)](/Section%2021-Explainable%20AI,%20Ethics%20%26%20Responsible%20AI/12-Automated%20Model%20Governance%20%28Model%20Cards%29.ipynb) | Automated documentation, compliance tracking, and model card generation for governance. | | <span style="color:red;">Expert 🔴</span> |
 
 #### 🕸️ Section 22 - Graph Data Science & Network Analysis
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-Graph Theory Basics | Nodes, edges, adjacency, and graph representations. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 02-Network Metrics | Degree, betweenness, closeness, and eigenvector centrality. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 03-Path and Traversal Algorithms | BFS, DFS, shortest paths, and traversal logic. | | <span style="color:orange;">Advanced 🟠</span> |
-| 04-Community Detection | Modularity, clustering, and network segmentation. | | <span style="color:orange;">Advanced 🟠</span> |
-| 05-Graph Databases | Neo4j concepts, Cypher queries, and graph storage. | | <span style="color:orange;">Advanced 🟠</span> |
-| 06-Graph Data Modeling | Schema design, edge direction, and relationship semantics. | | <span style="color:orange;">Advanced 🟠</span> |
-| 07-Graph Embeddings | Node2Vec, structural embeddings, and similarity. | | <span style="color:red;">Expert 🔴</span> |
-| 08-Graph Machine Learning | Link prediction, node classification, and GNN basics. | | <span style="color:red;">Expert 🔴</span> |
-| 09-Graph Analytics at Scale | Large graphs, optimization, and distributed processing. | | <span style="color:red;">Expert 🔴</span> |
-| 10-Use Cases and Governance | Fraud, recommendations, provenance, and data ethics. | | <span style="color:red;">Expert 🔴</span> |
-| 11-Graph Sampling and Subgraph Extraction | Sampling strategies for large and sparse networks. | | <span style="color:red;">Expert 🔴</span> |
-| 12-Temporal Graphs | Evolving networks, event streams, and time-aware analysis. | | <span style="color:red;">Expert 🔴</span> |
-| 13-Graph Visualization | Layouts, readability, and storytelling with network graphs. | | <span style="color:red;">Expert 🔴</span> |
-| 14-Enterprise Graph Applications | Knowledge graphs, fraud rings, and recommendation systems. | | <span style="color:red;">Expert 🔴</span> |
+| [01-Graph Fundamentals & Network Construction (NetworkX)](/Section%2022-Graph%20Data%20Science%20%26%20Network%20Analysis/01-Graph%20Fundamentals%20%26%20Network%20Construction%20%28NetworkX%29.ipynb) | Nodes, edges, adjacency representations, and graph construction in Python. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [02-Centrality & Network Metrics (NetworkX)](/Section%2022-Graph%20Data%20Science%20%26%20Network%20Analysis/02-Centrality%20%26%20Network%20Metrics%20%28NetworkX%29.ipynb) | Degree, betweenness, closeness, and eigenvector centrality measures. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [03-Path Finding & Traversal Algorithms (NetworkX / igraph)](/Section%2022-Graph%20Data%20Science%20%26%20Network%20Analysis/03-Path%20Finding%20%26%20Traversal%20Algorithms%20%28NetworkX%20／%20igraph%29.ipynb) | BFS, DFS, shortest paths, and traversal logic across graph libraries. | | <span style="color:orange;">Advanced 🟠</span> |
+| [04-Community Detection (Louvain & Leiden — python-igraph)](/Section%2022-Graph%20Data%20Science%20%26%20Network%20Analysis/04-Community%20Detection%20%28Louvain%20%26%20Leiden%20—%20python-igraph%29.ipynb) | Modularity optimization, clustering, and network segmentation algorithms. | | <span style="color:orange;">Advanced 🟠</span> |
+| [05-Graph Databases & Cypher Queries (Neo4j)](/Section%2022-Graph%20Data%20Science%20%26%20Network%20Analysis/05-Graph%20Databases%20%26%20Cypher%20Queries%20%28Neo4j%29.ipynb) | Native graph storage, Cypher query language, and relationship-first modeling. | | <span style="color:orange;">Advanced 🟠</span> |
+| [06-Graph Data Modeling at Scale (Neo4j Graph Data Science Library)](/Section%2022-Graph%20Data%20Science%20%26%20Network%20Analysis/06-Graph%20Data%20Modeling%20at%20Scale%20%28Neo4j%20Graph%20Data%20Science%20Library%29.ipynb) | Schema design, projection, and scalable graph algorithms in production. | | <span style="color:orange;">Advanced 🟠</span> |
+| [07-Graph Embeddings (Node2Vec)](/Section%2022-Graph%20Data%20Science%20%26%20Network%20Analysis/07-Graph%20Embeddings%20%28Node2Vec%29.ipynb) | Random-walk-based structural embeddings and similarity learning. | | <span style="color:red;">Expert 🔴</span> |
+| [08-Graph Neural Network Foundations (PyTorch Geometric)](/Section%2022-Graph%20Data%20Science%20%26%20Network%20Analysis/08-Graph%20Neural%20Network%20Foundations%20%28PyTorch%20Geometric%29.ipynb) | Message passing, node classification, and link prediction with GNNs. | | <span style="color:red;">Expert 🔴</span> |
+| [09-Graph Machine Learning at Scale (DGL — Deep Graph Library)](/Section%2022-Graph%20Data%20Science%20%26%20Network%20Analysis/09-Graph%20Machine%20Learning%20at%20Scale%20%28DGL%20—%20Deep%20Graph%20Library%29.ipynb) | Distributed graph learning and large-scale GNN training pipelines. | | <span style="color:red;">Expert 🔴</span> |
+| [10-Temporal & Dynamic Graphs (PyTorch Geometric Temporal)](/Section%2022-Graph%20Data%20Science%20%26%20Network%20Analysis/10-Temporal%20%26%20Dynamic%20Graphs%20%28PyTorch%20Geometric%20Temporal%29.ipynb) | Evolving networks, event streams, and time-aware graph representation learning. | | <span style="color:red;">Expert 🔴</span> |
+| [11-Graph Visualization (Gephi / PyVis)](/Section%2022-Graph%20Data%20Science%20%26%20Network%20Analysis/11-Graph%20Visualization%20%28Gephi%20／%20PyVis%29.ipynb) | Layouts, readability, and interactive storytelling with network graphs. | | <span style="color:red;">Expert 🔴</span> |
+| [12-Enterprise Graph Applications & Governance (Neo4j)](/Section%2022-Graph%20Data%20Science%20%26%20Network%20Analysis/12-Enterprise%20Graph%20Applications%20%26%20Governance%20%28Neo4j%29.ipynb) | Knowledge graphs, fraud rings, recommendation systems, and data governance. | | <span style="color:red;">Expert 🔴</span> |
 
 #### ☸️ Section 23 - Kubernetes & Distributed Training
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-Kubernetes Basics | Pods, deployments, services, and namespaces. | | <span style="color:green;">Beginner 🟢</span> |
-| 02-Resource Management | CPU, memory limits, requests, and scheduling behavior. | | <span style="color:green;">Beginner 🟢</span> |
-| 03-Rolling Updates and Scaling | HPA, rollout strategies, and service stability. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 04-Helm Charts | Packaging, templating, and repeatable deployment definitions. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 05-Data Parallelism | Synchronous training across multiple devices. | | <span style="color:orange;">Advanced 🟠</span> |
-| 06-Model Parallelism | Splitting model computation and memory across devices. | | <span style="color:orange;">Advanced 🟠</span> |
-| 07-DeepSpeed ZeRO | Stage 1/2/3 memory optimization strategies. | | <span style="color:orange;">Advanced 🟠</span> |
-| 08-Distributed Checkpointing | Saving, restoring, and syncing distributed training state. | | <span style="color:orange;">Advanced 🟠</span> |
-| 09-Cluster Debugging | Scheduling issues, networking, logs, and runtime failures. | | <span style="color:red;">Expert 🔴</span> |
-| 10-Scale Strategy | Choosing between single node, multi-node, and hybrid execution. | | <span style="color:red;">Expert 🔴</span> |
-| 11-GPU Scheduling and Allocation | Node selectors, taints, and topology-aware resource planning. | | <span style="color:red;">Expert 🔴</span> |
-| 12-Distributed Data Pipelines | Sharded datasets, prefetching, and high-throughput loading patterns. | | <span style="color:red;">Expert 🔴</span> |
-| 13-Fault Tolerance in Training Jobs | Checkpoint recovery, retries, and resilient multi-node execution. | | <span style="color:red;">Expert 🔴</span> |
-| 14-Operational Cost and Efficiency | Throughput-cost tradeoffs and cluster utilization optimization. | | <span style="color:red;">Expert 🔴</span> |
+| [01-Container Orchestration Fundamentals (kubectl & Pods)](/Section%2023-Kubernetes%20%26%20Distributed%20Training/01-Container%20Orchestration%20Fundamentals%20%28kubectl%20%26%20Pods%29.ipynb) | Pods, deployments, services, and namespaces via the Kubernetes CLI. | | <span style="color:green;">Beginner 🟢</span> |
+| [02-Resource Management & Autoscaling (Kubernetes HPA-VPA)](/Section%2023-Kubernetes%20%26%20Distributed%20Training/02-Resource%20Management%20%26%20Autoscaling%20%28Kubernetes%20HPA-VPA%29.ipynb) | CPU/memory limits, requests, and horizontal/vertical autoscaling behavior. | | <span style="color:green;">Beginner 🟢</span> |
+| [03-Rolling Deployments & Scaling Strategies (Kubernetes Deployments)](/Section%2023-Kubernetes%20%26%20Distributed%20Training/03-Rolling%20Deployments%20%26%20Scaling%20Strategies%20%28Kubernetes%20Deployments%29.ipynb) | Rollout strategies, service stability, and zero-downtime scaling. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [04-Templated Infrastructure (Helm Charts)](/Section%2023-Kubernetes%20%26%20Distributed%20Training/04-Templated%20Infrastructure%20%28Helm%20Charts%29.ipynb) | Packaging, templating, and repeatable deployment definitions. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [05-Data-Parallel Training (PyTorch DDP)](/Section%2023-Kubernetes%20%26%20Distributed%20Training/05-Data-Parallel%20Training%20%28PyTorch%20DDP%29.ipynb) | Synchronous gradient training across multiple devices with DistributedDataParallel. | | <span style="color:orange;">Advanced 🟠</span> |
+| [06-Model Parallelism & Sharding (DeepSpeed ZeRO)](/Section%2023-Kubernetes%20%26%20Distributed%20Training/06-Model%20Parallelism%20%26%20Sharding%20%28DeepSpeed%20ZeRO%29.ipynb) | Splitting model computation and memory across devices with ZeRO stages. | | <span style="color:orange;">Advanced 🟠</span> |
+| [07-Distributed Checkpointing & Fault Recovery (Torch Distributed Checkpoint)](/Section%2023-Kubernetes%20%26%20Distributed%20Training/07-Distributed%20Checkpointing%20%26%20Fault%20Recovery%20%28Torch%20Distributed%20Checkpoint%29.ipynb) | Saving, restoring, and syncing distributed training state reliably. | | <span style="color:orange;">Advanced 🟠</span> |
+| [08-GPU Scheduling & Allocation (NVIDIA GPU Operator)](/Section%2023-Kubernetes%20%26%20Distributed%20Training/08-GPU%20Scheduling%20%26%20Allocation%20%28NVIDIA%20GPU%20Operator%29.ipynb) | Node selectors, taints, and topology-aware GPU resource planning. | | <span style="color:orange;">Advanced 🟠</span> |
+| [09-ML Workflow Orchestration on Kubernetes (Kubeflow)](/Section%2023-Kubernetes%20%26%20Distributed%20Training/09-ML%20Workflow%20Orchestration%20on%20Kubernetes%20%28Kubeflow%29.ipynb) | Pipeline orchestration and experiment tracking for ML on Kubernetes. | | <span style="color:red;">Expert 🔴</span> |
+| [10-Distributed Training at Scale (Ray Train)](/Section%2023-Kubernetes%20%26%20Distributed%20Training/10-Distributed%20Training%20at%20Scale%20%28Ray%20Train%29.ipynb) | Cluster-wide distributed training orchestration and scale strategy selection. | | <span style="color:red;">Expert 🔴</span> |
+| [11-Cluster Debugging & Observability (Prometheus & Grafana)](/Section%2023-Kubernetes%20%26%20Distributed%20Training/11-Cluster%20Debugging%20%26%20Observability%20%28Prometheus%20%26%20Grafana%29.ipynb) | Scheduling issues, networking, logs, and runtime failure diagnosis. | | <span style="color:red;">Expert 🔴</span> |
+| [12-Operational Cost & Efficiency (Spot/Preemptible GPU Nodes)](/Section%2023-Kubernetes%20%26%20Distributed%20Training/12-Operational%20Cost%20%26%20Efficiency%20%28Spot／Preemptible%20GPU%20Nodes%29.ipynb) | Throughput-cost tradeoffs and cluster utilization optimization. | | <span style="color:red;">Expert 🔴</span> |
 
 #### 📐 Section 24 - Statistical Deep Learning
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-Bayesian Foundations | Priors, posteriors, and probabilistic reasoning basics. | | <span style="color:green;">Beginner 🟢</span> |
-| 02-Uncertainty Estimation | Aleatoric vs epistemic uncertainty and practical estimation. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 03-Variational Inference | Approximate posterior learning and ELBO intuition. | | <span style="color:orange;">Advanced 🟠</span> |
-| 04-Variational Autoencoders | Latent variables, reconstruction, and generative representation learning. | | <span style="color:orange;">Advanced 🟠</span> |
-| 05-Diffusion Fundamentals | Noise schedules, denoising, and generative steps. | | <span style="color:orange;">Advanced 🟠</span> |
-| 06-Probabilistic Losses | Gaussian, categorical, and uncertainty-aware objectives. | | <span style="color:orange;">Advanced 🟠</span> |
-| 07-Calibration | Reliability, temperature scaling, and confidence quality. | | <span style="color:red;">Expert 🔴</span> |
-| 08-Bayesian Neural Networks | Parameter uncertainty and Monte Carlo approximation ideas. | | <span style="color:red;">Expert 🔴</span> |
-| 09-Stochastic Training Dynamics | Noise, regularization, and probabilistic interpretation of gradients. | | <span style="color:red;">Expert 🔴</span> |
-| 10-Risk-Aware Prediction | Using uncertainty for decision-making and thresholding. | | <span style="color:red;">Expert 🔴</span> |
-| 11-Posterior Predictive Analysis | Estimating uncertainty bands and decision confidence under shift. | | <span style="color:red;">Expert 🔴</span> |
-| 12-Bayesian Optimization for Training | Hyperparameter search guided by probabilistic surrogate models. | | <span style="color:red;">Expert 🔴</span> |
-| 13-Deep Ensembles and Uncertainty | Ensemble-based uncertainty quantification and robustness behavior. | | <span style="color:red;">Expert 🔴</span> |
-| 14-Decision-Theoretic Inference | Utility-aware prediction and uncertainty-informed action selection. | | <span style="color:red;">Expert 🔴</span> |
+| [01-Bayesian Foundations & Probabilistic Programming (PyMC)](/Section%2024-Statistical%20Deep%20Learning/01-Bayesian%20Foundations%20%26%20Probabilistic%20Programming%20%28PyMC%29.ipynb) | Priors, posteriors, and probabilistic reasoning with a modern PPL. | | <span style="color:green;">Beginner 🟢</span> |
+| [02-Uncertainty Estimation (TensorFlow Probability)](/Section%2024-Statistical%20Deep%20Learning/02-Uncertainty%20Estimation%20%28TensorFlow%20Probability%29.ipynb) | Aleatoric vs epistemic uncertainty and practical estimation techniques. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [03-Variational Inference (Pyro)](/Section%2024-Statistical%20Deep%20Learning/03-Variational%20Inference%20%28Pyro%29.ipynb) | Approximate posterior learning and ELBO optimization. | | <span style="color:orange;">Advanced 🟠</span> |
+| [04-Variational Autoencoders (PyTorch)](/Section%2024-Statistical%20Deep%20Learning/04-Variational%20Autoencoders%20%28PyTorch%29.ipynb) | Latent variables, reconstruction, and generative representation learning. | | <span style="color:orange;">Advanced 🟠</span> |
+| [05-Diffusion Model Fundamentals (Hugging Face Diffusers)](/Section%2024-Statistical%20Deep%20Learning/05-Diffusion%20Model%20Fundamentals%20%28Hugging%20Face%20Diffusers%29.ipynb) | Noise schedules, denoising, and generative diffusion steps. | | <span style="color:orange;">Advanced 🟠</span> |
+| [06-Probabilistic Losses & Calibration (TorchUncertainty)](/Section%2024-Statistical%20Deep%20Learning/06-Probabilistic%20Losses%20%26%20Calibration%20%28TorchUncertainty%29.ipynb) | Gaussian, categorical, and uncertainty-aware objectives with calibration checks. | | <span style="color:orange;">Advanced 🟠</span> |
+| [07-Bayesian Neural Networks (Pyro - BLiTZ)](/Section%2024-Statistical%20Deep%20Learning/07-Bayesian%20Neural%20Networks%20%28Pyro%20-%20BLiTZ%29.ipynb) | Parameter uncertainty and Monte Carlo approximation in neural nets. | | <span style="color:red;">Expert 🔴</span> |
+| [08-Stochastic Training Dynamics (Monte Carlo Dropout — PyTorch)](/Section%2024-Statistical%20Deep%20Learning/08-Stochastic%20Training%20Dynamics%20%28Monte%20Carlo%20Dropout%20—%20PyTorch%29.ipynb) | Noise, regularization, and probabilistic interpretation of gradients. | | <span style="color:red;">Expert 🔴</span> |
+| [09-Deep Ensembles for Uncertainty Quantification (PyTorch)](/Section%2024-Statistical%20Deep%20Learning/09-Deep%20Ensembles%20for%20Uncertainty%20Quantification%20%28PyTorch%29.ipynb) | Ensemble-based uncertainty quantification and robustness behavior. | | <span style="color:red;">Expert 🔴</span> |
+| [10-Bayesian Optimization for Training (Optuna / BoTorch)](/Section%2024-Statistical%20Deep%20Learning/10-Bayesian%20Optimization%20for%20Training%20%28Optuna%20／%20BoTorch%29.ipynb) | Hyperparameter search guided by probabilistic surrogate models. | | <span style="color:red;">Expert 🔴</span> |
+| [11-Posterior Predictive & Risk-Aware Prediction (ArviZ)](/Section%2024-Statistical%20Deep%20Learning/11-Posterior%20Predictive%20%26%20Risk-Aware%20Prediction%20%28ArviZ%29.ipynb) | Estimating uncertainty bands and decision confidence under shift. | | <span style="color:red;">Expert 🔴</span> |
+| [12-Decision-Theoretic Inference & Risk Communication](/Section%2024-Statistical%20Deep%20Learning/12-Decision-Theoretic%20Inference%20%26%20Risk%20Communication.ipynb) | Utility-aware prediction and uncertainty-informed action selection. | | <span style="color:red;">Expert 🔴</span> |
 
 #### 📱 Section 25 - Edge AI, TinyML & Reinforcement Learning
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-Edge AI Fundamentals | Latency constraints, offline inference, and device limits. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 02-Model Compression | Quantization, pruning, distillation, and sparse deployment. | | <span style="color:orange;">Advanced 🟠</span> |
-| 03-TinyML Toolchains | Embedded workflows, interpreters, and runtime toolchains. | | <span style="color:orange;">Advanced 🟠</span> |
-| 04-Sensor Data Processing | Signal collection, filtering, preprocessing, and feature extraction. | | <span style="color:orange;">Advanced 🟠</span> |
-| 05-Low-Power Optimization | Memory footprint, energy efficiency, and device tuning. | | <span style="color:orange;">Advanced 🟠</span> |
-| 06-Edge Deployment Patterns | OTA updates, model versioning, and fleet management. | | <span style="color:orange;">Advanced 🟠</span> |
-| 07-Embedded Hardware Awareness | MCU/SoC constraints, accelerators, and runtime choice. | | <span style="color:red;">Expert 🔴</span> |
-| 08-RL Fundamentals | Agent, environment, reward, and policy basics. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 09-Markov Decision Processes | States, actions, transitions, and discounted returns. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 10-Value-Based Methods | Q-learning, SARSA, and value approximation. | | <span style="color:orange;">Advanced 🟠</span> |
-| 11-Policy Gradient Methods | REINFORCE, actor-critic, and policy optimization. | | <span style="color:orange;">Advanced 🟠</span> |
-| 12-Exploration Strategies | Epsilon-greedy, entropy, and exploration/exploitation balance. | | <span style="color:orange;">Advanced 🟠</span> |
-| 13-Deep RL | Deep Q-networks and neural policy approximation. | | <span style="color:orange;">Advanced 🟠</span> |
-| 14-Safe RL | Constraints, risk-aware policies, and deployment safeguards. | | <span style="color:red;">Expert 🔴</span> |
+| [01-Edge AI Fundamentals & Model Conversion (ONNX)](/Section%2025-Edge%20AI,%20TinyML%20%26%20Reinforcement%20Learning/01-Edge%20AI%20Fundamentals%20%26%20Model%20Conversion%20%28ONNX%29.ipynb) | Latency constraints, offline inference, and cross-framework model conversion. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [02-Model Compression Pruning & Quantization (TensorFlow Lite)](/Section%2025-Edge%20AI,%20TinyML%20%26%20Reinforcement%20Learning/02-Model%20Compression%20Pruning%20%26%20Quantization%20%28TensorFlow%20Lite%29.ipynb) | Quantization, pruning, distillation, and sparse deployment. | | <span style="color:orange;">Advanced 🟠</span> |
+| [03-TinyML Toolchains for Microcontrollers (Edge Impulse)](/Section%2025-Edge%20AI,%20TinyML%20%26%20Reinforcement%20Learning/03-TinyML%20Toolchains%20for%20Microcontrollers%20%28Edge%20Impulse%29.ipynb) | Embedded workflows, interpreters, and runtime toolchains for MCUs. | | <span style="color:orange;">Advanced 🟠</span> |
+| [04-Sensor Data Processing & Signal Pipelines (TinyML)](/Section%2025-Edge%20AI,%20TinyML%20%26%20Reinforcement%20Learning/04-Sensor%20Data%20Processing%20%26%20Signal%20Pipelines%20%28TinyML%29.ipynb) | Signal collection, filtering, preprocessing, and feature extraction. | | <span style="color:orange;">Advanced 🟠</span> |
+| [05-Low-Power Inference Optimization (TensorFlow Lite Micro)](/Section%2025-Edge%20AI,%20TinyML%20%26%20Reinforcement%20Learning/05-Low-Power%20Inference%20Optimization%20%28TensorFlow%20Lite%20Micro%29.ipynb) | Memory footprint, energy efficiency, and device-level tuning. | | <span style="color:orange;">Advanced 🟠</span> |
+| [06-Edge Deployment Patterns (NVIDIA Jetson & ONNX Runtime)](/Section%2025-Edge%20AI,%20TinyML%20%26%20Reinforcement%20Learning/06-Edge%20Deployment%20Patterns%20%28NVIDIA%20Jetson%20%26%20ONNX%20Runtime%29.ipynb) | OTA updates, model versioning, and fleet management for edge devices. | | <span style="color:orange;">Advanced 🟠</span> |
+| [07-Reinforcement Learning Fundamentals & MDPs (Gymnasium)](/Section%2025-Edge%20AI,%20TinyML%20%26%20Reinforcement%20Learning/07-Reinforcement%20Learning%20Fundamentals%20%26%20MDPs%20%28Gymnasium%29.ipynb) | Agent, environment, reward, states, actions, and Markov decision processes. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [08-Value-Based Methods (Deep Q-Networks — Stable-Baselines3)](/Section%2025-Edge%20AI,%20TinyML%20%26%20Reinforcement%20Learning/08-Value-Based%20Methods%20%28Deep%20Q-Networks%20—%20Stable-Baselines3%29.ipynb) | Q-learning, SARSA, and value approximation with deep Q-networks. | | <span style="color:orange;">Advanced 🟠</span> |
+| [09-Policy Gradient Methods (PPO — Stable-Baselines3)](/Section%2025-Edge%20AI,%20TinyML%20%26%20Reinforcement%20Learning/09-Policy%20Gradient%20Methods%20%28PPO%20—%20Stable-Baselines3%29.ipynb) | REINFORCE, actor-critic, and proximal policy optimization. | | <span style="color:orange;">Advanced 🟠</span> |
+| [10-Exploration Strategies & Multi-Armed Bandits](/Section%2025-Edge%20AI,%20TinyML%20%26%20Reinforcement%20Learning/10-Exploration%20Strategies%20%26%20Multi-Armed%20Bandits.ipynb) | Epsilon-greedy, entropy, and exploration/exploitation balance. | | <span style="color:orange;">Advanced 🟠</span> |
+| [11-Deep RL at Scale (Ray RLlib)](/Section%2025-Edge%20AI,%20TinyML%20%26%20Reinforcement%20Learning/11-Deep%20RL%20at%20Scale%20%28Ray%20RLlib%29.ipynb) | Distributed deep reinforcement learning training and scaling strategies. | | <span style="color:red;">Expert 🔴</span> |
+| [12-Safe & Constrained RL](/Section%2025-Edge%20AI,%20TinyML%20%26%20Reinforcement%20Learning/12-Safe%20%26%20Constrained%20RL.ipynb) | Constraints, risk-aware policies, and deployment safeguards. | | <span style="color:red;">Expert 🔴</span> |
+| [13-Sim-to-Real & Embedded RL Deployment](/Section%2025-Edge%20AI,%20TinyML%20%26%20Reinforcement%20Learning/13-Sim-to-Real%20%26%20Embedded%20RL%20Deployment.ipynb) | Transferring trained policies from simulation to constrained edge hardware. | | <span style="color:red;">Expert 🔴</span> |
 
 #### 🖥️ Section 26 - System Programming & LLM Serving
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-Modern C++ Foundations for AI Systems | Memory management, RAII, templates, and performance-oriented design. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 02-Rust Foundations for Safe Systems | Ownership, borrowing, and concurrency-safe service development. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 03-LLM Serving Fundamentals | Throughput, latency, batching, and token streaming behavior. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 04-vLLM Architecture | Paged attention, continuous batching, and high-throughput inference internals. | | <span style="color:orange;">Advanced 🟠</span> |
-| 05-TensorRT-LLM Optimization | Engine building, kernel fusion, and precision-aware optimization. | | <span style="color:orange;">Advanced 🟠</span> |
-| 06-Tokenizer and Runtime Integration | Efficient tokenization pipelines and runtime interoperability. | | <span style="color:orange;">Advanced 🟠</span> |
-| 07-Zero-Copy Data Paths | Buffer reuse, pinned memory, and minimizing serialization overhead. | | <span style="color:orange;">Advanced 🟠</span> |
-| 08-Concurrent Inference Scheduling | Queueing models, prioritization, and fairness in serving workloads. | | <span style="color:orange;">Advanced 🟠</span> |
-| 09-Quantization for Serving | INT8/FP8 tradeoffs and deployment-time calibration strategies. | | <span style="color:red;">Expert 🔴</span> |
-| 10-Multi-Model Serving Infrastructure | Routing, model isolation, and shared GPU resource management. | | <span style="color:red;">Expert 🔴</span> |
-| 11-Observability in LLM Serving | Metrics, tracing, tail-latency analysis, and SLA tracking. | | <span style="color:red;">Expert 🔴</span> |
-| 12-Fault Tolerance and Recovery | Graceful degradation, retries, and resilient inference operations. | | <span style="color:red;">Expert 🔴</span> |
-| 13-Security for Inference Endpoints | Request validation, isolation boundaries, and abuse protection. | | <span style="color:red;">Expert 🔴</span> |
-| 14-Production Cost-Performance Engineering | Throughput-per-dollar optimization and capacity planning for scale. | | <span style="color:red;">Expert 🔴</span> |
+| [01-Modern C++ Foundations for AI Systems](/Section%2026-System%20Programming%20%26%20LLM%20Serving/01-Modern%20C++%20Foundations%20for%20AI%20Systems.ipynb) | Memory management, RAII, templates, and performance-oriented design. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [02-Rust Foundations for Safe Systems](/Section%2026-System%20Programming%20%26%20LLM%20Serving/02-Rust%20Foundations%20for%20Safe%20Systems.ipynb) | Ownership, borrowing, and concurrency-safe service development. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [03-LLM Serving Fundamentals (Hugging Face Text Generation Inference)](/Section%2026-System%20Programming%20%26%20LLM%20Serving/03-LLM%20Serving%20Fundamentals%20%28Hugging%20Face%20Text%20Generation%20Inference%29.ipynb) | Throughput, latency, batching, and token streaming behavior. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [04-High-Throughput Serving Architecture (vLLM)](/Section%2026-System%20Programming%20%26%20LLM%20Serving/04-High-Throughput%20Serving%20Architecture%20%28vLLM%29.ipynb) | Paged attention, continuous batching, and high-throughput inference internals. | | <span style="color:orange;">Advanced 🟠</span> |
+| [05-Kernel-Level Inference Optimization (TensorRT-LLM)](/Section%2026-System%20Programming%20%26%20LLM%20Serving/05-Kernel-Level%20Inference%20Optimization%20%28TensorRT-LLM%29.ipynb) | Engine building, kernel fusion, and precision-aware optimization. | | <span style="color:orange;">Advanced 🟠</span> |
+| [06-Tokenizer & Runtime Integration (Hugging Face Tokenizers & ONNX Runtime)](/Section%2026-System%20Programming%20%26%20LLM%20Serving/06-Tokenizer%20%26%20Runtime%20Integration%20%28Hugging%20Face%20Tokenizers%20%26%20ONNX%20Runtime%29.ipynb) | Efficient tokenization pipelines and cross-runtime interoperability. | | <span style="color:orange;">Advanced 🟠</span> |
+| [07-Concurrent Inference Scheduling (vLLM PagedAttention & Continuous Batching)](/Section%2026-System%20Programming%20%26%20LLM%20Serving/07-Concurrent%20Inference%20Scheduling%20%28vLLM%20PagedAttention%20%26%20Continuous%20Batching%29.ipynb) | Queueing models, prioritization, and fairness in serving workloads. | | <span style="color:orange;">Advanced 🟠</span> |
+| [08-Quantization for Production Serving (GPTQ / AWQ)](/Section%2026-System%20Programming%20%26%20LLM%20Serving/08-Quantization%20for%20Production%20Serving%20%28GPTQ%20／%20AWQ%29.ipynb) | INT8/FP8 tradeoffs and deployment-time calibration strategies. | | <span style="color:red;">Expert 🔴</span> |
+| [09-Multi-Model Serving Infrastructure (NVIDIA Triton Inference Server)](/Section%2026-System%20Programming%20%26%20LLM%20Serving/09-Multi-Model%20Serving%20Infrastructure%20%28NVIDIA%20Triton%20Inference%20Server%29.ipynb) | Routing, model isolation, and shared GPU resource management. | | <span style="color:red;">Expert 🔴</span> |
+| [10-Observability in LLM Serving (Prometheus & OpenTelemetry)](/Section%2026-System%20Programming%20%26%20LLM%20Serving/10-Observability%20in%20LLM%20Serving%20%28Prometheus%20%26%20OpenTelemetry%29.ipynb) | Metrics, tracing, tail-latency analysis, and SLA tracking. | | <span style="color:red;">Expert 🔴</span> |
+| [11-Fault Tolerance & Recovery for Inference Endpoints](/Section%2026-System%20Programming%20%26%20LLM%20Serving/11-Fault%20Tolerance%20%26%20Recovery%20for%20Inference%20Endpoints.ipynb) | Graceful degradation, retries, and resilient inference operations. | | <span style="color:red;">Expert 🔴</span> |
+| [12-Production Cost-Performance Engineering](/Section%2026-System%20Programming%20%26%20LLM%20Serving/12-Production%20Cost-Performance%20Engineering.ipynb) | Throughput-per-dollar optimization and capacity planning for scale. | | <span style="color:red;">Expert 🔴</span> |
 
 #### ⚙️ Section 27 - GPU Systems, CUDA & Attention Optimization
 
 | Context | Description | Medium Page | Level |
 | :--- | :--- | :--- | :--- |
-| 01-CUDA Programming Basics | Kernels, threads, blocks, and execution model fundamentals. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 02-GPU Memory Hierarchy | Global, shared, registers, and bandwidth-aware programming. | | <span style="color:yellow;">Intermediate 🟡</span> |
-| 03-Warp Divergence and Occupancy | SIMT behavior, occupancy tuning, and branch efficiency. | | <span style="color:orange;">Advanced 🟠</span> |
-| 04-Triton Kernels | Python-based custom kernels and performance-oriented implementation. | | <span style="color:orange;">Advanced 🟠</span> |
-| 05-C++ ML Systems | libtorch, ONNX Runtime, and custom operator integration. | | <span style="color:orange;">Advanced 🟠</span> |
-| 06-Rust Inference Systems | Candle, zero-copy patterns, and secure inference service design. | | <span style="color:orange;">Advanced 🟠</span> |
-| 07-Hardware Architecture | FLOPS, bandwidth, roofline model, and compute/memory balance. | | <span style="color:red;">Expert 🔴</span> |
-| 08-Attention Optimization | FlashAttention, sparse attention, and sliding-window methods. | | <span style="color:red;">Expert 🔴</span> |
-| 09-Pretraining Systems | Tokenizer design, data pipelines, scaling laws, and MoE basics. | | <span style="color:red;">Expert 🔴</span> |
-| 10-Custom CUDA Kernels | Fused operations, tiling, profiling, and profiling-guided optimization. | | <span style="color:red;">Expert 🔴</span> |
-| 11-Kernel Fusion Strategies | Combining operators to reduce memory traffic and latency overhead. | | <span style="color:red;">Expert 🔴</span> |
-| 12-Memory-Bound Optimization | Coalesced access, shared-memory tiling, and cache-aware kernel design. | | <span style="color:red;">Expert 🔴</span> |
-| 13-Inference Runtime Engineering | TensorRT-LLM, vLLM, and scheduler-aware serving optimization. | | <span style="color:red;">Expert 🔴</span> |
-| 14-Distributed Attention Systems | Multi-GPU attention scaling and communication-efficient kernel pipelines. | | <span style="color:red;">Expert 🔴</span> |
+| [01-CUDA Programming Basics (CUDA C++)](/Section%2027-GPU%20Systems,%20CUDA%20%26%20Attention%20Optimization/01-CUDA%20Programming%20Basics%20%28CUDA%20C++%29.ipynb) | Kernels, threads, blocks, and execution model fundamentals. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [02-GPU Memory Hierarchy & Bandwidth Optimization (CUDA)](/Section%2027-GPU%20Systems,%20CUDA%20%26%20Attention%20Optimization/02-GPU%20Memory%20Hierarchy%20%26%20Bandwidth%20Optimization%20%28CUDA%29.ipynb) | Global, shared, registers, and bandwidth-aware programming. | | <span style="color:yellow;">Intermediate 🟡</span> |
+| [03-Warp Divergence & Occupancy Tuning (Nsight Compute)](/Section%2027-GPU%20Systems,%20CUDA%20%26%20Attention%20Optimization/03-Warp%20Divergence%20%26%20Occupancy%20Tuning%20%28Nsight%20Compute%29.ipynb) | SIMT behavior, occupancy tuning, and branch efficiency profiling. | | <span style="color:orange;">Advanced 🟠</span> |
+| [04-Writing GPU Kernels in Python (Triton)](/Section%2027-GPU%20Systems,%20CUDA%20%26%20Attention%20Optimization/04-Writing%20GPU%20Kernels%20in%20Python%20%28Triton%29.ipynb) | Python-based custom kernels and performance-oriented implementation. | | <span style="color:orange;">Advanced 🟠</span> |
+| [05-Custom CUDA Kernel Development (PyTorch C++/CUDA Extensions)](/Section%2027-GPU%20Systems,%20CUDA%20%26%20Attention%20Optimization/05-Custom%20CUDA%20Kernel%20Development%20%28PyTorch%20C++／CUDA%20Extensions%29.ipynb) | Fused operations, tiling, and profiling-guided kernel optimization. | | <span style="color:orange;">Advanced 🟠</span> |
+| [06-Kernel Fusion Strategies (Triton & torch.compile)](/Section%2027-GPU%20Systems,%20CUDA%20%26%20Attention%20Optimization/06-Kernel%20Fusion%20Strategies%20%28Triton%20%26%20torch.compile%29.ipynb) | Combining operators to reduce memory traffic and latency overhead. | | <span style="color:orange;">Advanced 🟠</span> |
+| [07-Flash Attention & Attention Optimization (FlashAttention)](/Section%2027-GPU%20Systems,%20CUDA%20%26%20Attention%20Optimization/07-Flash%20Attention%20%26%20Attention%20Optimization%20%28FlashAttention%29.ipynb) | IO-aware attention, sparse attention, and sliding-window methods. | | <span style="color:red;">Expert 🔴</span> |
+| [08-Memory-Bound vs Compute-Bound Optimization (Nsight ／ CUDA Profiling)](/Section%2027-GPU%20Systems,%20CUDA%20%26%20Attention%20Optimization/08-Memory-Bound%20vs%20Compute-Bound%20Optimization%20%28Nsight%20／%20CUDA%20Profiling%29.ipynb) | Roofline analysis, coalesced access, and cache-aware kernel design. | | <span style="color:red;">Expert 🔴</span> |
+| [09-Distributed Attention for Long-Context Models (Ring Attention)](/Section%2027-GPU%20Systems,%20CUDA%20%26%20Attention%20Optimization/09-Distributed%20Attention%20for%20Long-Context%20Models%20%28Ring%20Attention%29.ipynb) | Multi-GPU attention scaling and communication-efficient kernel pipelines. | | <span style="color:red;">Expert 🔴</span> |
+| [10-Pretraining Systems Engineering at Scale (Megatron-LM)](/Section%2027-GPU%20Systems,%20CUDA%20%26%20Attention%20Optimization/10-Pretraining%20Systems%20Engineering%20at%20Scale%20%28Megatron-LM%29.ipynb) | Tokenizer design, data pipelines, scaling laws, and MoE basics at scale. | | <span style="color:red;">Expert 🔴</span> |
+| [11-Inference Runtime Engineering (CUDA Graphs ／ TensorRT)](/Section%2027-GPU%20Systems,%20CUDA%20%26%20Attention%20Optimization/11-Inference%20Runtime%20Engineering%20%28CUDA%20Graphs%20／%20TensorRT%29.ipynb) | Scheduler-aware serving optimization and runtime graph capture. | | <span style="color:red;">Expert 🔴</span> |
 
 ### Notes on Supporting Material
 
-- `Section 4-SQL & NoSQL Databases/` is currently empty and reserved for future notebooks.
 - `medium/` is kept for supplementary content and reference material.
 - `files/` contains small sample inputs and outputs used in notebook examples.
 - `images/` contains images referenced by the notes.
@@ -614,10 +689,9 @@ This roadmap will continue to be updated as I explore more topics in Data Scienc
 
 ## Disclaimer
 
-This repository contains AI-assisted notes and personally curated learning materials.
-
-* The content is created for **educational purposes only**.
-* All explanations are reviewed and structured based on my own understanding.
+* The content is created for **educational purposes only** and is not a substitute for official vendor documentation, especially for anything safety- or production-critical.
+* All explanations are reviewed and structured based on my own understanding (see the "About This Project" section above for how the AI-assisted authoring process worked).
 * Any referenced materials belong to their respective owners and are credited where applicable.
+* If any unintentional copyright issue arises, please contact me and it will be promptly resolved.
 
 If any unintentional copyright issue arises, please contact me and it will be promptly resolved.
