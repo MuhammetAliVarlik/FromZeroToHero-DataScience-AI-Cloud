@@ -223,3 +223,6 @@ Section 21-Explainable AI, Ethics & Responsible AI/config/
 Section */*.md
 # Generated artefacts and old PDF exports left over from the Section -> Module restructure (safe to delete)
 _legacy_untracked/
+
+# downloaded datasets (tools/datasets.py)
+data/cache/

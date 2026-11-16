@@ -9,6 +9,7 @@
 #   docker compose -f docker/compose.yml --profile observability up -d   # Prometheus + Grafana
 #   docker compose -f docker/compose.yml --profile graph up -d       # Neo4j
 #   docker compose -f docker/compose.yml --profile vector up -d      # Qdrant
+#   docker compose -f docker/compose.yml --profile bi up -d          # Apache Superset (+ PostgreSQL as a data source)
 # Stop:   docker compose -f docker/compose.yml --profile <name> down
 # Reset data (deletes volumes):  docker compose -f docker/compose.yml --profile <name> down -v
 #
@@ -19,7 +20,7 @@ name: fromzerotohero
 services:
   postgres:
     image: pgvector/pgvector:pg17
-    profiles: [db, rag]
+    profiles: [db, rag, bi]
     environment:
       POSTGRES_USER: course
       POSTGRES_PASSWORD: course
@@ -30,6 +31,30 @@ services:
       test: ["CMD-SHELL", "pg_isready -U course"]
       interval: 5s
       retries: 10
+
+  superset:
+    build: ./superset                 # apache/superset:5.0.0 + PostgreSQL driver (see docker/superset/Dockerfile)
+    image: fromzerotohero-superset:5.0.0
+    profiles: [bi]
+    depends_on: [postgres]
+    environment:
+      SUPERSET_SECRET_KEY: local-learning-only-change-me-0123456789abcdef
+      SUPERSET_LOAD_EXAMPLES: "no"
+    ports: ["8088:8088"]
+    volumes: [superset-home:/app/superset_home]
+    # one-time setup (idempotent): metadata database, admin user, roles; then start the web server
+    command:
+      - bash
+      - -c
+      - >-
+        superset db upgrade &&
+        (superset fab create-admin --username admin --firstname Course --lastname Admin --email admin@example.com --password admin || true) &&
+        superset init &&
+        /usr/bin/run-server.sh
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fs http://localhost:8088/health || exit 1"]
+      interval: 10s
+      retries: 30
 
   mongodb:
     image: mongo:8
@@ -125,6 +150,7 @@ services:
 
 volumes:
   postgres-data:
+  superset-home:
   mongo-data:
   ollama-models:
   qdrant-data:

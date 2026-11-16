@@ -572,131 +572,161 @@ modules:
       - redis
     lessons:
       - title: Database Setup with Docker (PostgreSQL)
-        status: planned
-        file: null
+        status: done
+        file: M07-SQL & Databases/01-Database Setup with Docker (PostgreSQL).ipynb
+        level: beginner
+        description: Start PostgreSQL with Docker Compose, load the Chinook sample database, connect with psql and SQLAlchemy,
+          explore the catalog.
+        data: real
       - title: Relational Database Foundations
         source: S03-01
         file: M07-SQL & Databases/02-Relational Database Foundations.ipynb
-        status: review
+        status: done
         level: beginner
-        description: Tables, keys, relationships, constraints, and normalization basics.
-        data: synthetic
+        description: Tables, keys and relationships in Chinook, constraints rejecting bad data, normalisation measured on
+          a denormalised copy.
+        data: real
       - title: Data Definition and Schema Design (CREATE-ALTER)
         source: S03-02
         file: M07-SQL & Databases/03-Data Definition and Schema Design (CREATE-ALTER).ipynb
-        status: review
+        status: done
         level: beginner
-        description: CREATE/ALTER/DROP, schema modeling, and database evolution.
+        description: PostgreSQL data types, CREATE TABLE with constraints, ALTER TABLE and migrations, DELETE vs TRUNCATE
+          timed.
         data: synthetic
       - title: SQL Query Fundamentals (SELECT, WHERE, GROUP BY)
         source: S03-03
         file: M07-SQL & Databases/04-SQL Query Fundamentals (SELECT, WHERE, GROUP BY).ipynb
-        status: review
+        status: done
         level: beginner
-        description: SELECT, WHERE, ORDER BY, GROUP BY, HAVING, and expressions.
-        data: synthetic
+        description: SELECT, WHERE, NULL handling, ORDER BY, GROUP BY/HAVING and the logical query order on Chinook.
+        data: real
       - title: Joins and Set Operations
         source: S03-04
         file: M07-SQL & Databases/05-Joins and Set Operations.ipynb
-        status: review
-        level: intermediate
-        description: INNER/LEFT/RIGHT/FULL joins, UNION, INTERSECT, and EXCEPT.
-        data: synthetic
+        status: done
+        level: beginner
+        description: Inner/outer/cross/self joins, anti-joins, the fan-out trap, UNION/INTERSECT/EXCEPT on Chinook.
+        data: real
       - title: Subqueries and Common Table Expressions (CTEs)
         source: S03-05
         file: M07-SQL & Databases/06-Subqueries and Common Table Expressions (CTEs).ipynb
-        status: review
+        status: done
         level: intermediate
-        description: Nested queries, CTEs, recursive patterns, and readability.
-        data: synthetic
+        description: Scalar, IN, EXISTS and correlated subqueries, multi-step CTEs, RFM segmentation, recursive org chart.
+        data: real
       - title: Window Functions for Analytics
         source: S03-06
         file: M07-SQL & Databases/07-Window Functions for Analytics.ipynb
-        status: review
+        status: done
         level: intermediate
-        description: Running totals, ranking, lag/lead, and analytic calculations.
-        data: synthetic
+        description: OVER/PARTITION BY, running totals, moving averages, RANK/ROW_NUMBER/NTILE, LAG/LEAD growth rates.
+        data: real
       - title: Analytical SQL with DuckDB
-        status: planned
-        file: null
+        status: done
+        file: M07-SQL & Databases/08-Analytical SQL with DuckDB.ipynb
+        level: intermediate
+        description: Row vs column stores, DuckDB on SQLite/CSV/Parquet/DataFrames, benchmark vs pandas and SQLite, partitioned
+          exports.
+        data: real
       - title: Connecting Python to SQL (SQLAlchemy & Pandas)
         source: S03-07
         file: M07-SQL & Databases/09-Connecting Python to SQL (SQLAlchemy & Pandas).ipynb
-        status: review
+        status: done
         level: intermediate
-        description: SQLAlchemy integration, Python connectivity, and pandas-driven SQL workflows.
-        data: synthetic
+        description: Engines and transactions, SQL injection vs parameters, read_sql chunks, the ORM, bulk loading with COPY
+          measured.
+        data: real
       - title: Indexes and Query Performance
         source: S03-08
         file: M07-SQL & Databases/10-Indexes and Query Performance.ipynb
-        status: review
+        status: done
         level: intermediate
-        description: Index design, query plans, selectivity, and performance tuning.
+        description: EXPLAIN ANALYZE, B-tree indexes, selectivity and plan choice, composite/covering indexes, write cost
+          of indexes.
         data: synthetic
       - title: Transactions and ACID Principles
         source: S03-09
         file: M07-SQL & Databases/11-Transactions and ACID Principles.ipynb
-        status: review
+        status: done
         level: intermediate
-        description: Isolation levels, consistency, rollback, and concurrency control.
+        description: ACID, savepoints, lost updates with 8 threads, FOR UPDATE vs atomic updates, isolation levels, deadlocks.
         data: synthetic
       - title: NoSQL Databases & MongoDB Fundamentals
         source: S03-10
         file: M07-SQL & Databases/12-NoSQL Databases & MongoDB Fundamentals.ipynb
-        status: realise
+        status: done
         level: intermediate
-        description: Documents, collections, aggregation pipelines, and flexible schema.
-        data: mock
+        description: NoSQL models, real MongoDB with Chinook invoices as documents, CRUD, aggregation pipelines, embedding
+          vs referencing, indexes.
+        data: real
       - title: Redis & Key-Value Stores
-        status: planned
-        file: null
+        status: done
+        file: M07-SQL & Databases/13-Redis & Key-Value Stores.ipynb
+        level: intermediate
+        description: Redis data structures, TTL, cache-aside in front of PostgreSQL measured, rate limiting, sorted-set leaderboards.
+        data: real
       - title: PostgreSQL JSONB & pgvector
-        status: planned
-        file: null
+        status: done
+        file: M07-SQL & Databases/14-PostgreSQL JSONB & pgvector.ipynb
+        level: intermediate
+        description: JSONB queries and GIN indexes, embeddings with Ollama nomic-embed-text, semantic album search, HNSW speed
+          and recall.
+        data: real
       - title: Data Modeling for Analytics (Star schemas)
         source: S03-11
         file: M07-SQL & Databases/15-Data Modeling for Analytics (Star schemas).ipynb
-        status: review
-        level: advanced
-        description: Star schemas, dimensions, facts, and analytical query design.
-        data: synthetic
+        status: done
+        level: intermediate
+        description: Facts, dimensions and grain, a Chinook star schema with a date dimension, star vs normalised queries,
+          SCD type 2.
+        data: real
       - title: Security, Roles, and Access Control
         source: S03-12
         file: M07-SQL & Databases/16-Security, Roles, and Access Control.ipynb
-        status: review
-        level: advanced
-        description: Roles, permissions, injection prevention, and least privilege.
+        status: done
+        level: intermediate
+        description: Roles and grants, column privileges, masking views, row-level security for tenants, privilege audits.
         data: synthetic
       - title: Stored Procedures, Functions, and Triggers
         source: S03-13
         file: M07-SQL & Databases/17-Stored Procedures, Functions, and Triggers.ipynb
-        status: review
-        level: advanced
-        description: Encapsulating business logic inside the database layer.
-        data: synthetic
+        status: done
+        level: intermediate
+        description: SQL and PL/pgSQL functions, batch procedures with COMMIT, audit/validation triggers, trigger overhead
+          measured.
+        data: real
       - title: Backup, Recovery, and Replication
         source: S03-14
         file: M07-SQL & Databases/18-Backup, Recovery, and Replication.ipynb
-        status: review
-        level: expert
-        description: High availability, disaster recovery, and data durability patterns.
-        data: synthetic
+        status: done
+        level: intermediate
+        description: RPO/RTO, pg_dump formats, tested restores, recovering deleted rows from a dump, WAL, PITR and replication.
+        data: real
       - title: Cloud Data Warehouses (BigQuery Sandbox)
-        status: planned
-        file: null
+        status: done
+        file: M07-SQL & Databases/19-Cloud Data Warehouses (BigQuery Sandbox).ipynb
+        level: intermediate
+        description: Warehouse architecture and pricing, bytes-scanned cost estimation, partitioning and clustering measured
+          with Parquet, BigQuery SQL.
+        data: synthetic
       - title: Text-to-SQL with Open LLMs
-        status: planned
-        file: null
+        status: done
+        file: M07-SQL & Databases/20-Text-to-SQL with Open LLMs.ipynb
+        level: advanced
+        description: Schema prompts, safe execution (read-only, timeout), execution accuracy on 16 labelled Chinook questions
+          with Llama 3.2 3B.
+        data: real
     assignments:
-      - title: E Commerce Analytics Warehouse
+      - title: E-Commerce Analytics Warehouse
         file: M07-SQL & Databases/assignments/01-E-Commerce-Analytics-Warehouse.ipynb
-        solution: null
+        solution: M07-SQL & Databases/assignments/01-E-Commerce-Analytics-Warehouse-solution.ipynb
       - title: MongoDB Operations Desk
         file: M07-SQL & Databases/assignments/02-MongoDB-Operations-Desk.ipynb
-        solution: null
+        solution: M07-SQL & Databases/assignments/02-MongoDB-Operations-Desk-solution.ipynb
       - title: ACID and ETL Control Room
         file: M07-SQL & Databases/assignments/03-ACID-and-ETL-Control-Room.ipynb
-        solution: null
+        solution: M07-SQL & Databases/assignments/03-ACID-and-ETL-Control-Room-solution.ipynb
   - id: M08
     name: NumPy, Pandas & Polars
     group: Data
@@ -707,123 +737,148 @@ modules:
       - title: Introduction to NumPy and Arrays
         source: S04-01
         file: M08-NumPy, Pandas & Polars/01-Introduction to NumPy and Arrays.ipynb
-        status: deepen
+        status: done
         level: beginner
-        description: Array creation, shape, dtype, dimensionality, and array metadata.
-        data: synthetic
+        description: 'Why arrays are fast (measured), creating arrays, shape/dtype/nbytes, dtype limits: overflow and precision.'
+        data: real
       - title: NumPy Indexing, Slicing, and Fancy Indexing
         source: S04-02
         file: M08-NumPy, Pandas & Polars/02-NumPy Indexing, Slicing, and Fancy Indexing.ipynb
-        status: deepen
+        status: done
         level: beginner
-        description: Scalar access, slicing, boolean masks, and advanced selection patterns.
-        data: synthetic
+        description: Indexing and slicing a years x days weather matrix, views vs copies, boolean masks, fancy indexing, top-k.
+        data: real
       - title: NumPy Data Manipulation
         source: S04-03
         file: M08-NumPy, Pandas & Polars/03-NumPy Data Manipulation.ipynb
-        status: deepen
+        status: done
         level: beginner
-        description: Reshaping, stacking, concatenation, flattening, and transposition.
-        data: synthetic
+        description: reshape and -1, axes and transpose, stack/concatenate/split, newaxis, sort and unique on weather data.
+        data: real
       - title: NumPy Mathematical and Statistical Functions
         source: S04-04
         file: M08-NumPy, Pandas & Polars/04-NumPy Mathematical and Statistical Functions.ipynb
-        status: deepen
+        status: done
         level: beginner
-        description: Ufuncs, aggregates, linear algebra, and element-wise transformations.
-        data: synthetic
+        description: ufuncs, axis aggregations, nan-functions, percentiles, cumsum/diff, correlation, least-squares regression
+          on penguins.
+        data: real
       - title: NumPy Performance Techniques and Broadcasting
         source: S04-05
         file: M08-NumPy, Pandas & Polars/05-NumPy Performance Techniques and Broadcasting.ipynb
-        status: deepen
+        status: done
         level: intermediate
-        description: Vectorization, broadcasting, memory behavior, and speed-aware design.
-        data: synthetic
+        description: Broadcasting rules, standardisation, pairwise distances (loops vs broadcasting vs matmul), memory, strides,
+          einsum.
+        data: real
       - title: Introduction to Pandas Series and DataFrames
         source: S04-06
         file: M08-NumPy, Pandas & Polars/06-Introduction to Pandas Series and DataFrames.ipynb
-        status: deepen
+        status: done
         level: beginner
-        description: Series, DataFrame structure, indexes, and data inspection.
-        data: synthetic
+        description: Series alignment, DataFrames and the index, reading CSV/JSON/Parquet, inspection, first plots, Copy-on-Write
+          basics.
+        data: real
       - title: Selecting, Filtering, and Indexing Data in Pandas
         source: S04-07
         file: M08-NumPy, Pandas & Polars/07-Selecting, Filtering, and Indexing Data in Pandas.ipynb
-        status: deepen
+        status: done
         level: beginner
-        description: loc, iloc, boolean filters, column selection, and slicing.
-        data: synthetic
+        description: Columns, loc/iloc, boolean filters, isin/between/query, sorted datetime index lookups on 3 million taxi
+          trips.
+        data: real
       - title: Data Cleaning and Handling Missing Data with Pandas
         source: S04-08
         file: M08-NumPy, Pandas & Polars/08-Data Cleaning and Handling Missing Data with Pandas.ipynb
-        status: deepen
-        level: beginner
-        description: Missing values, replacement strategies, imputation, and data validation.
-        data: synthetic
+        status: done
+        level: intermediate
+        description: Missingness, domain rules, duplicates and fare reversals, IQR outliers, code mapping, a reusable cleaning
+          function with a report.
+        data: real
       - title: Data Transformation and Manipulation in Pandas
         source: S04-09
         file: M08-NumPy, Pandas & Polars/09-Data Transformation and Manipulation in Pandas.ipynb
-        status: deepen
-        level: beginner
-        description: Renaming, derived columns, type casting, apply, map, and sorting.
-        data: synthetic
+        status: done
+        level: intermediate
+        description: Derived columns, dates and types, np.select, cut/qcut, mapping, .str methods, vectorised vs apply measured,
+          pipe chains.
+        data: real
       - title: Grouping and Aggregation in Pandas (groupby)
         source: S04-10
         file: M08-NumPy, Pandas & Polars/10-Grouping and Aggregation in Pandas (groupby).ipynb
-        status: deepen
+        status: done
         level: intermediate
-        description: Group-wise summaries, aggregations, transformations, and filtering.
-        data: synthetic
+        description: Named aggregations, multi-key and time groups, transform, filter, pivot_table and crosstab on NYC taxi
+          trips.
+        data: real
       - title: Merging and Joining DataFrames in Pandas
         source: S04-11
         file: M08-NumPy, Pandas & Polars/11-Merging and Joining DataFrames in Pandas.ipynb
-        status: deepen
+        status: done
         level: intermediate
-        description: Merge strategies, join types, concatenation, and relational matching.
-        data: synthetic
+        description: Merges with validate and indicator, the many-to-many trap, concat with keys, merge_asof without leakage.
+        data: real
       - title: Time Series and Date Handling in Pandas
         source: S04-12
         file: M08-NumPy, Pandas & Polars/12-Time Series and Date Handling in Pandas.ipynb
-        status: deepen
+        status: done
         level: intermediate
-        description: Datetime indexes, resampling, offsets, periods, and calendar handling.
-        data: synthetic
+        description: DatetimeIndex, resampling, rolling/expanding windows, seasonal decomposition, time zones and DST, calendar
+          offsets.
+        data: real
       - title: MultiIndex and Advanced Data Structures in Pandas
         source: S04-13
         file: M08-NumPy, Pandas & Polars/13-MultiIndex and Advanced Data Structures in Pandas.ipynb
-        status: deepen
+        status: done
         level: intermediate
-        description: Hierarchical indexing, reshaping, and advanced tabular organization.
-        data: synthetic
+        description: MultiIndex selection with xs and IndexSlice, long vs wide with stack/unstack/pivot/melt, weighted group
+          means on Gapminder.
+        data: real
       - title: Performance Optimization with NumPy and Pandas
         source: S04-14
         file: M08-NumPy, Pandas & Polars/14-Performance Optimization with NumPy and Pandas.ipynb
-        status: deepen
+        status: done
         level: intermediate
-        description: Categorical data, chunking, vectorization, and efficient workflows.
-        data: synthetic
+        description: Memory profiling, downcasting, category and Arrow strings, Parquet column/row filters, chunked aggregation.
+        data: real
       - title: pandas 2.x & 3.0 (Copy-on-Write, Arrow Types)
-        status: planned
-        file: null
+        status: done
+        file: M08-NumPy, Pandas & Polars/15-pandas 2.x & 3.0 (Copy-on-Write, Arrow Types).ipynb
+        level: intermediate
+        description: Copy-on-Write and chained assignment, the str dtype, nullable and Arrow dtypes, zero-copy exchange, migration
+          checklist.
+        data: real
       - title: Polars Fundamentals
-        status: planned
-        file: null
+        status: done
+        file: M08-NumPy, Pandas & Polars/16-Polars Fundamentals.ipynb
+        level: intermediate
+        description: Expressions and contexts, selectors, group_by/join/over, pandas vs Polars on the same pipeline, translation
+          table.
+        data: real
       - title: Polars Lazy API & Performance
-        status: planned
-        file: null
+        status: done
+        file: M08-NumPy, Pandas & Polars/17-Polars Lazy API & Performance.ipynb
+        level: intermediate
+        description: scan_parquet, query plans with projection/predicate pushdown, eager vs lazy vs streaming time and memory,
+          sink_parquet.
+        data: real
       - title: Querying DataFrames with DuckDB
-        status: planned
-        file: null
+        status: done
+        file: M08-NumPy, Pandas & Polars/18-Querying DataFrames with DuckDB.ipynb
+        level: intermediate
+        description: SQL on pandas/Polars frames and Parquet files, QUALIFY, the relational API, pandas vs Polars vs DuckDB
+          benchmark.
+        data: real
     assignments:
       - title: Customer Purchase Data Clinic
         file: M08-NumPy, Pandas & Polars/assignments/01-Customer-Purchase-Data-Clinic.ipynb
-        solution: null
-      - title: Multi Source Data Integration Hub
+        solution: M08-NumPy, Pandas & Polars/assignments/01-Customer-Purchase-Data-Clinic-solution.ipynb
+      - title: Multi-Source Data Integration Hub
         file: M08-NumPy, Pandas & Polars/assignments/02-Multi-Source-Data-Integration-Hub.ipynb
-        solution: null
-      - title: Inventory Time Series Command
-        file: M08-NumPy, Pandas & Polars/assignments/03-Inventory-Time-Series-Command.ipynb
-        solution: null
+        solution: M08-NumPy, Pandas & Polars/assignments/02-Multi-Source-Data-Integration-Hub-solution.ipynb
+      - title: Fleet Demand Time Series Command
+        file: M08-NumPy, Pandas & Polars/assignments/03-Fleet-Demand-Time-Series-Command.ipynb
+        solution: M08-NumPy, Pandas & Polars/assignments/03-Fleet-Demand-Time-Series-Command-solution.ipynb
   - id: M09
     name: Data Visualization & BI
     group: Data
@@ -834,113 +889,145 @@ modules:
       - title: Visualization Principles
         source: S06-01
         file: M09-Data Visualization & BI/01-Visualization Principles.ipynb
-        status: review
+        status: done
         level: beginner
-        description: Chart selection, visual hierarchy, and reducing noise.
-        data: synthetic
+        description: Chart choice by task, perception accuracy (position vs angle vs area), decluttering with message titles,
+          honest scales.
+        data: real
       - title: Exploratory Visual Analysis
         source: S06-02
         file: M09-Data Visualization & BI/02-Exploratory Visual Analysis.ipynb
-        status: review
+        status: done
         level: beginner
-        description: Distribution, relationship, and comparison plots for EDA.
-        data: synthetic
+        description: Histograms/KDE/ECDF/violins, Simpson's paradox in scatter plots, pair plots, facets, hexbin for 3 million
+          points.
+        data: real
       - title: Color, Layout, and Accessibility
         source: S06-03
         file: M09-Data Visualization & BI/03-Color, Layout, and Accessibility.ipynb
-        status: review
-        level: intermediate
-        description: Palette choice, contrast, annotations, and readability.
-        data: synthetic
+        status: done
+        level: beginner
+        description: Categorical/sequential/diverging palettes, colour-blind simulation (Machado 2009), WCAG contrast, direct
+          labels and grids.
+        data: real
       - title: Advanced Chart Types
         source: S06-04
         file: M09-Data Visualization & BI/04-Advanced Chart Types.ipynb
-        status: review
-        level: advanced
-        description: Heatmaps, small multiples, network visuals, and layered plots.
-        data: synthetic
+        status: done
+        level: intermediate
+        description: Slope and dumbbell charts, ridgelines, annotated and clustered heatmaps, small multiples, flow networks.
+        data: real
       - title: Geospatial Visualization
         source: S06-05
         file: M09-Data Visualization & BI/05-Geospatial Visualization.ipynb
-        status: review
-        level: advanced
-        description: Maps, coordinates, and location-aware storytelling.
-        data: synthetic
+        status: done
+        level: intermediate
+        description: GeoPandas and CRS, choropleths of counts vs density vs rates, classification schemes, flow maps, Folium
+          web maps.
+        data: real
       - title: Exploratory Storyboarding
         source: S06-06
         file: M09-Data Visualization & BI/06-Exploratory Storyboarding.ipynb
-        status: review
-        level: advanced
-        description: Structuring plots into a coherent analytical flow.
-        data: synthetic
+        status: done
+        level: intermediate
+        description: 'Plan a six-panel storyboard on airport taxi trips: context, pattern, breakdown, timing, anomaly, implication.'
+        data: real
       - title: Storytelling with Dashboards
         source: S06-07
         file: M09-Data Visualization & BI/07-Storytelling with Dashboards.ipynb
-        status: review
+        status: done
         level: intermediate
-        description: Sequencing insights and building stakeholder-ready narratives.
-        data: synthetic
+        description: Audience, decisions and KPIs; KPI tiles with comparisons; a monthly operations dashboard with message
+          titles.
+        data: real
       - title: Interactive Charts with Plotly & Altair
-        status: planned
-        file: null
+        status: done
+        file: M09-Data Visualization & BI/08-Interactive Charts with Plotly & Altair.ipynb
+        level: intermediate
+        description: Animated Plotly scatter, range sliders, Altair grammar of graphics, linked brushing, HTML export sizes.
+        data: real
       - title: Data Apps with Streamlit
-        status: planned
-        file: null
+        status: done
+        file: M09-Data Visualization & BI/09-Data Apps with Streamlit.ipynb
+        level: intermediate
+        description: Streamlit execution model, caching, a taxi zone explorer app, automated AppTest tests, headless server
+          check.
+        data: real
       - title: Tableau Calculated Fields
         source: S06-08
         file: M09-Data Visualization & BI/10-Tableau Calculated Fields.ipynb
-        status: review
+        status: done
         level: intermediate
-        description: Table calculations, parameters, and reusable logic in Tableau.
-        data: synthetic
+        description: Row vs aggregate calculations, LOD expressions (FIXED/INCLUDE/EXCLUDE), table calculations, order of
+          operations, with pandas answer keys.
+        data: real
       - title: Interactive Dashboards
         source: S06-09
         file: M09-Data Visualization & BI/11-Interactive Dashboards.ipynb
-        status: review
+        status: done
         level: intermediate
-        description: Filters, actions, drill-downs, and interactive exploration.
-        data: synthetic
+        description: Filter actions, parameters, drill-down treemaps, highlight vs filter, payload size of interactive charts.
+        data: real
       - title: Advanced Tableau Modeling
         source: S06-10
         file: M09-Data Visualization & BI/12-Advanced Tableau Modeling.ipynb
-        status: review
-        level: expert
-        description: Data blending, extracts, and performance-aware dashboard design.
-        data: synthetic
+        status: done
+        level: intermediate
+        description: Joins vs relationships vs blending (fan-out shown), live vs extract vs aggregated extract timings, performance
+          checklist.
+        data: real
       - title: Power BI Desktop Fundamentals
-        status: planned
-        file: null
+        status: done
+        file: M09-Data Visualization & BI/13-Power BI Desktop Fundamentals.ipynb
+        level: intermediate
+        description: Power Query M steps, a Chinook star schema export, DAX measures and filter context, time intelligence
+          with answer keys.
+        data: real
       - title: Open-Source BI with Apache Superset
-        status: planned
-        file: null
+        status: done
+        file: M09-Data Visualization & BI/14-Open-Source BI with Apache Superset.ipynb
+        level: intermediate
+        description: Superset in Docker, database connection, SQL Lab, virtual dataset, chart and dashboard via the REST API,
+          YAML export.
+        data: real
       - title: Operational Reporting
         source: S06-11
         file: M09-Data Visualization & BI/15-Operational Reporting.ipynb
-        status: review
-        level: advanced
-        description: KPI design, refresh cadence, and executive reporting patterns.
-        data: synthetic
+        status: done
+        level: intermediate
+        description: KPI definitions as code, week-over-week and baseline comparisons, threshold alerts, a self-contained
+          HTML report, scheduling.
+        data: real
       - title: Publishing and Sharing
         source: S06-12
         file: M09-Data Visualization & BI/16-Publishing and Sharing.ipynb
-        status: realise
-        level: advanced
-        description: Deployment, permissions, and governance for visual assets.
-        data: mock
+        status: done
+        level: intermediate
+        description: PNG/SVG/PDF/HTML trade-offs measured, sharing channels and permissions, versioning chart specs, small-cell
+          suppression.
+        data: real
       - title: Visualization QA and UX
         source: S06-13
         file: M09-Data Visualization & BI/17-Visualization QA and UX.ipynb
-        status: review
-        level: expert
-        description: Validation, labeling, and dashboard usability checks.
-        data: synthetic
+        status: done
+        level: intermediate
+        description: An automated chart linter, data reconciliation tests, 5-second and task tests, a release checklist.
+        data: real
       - title: Visual Analytics Governance
         source: S06-14
         file: M09-Data Visualization & BI/18-Visual Analytics Governance.ipynb
-        status: realise
-        level: expert
-        description: Definition of KPIs, source-of-truth control, and dashboard maintenance.
-        data: mock
+        status: done
+        level: intermediate
+        description: Conflicting metric definitions, a YAML metric registry computed with DuckDB, dashboard inventory rules,
+          lineage and impact analysis.
+        data: real
+    assignments:
+      - title: KPI Dashboard Makeover
+        file: M09-Data Visualization & BI/assignments/01-KPI-Dashboard-Makeover.ipynb
+        solution: M09-Data Visualization & BI/assignments/01-KPI-Dashboard-Makeover-solution.ipynb
+      - title: Tipping Geography Story
+        file: M09-Data Visualization & BI/assignments/02-Tipping-Geography-Story.ipynb
+        solution: M09-Data Visualization & BI/assignments/02-Tipping-Geography-Story-solution.ipynb
   - id: M10
     name: Feature Engineering & Data Preprocessing
     group: Data

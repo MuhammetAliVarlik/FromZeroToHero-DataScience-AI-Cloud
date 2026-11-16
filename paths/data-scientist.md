@@ -11,9 +11,9 @@ Take the modules in order. Each module lists its lessons; skip lessons you alrea
 | 3 | [M04 · Linux & Shell](../M04-Linux%20%26%20Shell/README.md) | 7 | 7/7 | — |
 | 4 | [M05 · Mathematics for Data Science (R)](../M05-Mathematics%20for%20Data%20Science%20%28R%29/README.md) | 7 | 7/7 | — |
 | 5 | [M06 · Statistics & Inference (R)](../M06-Statistics%20%26%20Inference%20%28R%29/README.md) | 23 | 23/23 | — |
-| 6 | [M07 · SQL & Databases](../M07-SQL%20%26%20Databases/README.md) | 20 | 0/20 | — |
-| 7 | [M08 · NumPy, Pandas & Polars](../M08-NumPy%2C%20Pandas%20%26%20Polars/README.md) | 18 | 0/18 | — |
-| 8 | [M09 · Data Visualization & BI](../M09-Data%20Visualization%20%26%20BI/README.md) | 18 | 0/18 | — |
+| 6 | [M07 · SQL & Databases](../M07-SQL%20%26%20Databases/README.md) | 20 | 20/20 | — |
+| 7 | [M08 · NumPy, Pandas & Polars](../M08-NumPy%2C%20Pandas%20%26%20Polars/README.md) | 18 | 18/18 | — |
+| 8 | [M09 · Data Visualization & BI](../M09-Data%20Visualization%20%26%20BI/README.md) | 18 | 18/18 | — |
 | 9 | [M10 · Feature Engineering & Data Preprocessing](../M10-Feature%20Engineering%20%26%20Data%20Preprocessing/README.md) | 16 | 0/16 | — |
 | 10 | [M14 · Experimentation & A/B Testing](../M14-Experimentation%20%26%20A/B%20Testing/README.md) | 6 | 0/6 | — |
 | 11 | [M15 · Causal Inference](../M15-Causal%20Inference/README.md) | 6 | 0/6 | — |
@@ -22,6 +22,6 @@ Take the modules in order. Each module lists its lessons; skip lessons you alrea
 | 14 | [M18 · Recommender Systems](../M18-Recommender%20Systems/README.md) | 6 | 0/6 | optional |
 | 15 | [M19 · Graph Data Science](../M19-Graph%20Data%20Science/README.md) | 13 | 0/13 | optional |
 
-**Total:** 209 lessons (42 still planned). **Capstone:** Capstone: Data Scientist (module M42).
+**Total:** 209 lessons (28 still planned). **Capstone:** Capstone: Data Scientist (module M42).
 
 **Used by roles:** [Applied Scientist / Research Engineer](../roles/applied-scientist.md), [Product Data Scientist](../roles/product-data-scientist.md)
