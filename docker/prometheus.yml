@@ -1,0 +1,12 @@
+# Prometheus scrapes metrics that notebooks expose on the host (prometheus_client starts an HTTP server).
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: prometheus
+    static_configs:
+      - targets: ["localhost:9090"]
+  - job_name: notebooks
+    # Lessons in M34 start metric servers on ports 8000-8002 of your machine.
+    static_configs:
+      - targets: ["host.docker.internal:8000", "host.docker.internal:8001", "host.docker.internal:8002"]

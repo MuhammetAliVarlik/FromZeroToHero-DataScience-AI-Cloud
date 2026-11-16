@@ -2,7 +2,9 @@
 
 > Generated from `curriculum.yml` by `tools/build_curriculum.py`. Do not edit by hand.
 
-**Group:** Data · **Lessons:** 5 existing + 2 planned (0 verified) · **GPU:** — · **Services:** kafka, minio
+**Group:** Data · **Lessons:** 5 existing + 2 planned (0 verified) · **GPU:** —
+
+**Services:** kafka, minio · start with `docker compose -f docker/compose.yml --profile streaming up -d`
 
 **Prerequisites:** [M11 Data Engineering & Orchestration](../M11-Data%20Engineering%20%26%20Orchestration/README.md)
 

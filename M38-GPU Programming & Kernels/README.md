@@ -13,14 +13,14 @@
 | 01 | [CUDA Programming Basics (CUDA C++)](01-CUDA%20Programming%20Basics%20(CUDA%20C%2B%2B).ipynb) | 🟡 Intermediate | 🔍 | Kernels, threads, blocks, and execution model fundamentals. |
 | 02 | [GPU Memory Hierarchy & Bandwidth Optimization (CUDA)](02-GPU%20Memory%20Hierarchy%20&%20Bandwidth%20Optimization%20(CUDA).ipynb) | 🟡 Intermediate | 🔍 | Global, shared, registers, and bandwidth-aware programming. |
 | 03 | [Warp Divergence & Occupancy Tuning (Nsight Compute)](03-Warp%20Divergence%20&%20Occupancy%20Tuning%20(Nsight%20Compute).ipynb) | 🟠 Advanced | ⚙️ | SIMT behavior, occupancy tuning, and branch efficiency profiling. |
-| 04 | Hopper & Blackwell Features (TMA, FP8, FP4) |  | 🆕 |  |
+| 04 | Hopper & Blackwell Features (TMA, FP8, FP4) |  | 🆕 | *(needs compute capability >= 9.0 (not available locally or on free GPUs): explain with diagrams and runnable CPU/older-GPU equivalents)* |
 | 05 | [Writing GPU Kernels in Python (Triton)](05-Writing%20GPU%20Kernels%20in%20Python%20(Triton).ipynb) | 🟠 Advanced | 🔍 | Python-based custom kernels and performance-oriented implementation. |
 | 06 | CUDA Python |  | 🆕 |  |
 | 07 | [Custom CUDA Kernel Development (PyTorch C++-CUDA Extensions)](07-Custom%20CUDA%20Kernel%20Development%20(PyTorch%20C%2B%2B-CUDA%20Extensions).ipynb) | 🟠 Advanced | ⚙️ | Fused operations, tiling, and profiling-guided kernel optimization. |
 | 08 | [Kernel Fusion Strategies (Triton & torch.compile)](08-Kernel%20Fusion%20Strategies%20(Triton%20&%20torch.compile).ipynb) | 🟠 Advanced | 🔍 | Combining operators to reduce memory traffic and latency overhead. |
-| 09 | CUTLASS & CuTe DSL |  | 🆕 |  |
-| 10 | [Flash Attention & Attention Optimization (FlashAttention)](10-Flash%20Attention%20&%20Attention%20Optimization%20(FlashAttention).ipynb) | 🔴 Expert | 🔍 | IO-aware attention, sparse attention, and sliding-window methods. |
-| 11 | FlashAttention-3 |  | 🆕 |  |
+| 09 | CUTLASS & CuTe DSL |  | 🆕 | *(CuTe DSL targets sm80+: build a CUTLASS example that supports sm75, explain newer features)* |
+| 10 | [Flash Attention & Attention Optimization (FlashAttention)](10-Flash%20Attention%20&%20Attention%20Optimization%20(FlashAttention).ipynb) | 🔴 Expert | 🔍 | IO-aware attention, sparse attention, and sliding-window methods. *(FlashAttention-2 needs sm80+: realise with PyTorch SDPA (memory-efficient kernel works on sm75))* |
+| 11 | FlashAttention-3 |  | 🆕 | *(needs compute capability >= 9.0: explain the algorithm; benchmark PyTorch SDPA kernels that run on sm75)* |
 | 12 | [Memory-Bound vs Compute-Bound Optimization (Nsight - CUDA Profiling)](12-Memory-Bound%20vs%20Compute-Bound%20Optimization%20(Nsight%20-%20CUDA%20Profiling).ipynb) | 🔴 Expert | 🔍 | Roofline analysis, coalesced access, and cache-aware kernel design. |
 | 13 | [Distributed Attention for Long-Context Models (Ring Attention)](13-Distributed%20Attention%20for%20Long-Context%20Models%20(Ring%20Attention).ipynb) | 🔴 Expert | ⚙️ | Multi-GPU attention scaling and communication-efficient kernel pipelines. |
 | 14 | [Pretraining Systems Engineering at Scale (Megatron-LM)](14-Pretraining%20Systems%20Engineering%20at%20Scale%20(Megatron-LM).ipynb) | 🔴 Expert | ⚙️ | Tokenizer design, data pipelines, scaling laws, and MoE basics at scale. |

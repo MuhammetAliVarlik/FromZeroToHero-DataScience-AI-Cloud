@@ -2,7 +2,9 @@
 
 > Generated from `curriculum.yml` by `tools/build_curriculum.py`. Do not edit by hand.
 
-**Group:** Ops & Systems · **Lessons:** 11 existing + 3 planned (0 verified) · **GPU:** — · **Services:** localstack
+**Group:** Ops & Systems · **Lessons:** 11 existing + 3 planned (0 verified) · **GPU:** —
+
+**Services:** localstack · start with `docker compose -f docker/compose.yml --profile cloud up -d`
 
 **Prerequisites:** [M32 Containers & Kubernetes](../M32-Containers%20%26%20Kubernetes/README.md)
 

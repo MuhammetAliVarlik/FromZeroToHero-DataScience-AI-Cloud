@@ -1,0 +1,188 @@
+# Python environment for the course, managed with uv (https://docs.astral.sh/uv/).
+#
+#   uv sync                          # base: Jupyter + the scientific Python stack
+#   uv sync --group data             # add one module group (see the table in README "Getting Started")
+#   uv sync --group dl --group llm   # several groups at once
+#   uv sync --all-groups             # everything in this file
+#   uv run jupyter lab
+#
+# Heavy stacks that pin their own versions (vLLM, SGLang, TensorRT, DeepSpeed, Apache Airflow,
+# AutoGluon, NeMo Guardrails, TensorFlow/LiteRT) are NOT listed here. The module that uses them
+# explains how to install them in a separate environment, so they cannot break this one.
+
+[project]
+name = "fromzerotohero"
+version = "0.1.0"
+description = "Free, notebook-based curriculum: Data Science, AI, LLM engineering, MLOps and GPU systems"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+license = { text = "MIT" }
+dependencies = [
+    "jupyterlab>=4.2",
+    "ipykernel>=6.29",
+    "ipywidgets>=8.1",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "scipy>=1.13",
+    "matplotlib>=3.9",
+    "seaborn>=0.13",
+    "pyyaml>=6.0",
+    "requests>=2.32",
+    "tqdm>=4.66",
+    "python-dotenv>=1.0",
+    "pillow>=10.4",
+]
+
+[dependency-groups]
+# M01-M04 Foundations
+foundations = [
+    "pytest>=8.3",
+    "ruff>=0.8",
+    "mypy>=1.13",
+    "pydantic>=2.9",
+    "rich>=13.9",
+    "typer>=0.15",
+]
+# M07-M10, M14 Data, BI, feature engineering, experimentation
+data = [
+    "sqlalchemy>=2.0",
+    "psycopg[binary]>=3.2",
+    "pymongo>=4.10",
+    "redis>=5.2",
+    "duckdb>=1.1",
+    "polars>=1.17",
+    "pyarrow>=18.0",
+    "plotly>=5.24",
+    "altair>=5.5",
+    "streamlit>=1.40",
+    "statsmodels>=0.14",
+    "scikit-learn>=1.5",
+    "imbalanced-learn>=0.12",
+    "pandera>=0.21",
+    "pingouin>=0.5.5",
+]
+# M11-M13 Data engineering, streaming, lakehouse, Spark
+data-eng = [
+    "dbt-duckdb>=1.9",
+    "dlt[duckdb]>=1.4",
+    "dagster>=1.9",
+    "great-expectations>=1.2",
+    "confluent-kafka>=2.6",
+    "fastavro>=1.9",
+    "openlineage-python>=1.25",
+    "pyspark>=3.5",
+    "deltalake>=0.22",
+    "pyiceberg[sql-sqlite,pyarrow]>=0.8",
+    "boto3>=1.35",
+]
+# M14-M19 Data science: causal inference, classical ML, time series, recommenders, graphs
+ds = [
+    "scikit-learn>=1.5",
+    "statsmodels>=0.14",
+    "dowhy>=0.12",
+    "econml>=0.15",
+    "xgboost>=2.1",
+    "lightgbm>=4.5",
+    "catboost>=1.2",
+    "mapie>=0.9",
+    "statsforecast>=2.0",
+    "mlforecast>=0.15",
+    "prophet>=1.1.6",
+    "implicit>=0.7",
+    "networkx>=3.4",
+    "python-igraph>=0.11",
+    "leidenalg>=0.10",
+    "pyvis>=0.3",
+    "neo4j>=5.26",
+]
+# M20-M25 Deep learning, computer vision, generative models, audio, probabilistic DL, RL
+dl = [
+    "torch>=2.5",
+    "torchvision>=0.20",
+    "torchaudio>=2.5",
+    "lightning>=2.4",
+    "accelerate>=1.2",
+    "timm>=1.0",
+    "transformers>=4.47",
+    "diffusers>=0.31",
+    "ultralytics>=8.3",
+    "open-clip-torch>=2.29",
+    "scikit-image>=0.24",
+    "opencv-python-headless>=4.10",
+    "librosa>=0.10",
+    "soundfile>=0.12",
+    "pymc>=5.19",
+    "arviz>=0.20",
+    "pyro-ppl>=1.9",
+    "numpyro>=0.16",
+    "gymnasium[classic-control]>=1.0",
+    "stable-baselines3>=2.4",
+    "torch-geometric>=2.6",
+]
+# M26-M31 LLMs, fine-tuning, RAG, agents, AI applications, evaluation
+llm = [
+    "transformers>=4.47",
+    "sentence-transformers>=3.3",
+    "datasets>=3.2",
+    "peft>=0.14",
+    "trl>=0.13",
+    "bitsandbytes>=0.45",
+    "evaluate>=0.4",
+    "rouge-score>=0.1.2",
+    "nltk>=3.9",
+    "langchain>=0.3",
+    "langchain-ollama>=0.2",
+    "langchain-community>=0.3",
+    "langgraph>=0.2",
+    "ollama>=0.4",
+    "fastapi>=0.115",
+    "uvicorn>=0.32",
+    "gradio>=5.9",
+    "litellm>=1.55",
+    "mcp>=1.2",
+    "rank-bm25>=0.2",
+    "faiss-cpu>=1.9",
+    "qdrant-client>=1.12",
+    "pgvector>=0.3",
+]
+# M32-M35, M37, M40 MLOps, monitoring, cloud emulation, optimisation, distributed training, HPO
+ops = [
+    "mlflow>=2.19",
+    "dvc>=3.58",
+    "prometheus-client>=0.21",
+    "opentelemetry-api>=1.29",
+    "opentelemetry-sdk>=1.29",
+    "evidently>=0.5",
+    "boto3>=1.35",
+    "kubernetes>=31.0",
+    "optuna>=4.1",
+    "flaml[automl]>=2.3",
+    "onnx>=1.17",
+    "onnxruntime>=1.20",
+    "openvino>=2024.6",
+    "ray[data,train,tune]>=2.40",
+]
+# M41 Responsible AI and AI security
+responsible = [
+    "shap>=0.46",
+    "lime>=0.2",
+    "fairlearn>=0.12",
+    "interpret>=0.6",
+    "captum>=0.7",
+    "opacus>=1.5",
+    "presidio-analyzer>=2.2",
+    "presidio-anonymizer>=2.2",
+]
+# M38 GPU programming (needs an NVIDIA GPU)
+gpu = [
+    "cupy-cuda12x>=13.3",
+    "numba>=0.60",
+]
+
+[tool.uv]
+# Install all groups together only when you ask for them.
+default-groups = []
+
+[tool.ruff]
+line-length = 120
+extend-include = ["*.ipynb"]

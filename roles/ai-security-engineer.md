@@ -21,7 +21,7 @@ Attacks and defends AI systems: prompt injection, jailbreaks, data leakage, gove
 | 9 | [M28 · RAG & Retrieval Systems](../M28-RAG%20%26%20Retrieval%20Systems/README.md) | 16 |
 | 10 | [M31 · Evaluation & Observability for ML and LLMs](../M31-Evaluation%20%26%20Observability%20for%20ML%20and%20LLMs/README.md) | 12 |
 | 11 | [M41 · Responsible AI, AI Security & Governance](../M41-Responsible%20AI%2C%20AI%20Security%20%26%20Governance/README.md) | 17 |
-| 12 | [M02 · Software Engineering Practices](../M02-Software%20Engineering%20Practices/README.md) | 12 |
+| 12 | [M02 · Software Engineering Practices](../M02-Software%20Engineering%20Practices/README.md) | 10 |
 | 13 | [M07 · SQL & Databases](../M07-SQL%20%26%20Databases/README.md) | 20 |
 | 14 | [M29 · AI Agents & MCP](../M29-AI%20Agents%20%26%20MCP/README.md) | 19 |
 | 15 | [M30 · AI Application Engineering](../M30-AI%20Application%20Engineering/README.md) | 15 |

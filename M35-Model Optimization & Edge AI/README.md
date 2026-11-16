@@ -17,7 +17,7 @@
 | 05 | [Network Pruning & Sparsity Mechanics](05-Network%20Pruning%20&%20Sparsity%20Mechanics.ipynb) | 🟠 Advanced | 🔍 | Removing redundant weights and connections to shrink and speed up models. |
 | 06 | [Knowledge Distillation (Teacher-Student)](06-Knowledge%20Distillation%20(Teacher-Student).ipynb) | 🔴 Expert | 🔍 | Training a compact student model to mimic a larger teacher model. |
 | 07 | [Massive Model Compression (bitsandbytes & GGUF)](07-Massive%20Model%20Compression%20(bitsandbytes%20&%20GGUF).ipynb) | 🔴 Expert | ⚙️ | Extreme quantization and compact serialization formats for large models. |
-| 08 | Low-Bit Formats (FP8, FP4, MXFP4) |  | 🆕 |  |
+| 08 | Low-Bit Formats (FP8, FP4, MXFP4) |  | 🆕 | *(FP8/FP4 hardware needs compute capability >= 8.9: simulate the number formats numerically with PyTorch on CPU/GPU)* |
 | 09 | [Bare-Metal Hardware Acceleration (OpenVINO)](09-Bare-Metal%20Hardware%20Acceleration%20(OpenVINO).ipynb) | 🔴 Expert | 🔍 | Compiling models for optimized inference on specific hardware targets. |
 | 10 | [Edge Vision & Quantization](10-Edge%20Vision%20&%20Quantization.ipynb) | 🔴 Expert | 🔍 | Compression, quantization, and on-device inference. |
 | 11 | [TinyML Toolchains for Microcontrollers (Edge Impulse)](11-TinyML%20Toolchains%20for%20Microcontrollers%20(Edge%20Impulse).ipynb) | 🟠 Advanced | ⚙️ | Embedded workflows, interpreters, and runtime toolchains for MCUs. |

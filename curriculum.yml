@@ -2,6 +2,13 @@
 # Edit this file, then run: python tools/build_curriculum.py --check --generate
 version: 1
 title: 'FromZeroToHero: Data Science, AI & Cloud'
+reference_hardware:
+  gpu: NVIDIA GeForce GTX 1650 Ti
+  vram_gib: 4
+  compute_capability: 7.5
+  ram_gib: 8
+  note: Every lesson must run on this machine or on free tiers. Lessons that need newer GPUs explain the concept, run what
+    the hardware allows, and state the requirement at the top.
 core_modules:
   - M01
   - M03
@@ -21,130 +28,136 @@ modules:
     prereqs: []
     gpu: none
     lessons:
-      - title: Python & Anaconda Installation
+      - title: Python Installation & Environment Setup
         source: S01-00
-        file: M01-Python/01-Python & Anaconda Installation.ipynb
-        status: deepen
+        file: M01-Python/01-Python Installation & Environment Setup.ipynb
+        status: done
         level: beginner
-        description: Installing Python and Anaconda, and setting up the basic development environment.
-        data: synthetic
+        description: Install Python, uv and Jupyter; create isolated environments; check the setup from a notebook.
+        data: real
       - title: Python Data Structures Overview
         source: S01-01
         file: M01-Python/02-Python Data Structures Overview.ipynb
-        status: deepen
+        status: done
         level: beginner
-        description: Overview of Python built-in data structures (list, tuple, dict, set).
+        description: Basic types, strings, list/tuple/dict/set, mutability, and measured lookup speed of each collection.
         data: synthetic
-      - title: Comprehensions in Python
-        source: S01-02
-        file: M01-Python/03-Comprehensions in Python.ipynb
-        status: deepen
+      - title: Conditions in Python
+        source: S01-04
+        file: M01-Python/03-Conditions in Python.ipynb
+        status: done
         level: beginner
-        description: Writing concise and readable code using list, dictionary, and set comprehensions.
+        description: if/elif/else, logical operators, truthiness, short-circuit evaluation, conditional expressions.
         data: synthetic
       - title: Loops in Python
         source: S01-03
         file: M01-Python/04-Loops in Python.ipynb
-        status: deepen
+        status: done
         level: beginner
-        description: Iterating over data using for and while loops.
+        description: for, while, range/enumerate/zip, break/continue/else, nested loops and their cost.
         data: synthetic
-      - title: Conditions in Python
-        source: S01-04
-        file: M01-Python/05-Conditions in Python.ipynb
-        status: deepen
+      - title: Comprehensions in Python
+        source: S01-02
+        file: M01-Python/05-Comprehensions in Python.ipynb
+        status: done
         level: beginner
-        description: Creating conditional logic with if, elif, and else statements.
+        description: List, dict, set comprehensions and generator expressions; speed compared with loops and map.
         data: synthetic
       - title: Functions in Python
         source: S01-05
         file: M01-Python/06-Functions in Python.ipynb
-        status: deepen
+        status: done
         level: beginner
-        description: Defining functions, using parameters, and making code modular.
+        description: Parameters, *args/**kwargs, keyword-only arguments, scope (LEGB), closures, docstrings and simple tests.
         data: synthetic
       - title: Modules & Packages
         source: S01-06
         file: M01-Python/07-Modules & Packages.ipynb
-        status: deepen
+        status: done
         level: beginner
-        description: Importing modules, creating packages, and improving code reusability.
+        description: Imports, building your own package, sys.path, __name__ == '__main__', and measured import cost.
         data: synthetic
       - title: Basic Input-Output (I-O) in Python
         source: S01-07
         file: M01-Python/08-Basic Input-Output (I-O) in Python.ipynb
-        status: deepen
+        status: done
         level: beginner
-        description: Getting user input and displaying output effectively.
+        description: Text files, encodings, CSV, JSON and binary formats compared by size and speed.
         data: synthetic
       - title: Files & Paths with pathlib
-        status: planned
-        file: null
+        status: done
+        file: M01-Python/09-Files & Paths with pathlib.ipynb
+        level: beginner
+        description: Path objects, glob/rglob, file metadata, and an analysis of this repository's folder tree.
+        data: real
       - title: Exception Handling
         source: S01-08
         file: M01-Python/10-Exception Handling.ipynb
-        status: deepen
-        level: beginner
-        description: Catching and managing errors using try, except, and finally.
+        status: done
+        level: intermediate
+        description: try/except/else/finally, custom exceptions, chaining, ExceptionGroup, retry with exponential backoff.
         data: synthetic
       - title: Lambda & Higher-Order Functions
         source: S01-09
         file: M01-Python/11-Lambda & Higher-Order Functions.ipynb
-        status: deepen
+        status: done
         level: intermediate
-        description: Using lambda expressions, map, filter, and reduce for functional workflows.
+        description: Lambdas, key functions, map/filter/reduce/partial, closures and function pipelines.
         data: synthetic
       - title: Iterators & Generators
         source: S01-10
         file: M01-Python/12-Iterators & Generators.ipynb
-        status: deepen
+        status: done
         level: intermediate
-        description: Using iter and next, and creating generators with yield.
+        description: Iterator protocol, generators, yield from, itertools, lazy pipelines and memory measurements.
         data: synthetic
       - title: Object Oriented Programming in Python
         source: S01-11
         file: M01-Python/13-Object Oriented Programming in Python.ipynb
-        status: deepen
+        status: done
         level: intermediate
-        description: Classes, objects, inheritance, and encapsulation in OOP.
+        description: Classes, properties, special methods, inheritance, ABCs and polymorphism with a fit/predict interface.
         data: synthetic
       - title: Dataclasses & Pydantic Models
-        status: planned
-        file: null
+        status: done
+        file: M01-Python/14-Dataclasses & Pydantic Models.ipynb
+        level: intermediate
+        description: Dataclasses, runtime validation with Pydantic v2, JSON Schema, and memory/speed of record types.
+        data: synthetic
       - title: Decorators
         source: S01-12
         file: M01-Python/15-Decorators.ipynb
-        status: deepen
+        status: done
         level: intermediate
-        description: Wrapping functions and modifying behavior using decorators.
+        description: Writing decorators, functools.wraps, decorators with arguments, caching and built-in class decorators.
         data: synthetic
       - title: Type Hinting & Static Typing
         source: S01-13
         file: M01-Python/16-Type Hinting & Static Typing.ipynb
-        status: deepen
+        status: done
         level: intermediate
-        description: Adding type hints to improve readability, IDE support, and reliability.
+        description: Annotations, TypedDict, Protocol, Python 3.12 generics, running mypy, zero runtime cost.
         data: synthetic
       - title: Performance Optimization
         source: S01-15
         file: M01-Python/17-Performance Optimization.ipynb
-        status: deepen
-        level: advanced
-        description: Techniques to optimize Python code for speed and memory usage.
+        status: done
+        level: intermediate
+        description: Profiling, time complexity, built-ins and NumPy, caching, threads vs processes and the GIL.
         data: synthetic
       - title: Modern Python 3.12–3.14 (Pattern Matching, New Typing Syntax, Free-Threading)
-        status: planned
-        file: null
+        status: done
+        file: M01-Python/18-Modern Python 3.12–3.14 (Pattern Matching, New Typing Syntax, Free-Threading).ipynb
+        level: intermediate
+        description: Pattern matching, 3.11–3.12 features, free-threaded 3.13t measured against the GIL, 3.14 template strings.
+        data: synthetic
     assignments:
       - title: Operation Market Pulse
         file: M01-Python/assignments/01-Operation-Market-Pulse.ipynb
-        solution: null
+        solution: M01-Python/assignments/01-Operation-Market-Pulse-solution.ipynb
       - title: Transit Telemetry Command
         file: M01-Python/assignments/02-Transit-Telemetry-Command.ipynb
-        solution: null
-      - title: Release Ready Toolkit
-        file: M01-Python/assignments/03-Release-Ready-Toolkit.ipynb
-        solution: null
+        solution: M01-Python/assignments/02-Transit-Telemetry-Command-solution.ipynb
   - id: M02
     name: Software Engineering Practices
     group: Foundations
@@ -152,60 +165,72 @@ modules:
       - M01
     gpu: none
     lessons:
-      - title: Virtual Environments (venv)
-        source: S01-17
-        file: M02-Software Engineering Practices/01-Virtual Environments (venv).ipynb
-        status: merge
-        level: beginner
-        description: Creating isolated Python environments and managing dependencies with requirements.txt.
-        data: synthetic
-        notes: 'merge into Modern Packaging & Environments with uv: fold venv basics into the uv lesson'
-      - title: Dependency Management with Poetry
-        source: S01-18
-        file: M02-Software Engineering Practices/02-Dependency Management with Poetry.ipynb
-        status: merge
-        level: intermediate
-        description: Modern package management, working with pyproject.toml, and lock files.
-        data: synthetic
-        notes: 'merge into Modern Packaging & Environments with uv: Poetry → uv; keep a short comparison'
       - title: Modern Packaging & Environments with uv
-        status: planned
-        file: null
+        status: done
+        file: M02-Software Engineering Practices/01-Modern Packaging & Environments with uv.ipynb
+        level: beginner
+        description: venv, pyproject.toml, lock files, uv init/add/run/build, pip vs uv speed, uv vs Poetry vs conda.
+        data: synthetic
       - title: Linting & Formatting with Ruff
-        status: planned
-        file: null
+        status: done
+        file: M02-Software Engineering Practices/02-Linting & Formatting with Ruff.ipynb
+        level: beginner
+        description: Ruff rule families, automatic fixes, formatting, and configuration in pyproject.toml.
+        data: synthetic
       - title: Best Practices (PEP8, docstring, clean code)
         source: S01-14
-        file: M02-Software Engineering Practices/05-Best Practices (PEP8, docstring, clean code).ipynb
-        status: deepen
-        level: intermediate
-        description: Following PEP8, writing docstrings, and applying clean code principles.
+        file: M02-Software Engineering Practices/03-Best Practices (PEP8, docstring, clean code).ipynb
+        status: done
+        level: beginner
+        description: PEP 8 naming, Google-style docstrings, refactoring a long function, complexity, project layout, secrets.
         data: synthetic
       - title: Testing with pytest
-        status: planned
-        file: null
+        status: done
+        file: M02-Software Engineering Practices/04-Testing with pytest.ipynb
+        level: intermediate
+        description: pytest tests, fixtures, parametrize, raises, tmp_path, monkeypatch, JUnit reports, the test pyramid.
+        data: synthetic
       - title: Logging & Configuration
-        status: planned
-        file: null
+        status: done
+        file: M02-Software Engineering Practices/05-Logging & Configuration.ipynb
+        level: intermediate
+        description: logging levels, handlers, JSON logs, exception logging, and validated configuration from the environment.
+        data: synthetic
       - title: Async Programming with asyncio
-        status: planned
-        file: null
+        status: done
+        file: M02-Software Engineering Practices/06-Async Programming with asyncio.ipynb
+        level: intermediate
+        description: Coroutines, gather, TaskGroup, semaphores, timeouts, measured on real HTTP requests to a local server.
+        data: synthetic
       - title: SOLID Principles
         source: S01-16
-        file: M02-Software Engineering Practices/09-SOLID Principles.ipynb
-        status: deepen
-        level: advanced
-        description: Applying SOLID design principles in object-oriented programming.
+        file: M02-Software Engineering Practices/07-SOLID Principles.ipynb
+        status: done
+        level: intermediate
+        description: The five SOLID principles with violations and refactorings in data-pipeline code.
         data: synthetic
       - title: Design Patterns for Data & AI Code
-        status: planned
-        file: null
+        status: done
+        file: M02-Software Engineering Practices/08-Design Patterns for Data & AI Code.ipynb
+        level: intermediate
+        description: Strategy, registry/factory, adapter, pipeline, repository and circuit breaker in Python.
+        data: synthetic
       - title: Building Command-Line Tools
-        status: planned
-        file: null
+        status: done
+        file: M02-Software Engineering Practices/09-Building Command-Line Tools.ipynb
+        level: intermediate
+        description: argparse and Typer CLIs, exit codes, stdout/stderr, JSON output, [project.scripts].
+        data: synthetic
       - title: API Design Fundamentals (HTTP, REST, OpenAPI)
-        status: planned
-        file: null
+        status: done
+        file: M02-Software Engineering Practices/10-API Design Fundamentals (HTTP, REST, OpenAPI).ipynb
+        level: intermediate
+        description: HTTP methods and status codes, REST design, idempotency keys, Problem Details, OpenAPI, latency percentiles.
+        data: synthetic
+    assignments:
+      - title: Release-Ready Toolkit
+        file: M02-Software Engineering Practices/assignments/01-Release-Ready-Toolkit.ipynb
+        solution: M02-Software Engineering Practices/assignments/01-Release-Ready-Toolkit-solution.ipynb
   - id: M03
     name: Git & Collaboration
     group: Foundations
@@ -1867,6 +1892,7 @@ modules:
       - title: torch.compile & Mixed Precision (bf16, FP8)
         status: planned
         file: null
+        notes: 'GTX 1650 Ti has no bf16/FP8: run fp16 autocast for real, explain bf16/FP8'
       - title: Callbacks & Checkpointing
         source: S09-20
         file: M20-Deep Learning Foundations/22-Callbacks & Checkpointing.ipynb
@@ -2311,11 +2337,10 @@ modules:
       - title: Decoding Strategies
         source: S11-09
         file: M26-LLM Foundations/10-Decoding Strategies.ipynb
-        status: rewrite
-        level: advanced
-        description: Greedy, beam, sampling, temperature and practical tradeoffs.
-        data: synthetic
-        notes: file is a copy of lesson 08; write decoding strategies (greedy, beam, top-k/p, temperature, min-p)
+        status: done
+        level: intermediate
+        description: Greedy, beam search, temperature, top-k, top-p and min-p implemented on GPT-2; diversity vs likelihood.
+        data: real
       - title: Modern LLM Architecture (RoPE, GQA, KV Cache, MoE)
         status: planned
         file: null
@@ -3156,6 +3181,8 @@ modules:
       - title: Low-Bit Formats (FP8, FP4, MXFP4)
         status: planned
         file: null
+        notes: 'FP8/FP4 hardware needs compute capability >= 8.9: simulate the number formats numerically with PyTorch on
+          CPU/GPU'
       - title: Bare-Metal Hardware Acceleration (OpenVINO)
         source: S20-10
         file: M35-Model Optimization & Edge AI/09-Bare-Metal Hardware Acceleration (OpenVINO).ipynb
@@ -3380,6 +3407,8 @@ modules:
       - title: Hopper & Blackwell Features (TMA, FP8, FP4)
         status: planned
         file: null
+        notes: 'needs compute capability >= 9.0 (not available locally or on free GPUs): explain with diagrams and runnable
+          CPU/older-GPU equivalents'
       - title: Writing GPU Kernels in Python (Triton)
         source: S27-04
         file: M38-GPU Programming & Kernels/05-Writing GPU Kernels in Python (Triton).ipynb
@@ -3407,6 +3436,7 @@ modules:
       - title: CUTLASS & CuTe DSL
         status: planned
         file: null
+        notes: 'CuTe DSL targets sm80+: build a CUTLASS example that supports sm75, explain newer features'
       - title: Flash Attention & Attention Optimization (FlashAttention)
         source: S27-07
         file: M38-GPU Programming & Kernels/10-Flash Attention & Attention Optimization (FlashAttention).ipynb
@@ -3414,9 +3444,11 @@ modules:
         level: expert
         description: IO-aware attention, sparse attention, and sliding-window methods.
         data: synthetic
+        notes: 'FlashAttention-2 needs sm80+: realise with PyTorch SDPA (memory-efficient kernel works on sm75)'
       - title: FlashAttention-3
         status: planned
         file: null
+        notes: 'needs compute capability >= 9.0: explain the algorithm; benchmark PyTorch SDPA kernels that run on sm75'
       - title: Memory-Bound vs Compute-Bound Optimization (Nsight - CUDA Profiling)
         source: S27-08
         file: M38-GPU Programming & Kernels/12-Memory-Bound vs Compute-Bound Optimization (Nsight - CUDA Profiling).ipynb

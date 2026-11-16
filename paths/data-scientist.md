@@ -6,7 +6,7 @@ Take the modules in order. Each module lists its lessons; skip lessons you alrea
 
 | Step | Module | Lessons | Verified | GPU |
 | :-: | :--- | :-: | :-: | :-: |
-| 1 | [M01 · Python](../M01-Python/README.md) | 18 | 0/18 | — |
+| 1 | [M01 · Python](../M01-Python/README.md) | 18 | 18/18 | — |
 | 2 | [M03 · Git & Collaboration](../M03-Git%20%26%20Collaboration/README.md) | 4 | 0/4 | — |
 | 3 | [M04 · Linux & Shell](../M04-Linux%20%26%20Shell/README.md) | 7 | 0/7 | — |
 | 4 | [M05 · Mathematics for Data Science (R)](../M05-Mathematics%20for%20Data%20Science%20%28R%29/README.md) | 7 | 7/7 | — |
@@ -22,6 +22,6 @@ Take the modules in order. Each module lists its lessons; skip lessons you alrea
 | 14 | [M18 · Recommender Systems](../M18-Recommender%20Systems/README.md) | 6 | 0/6 | optional |
 | 15 | [M19 · Graph Data Science](../M19-Graph%20Data%20Science/README.md) | 13 | 0/13 | optional |
 
-**Total:** 209 lessons (47 still planned). **Capstone:** Capstone: Data Scientist (module M42).
+**Total:** 209 lessons (44 still planned). **Capstone:** Capstone: Data Scientist (module M42).
 
 **Used by roles:** [Applied Scientist / Research Engineer](../roles/applied-scientist.md), [Product Data Scientist](../roles/product-data-scientist.md)

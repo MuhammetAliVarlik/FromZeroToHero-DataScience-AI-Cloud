@@ -2,7 +2,9 @@
 
 > Generated from `curriculum.yml` by `tools/build_curriculum.py`. Do not edit by hand.
 
-**Group:** Ops & Systems · **Lessons:** 7 existing + 2 planned (0 verified) · **GPU:** optional · **Services:** docker, kind
+**Group:** Ops & Systems · **Lessons:** 7 existing + 2 planned (0 verified) · **GPU:** optional
+
+**Services:** docker, kind (docker: Docker Engine; kind: kind CLI (local Kubernetes in Docker))
 
 **Prerequisites:** [M04 Linux & Shell](../M04-Linux%20%26%20Shell/README.md), [M02 Software Engineering Practices](../M02-Software%20Engineering%20Practices/README.md)
 

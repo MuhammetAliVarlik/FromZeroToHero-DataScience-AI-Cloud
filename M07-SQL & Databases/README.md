@@ -2,7 +2,9 @@
 
 > Generated from `curriculum.yml` by `tools/build_curriculum.py`. Do not edit by hand.
 
-**Group:** Data · **Lessons:** 14 existing + 6 planned (0 verified) · **GPU:** — · **Services:** postgres, mongodb, redis
+**Group:** Data · **Lessons:** 14 existing + 6 planned (0 verified) · **GPU:** —
+
+**Services:** postgres, mongodb, redis · start with `docker compose -f docker/compose.yml --profile db up -d`
 
 **Prerequisites:** [M01 Python](../M01-Python/README.md)
 

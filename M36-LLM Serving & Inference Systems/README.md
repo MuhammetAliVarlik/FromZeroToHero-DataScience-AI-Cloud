@@ -2,7 +2,9 @@
 
 > Generated from `curriculum.yml` by `tools/build_curriculum.py`. Do not edit by hand.
 
-**Group:** Ops & Systems · **Lessons:** 11 existing + 4 planned (0 verified) · **GPU:** required · **Services:** docker
+**Group:** Ops & Systems · **Lessons:** 11 existing + 4 planned (0 verified) · **GPU:** required
+
+**Services:** docker (docker: Docker Engine)
 
 **Prerequisites:** [M26 LLM Foundations](../M26-LLM%20Foundations/README.md), [M32 Containers & Kubernetes](../M32-Containers%20%26%20Kubernetes/README.md)
 

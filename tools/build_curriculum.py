@@ -35,6 +35,23 @@ STATUS_ICON = OrderedDict([
 LEVEL_ICON = {"beginner": "🟢 Beginner", "intermediate": "🟡 Intermediate",
               "advanced": "🟠 Advanced", "expert": "🔴 Expert"}
 GPU_ICON = {"none": "—", "optional": "optional", "required": "required"}
+# service name in curriculum.yml -> docker/compose.yml profile (None = not a compose service)
+SERVICE_PROFILE = {"postgres": "db", "mongodb": "db", "redis": "db", "kafka": "streaming", "minio": "streaming",
+                   "localstack": "cloud", "prometheus": "observability", "grafana": "observability",
+                   "neo4j": "graph", "qdrant": "vector", "ollama": "ollama"}
+SERVICE_NOTE = {"ollama": "or native Ollama on http://localhost:11434", "kind": "kind CLI (local Kubernetes in Docker)",
+                "docker": "Docker Engine", "airflow": "separate environment, see the lesson"}
+
+
+def services_md(services):
+    profiles = sorted({SERVICE_PROFILE[s] for s in services if SERVICE_PROFILE.get(s)})
+    notes = [f"{s}: {SERVICE_NOTE[s]}" for s in services if s in SERVICE_NOTE]
+    out = ", ".join(services)
+    if profiles:
+        out += " · start with `docker compose -f docker/compose.yml " + " ".join(f"--profile {p}" for p in profiles) + " up -d`"
+    if notes:
+        out += " (" + "; ".join(notes) + ")"
+    return out
 GROUP_ICON = {"Foundations": "🧱", "Data": "🗄️", "Data Science": "🔬", "Deep Learning & Modalities": "🧠",
               "LLM & AI Applications": "🤖", "Ops & Systems": "⚙️", "Responsibility": "🛡️",
               "Capstones": "🏁", "Delivery": "🤝"}
@@ -253,7 +270,9 @@ def gen_module_readme(doc, m) -> str:
            "> Generated from `curriculum.yml` by `tools/build_curriculum.py`. Do not edit by hand.", "",
            f"**Group:** {m['group']} · **Lessons:** {ex} existing + {planned} planned ({done} verified) · "
            f"**GPU:** {GPU_ICON[m['gpu']]}"
-           + (f" · **Services:** {', '.join(m['services'])}" if m.get("services") else ""), ""]
+           , ""]
+    if m.get("services"):
+        out += [f"**Services:** {services_md(m['services'])}", ""]
     pre = ", ".join(f"[{p} {mods[p]['name']}](../{urllib.parse.quote(module_dir(mods[p]))}/README.md)" for p in m.get("prereqs", []))
     rec = ", ".join(f"[{p} {mods[p]['name']}](../{urllib.parse.quote(module_dir(mods[p]))}/README.md)" for p in m.get("recommended", []))
     out.append(f"**Prerequisites:** {pre or 'none'}" + (f" · **Recommended:** {rec}" if rec else ""))

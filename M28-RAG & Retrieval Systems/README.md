@@ -2,7 +2,9 @@
 
 > Generated from `curriculum.yml` by `tools/build_curriculum.py`. Do not edit by hand.
 
-**Group:** LLM & AI Applications · **Lessons:** 11 existing + 5 planned (0 verified) · **GPU:** optional · **Services:** ollama, postgres
+**Group:** LLM & AI Applications · **Lessons:** 11 existing + 5 planned (0 verified) · **GPU:** optional
+
+**Services:** ollama, postgres · start with `docker compose -f docker/compose.yml --profile db --profile ollama up -d` (ollama: or native Ollama on http://localhost:11434)
 
 **Prerequisites:** [M26 LLM Foundations](../M26-LLM%20Foundations/README.md) · **Recommended:** [M07 SQL & Databases](../M07-SQL%20%26%20Databases/README.md)
 

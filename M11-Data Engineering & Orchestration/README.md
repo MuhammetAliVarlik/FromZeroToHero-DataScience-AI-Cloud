@@ -2,7 +2,9 @@
 
 > Generated from `curriculum.yml` by `tools/build_curriculum.py`. Do not edit by hand.
 
-**Group:** Data · **Lessons:** 7 existing + 3 planned (0 verified) · **GPU:** — · **Services:** postgres, airflow
+**Group:** Data · **Lessons:** 7 existing + 3 planned (0 verified) · **GPU:** —
+
+**Services:** postgres, airflow · start with `docker compose -f docker/compose.yml --profile db up -d` (airflow: separate environment, see the lesson)
 
 **Prerequisites:** [M07 SQL & Databases](../M07-SQL%20%26%20Databases/README.md), [M02 Software Engineering Practices](../M02-Software%20Engineering%20Practices/README.md)
 

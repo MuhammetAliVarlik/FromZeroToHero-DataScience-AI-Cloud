@@ -2,7 +2,9 @@
 
 > Generated from `curriculum.yml` by `tools/build_curriculum.py`. Do not edit by hand.
 
-**Group:** LLM & AI Applications · **Lessons:** 12 existing + 3 planned (0 verified) · **GPU:** optional · **Services:** ollama
+**Group:** LLM & AI Applications · **Lessons:** 12 existing + 3 planned (0 verified) · **GPU:** optional
+
+**Services:** ollama · start with `docker compose -f docker/compose.yml --profile ollama up -d` (ollama: or native Ollama on http://localhost:11434)
 
 **Prerequisites:** [M02 Software Engineering Practices](../M02-Software%20Engineering%20Practices/README.md), [M26 LLM Foundations](../M26-LLM%20Foundations/README.md)
 

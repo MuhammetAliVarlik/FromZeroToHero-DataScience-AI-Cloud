@@ -2,7 +2,9 @@
 
 > Generated from `curriculum.yml` by `tools/build_curriculum.py`. Do not edit by hand.
 
-**Group:** Data Science · **Lessons:** 12 existing + 1 planned (0 verified) · **GPU:** optional · **Services:** neo4j
+**Group:** Data Science · **Lessons:** 12 existing + 1 planned (0 verified) · **GPU:** optional
+
+**Services:** neo4j · start with `docker compose -f docker/compose.yml --profile graph up -d`
 
 **Prerequisites:** [M16 Classical Machine Learning](../M16-Classical%20Machine%20Learning/README.md) · **Recommended:** [M20 Deep Learning Foundations](../M20-Deep%20Learning%20Foundations/README.md)
 

@@ -2,7 +2,9 @@
 
 > Generated from `curriculum.yml` by `tools/build_curriculum.py`. Do not edit by hand.
 
-**Group:** LLM & AI Applications · **Lessons:** 9 existing + 6 planned (0 verified) · **GPU:** optional · **Services:** ollama
+**Group:** LLM & AI Applications · **Lessons:** 9 existing + 6 planned (1 verified) · **GPU:** optional
+
+**Services:** ollama · start with `docker compose -f docker/compose.yml --profile ollama up -d` (ollama: or native Ollama on http://localhost:11434)
 
 **Prerequisites:** [M01 Python](../M01-Python/README.md) · **Recommended:** [M20 Deep Learning Foundations](../M20-Deep%20Learning%20Foundations/README.md)
 
@@ -19,7 +21,7 @@
 | 07 | [Encoder Models (BERT)](07-Encoder%20Models%20(BERT).ipynb) | 🟠 Advanced | 🔍 | Encoder-only models and masked-language pretraining. |
 | 08 | Encoder LLMs & Text Embeddings (ModernBERT) |  | 🆕 |  |
 | 09 | [Decoder Models (GPT)](09-Decoder%20Models%20(GPT).ipynb) | 🟠 Advanced | 🔍 | Causal decoding, autoregression, and next-token modelling. |
-| 10 | [Decoding Strategies](10-Decoding%20Strategies.ipynb) | 🟠 Advanced | ✏️ | Greedy, beam, sampling, temperature and practical tradeoffs. *(file is a copy of lesson 08; write decoding strategies (greedy, beam, top-k/p, temperature, min-p))* |
+| 10 | [Decoding Strategies](10-Decoding%20Strategies.ipynb) | 🟡 Intermediate | ✅ | Greedy, beam search, temperature, top-k, top-p and min-p implemented on GPT-2; diversity vs likelihood. |
 | 11 | Modern LLM Architecture (RoPE, GQA, KV Cache, MoE) |  | 🆕 |  |
 | 12 | Working with Open LLMs Locally (Ollama & Transformers) |  | 🆕 |  |
 | 13 | Prompt & Context Engineering |  | 🆕 |  |

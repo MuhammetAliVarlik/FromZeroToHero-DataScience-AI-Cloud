@@ -2,7 +2,9 @@
 
 > Generated from `curriculum.yml` by `tools/build_curriculum.py`. Do not edit by hand.
 
-**Group:** Ops & Systems · **Lessons:** 17 existing + 3 planned (0 verified) · **GPU:** — · **Services:** docker, prometheus, grafana
+**Group:** Ops & Systems · **Lessons:** 17 existing + 3 planned (0 verified) · **GPU:** —
+
+**Services:** docker, prometheus, grafana · start with `docker compose -f docker/compose.yml --profile observability up -d` (docker: Docker Engine)
 
 **Prerequisites:** [M16 Classical Machine Learning](../M16-Classical%20Machine%20Learning/README.md), [M32 Containers & Kubernetes](../M32-Containers%20%26%20Kubernetes/README.md)
 

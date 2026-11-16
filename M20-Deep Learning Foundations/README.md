@@ -30,7 +30,7 @@
 | 18 | [Handling Imbalanced Data](18-Handling%20Imbalanced%20Data.ipynb) | 🟠 Advanced | 🔀 | Techniques for class imbalance in DL. *(merge into S05-11: class imbalance canonical home is M10)* |
 | 19 | [Deep Learning Diagnostics](19-Deep%20Learning%20Diagnostics.ipynb) | 🟠 Advanced | 🔍 | Training diagnostics, visualizations, and fixes. |
 | 20 | [Hardware Acceleration](20-Hardware%20Acceleration.ipynb) | 🔴 Expert | 🔍 | GPUs, mixed precision, and performance tips. |
-| 21 | torch.compile & Mixed Precision (bf16, FP8) |  | 🆕 |  |
+| 21 | torch.compile & Mixed Precision (bf16, FP8) |  | 🆕 | *(GTX 1650 Ti has no bf16/FP8: run fp16 autocast for real, explain bf16/FP8)* |
 | 22 | [Callbacks & Checkpointing](22-Callbacks%20&%20Checkpointing.ipynb) | 🟠 Advanced | 🔍 | Checkpoints, callbacks, and training utilities. |
 | 23 | Training with Lightning & Accelerate |  | 🆕 |  |
 | 24 | [Multi-Task Architectures](24-Multi-Task%20Architectures.ipynb) | 🟠 Advanced | 🔍 | Multi-head and multi-task model designs. |

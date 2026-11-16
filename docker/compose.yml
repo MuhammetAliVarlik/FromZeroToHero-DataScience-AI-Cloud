@@ -1,0 +1,133 @@
+# Local services for the course. Everything here is free and runs on your machine.
+#
+# Start only what a module needs (each module README lists its services):
+#   docker compose -f docker/compose.yml --profile db up -d          # PostgreSQL + pgvector, MongoDB, Redis
+#   docker compose -f docker/compose.yml --profile ollama up -d      # Ollama in Docker (skip if Ollama is installed natively:
+#                                                                     #  the course talks to http://localhost:11434 either way)
+#   docker compose -f docker/compose.yml --profile streaming up -d   # Kafka + MinIO
+#   docker compose -f docker/compose.yml --profile cloud up -d       # LocalStack (AWS emulator) + MinIO
+#   docker compose -f docker/compose.yml --profile observability up -d   # Prometheus + Grafana
+#   docker compose -f docker/compose.yml --profile graph up -d       # Neo4j
+#   docker compose -f docker/compose.yml --profile vector up -d      # Qdrant
+# Stop:   docker compose -f docker/compose.yml --profile <name> down
+# Reset data (deletes volumes):  docker compose -f docker/compose.yml --profile <name> down -v
+#
+# Default credentials are for local learning only. Never reuse them anywhere else.
+
+name: fromzerotohero
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    profiles: [db, rag]
+    environment:
+      POSTGRES_USER: course
+      POSTGRES_PASSWORD: course
+      POSTGRES_DB: course
+    ports: ["5432:5432"]
+    volumes: [postgres-data:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U course"]
+      interval: 5s
+      retries: 10
+
+  mongodb:
+    image: mongo:8
+    profiles: [db]
+    ports: ["27017:27017"]
+    volumes: [mongo-data:/data/db]
+
+  redis:
+    image: redis:7-alpine
+    profiles: [db, llm-app]
+    ports: ["6379:6379"]
+
+  ollama:
+    image: ollama/ollama:latest
+    profiles: [ollama]
+    ports: ["11434:11434"]
+    volumes: [ollama-models:/root/.ollama]
+    # GPU access. Remove this block if the NVIDIA Container Toolkit is not installed (Ollama then runs on CPU).
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    profiles: [vector]
+    ports: ["6333:6333"]
+    volumes: [qdrant-data:/qdrant/storage]
+
+  kafka:
+    image: apache/kafka:3.9.1
+    profiles: [streaming]
+    ports: ["9092:9092"]
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_LISTENERS: PLAINTEXT://:9092,CONTROLLER://:9093
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@localhost:9093
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_HEAP_OPTS: "-Xmx512m -Xms512m"
+
+  minio:
+    image: minio/minio:latest
+    profiles: [streaming, cloud]
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: course
+      MINIO_ROOT_PASSWORD: course-password
+    ports: ["9000:9000", "9001:9001"]
+    volumes: [minio-data:/data]
+
+  localstack:
+    image: localstack/localstack:4
+    profiles: [cloud]
+    ports: ["4566:4566"]
+    environment:
+      SERVICES: s3,sqs,lambda,iam,sts,events,dynamodb
+    volumes: [/var/run/docker.sock:/var/run/docker.sock]
+
+  prometheus:
+    image: prom/prometheus:latest
+    profiles: [observability]
+    ports: ["9090:9090"]
+    volumes: [./prometheus.yml:/etc/prometheus/prometheus.yml:ro]
+    extra_hosts: ["host.docker.internal:host-gateway"]
+
+  grafana:
+    image: grafana/grafana:latest
+    profiles: [observability]
+    ports: ["3000:3000"]
+    environment:
+      GF_SECURITY_ADMIN_USER: course
+      GF_SECURITY_ADMIN_PASSWORD: course
+      GF_AUTH_ANONYMOUS_ENABLED: "true"
+    volumes: [grafana-data:/var/lib/grafana]
+
+  neo4j:
+    image: neo4j:5-community
+    profiles: [graph]
+    ports: ["7474:7474", "7687:7687"]
+    environment:
+      NEO4J_AUTH: neo4j/course-password
+      NEO4J_PLUGINS: '["graph-data-science"]'
+      NEO4J_server_memory_heap_max__size: 1G
+    volumes: [neo4j-data:/data]
+
+volumes:
+  postgres-data:
+  mongo-data:
+  ollama-models:
+  qdrant-data:
+  minio-data:
+  grafana-data:
+  neo4j-data:

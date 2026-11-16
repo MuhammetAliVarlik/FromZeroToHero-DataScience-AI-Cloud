@@ -13,7 +13,7 @@ Designs end-to-end AI architectures and guides customers or internal teams throu
 | 1 | [M01 · Python](../M01-Python/README.md) | 18 |
 | 2 | [M03 · Git & Collaboration](../M03-Git%20%26%20Collaboration/README.md) | 4 |
 | 3 | [M04 · Linux & Shell](../M04-Linux%20%26%20Shell/README.md) | 7 |
-| 4 | [M02 · Software Engineering Practices](../M02-Software%20Engineering%20Practices/README.md) | 12 |
+| 4 | [M02 · Software Engineering Practices](../M02-Software%20Engineering%20Practices/README.md) | 10 |
 | 5 | [M07 · SQL & Databases](../M07-SQL%20%26%20Databases/README.md) | 20 |
 | 6 | [M26 · LLM Foundations](../M26-LLM%20Foundations/README.md) | 15 |
 | 7 | [M28 · RAG & Retrieval Systems](../M28-RAG%20%26%20Retrieval%20Systems/README.md) | 16 |

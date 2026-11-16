@@ -13,7 +13,7 @@ Makes models fast and cheap: kernels, quantisation, serving engines, distributed
 | 1 | [M01 · Python](../M01-Python/README.md) | 18 |
 | 2 | [M03 · Git & Collaboration](../M03-Git%20%26%20Collaboration/README.md) | 4 |
 | 3 | [M04 · Linux & Shell](../M04-Linux%20%26%20Shell/README.md) | 7 |
-| 4 | [M02 · Software Engineering Practices](../M02-Software%20Engineering%20Practices/README.md) | 12 |
+| 4 | [M02 · Software Engineering Practices](../M02-Software%20Engineering%20Practices/README.md) | 10 |
 | 5 | [M05 · Mathematics for Data Science (R)](../M05-Mathematics%20for%20Data%20Science%20%28R%29/README.md) | 7 |
 | 6 | [M08 · NumPy, Pandas & Polars](../M08-NumPy%2C%20Pandas%20%26%20Polars/README.md) | 18 |
 | 7 | [M16 · Classical Machine Learning](../M16-Classical%20Machine%20Learning/README.md) | 22 |
