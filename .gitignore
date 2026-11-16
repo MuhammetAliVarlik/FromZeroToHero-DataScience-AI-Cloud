@@ -221,3 +221,5 @@ Section 21-Explainable AI, Ethics & Responsible AI/config/
 # Stray markdown drafts left over from authoring a notebook (superseded by
 # the notebook itself — every lesson's real content lives in the .ipynb)
 Section */*.md
+# Generated artefacts and old PDF exports left over from the Section -> Module restructure (safe to delete)
+_legacy_untracked/

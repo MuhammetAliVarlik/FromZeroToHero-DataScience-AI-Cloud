@@ -1,0 +1,3984 @@
+# Single source of truth for the course structure.
+# Edit this file, then run: python tools/build_curriculum.py --check --generate
+version: 1
+title: 'FromZeroToHero: Data Science, AI & Cloud'
+core_modules:
+  - M01
+  - M03
+  - M04
+statuses:
+  done: rewritten, executed and verified
+  review: content exists; audit pending in Phase B
+  deepen: too thin; needs more explanation and hands-on code
+  realise: outputs came from a simulation/mock; re-run for real with free tools
+  merge: duplicate of another lesson; merge into the canonical one
+  rewrite: broken or wrong content; rewrite
+  planned: new lesson, not written yet
+modules:
+  - id: M01
+    name: Python
+    group: Foundations
+    prereqs: []
+    gpu: none
+    lessons:
+      - title: Python & Anaconda Installation
+        source: S01-00
+        file: M01-Python/01-Python & Anaconda Installation.ipynb
+        status: deepen
+        level: beginner
+        description: Installing Python and Anaconda, and setting up the basic development environment.
+        data: synthetic
+      - title: Python Data Structures Overview
+        source: S01-01
+        file: M01-Python/02-Python Data Structures Overview.ipynb
+        status: deepen
+        level: beginner
+        description: Overview of Python built-in data structures (list, tuple, dict, set).
+        data: synthetic
+      - title: Comprehensions in Python
+        source: S01-02
+        file: M01-Python/03-Comprehensions in Python.ipynb
+        status: deepen
+        level: beginner
+        description: Writing concise and readable code using list, dictionary, and set comprehensions.
+        data: synthetic
+      - title: Loops in Python
+        source: S01-03
+        file: M01-Python/04-Loops in Python.ipynb
+        status: deepen
+        level: beginner
+        description: Iterating over data using for and while loops.
+        data: synthetic
+      - title: Conditions in Python
+        source: S01-04
+        file: M01-Python/05-Conditions in Python.ipynb
+        status: deepen
+        level: beginner
+        description: Creating conditional logic with if, elif, and else statements.
+        data: synthetic
+      - title: Functions in Python
+        source: S01-05
+        file: M01-Python/06-Functions in Python.ipynb
+        status: deepen
+        level: beginner
+        description: Defining functions, using parameters, and making code modular.
+        data: synthetic
+      - title: Modules & Packages
+        source: S01-06
+        file: M01-Python/07-Modules & Packages.ipynb
+        status: deepen
+        level: beginner
+        description: Importing modules, creating packages, and improving code reusability.
+        data: synthetic
+      - title: Basic Input-Output (I-O) in Python
+        source: S01-07
+        file: M01-Python/08-Basic Input-Output (I-O) in Python.ipynb
+        status: deepen
+        level: beginner
+        description: Getting user input and displaying output effectively.
+        data: synthetic
+      - title: Files & Paths with pathlib
+        status: planned
+        file: null
+      - title: Exception Handling
+        source: S01-08
+        file: M01-Python/10-Exception Handling.ipynb
+        status: deepen
+        level: beginner
+        description: Catching and managing errors using try, except, and finally.
+        data: synthetic
+      - title: Lambda & Higher-Order Functions
+        source: S01-09
+        file: M01-Python/11-Lambda & Higher-Order Functions.ipynb
+        status: deepen
+        level: intermediate
+        description: Using lambda expressions, map, filter, and reduce for functional workflows.
+        data: synthetic
+      - title: Iterators & Generators
+        source: S01-10
+        file: M01-Python/12-Iterators & Generators.ipynb
+        status: deepen
+        level: intermediate
+        description: Using iter and next, and creating generators with yield.
+        data: synthetic
+      - title: Object Oriented Programming in Python
+        source: S01-11
+        file: M01-Python/13-Object Oriented Programming in Python.ipynb
+        status: deepen
+        level: intermediate
+        description: Classes, objects, inheritance, and encapsulation in OOP.
+        data: synthetic
+      - title: Dataclasses & Pydantic Models
+        status: planned
+        file: null
+      - title: Decorators
+        source: S01-12
+        file: M01-Python/15-Decorators.ipynb
+        status: deepen
+        level: intermediate
+        description: Wrapping functions and modifying behavior using decorators.
+        data: synthetic
+      - title: Type Hinting & Static Typing
+        source: S01-13
+        file: M01-Python/16-Type Hinting & Static Typing.ipynb
+        status: deepen
+        level: intermediate
+        description: Adding type hints to improve readability, IDE support, and reliability.
+        data: synthetic
+      - title: Performance Optimization
+        source: S01-15
+        file: M01-Python/17-Performance Optimization.ipynb
+        status: deepen
+        level: advanced
+        description: Techniques to optimize Python code for speed and memory usage.
+        data: synthetic
+      - title: Modern Python 3.12–3.14 (Pattern Matching, New Typing Syntax, Free-Threading)
+        status: planned
+        file: null
+    assignments:
+      - title: Operation Market Pulse
+        file: M01-Python/assignments/01-Operation-Market-Pulse.ipynb
+        solution: null
+      - title: Transit Telemetry Command
+        file: M01-Python/assignments/02-Transit-Telemetry-Command.ipynb
+        solution: null
+      - title: Release Ready Toolkit
+        file: M01-Python/assignments/03-Release-Ready-Toolkit.ipynb
+        solution: null
+  - id: M02
+    name: Software Engineering Practices
+    group: Foundations
+    prereqs:
+      - M01
+    gpu: none
+    lessons:
+      - title: Virtual Environments (venv)
+        source: S01-17
+        file: M02-Software Engineering Practices/01-Virtual Environments (venv).ipynb
+        status: merge
+        level: beginner
+        description: Creating isolated Python environments and managing dependencies with requirements.txt.
+        data: synthetic
+        notes: 'merge into Modern Packaging & Environments with uv: fold venv basics into the uv lesson'
+      - title: Dependency Management with Poetry
+        source: S01-18
+        file: M02-Software Engineering Practices/02-Dependency Management with Poetry.ipynb
+        status: merge
+        level: intermediate
+        description: Modern package management, working with pyproject.toml, and lock files.
+        data: synthetic
+        notes: 'merge into Modern Packaging & Environments with uv: Poetry → uv; keep a short comparison'
+      - title: Modern Packaging & Environments with uv
+        status: planned
+        file: null
+      - title: Linting & Formatting with Ruff
+        status: planned
+        file: null
+      - title: Best Practices (PEP8, docstring, clean code)
+        source: S01-14
+        file: M02-Software Engineering Practices/05-Best Practices (PEP8, docstring, clean code).ipynb
+        status: deepen
+        level: intermediate
+        description: Following PEP8, writing docstrings, and applying clean code principles.
+        data: synthetic
+      - title: Testing with pytest
+        status: planned
+        file: null
+      - title: Logging & Configuration
+        status: planned
+        file: null
+      - title: Async Programming with asyncio
+        status: planned
+        file: null
+      - title: SOLID Principles
+        source: S01-16
+        file: M02-Software Engineering Practices/09-SOLID Principles.ipynb
+        status: deepen
+        level: advanced
+        description: Applying SOLID design principles in object-oriented programming.
+        data: synthetic
+      - title: Design Patterns for Data & AI Code
+        status: planned
+        file: null
+      - title: Building Command-Line Tools
+        status: planned
+        file: null
+      - title: API Design Fundamentals (HTTP, REST, OpenAPI)
+        status: planned
+        file: null
+  - id: M03
+    name: Git & Collaboration
+    group: Foundations
+    prereqs: []
+    gpu: none
+    lessons:
+      - title: Git Fundamentals
+        source: S01-19
+        file: M03-Git & Collaboration/01-Git Fundamentals.ipynb
+        status: deepen
+        level: beginner
+        description: 'Version control basics: init, add, commit, status, branching, and merging.'
+        data: synthetic
+      - title: Github & Collaboration
+        source: S01-20
+        file: M03-Git & Collaboration/02-Github & Collaboration.ipynb
+        status: deepen
+        level: intermediate
+        description: Remote repositories, push, pull, cloning, .gitignore, and Pull Request workflows.
+        data: synthetic
+      - title: Branching Strategies, Rebase & Conflict Resolution
+        status: planned
+        file: null
+      - title: Pre-commit Hooks & Code Review
+        status: planned
+        file: null
+  - id: M04
+    name: Linux & Shell
+    group: Foundations
+    prereqs: []
+    gpu: none
+    lessons:
+      - title: POSIX Storage Physics & Directory Topologies
+        source: S18-01
+        file: M04-Linux & Shell/01-POSIX Storage Physics & Directory Topologies.ipynb
+        status: review
+        level: beginner
+        description: Filesystem hierarchy, permission bits, and inode-level storage mechanics.
+        data: synthetic
+      - title: The Linux Stream Matrix (I-O Redirection & Pipes)
+        source: S18-02
+        file: M04-Linux & Shell/02-The Linux Stream Matrix (I-O Redirection & Pipes).ipynb
+        status: review
+        level: beginner
+        description: stdin/stdout/stderr redirection, pipes, and composing shell commands.
+        data: synthetic
+      - title: Hardware Telemetry & Kernel Resource Management
+        source: S18-03
+        file: M04-Linux & Shell/03-Hardware Telemetry & Kernel Resource Management.ipynb
+        status: realise
+        level: beginner
+        description: CPU, memory, and process introspection via /proc and kernel resource accounting.
+        data: mock
+      - title: Text Processing Mechanics (grep, sed, awk)
+        source: S18-04
+        file: M04-Linux & Shell/04-Text Processing Mechanics (grep, sed, awk).ipynb
+        status: review
+        level: intermediate
+        description: Pattern matching, stream editing, and field-based text processing at the command line.
+        data: synthetic
+      - title: Structured Log Extraction & Telemetry Parsing (jq)
+        source: S18-05
+        file: M04-Linux & Shell/05-Structured Log Extraction & Telemetry Parsing (jq).ipynb
+        status: review
+        level: intermediate
+        description: Querying and reshaping JSON log streams directly from the shell.
+        data: synthetic
+      - title: Automated Batch Scripts & Network Cron Daemon
+        source: S18-06
+        file: M04-Linux & Shell/06-Automated Batch Scripts & Network Cron Daemon.ipynb
+        status: review
+        level: intermediate
+        description: Scheduling recurring jobs and building resilient batch automation scripts.
+        data: synthetic
+      - title: Network Socket Physics, SSH & Remote Automation
+        source: S18-07
+        file: M04-Linux & Shell/07-Network Socket Physics, SSH & Remote Automation.ipynb
+        status: review
+        level: intermediate
+        description: TCP/socket fundamentals, SSH key-based access, and remote command execution.
+        data: synthetic
+  - id: M05
+    name: Mathematics for Data Science (R)
+    group: Foundations
+    prereqs: []
+    gpu: none
+    lessons:
+      - title: R & Visual Studio Code Installation
+        source: S02-00
+        file: M05-Mathematics for Data Science (R)/01-R & Visual Studio Code Installation.ipynb
+        status: done
+        level: beginner
+        description: Installing R, VS Code, and preparing a statistical computing environment.
+        data: mixed
+      - title: Getting Started with R
+        source: S02-01
+        file: M05-Mathematics for Data Science (R)/02-Getting Started with R.ipynb
+        status: done
+        level: beginner
+        description: Syntax, vectors, lists, factors, and working with the R console.
+        data: mixed
+      - title: Mathematical Notation in R
+        source: S02-02
+        file: M05-Mathematics for Data Science (R)/03-Mathematical Notation in R.ipynb
+        status: done
+        level: intermediate
+        description: Expression writing, operator usage, and mathematical conventions.
+        data: mixed
+      - title: Basic Arithmetic and Algebra
+        source: S02-03
+        file: M05-Mathematics for Data Science (R)/04-Basic Arithmetic and Algebra.ipynb
+        status: done
+        level: beginner
+        description: Arithmetic review, algebraic identities, and statistical notation.
+        data: mixed
+      - title: Functions, Graphs, and Transformations
+        source: S02-04
+        file: M05-Mathematics for Data Science (R)/05-Functions, Graphs, and Transformations.ipynb
+        status: done
+        level: intermediate
+        description: Function behavior, graphical interpretation, and transformation rules.
+        data: mixed
+      - title: Basics of Linear Algebra
+        source: S02-05
+        file: M05-Mathematics for Data Science (R)/06-Basics of Linear Algebra.ipynb
+        status: done
+        level: intermediate
+        description: Vectors, matrices, matrix multiplication, and linear systems.
+        data: mixed
+      - title: Calculus and Optimization
+        source: S02-06
+        file: M05-Mathematics for Data Science (R)/07-Calculus and Optimization.ipynb
+        status: done
+        level: advanced
+        description: Derivatives, integrals, gradient intuition, and optimization methods.
+        data: mixed
+  - id: M06
+    name: Statistics & Inference (R)
+    group: Foundations
+    prereqs:
+      - M05
+    gpu: none
+    lessons:
+      - title: Introduction to Probability Theory
+        source: S02-07
+        file: M06-Statistics & Inference (R)/01-Introduction to Probability Theory.ipynb
+        status: done
+        level: intermediate
+        description: Probability axioms, conditional probability, Bayes reasoning, random variables, expected value and variance.
+        data: mixed
+      - title: Descriptive Statistics and Data Summary
+        source: S02-08
+        file: M06-Statistics & Inference (R)/02-Descriptive Statistics and Data Summary.ipynb
+        status: done
+        level: intermediate
+        description: Center, spread, quantiles, distribution summaries, and charts.
+        data: mixed
+      - title: Basics of Data Visualization
+        source: S02-09
+        file: M06-Statistics & Inference (R)/03-Basics of Data Visualization.ipynb
+        status: done
+        level: beginner
+        description: Core plotting principles and visual data communication in R.
+        data: mixed
+      - title: Basic Probability Distributions
+        source: S02-10
+        file: M06-Statistics & Inference (R)/04-Basic Probability Distributions.ipynb
+        status: done
+        level: intermediate
+        description: Normal, binomial, Poisson, uniform, and related distributions.
+        data: mixed
+      - title: Central Limit Theorem and Sampling
+        source: S02-11
+        file: M06-Statistics & Inference (R)/05-Central Limit Theorem and Sampling.ipynb
+        status: done
+        level: advanced
+        description: Sampling distributions, standard error, and CLT-based inference.
+        data: mixed
+      - title: Sampling Distributions and Confidence Intervals
+        source: S02-12
+        file: M06-Statistics & Inference (R)/06-Sampling Distributions and Confidence Intervals.ipynb
+        status: done
+        level: intermediate
+        description: t, chi-square and F distributions, confidence intervals for means, proportions and variances, and the
+          CI-test duality.
+        data: mixed
+      - title: Introduction to Hypothesis Testing
+        source: S02-13
+        file: M06-Statistics & Inference (R)/07-Introduction to Hypothesis Testing.ipynb
+        status: done
+        level: intermediate
+        description: Null hypothesis setup, p-values, Type I/II errors, one-sided tests, reporting results, and p-hacking.
+        data: mixed
+      - title: Test Selection Flowchart
+        source: S02-14
+        file: M06-Statistics & Inference (R)/08-Test Selection Flowchart.ipynb
+        status: done
+        level: intermediate
+        description: Structured statistical test selection by data type and assumptions.
+        data: mixed
+      - title: Assumption Checks
+        source: S02-15
+        file: M06-Statistics & Inference (R)/09-Assumption Checks.ipynb
+        status: done
+        level: intermediate
+        description: Normality, homogeneity, independence, and diagnostic checks before testing.
+        data: mixed
+      - title: Two-Group Comparisons
+        source: S02-16
+        file: M06-Statistics & Inference (R)/10-Two-Group Comparisons.ipynb
+        status: done
+        level: intermediate
+        description: t-test families, non-parametric alternatives, and effect size basics.
+        data: mixed
+      - title: Comparisons for Three or More Groups
+        source: S02-17
+        file: M06-Statistics & Inference (R)/11-Comparisons for Three or More Groups.ipynb
+        status: done
+        level: intermediate
+        description: ANOVA families, non-parametric alternatives, Dunn's test, repeated measures, and two-way ANOVA with interactions.
+        data: mixed
+      - title: Post-hoc Analyses and Effect Size
+        source: S02-18
+        file: M06-Statistics & Inference (R)/12-Post-hoc Analyses and Effect Size.ipynb
+        status: done
+        level: advanced
+        description: Multiple-comparison procedures (Tukey, Holm, Games-Howell), false discovery rate, and effect sizes.
+        data: mixed
+      - title: Tests for Categorical Data and Proportions
+        source: S02-19
+        file: M06-Statistics & Inference (R)/13-Tests for Categorical Data and Proportions.ipynb
+        status: done
+        level: intermediate
+        description: One- and two-proportion tests, A/B testing, chi-square independence, Cramér's V, Fisher's exact and McNemar
+          tests.
+        data: mixed
+      - title: Power Analysis and Sample Size Planning
+        source: S02-20
+        file: M06-Statistics & Inference (R)/14-Power Analysis and Sample Size Planning.ipynb
+        status: done
+        level: advanced
+        description: Effect size, power and sample size, A/B test planning, simulation-based power, and the winner's curse.
+        data: mixed
+      - title: Resampling Methods - Bootstrap and Permutation Tests
+        source: S02-21
+        file: M06-Statistics & Inference (R)/15-Resampling Methods - Bootstrap and Permutation Tests.ipynb
+        status: done
+        level: advanced
+        description: Bootstrap standard errors and confidence intervals (percentile, BCa) and permutation tests for any statistic.
+        data: mixed
+      - title: Correlation and Causality
+        source: S02-22
+        file: M06-Statistics & Inference (R)/16-Correlation and Causality.ipynb
+        status: done
+        level: intermediate
+        description: Correlation metrics, confounding, and causal interpretation limits.
+        data: mixed
+      - title: Introduction to Regression Analysis
+        source: S02-23
+        file: M06-Statistics & Inference (R)/17-Introduction to Regression Analysis.ipynb
+        status: done
+        level: intermediate
+        description: Simple linear regression concepts, fitting, and interpretation basics.
+        data: mixed
+      - title: Multiple Linear Regression
+        source: S02-24
+        file: M06-Statistics & Inference (R)/18-Multiple Linear Regression.ipynb
+        status: done
+        level: advanced
+        description: Multivariable modeling, coefficients, assumptions, and diagnostics.
+        data: mixed
+      - title: Logistic Regression
+        source: S02-25
+        file: M06-Statistics & Inference (R)/19-Logistic Regression.ipynb
+        status: done
+        level: advanced
+        description: Binary outcome modeling, odds interpretation, and model evaluation.
+        data: mixed
+      - title: Introduction to Time Series Analysis
+        source: S02-26
+        file: M06-Statistics & Inference (R)/20-Introduction to Time Series Analysis.ipynb
+        status: done
+        level: advanced
+        description: Time-indexed data foundations, trend/seasonality, and temporal structure.
+        data: mixed
+      - title: Generalized Linear Models (GLM) and Advanced Techniques
+        source: S02-27
+        file: M06-Statistics & Inference (R)/21-Generalized Linear Models (GLM) and Advanced Techniques.ipynb
+        status: done
+        level: advanced
+        description: GLM families, link functions, and advanced statistical modeling techniques.
+        data: mixed
+      - title: Model Evaluation and Comparison
+        source: S02-28
+        file: M06-Statistics & Inference (R)/22-Model Evaluation and Comparison.ipynb
+        status: done
+        level: advanced
+        description: Comparing statistical models with fit metrics and validation criteria.
+        data: mixed
+      - title: End-to-End Hypothesis Testing Case Study
+        source: S02-29
+        file: M06-Statistics & Inference (R)/23-End-to-End Hypothesis Testing Case Study.ipynb
+        status: done
+        level: advanced
+        description: 'Capstone on real data: two-way ANOVA (ToothGrowth) and Simpson''s paradox in UC Berkeley admissions.'
+        data: mixed
+    assignments:
+      - title: Clinical Trial Stats
+        file: M06-Statistics & Inference (R)/assignments/01-Clinical-Trial-Stats.ipynb
+        solution: null
+      - title: Sales Forecasting with Regression
+        file: M06-Statistics & Inference (R)/assignments/02-Sales-Forecasting-with-Regression.ipynb
+        solution: null
+      - title: Time Series Evidence Desk
+        file: M06-Statistics & Inference (R)/assignments/03-Time-Series-Evidence-Desk.ipynb
+        solution: null
+  - id: M07
+    name: SQL & Databases
+    group: Data
+    prereqs:
+      - M01
+    gpu: none
+    services:
+      - postgres
+      - mongodb
+      - redis
+    lessons:
+      - title: Database Setup with Docker (PostgreSQL)
+        status: planned
+        file: null
+      - title: Relational Database Foundations
+        source: S03-01
+        file: M07-SQL & Databases/02-Relational Database Foundations.ipynb
+        status: review
+        level: beginner
+        description: Tables, keys, relationships, constraints, and normalization basics.
+        data: synthetic
+      - title: Data Definition and Schema Design (CREATE-ALTER)
+        source: S03-02
+        file: M07-SQL & Databases/03-Data Definition and Schema Design (CREATE-ALTER).ipynb
+        status: review
+        level: beginner
+        description: CREATE/ALTER/DROP, schema modeling, and database evolution.
+        data: synthetic
+      - title: SQL Query Fundamentals (SELECT, WHERE, GROUP BY)
+        source: S03-03
+        file: M07-SQL & Databases/04-SQL Query Fundamentals (SELECT, WHERE, GROUP BY).ipynb
+        status: review
+        level: beginner
+        description: SELECT, WHERE, ORDER BY, GROUP BY, HAVING, and expressions.
+        data: synthetic
+      - title: Joins and Set Operations
+        source: S03-04
+        file: M07-SQL & Databases/05-Joins and Set Operations.ipynb
+        status: review
+        level: intermediate
+        description: INNER/LEFT/RIGHT/FULL joins, UNION, INTERSECT, and EXCEPT.
+        data: synthetic
+      - title: Subqueries and Common Table Expressions (CTEs)
+        source: S03-05
+        file: M07-SQL & Databases/06-Subqueries and Common Table Expressions (CTEs).ipynb
+        status: review
+        level: intermediate
+        description: Nested queries, CTEs, recursive patterns, and readability.
+        data: synthetic
+      - title: Window Functions for Analytics
+        source: S03-06
+        file: M07-SQL & Databases/07-Window Functions for Analytics.ipynb
+        status: review
+        level: intermediate
+        description: Running totals, ranking, lag/lead, and analytic calculations.
+        data: synthetic
+      - title: Analytical SQL with DuckDB
+        status: planned
+        file: null
+      - title: Connecting Python to SQL (SQLAlchemy & Pandas)
+        source: S03-07
+        file: M07-SQL & Databases/09-Connecting Python to SQL (SQLAlchemy & Pandas).ipynb
+        status: review
+        level: intermediate
+        description: SQLAlchemy integration, Python connectivity, and pandas-driven SQL workflows.
+        data: synthetic
+      - title: Indexes and Query Performance
+        source: S03-08
+        file: M07-SQL & Databases/10-Indexes and Query Performance.ipynb
+        status: review
+        level: intermediate
+        description: Index design, query plans, selectivity, and performance tuning.
+        data: synthetic
+      - title: Transactions and ACID Principles
+        source: S03-09
+        file: M07-SQL & Databases/11-Transactions and ACID Principles.ipynb
+        status: review
+        level: intermediate
+        description: Isolation levels, consistency, rollback, and concurrency control.
+        data: synthetic
+      - title: NoSQL Databases & MongoDB Fundamentals
+        source: S03-10
+        file: M07-SQL & Databases/12-NoSQL Databases & MongoDB Fundamentals.ipynb
+        status: realise
+        level: intermediate
+        description: Documents, collections, aggregation pipelines, and flexible schema.
+        data: mock
+      - title: Redis & Key-Value Stores
+        status: planned
+        file: null
+      - title: PostgreSQL JSONB & pgvector
+        status: planned
+        file: null
+      - title: Data Modeling for Analytics (Star schemas)
+        source: S03-11
+        file: M07-SQL & Databases/15-Data Modeling for Analytics (Star schemas).ipynb
+        status: review
+        level: advanced
+        description: Star schemas, dimensions, facts, and analytical query design.
+        data: synthetic
+      - title: Security, Roles, and Access Control
+        source: S03-12
+        file: M07-SQL & Databases/16-Security, Roles, and Access Control.ipynb
+        status: review
+        level: advanced
+        description: Roles, permissions, injection prevention, and least privilege.
+        data: synthetic
+      - title: Stored Procedures, Functions, and Triggers
+        source: S03-13
+        file: M07-SQL & Databases/17-Stored Procedures, Functions, and Triggers.ipynb
+        status: review
+        level: advanced
+        description: Encapsulating business logic inside the database layer.
+        data: synthetic
+      - title: Backup, Recovery, and Replication
+        source: S03-14
+        file: M07-SQL & Databases/18-Backup, Recovery, and Replication.ipynb
+        status: review
+        level: expert
+        description: High availability, disaster recovery, and data durability patterns.
+        data: synthetic
+      - title: Cloud Data Warehouses (BigQuery Sandbox)
+        status: planned
+        file: null
+      - title: Text-to-SQL with Open LLMs
+        status: planned
+        file: null
+    assignments:
+      - title: E Commerce Analytics Warehouse
+        file: M07-SQL & Databases/assignments/01-E-Commerce-Analytics-Warehouse.ipynb
+        solution: null
+      - title: MongoDB Operations Desk
+        file: M07-SQL & Databases/assignments/02-MongoDB-Operations-Desk.ipynb
+        solution: null
+      - title: ACID and ETL Control Room
+        file: M07-SQL & Databases/assignments/03-ACID-and-ETL-Control-Room.ipynb
+        solution: null
+  - id: M08
+    name: NumPy, Pandas & Polars
+    group: Data
+    prereqs:
+      - M01
+    gpu: none
+    lessons:
+      - title: Introduction to NumPy and Arrays
+        source: S04-01
+        file: M08-NumPy, Pandas & Polars/01-Introduction to NumPy and Arrays.ipynb
+        status: deepen
+        level: beginner
+        description: Array creation, shape, dtype, dimensionality, and array metadata.
+        data: synthetic
+      - title: NumPy Indexing, Slicing, and Fancy Indexing
+        source: S04-02
+        file: M08-NumPy, Pandas & Polars/02-NumPy Indexing, Slicing, and Fancy Indexing.ipynb
+        status: deepen
+        level: beginner
+        description: Scalar access, slicing, boolean masks, and advanced selection patterns.
+        data: synthetic
+      - title: NumPy Data Manipulation
+        source: S04-03
+        file: M08-NumPy, Pandas & Polars/03-NumPy Data Manipulation.ipynb
+        status: deepen
+        level: beginner
+        description: Reshaping, stacking, concatenation, flattening, and transposition.
+        data: synthetic
+      - title: NumPy Mathematical and Statistical Functions
+        source: S04-04
+        file: M08-NumPy, Pandas & Polars/04-NumPy Mathematical and Statistical Functions.ipynb
+        status: deepen
+        level: beginner
+        description: Ufuncs, aggregates, linear algebra, and element-wise transformations.
+        data: synthetic
+      - title: NumPy Performance Techniques and Broadcasting
+        source: S04-05
+        file: M08-NumPy, Pandas & Polars/05-NumPy Performance Techniques and Broadcasting.ipynb
+        status: deepen
+        level: intermediate
+        description: Vectorization, broadcasting, memory behavior, and speed-aware design.
+        data: synthetic
+      - title: Introduction to Pandas Series and DataFrames
+        source: S04-06
+        file: M08-NumPy, Pandas & Polars/06-Introduction to Pandas Series and DataFrames.ipynb
+        status: deepen
+        level: beginner
+        description: Series, DataFrame structure, indexes, and data inspection.
+        data: synthetic
+      - title: Selecting, Filtering, and Indexing Data in Pandas
+        source: S04-07
+        file: M08-NumPy, Pandas & Polars/07-Selecting, Filtering, and Indexing Data in Pandas.ipynb
+        status: deepen
+        level: beginner
+        description: loc, iloc, boolean filters, column selection, and slicing.
+        data: synthetic
+      - title: Data Cleaning and Handling Missing Data with Pandas
+        source: S04-08
+        file: M08-NumPy, Pandas & Polars/08-Data Cleaning and Handling Missing Data with Pandas.ipynb
+        status: deepen
+        level: beginner
+        description: Missing values, replacement strategies, imputation, and data validation.
+        data: synthetic
+      - title: Data Transformation and Manipulation in Pandas
+        source: S04-09
+        file: M08-NumPy, Pandas & Polars/09-Data Transformation and Manipulation in Pandas.ipynb
+        status: deepen
+        level: beginner
+        description: Renaming, derived columns, type casting, apply, map, and sorting.
+        data: synthetic
+      - title: Grouping and Aggregation in Pandas (groupby)
+        source: S04-10
+        file: M08-NumPy, Pandas & Polars/10-Grouping and Aggregation in Pandas (groupby).ipynb
+        status: deepen
+        level: intermediate
+        description: Group-wise summaries, aggregations, transformations, and filtering.
+        data: synthetic
+      - title: Merging and Joining DataFrames in Pandas
+        source: S04-11
+        file: M08-NumPy, Pandas & Polars/11-Merging and Joining DataFrames in Pandas.ipynb
+        status: deepen
+        level: intermediate
+        description: Merge strategies, join types, concatenation, and relational matching.
+        data: synthetic
+      - title: Time Series and Date Handling in Pandas
+        source: S04-12
+        file: M08-NumPy, Pandas & Polars/12-Time Series and Date Handling in Pandas.ipynb
+        status: deepen
+        level: intermediate
+        description: Datetime indexes, resampling, offsets, periods, and calendar handling.
+        data: synthetic
+      - title: MultiIndex and Advanced Data Structures in Pandas
+        source: S04-13
+        file: M08-NumPy, Pandas & Polars/13-MultiIndex and Advanced Data Structures in Pandas.ipynb
+        status: deepen
+        level: intermediate
+        description: Hierarchical indexing, reshaping, and advanced tabular organization.
+        data: synthetic
+      - title: Performance Optimization with NumPy and Pandas
+        source: S04-14
+        file: M08-NumPy, Pandas & Polars/14-Performance Optimization with NumPy and Pandas.ipynb
+        status: deepen
+        level: intermediate
+        description: Categorical data, chunking, vectorization, and efficient workflows.
+        data: synthetic
+      - title: pandas 2.x & 3.0 (Copy-on-Write, Arrow Types)
+        status: planned
+        file: null
+      - title: Polars Fundamentals
+        status: planned
+        file: null
+      - title: Polars Lazy API & Performance
+        status: planned
+        file: null
+      - title: Querying DataFrames with DuckDB
+        status: planned
+        file: null
+    assignments:
+      - title: Customer Purchase Data Clinic
+        file: M08-NumPy, Pandas & Polars/assignments/01-Customer-Purchase-Data-Clinic.ipynb
+        solution: null
+      - title: Multi Source Data Integration Hub
+        file: M08-NumPy, Pandas & Polars/assignments/02-Multi-Source-Data-Integration-Hub.ipynb
+        solution: null
+      - title: Inventory Time Series Command
+        file: M08-NumPy, Pandas & Polars/assignments/03-Inventory-Time-Series-Command.ipynb
+        solution: null
+  - id: M09
+    name: Data Visualization & BI
+    group: Data
+    prereqs:
+      - M08
+    gpu: none
+    lessons:
+      - title: Visualization Principles
+        source: S06-01
+        file: M09-Data Visualization & BI/01-Visualization Principles.ipynb
+        status: review
+        level: beginner
+        description: Chart selection, visual hierarchy, and reducing noise.
+        data: synthetic
+      - title: Exploratory Visual Analysis
+        source: S06-02
+        file: M09-Data Visualization & BI/02-Exploratory Visual Analysis.ipynb
+        status: review
+        level: beginner
+        description: Distribution, relationship, and comparison plots for EDA.
+        data: synthetic
+      - title: Color, Layout, and Accessibility
+        source: S06-03
+        file: M09-Data Visualization & BI/03-Color, Layout, and Accessibility.ipynb
+        status: review
+        level: intermediate
+        description: Palette choice, contrast, annotations, and readability.
+        data: synthetic
+      - title: Advanced Chart Types
+        source: S06-04
+        file: M09-Data Visualization & BI/04-Advanced Chart Types.ipynb
+        status: review
+        level: advanced
+        description: Heatmaps, small multiples, network visuals, and layered plots.
+        data: synthetic
+      - title: Geospatial Visualization
+        source: S06-05
+        file: M09-Data Visualization & BI/05-Geospatial Visualization.ipynb
+        status: review
+        level: advanced
+        description: Maps, coordinates, and location-aware storytelling.
+        data: synthetic
+      - title: Exploratory Storyboarding
+        source: S06-06
+        file: M09-Data Visualization & BI/06-Exploratory Storyboarding.ipynb
+        status: review
+        level: advanced
+        description: Structuring plots into a coherent analytical flow.
+        data: synthetic
+      - title: Storytelling with Dashboards
+        source: S06-07
+        file: M09-Data Visualization & BI/07-Storytelling with Dashboards.ipynb
+        status: review
+        level: intermediate
+        description: Sequencing insights and building stakeholder-ready narratives.
+        data: synthetic
+      - title: Interactive Charts with Plotly & Altair
+        status: planned
+        file: null
+      - title: Data Apps with Streamlit
+        status: planned
+        file: null
+      - title: Tableau Calculated Fields
+        source: S06-08
+        file: M09-Data Visualization & BI/10-Tableau Calculated Fields.ipynb
+        status: review
+        level: intermediate
+        description: Table calculations, parameters, and reusable logic in Tableau.
+        data: synthetic
+      - title: Interactive Dashboards
+        source: S06-09
+        file: M09-Data Visualization & BI/11-Interactive Dashboards.ipynb
+        status: review
+        level: intermediate
+        description: Filters, actions, drill-downs, and interactive exploration.
+        data: synthetic
+      - title: Advanced Tableau Modeling
+        source: S06-10
+        file: M09-Data Visualization & BI/12-Advanced Tableau Modeling.ipynb
+        status: review
+        level: expert
+        description: Data blending, extracts, and performance-aware dashboard design.
+        data: synthetic
+      - title: Power BI Desktop Fundamentals
+        status: planned
+        file: null
+      - title: Open-Source BI with Apache Superset
+        status: planned
+        file: null
+      - title: Operational Reporting
+        source: S06-11
+        file: M09-Data Visualization & BI/15-Operational Reporting.ipynb
+        status: review
+        level: advanced
+        description: KPI design, refresh cadence, and executive reporting patterns.
+        data: synthetic
+      - title: Publishing and Sharing
+        source: S06-12
+        file: M09-Data Visualization & BI/16-Publishing and Sharing.ipynb
+        status: realise
+        level: advanced
+        description: Deployment, permissions, and governance for visual assets.
+        data: mock
+      - title: Visualization QA and UX
+        source: S06-13
+        file: M09-Data Visualization & BI/17-Visualization QA and UX.ipynb
+        status: review
+        level: expert
+        description: Validation, labeling, and dashboard usability checks.
+        data: synthetic
+      - title: Visual Analytics Governance
+        source: S06-14
+        file: M09-Data Visualization & BI/18-Visual Analytics Governance.ipynb
+        status: realise
+        level: expert
+        description: Definition of KPIs, source-of-truth control, and dashboard maintenance.
+        data: mock
+  - id: M10
+    name: Feature Engineering & Data Preprocessing
+    group: Data
+    prereqs:
+      - M08
+    recommended:
+      - M06
+    gpu: none
+    lessons:
+      - title: Data Profiling and Quality Checks
+        source: S05-01
+        file: M10-Feature Engineering & Data Preprocessing/01-Data Profiling and Quality Checks.ipynb
+        status: review
+        level: beginner
+        description: Data types, uniqueness, duplicates, nulls, and summary statistics.
+        data: synthetic
+      - title: Missing Value Treatment
+        source: S05-02
+        file: M10-Feature Engineering & Data Preprocessing/02-Missing Value Treatment.ipynb
+        status: review
+        level: beginner
+        description: Deletion, imputation, and model-specific strategies for nulls.
+        data: synthetic
+      - title: Outlier Detection and Robust Handling
+        source: S05-03
+        file: M10-Feature Engineering & Data Preprocessing/03-Outlier Detection and Robust Handling.ipynb
+        status: review
+        level: intermediate
+        description: IQR, z-score, winsorization, and anomaly-aware preprocessing.
+        data: synthetic
+      - title: Scaling and Normalization
+        source: S05-04
+        file: M10-Feature Engineering & Data Preprocessing/04-Scaling and Normalization.ipynb
+        status: review
+        level: intermediate
+        description: Standardization, min-max scaling, robust scaling, and their tradeoffs.
+        data: synthetic
+      - title: Categorical Encoding
+        source: S05-05
+        file: M10-Feature Engineering & Data Preprocessing/05-Categorical Encoding.ipynb
+        status: review
+        level: intermediate
+        description: One-hot, ordinal, target, hashing, and embedding-style encoding.
+        data: synthetic
+      - title: Binning and Discretization
+        source: S05-06
+        file: M10-Feature Engineering & Data Preprocessing/06-Binning and Discretization.ipynb
+        status: review
+        level: advanced
+        description: Turning continuous variables into informative buckets.
+        data: synthetic
+      - title: Feature Construction
+        source: S05-07
+        file: M10-Feature Engineering & Data Preprocessing/07-Feature Construction.ipynb
+        status: review
+        level: advanced
+        description: Polynomial terms, interactions, ratios, and domain-driven features.
+        data: synthetic
+      - title: Feature Selection & PCA
+        source: S05-08
+        file: M10-Feature Engineering & Data Preprocessing/08-Feature Selection & PCA.ipynb
+        status: review
+        level: advanced
+        description: Filter, wrapper, and embedded methods for reducing dimensionality.
+        data: synthetic
+      - title: Target Leakage Prevention
+        source: S05-09
+        file: M10-Feature Engineering & Data Preprocessing/09-Target Leakage Prevention.ipynb
+        status: review
+        level: advanced
+        description: Leakage patterns, time-aware splits, and safer pipeline design.
+        data: synthetic
+      - title: Pipeline Engineering (scikit-learn)
+        source: S05-10
+        file: M10-Feature Engineering & Data Preprocessing/10-Pipeline Engineering (scikit-learn).ipynb
+        status: review
+        level: advanced
+        description: Reusable transformations, train/test consistency, and reproducibility.
+        data: synthetic
+      - title: Handling Imbalanced Data
+        source: S05-11
+        file: M10-Feature Engineering & Data Preprocessing/11-Handling Imbalanced Data.ipynb
+        status: review
+        level: expert
+        description: Resampling, class weights, and preprocessing for skewed targets.
+        data: synthetic
+      - title: Temporal Feature Engineering
+        source: S05-12
+        file: M10-Feature Engineering & Data Preprocessing/12-Temporal Feature Engineering.ipynb
+        status: merge
+        level: advanced
+        description: Lag features, rolling statistics, and date-derived signals.
+        data: synthetic
+        notes: 'merge into S08-06: temporal features live in M17; keep a pointer here'
+      - title: Text and Categorical Cleaning (Advanced)
+        source: S05-13
+        file: M10-Feature Engineering & Data Preprocessing/13-Text and Categorical Cleaning (Advanced).ipynb
+        status: review
+        level: expert
+        description: Standardizing labels, handling rare categories, and normalization.
+        data: synthetic
+      - title: Data Validation with pandera
+        status: planned
+        file: null
+      - title: Embeddings as Features
+        status: planned
+        file: null
+      - title: Feature Stores and Reuse
+        source: S05-14
+        file: M10-Feature Engineering & Data Preprocessing/16-Feature Stores and Reuse.ipynb
+        status: realise
+        level: expert
+        description: Persisting engineered features for repeatable model training.
+        data: mock
+  - id: M11
+    name: Data Engineering & Orchestration
+    group: Data
+    prereqs:
+      - M07
+      - M02
+    gpu: none
+    services:
+      - postgres
+      - airflow
+    lessons:
+      - title: The Modern Data Stack & ELT Physics
+        source: S15-01
+        file: M11-Data Engineering & Orchestration/01-The Modern Data Stack & ELT Physics.ipynb
+        status: review
+        level: beginner
+        description: Modern ELT stacks and data flow architectures.
+        data: real
+      - title: Dimensional Data Modeling (Kimball)
+        source: S15-02
+        file: M11-Data Engineering & Orchestration/02-Dimensional Data Modeling (Kimball).ipynb
+        status: review
+        level: intermediate
+        description: Star schemas, facts, dimensions, and modeling tradeoffs.
+        data: synthetic
+      - title: Transformations with dbt (Data Build Tool)
+        source: S15-03
+        file: M11-Data Engineering & Orchestration/03-Transformations with dbt (Data Build Tool).ipynb
+        status: realise
+        level: intermediate
+        description: dbt patterns, models, testing and CI.
+        data: mock
+      - title: Data Ingestion with dlt
+        status: planned
+        file: null
+      - title: Apache Airflow Foundations
+        source: S15-04
+        file: M11-Data Engineering & Orchestration/05-Apache Airflow Foundations.ipynb
+        status: review
+        level: intermediate
+        description: DAG design, scheduling, and orchestration basics.
+        data: synthetic
+      - title: Advanced Airflow Orchestration
+        source: S15-05
+        file: M11-Data Engineering & Orchestration/06-Advanced Airflow Orchestration.ipynb
+        status: review
+        level: advanced
+        description: Complex DAG patterns, sensors, and backfills.
+        data: synthetic
+      - title: 'Airflow 3: What Changed'
+        status: planned
+        file: null
+      - title: Asset-Based Orchestration with Dagster
+        status: planned
+        file: null
+      - title: Incremental Data Loading Physics
+        source: S15-06
+        file: M11-Data Engineering & Orchestration/09-Incremental Data Loading Physics.ipynb
+        status: review
+        level: advanced
+        description: CDC, idempotency, and incremental ingestion techniques.
+        data: synthetic
+      - title: Data Quality via Great Expectations
+        source: S15-07
+        file: M11-Data Engineering & Orchestration/10-Data Quality via Great Expectations.ipynb
+        status: review
+        level: advanced
+        description: Data validation, expectations, and test-driven QA.
+        data: synthetic
+  - id: M12
+    name: Streaming & Lakehouse
+    group: Data
+    prereqs:
+      - M11
+    gpu: none
+    services:
+      - kafka
+      - minio
+    lessons:
+      - title: Change Data Capture (CDC) with Debezium
+        source: S15-08
+        file: M12-Streaming & Lakehouse/01-Change Data Capture (CDC) with Debezium.ipynb
+        status: realise
+        level: advanced
+        description: CDC patterns and Debezium integration.
+        data: mock
+      - title: Event Streaming with Apache Kafka
+        source: S15-09
+        file: M12-Streaming & Lakehouse/02-Event Streaming with Apache Kafka.ipynb
+        status: review
+        level: advanced
+        description: Kafka topics, partitions, and stream processing basics.
+        data: synthetic
+      - title: Stream Processing with Apache Flink
+        status: planned
+        file: null
+      - title: The Lakehouse Architecture (Iceberg - Delta)
+        source: S15-10
+        file: M12-Streaming & Lakehouse/04-The Lakehouse Architecture (Iceberg - Delta).ipynb
+        status: review
+        level: expert
+        description: Lakehouse design, ACID tables and formats.
+        data: synthetic
+      - title: Open Table Catalogs (Iceberg REST)
+        status: planned
+        file: null
+      - title: Data Contracts & Schema Registries
+        source: S15-11
+        file: M12-Streaming & Lakehouse/06-Data Contracts & Schema Registries.ipynb
+        status: review
+        level: expert
+        description: Contracts, schema evolution, and governance patterns.
+        data: synthetic
+      - title: Data Observability & Lineage
+        source: S15-12
+        file: M12-Streaming & Lakehouse/07-Data Observability & Lineage.ipynb
+        status: realise
+        level: expert
+        description: Lineage, observability tooling and alerting for data.
+        data: mock
+  - id: M13
+    name: Spark & Distributed Data Processing
+    group: Data
+    prereqs:
+      - M08
+      - M11
+    gpu: none
+    lessons:
+      - title: The Physics of Distributed Compute
+        source: S16-01
+        file: M13-Spark & Distributed Data Processing/01-The Physics of Distributed Compute.ipynb
+        status: review
+        level: beginner
+        description: Cluster compute fundamentals and execution models.
+        data: synthetic
+      - title: The Catalyst Optimizer & Execution Plans
+        source: S16-02
+        file: M13-Spark & Distributed Data Processing/02-The Catalyst Optimizer & Execution Plans.ipynb
+        status: review
+        level: intermediate
+        description: Query planning, logical/physical plans and optimization.
+        data: synthetic
+      - title: Partitioning & The Shuffle Penalty
+        source: S16-03
+        file: M13-Spark & Distributed Data Processing/03-Partitioning & The Shuffle Penalty.ipynb
+        status: review
+        level: intermediate
+        description: Partitioning strategies and the cost of shuffles.
+        data: synthetic
+      - title: Distributed Joins & Broadcast Physics
+        source: S16-04
+        file: M13-Spark & Distributed Data Processing/04-Distributed Joins & Broadcast Physics.ipynb
+        status: review
+        level: advanced
+        description: Join strategies and broadcast join tradeoffs.
+        data: synthetic
+      - title: Vectorized Computation (Apache Arrow)
+        source: S16-05
+        file: M13-Spark & Distributed Data Processing/05-Vectorized Computation (Apache Arrow).ipynb
+        status: review
+        level: advanced
+        description: Arrow-based vectorized execution and IO performance.
+        data: synthetic
+      - title: Window Functions & Stateful Bounding
+        source: S16-06
+        file: M13-Spark & Distributed Data Processing/06-Window Functions & Stateful Bounding.ipynb
+        status: review
+        level: advanced
+        description: Windowed analytics and stateful computation patterns.
+        data: synthetic
+      - title: Data Skew & Cryptographic Salting
+        source: S16-07
+        file: M13-Spark & Distributed Data Processing/07-Data Skew & Cryptographic Salting.ipynb
+        status: review
+        level: advanced
+        description: Skew detection and salting strategies for joins.
+        data: synthetic
+      - title: Structured Streaming & Watermarks
+        source: S16-08
+        file: M13-Spark & Distributed Data Processing/08-Structured Streaming & Watermarks.ipynb
+        status: review
+        level: advanced
+        description: Streaming processing, watermarks, and time handling.
+        data: synthetic
+      - title: Delta Lake Integration (Lakehouse Scaling)
+        source: S16-09
+        file: M13-Spark & Distributed Data Processing/09-Delta Lake Integration (Lakehouse Scaling).ipynb
+        status: review
+        level: expert
+        description: Delta Lake usage patterns and ACID table integration.
+        data: synthetic
+      - title: Cluster Optimization & The Spark UI
+        source: S16-10
+        file: M13-Spark & Distributed Data Processing/10-Cluster Optimization & The Spark UI.ipynb
+        status: review
+        level: expert
+        description: Tuning clusters, executors, and using the Spark UI effectively.
+        data: synthetic
+      - title: Spark 4.0 (Spark Connect, ANSI Mode, VARIANT)
+        status: planned
+        file: null
+      - title: 'Beyond Spark: Polars, DuckDB, Ray Data & Daft'
+        status: planned
+        file: null
+  - id: M14
+    name: Experimentation & A/B Testing
+    group: Data Science
+    prereqs:
+      - M06
+      - M08
+    gpu: none
+    lessons:
+      - title: Python Statistics Toolkit (SciPy, statsmodels, pingouin)
+        status: planned
+        file: null
+      - title: Experiment Design & Metric Selection
+        status: planned
+        file: null
+      - title: A/B Testing End to End in Python
+        status: planned
+        file: null
+      - title: Variance Reduction with CUPED
+        status: planned
+        file: null
+      - title: Sequential Testing & Safe Peeking
+        status: planned
+        file: null
+      - title: Multi-Armed Bandits for Online Experiments
+        status: planned
+        file: null
+  - id: M15
+    name: Causal Inference
+    group: Data Science
+    prereqs:
+      - M14
+    gpu: none
+    lessons:
+      - title: Causal Questions & Directed Acyclic Graphs
+        status: planned
+        file: null
+      - title: Potential Outcomes & Confounding
+        status: planned
+        file: null
+      - title: Propensity Scores & Matching
+        status: planned
+        file: null
+      - title: Difference-in-Differences & Synthetic Control
+        status: planned
+        file: null
+      - title: Causal Inference Workflow with DoWhy
+        status: planned
+        file: null
+      - title: Heterogeneous Effects & Uplift Modeling (EconML)
+        status: planned
+        file: null
+  - id: M16
+    name: Classical Machine Learning
+    group: Data Science
+    prereqs:
+      - M05
+      - M08
+    recommended:
+      - M06
+      - M10
+    gpu: none
+    lessons:
+      - title: ML Problem Framing
+        source: S07-01
+        file: M16-Classical Machine Learning/01-ML Problem Framing.ipynb
+        status: review
+        level: beginner
+        description: Problem definition, success metrics, and business alignment.
+        data: synthetic
+      - title: Gradient Descent & Optimization
+        source: S07-02
+        file: M16-Classical Machine Learning/02-Gradient Descent & Optimization.ipynb
+        status: review
+        level: intermediate
+        description: Optimization algorithms, learning rates, and convergence.
+        data: synthetic
+      - title: Linear Regression
+        source: S07-03
+        file: M16-Classical Machine Learning/03-Linear Regression.ipynb
+        status: review
+        level: beginner
+        description: Regression basics, least squares, and interpretation.
+        data: synthetic
+      - title: Logistic Regression
+        source: S07-04
+        file: M16-Classical Machine Learning/04-Logistic Regression.ipynb
+        status: review
+        level: intermediate
+        description: Binary classification, odds, and probability calibration.
+        data: synthetic
+      - title: Distance Models (KNN)
+        source: S07-05
+        file: M16-Classical Machine Learning/05-Distance Models (KNN).ipynb
+        status: review
+        level: intermediate
+        description: Instance-based learning, distance metrics, and KNN.
+        data: synthetic
+      - title: Support Vector Machines
+        source: S07-06
+        file: M16-Classical Machine Learning/06-Support Vector Machines.ipynb
+        status: review
+        level: advanced
+        description: Margin maximization, kernels, and SVM workflows.
+        data: synthetic
+      - title: Naive Bayes
+        source: S07-07
+        file: M16-Classical Machine Learning/07-Naive Bayes.ipynb
+        status: review
+        level: intermediate
+        description: Probabilistic classification and conditional independence.
+        data: synthetic
+      - title: Decision Trees
+        source: S07-08
+        file: M16-Classical Machine Learning/08-Decision Trees.ipynb
+        status: review
+        level: intermediate
+        description: Tree construction, splitting criteria, and interpretability.
+        data: synthetic
+      - title: Bias-Variance & Regularization
+        source: S07-09
+        file: M16-Classical Machine Learning/09-Bias-Variance & Regularization.ipynb
+        status: review
+        level: intermediate
+        description: Underfitting, overfitting, and generalization control.
+        data: synthetic
+      - title: 'Ensemble: Bagging'
+        source: S07-10
+        file: M16-Classical Machine Learning/10-Ensemble - Bagging.ipynb
+        status: review
+        level: advanced
+        description: Bootstrap aggregating and parallel ensemble methods.
+        data: synthetic
+      - title: 'Ensemble: Boosting'
+        source: S07-11
+        file: M16-Classical Machine Learning/11-Ensemble - Boosting.ipynb
+        status: review
+        level: advanced
+        description: Sequential ensemble building and gradient boosting.
+        data: synthetic
+      - title: Gradient Boosting Libraries (XGBoost, LightGBM, CatBoost)
+        status: planned
+        file: null
+      - title: 'Unsupervised: Clustering'
+        source: S07-12
+        file: M16-Classical Machine Learning/13-Unsupervised - Clustering.ipynb
+        status: review
+        level: advanced
+        description: K-means, hierarchical clustering, and cluster evaluation.
+        data: synthetic
+      - title: 'Unsupervised: Dimensionality'
+        source: S07-13
+        file: M16-Classical Machine Learning/14-Unsupervised - Dimensionality.ipynb
+        status: review
+        level: advanced
+        description: PCA, manifold learning, and dimensionality reduction.
+        data: synthetic
+      - title: Anomaly Detection (Isolation Forest & LOF)
+        status: planned
+        file: null
+      - title: Model Evaluation & Validation
+        source: S07-14
+        file: M16-Classical Machine Learning/16-Model Evaluation & Validation.ipynb
+        status: review
+        level: intermediate
+        description: Cross-validation, metrics, and model selection.
+        data: synthetic
+      - title: Classification Metrics
+        source: S07-15
+        file: M16-Classical Machine Learning/17-Classification Metrics.ipynb
+        status: review
+        level: intermediate
+        description: Precision, recall, F1, ROC-AUC, and threshold selection.
+        data: synthetic
+      - title: Multiclass and Multilabel
+        source: S07-17
+        file: M16-Classical Machine Learning/18-Multiclass and Multilabel.ipynb
+        status: review
+        level: advanced
+        description: Multi-class classification and multilabel strategies.
+        data: synthetic
+      - title: Probability Calibration
+        source: S07-18
+        file: M16-Classical Machine Learning/19-Probability Calibration.ipynb
+        status: review
+        level: advanced
+        description: Calibration methods and reliability diagrams.
+        data: synthetic
+      - title: Conformal Prediction (MAPIE)
+        status: planned
+        file: null
+      - title: Building ML Pipelines
+        source: S07-19
+        file: M16-Classical Machine Learning/21-Building ML Pipelines.ipynb
+        status: review
+        level: advanced
+        description: End-to-end pipeline design and reproducibility.
+        data: synthetic
+      - title: Tabular Foundation Models (TabPFN)
+        status: planned
+        file: null
+  - id: M17
+    name: Time Series & Forecasting
+    group: Data Science
+    prereqs:
+      - M16
+    gpu: optional
+    lessons:
+      - title: Time Series Problem Framing
+        source: S08-01
+        file: M17-Time Series & Forecasting/01-Time Series Problem Framing.ipynb
+        status: review
+        level: beginner
+        description: Problem definition, horizons, and baseline strategies.
+        data: synthetic
+      - title: Components & Decomposition
+        source: S08-02
+        file: M17-Time Series & Forecasting/02-Components & Decomposition.ipynb
+        status: review
+        level: intermediate
+        description: Trend/seasonality decomposition and component analysis.
+        data: synthetic
+      - title: Exploratory Time Series Analysis
+        source: S08-03
+        file: M17-Time Series & Forecasting/03-Exploratory Time Series Analysis.ipynb
+        status: review
+        level: intermediate
+        description: Decomposition, ACF/PACF inspection, and diagnostics.
+        data: synthetic
+      - title: Autocorrelation (ACF-PACF)
+        source: S08-04
+        file: M17-Time Series & Forecasting/04-Autocorrelation (ACF-PACF).ipynb
+        status: review
+        level: intermediate
+        description: ACF/PACF interpretation and lag selection.
+        data: synthetic
+      - title: Stationarity & Differencing
+        source: S08-05
+        file: M17-Time Series & Forecasting/05-Stationarity & Differencing.ipynb
+        status: review
+        level: intermediate
+        description: Unit roots, tests, and differencing strategies.
+        data: synthetic
+      - title: Temporal Feature Engineering
+        source: S08-06
+        file: M17-Time Series & Forecasting/06-Temporal Feature Engineering.ipynb
+        status: review
+        level: advanced
+        description: Lag/window features, calendar effects, and encodings.
+        data: synthetic
+      - title: Lag & Window Features
+        source: S08-07
+        file: M17-Time Series & Forecasting/07-Lag & Window Features.ipynb
+        status: merge
+        level: advanced
+        description: Rolling statistics, expanding windows, and feature lags.
+        data: synthetic
+        notes: 'merge into S08-06: merge both ''Temporal Feature Engineering'' parts; tabularisation part → S08-13'
+      - title: 'Classic: Exponential Smoothing'
+        source: S08-08
+        file: M17-Time Series & Forecasting/08-Classic - Exponential Smoothing.ipynb
+        status: review
+        level: advanced
+        description: Simple/seasonal exponential smoothing and Holt-Winters.
+        data: synthetic
+      - title: 'Classic: ARIMA Models'
+        source: S08-09
+        file: M17-Time Series & Forecasting/09-Classic - ARIMA Models.ipynb
+        status: review
+        level: advanced
+        description: ARIMA identification, estimation, and forecasting.
+        data: synthetic
+      - title: 'Classic: SARIMAX'
+        source: S08-10
+        file: M17-Time Series & Forecasting/10-Classic - SARIMAX.ipynb
+        status: review
+        level: advanced
+        description: Seasonal ARIMA with exogenous regressors.
+        data: synthetic
+      - title: Time Series Validation Strategies
+        source: S08-11
+        file: M17-Time Series & Forecasting/11-Time Series Validation Strategies.ipynb
+        status: review
+        level: advanced
+        description: Walk-forward validation, backtesting, and horizons.
+        data: synthetic
+      - title: Forecasting Metrics
+        source: S08-12
+        file: M17-Time Series & Forecasting/12-Forecasting Metrics.ipynb
+        status: review
+        level: advanced
+        description: MAPE, RMSE, MAE, and probabilistic metrics.
+        data: synthetic
+      - title: ML Forecasting (Tabularization)
+        source: S08-13
+        file: M17-Time Series & Forecasting/13-ML Forecasting (Tabularization).ipynb
+        status: review
+        level: advanced
+        description: Converting series to supervised tabular format for ML.
+        data: synthetic
+      - title: Global vs. Local Models
+        source: S08-14
+        file: M17-Time Series & Forecasting/14-Global vs. Local Models.ipynb
+        status: review
+        level: advanced
+        description: Model per-series vs pooled/global approaches.
+        data: synthetic
+      - title: Forecasting with Nixtla (statsforecast & mlforecast)
+        status: planned
+        file: null
+      - title: Multivariate Forecasting (VAR)
+        source: S08-15
+        file: M17-Time Series & Forecasting/16-Multivariate Forecasting (VAR).ipynb
+        status: review
+        level: advanced
+        description: VAR models and multivariate temporal dependencies.
+        data: synthetic
+      - title: 'Deep Learning: LSTMs'
+        source: S08-16
+        file: M17-Time Series & Forecasting/17-Deep Learning - LSTMs.ipynb
+        status: review
+        level: advanced
+        description: Sequence models, LSTM architectures, and training tips.
+        data: synthetic
+      - title: 'Deep Learning: Transformers'
+        source: S08-17
+        file: M17-Time Series & Forecasting/18-Deep Learning - Transformers.ipynb
+        status: review
+        level: advanced
+        description: Transformer-based time series models and attention.
+        data: synthetic
+      - title: Neural Forecasting (N-HiTS, PatchTST)
+        status: planned
+        file: null
+      - title: Time Series Foundation Models (Chronos, TimesFM)
+        status: planned
+        file: null
+      - title: Hierarchical Forecasting
+        source: S08-18
+        file: M17-Time Series & Forecasting/21-Hierarchical Forecasting.ipynb
+        status: review
+        level: expert
+        description: Reconciliation, aggregation, and bottom-up/top-down methods.
+        data: synthetic
+      - title: Uncertainty Quantification
+        source: S08-19
+        file: M17-Time Series & Forecasting/22-Uncertainty Quantification.ipynb
+        status: review
+        level: expert
+        description: Prediction intervals, quantiles, and probabilistic forecasts.
+        data: synthetic
+      - title: Anomaly Detection in Time
+        source: S08-20
+        file: M17-Time Series & Forecasting/23-Anomaly Detection in Time.ipynb
+        status: review
+        level: expert
+        description: Detecting temporal anomalies and change points.
+        data: synthetic
+      - title: 'MLOps: Continuous Backtesting'
+        source: S08-21
+        file: M17-Time Series & Forecasting/24-MLOps - Continuous Backtesting.ipynb
+        status: review
+        level: expert
+        description: Automated backtests, scheduling, and monitoring.
+        data: synthetic
+      - title: 'MLOps: Operationalization'
+        source: S08-22
+        file: M17-Time Series & Forecasting/25-MLOps - Operationalization.ipynb
+        status: realise
+        level: expert
+        description: Serving, retraining, and production considerations.
+        data: mock
+  - id: M18
+    name: Recommender Systems
+    group: Data Science
+    prereqs:
+      - M16
+    recommended:
+      - M20
+    gpu: optional
+    lessons:
+      - title: Recommender Systems Fundamentals & Metrics
+        status: planned
+        file: null
+      - title: Collaborative Filtering & Matrix Factorization
+        status: planned
+        file: null
+      - title: Implicit Feedback (ALS & BPR)
+        status: planned
+        file: null
+      - title: Content-Based & Hybrid Recommenders
+        status: planned
+        file: null
+      - title: Two-Tower Retrieval & Ranking
+        status: planned
+        file: null
+      - title: LLM-Powered Recommendation
+        status: planned
+        file: null
+  - id: M19
+    name: Graph Data Science
+    group: Data Science
+    prereqs:
+      - M16
+    recommended:
+      - M20
+    gpu: optional
+    services:
+      - neo4j
+    lessons:
+      - title: Graph Fundamentals & Network Construction (NetworkX)
+        source: S22-01
+        file: M19-Graph Data Science/01-Graph Fundamentals & Network Construction (NetworkX).ipynb
+        status: review
+        level: intermediate
+        description: Nodes, edges, adjacency representations, and graph construction in Python.
+        data: synthetic
+      - title: Centrality & Network Metrics (NetworkX)
+        source: S22-02
+        file: M19-Graph Data Science/02-Centrality & Network Metrics (NetworkX).ipynb
+        status: review
+        level: intermediate
+        description: Degree, betweenness, closeness, and eigenvector centrality measures.
+        data: synthetic
+      - title: Path Finding & Traversal Algorithms (NetworkX - igraph)
+        source: S22-03
+        file: M19-Graph Data Science/03-Path Finding & Traversal Algorithms (NetworkX - igraph).ipynb
+        status: realise
+        level: advanced
+        description: BFS, DFS, shortest paths, and traversal logic across graph libraries.
+        data: synthetic
+      - title: Community Detection (Louvain & Leiden - python-igraph)
+        source: S22-04
+        file: M19-Graph Data Science/04-Community Detection (Louvain & Leiden - python-igraph).ipynb
+        status: realise
+        level: advanced
+        description: Modularity optimization, clustering, and network segmentation algorithms.
+        data: synthetic
+      - title: Graph Databases & Cypher Queries (Neo4j)
+        source: S22-05
+        file: M19-Graph Data Science/05-Graph Databases & Cypher Queries (Neo4j).ipynb
+        status: realise
+        level: advanced
+        description: Native graph storage, Cypher query language, and relationship-first modeling.
+        data: synthetic
+      - title: Graph Data Modeling at Scale (Neo4j Graph Data Science Library)
+        source: S22-06
+        file: M19-Graph Data Science/06-Graph Data Modeling at Scale (Neo4j Graph Data Science Library).ipynb
+        status: realise
+        level: advanced
+        description: Schema design, projection, and scalable graph algorithms in production.
+        data: synthetic
+      - title: Graph Embeddings (Node2Vec)
+        source: S22-07
+        file: M19-Graph Data Science/07-Graph Embeddings (Node2Vec).ipynb
+        status: realise
+        level: expert
+        description: Random-walk-based structural embeddings and similarity learning.
+        data: synthetic
+      - title: Graph Neural Network Foundations (PyTorch Geometric)
+        source: S22-08
+        file: M19-Graph Data Science/08-Graph Neural Network Foundations (PyTorch Geometric).ipynb
+        status: realise
+        level: expert
+        description: Message passing, node classification, and link prediction with GNNs.
+        data: synthetic
+      - title: Graph Machine Learning at Scale (DGL - Deep Graph Library)
+        source: S22-09
+        file: M19-Graph Data Science/09-Graph Machine Learning at Scale (DGL - Deep Graph Library).ipynb
+        status: realise
+        level: expert
+        description: Distributed graph learning and large-scale GNN training pipelines.
+        data: synthetic
+      - title: Temporal & Dynamic Graphs (PyTorch Geometric Temporal)
+        source: S22-10
+        file: M19-Graph Data Science/10-Temporal & Dynamic Graphs (PyTorch Geometric Temporal).ipynb
+        status: realise
+        level: expert
+        description: Evolving networks, event streams, and time-aware graph representation learning.
+        data: synthetic
+      - title: Graph Visualization (Gephi - PyVis)
+        source: S22-11
+        file: M19-Graph Data Science/11-Graph Visualization (Gephi - PyVis).ipynb
+        status: realise
+        level: expert
+        description: Layouts, readability, and interactive storytelling with network graphs.
+        data: synthetic
+      - title: Enterprise Graph Applications & Governance (Neo4j)
+        source: S22-12
+        file: M19-Graph Data Science/12-Enterprise Graph Applications & Governance (Neo4j).ipynb
+        status: realise
+        level: expert
+        description: Knowledge graphs, fraud rings, recommendation systems, and data governance.
+        data: synthetic
+      - title: Knowledge Graphs for LLM Applications
+        status: planned
+        file: null
+  - id: M20
+    name: Deep Learning Foundations
+    group: Deep Learning & Modalities
+    prereqs:
+      - M05
+      - M01
+    recommended:
+      - M16
+    gpu: optional
+    lessons:
+      - title: Tensor Mathematics
+        source: S09-01
+        file: M20-Deep Learning Foundations/01-Tensor Mathematics.ipynb
+        status: review
+        level: beginner
+        description: Tensor operations and linear algebra foundations for DL.
+        data: synthetic
+      - title: The Artificial Neuron
+        source: S09-02
+        file: M20-Deep Learning Foundations/02-The Artificial Neuron.ipynb
+        status: review
+        level: beginner
+        description: Neuron model, weights, bias, and activation intuition.
+        data: synthetic
+      - title: Activation Functions
+        source: S09-03
+        file: M20-Deep Learning Foundations/03-Activation Functions.ipynb
+        status: review
+        level: beginner
+        description: Common activations and their properties.
+        data: synthetic
+      - title: Multi-Layer Perceptrons
+        source: S09-04
+        file: M20-Deep Learning Foundations/04-Multi-Layer Perceptrons.ipynb
+        status: review
+        level: intermediate
+        description: MLP architectures and feedforward networks.
+        data: synthetic
+      - title: Loss Functions
+        source: S09-05
+        file: M20-Deep Learning Foundations/05-Loss Functions.ipynb
+        status: review
+        level: intermediate
+        description: Loss choices and their effects on training.
+        data: synthetic
+      - title: Gradient Descent
+        source: S09-06
+        file: M20-Deep Learning Foundations/06-Gradient Descent.ipynb
+        status: review
+        level: intermediate
+        description: Optimization basics and learning dynamics.
+        data: synthetic
+      - title: Backpropagation
+        source: S09-07
+        file: M20-Deep Learning Foundations/07-Backpropagation.ipynb
+        status: review
+        level: intermediate
+        description: Backprop algorithm and computational graph derivatives.
+        data: synthetic
+      - title: Auto-Differentiation
+        source: S09-08
+        file: M20-Deep Learning Foundations/08-Auto-Differentiation.ipynb
+        status: review
+        level: intermediate
+        description: Autograd mechanics and practical tips.
+        data: synthetic
+      - title: Batches & DataLoaders
+        source: S09-09
+        file: M20-Deep Learning Foundations/09-Batches & DataLoaders.ipynb
+        status: review
+        level: intermediate
+        description: Mini-batching, loaders, and efficient data pipelines.
+        data: synthetic
+      - title: Advanced Optimizers
+        source: S09-10
+        file: M20-Deep Learning Foundations/10-Advanced Optimizers.ipynb
+        status: review
+        level: advanced
+        description: Adam, RMSProp, and optimizer variants.
+        data: synthetic
+      - title: The Training Loop
+        source: S09-11
+        file: M20-Deep Learning Foundations/11-The Training Loop.ipynb
+        status: review
+        level: advanced
+        description: Epochs, steps, evaluation, and debugging loops.
+        data: synthetic
+      - title: Gradient Instability
+        source: S09-12
+        file: M20-Deep Learning Foundations/12-Gradient Instability.ipynb
+        status: review
+        level: advanced
+        description: Vanishing/exploding gradients and remedies.
+        data: synthetic
+      - title: Weight Initialization
+        source: S09-13
+        file: M20-Deep Learning Foundations/13-Weight Initialization.ipynb
+        status: review
+        level: advanced
+        description: Initialization schemes and their impact.
+        data: synthetic
+      - title: 'Regularization: Dropout'
+        source: S09-14
+        file: M20-Deep Learning Foundations/14-Regularization - Dropout.ipynb
+        status: review
+        level: advanced
+        description: Dropout and other regularization techniques.
+        data: synthetic
+      - title: Normalization Layers
+        source: S09-15
+        file: M20-Deep Learning Foundations/15-Normalization Layers.ipynb
+        status: review
+        level: advanced
+        description: BatchNorm, LayerNorm and training stability.
+        data: synthetic
+      - title: Learning Rate Scheduling
+        source: S09-16
+        file: M20-Deep Learning Foundations/16-Learning Rate Scheduling.ipynb
+        status: review
+        level: advanced
+        description: Schedulers, warmup, and cyclic strategies.
+        data: synthetic
+      - title: Residual Connections & Modern Building Blocks
+        status: planned
+        file: null
+      - title: Handling Imbalanced Data
+        source: S09-17
+        file: M20-Deep Learning Foundations/18-Handling Imbalanced Data.ipynb
+        status: merge
+        level: advanced
+        description: Techniques for class imbalance in DL.
+        data: synthetic
+        notes: 'merge into S05-11: class imbalance canonical home is M10'
+      - title: Deep Learning Diagnostics
+        source: S09-18
+        file: M20-Deep Learning Foundations/19-Deep Learning Diagnostics.ipynb
+        status: review
+        level: advanced
+        description: Training diagnostics, visualizations, and fixes.
+        data: synthetic
+      - title: Hardware Acceleration
+        source: S09-19
+        file: M20-Deep Learning Foundations/20-Hardware Acceleration.ipynb
+        status: review
+        level: expert
+        description: GPUs, mixed precision, and performance tips.
+        data: synthetic
+      - title: torch.compile & Mixed Precision (bf16, FP8)
+        status: planned
+        file: null
+      - title: Callbacks & Checkpointing
+        source: S09-20
+        file: M20-Deep Learning Foundations/22-Callbacks & Checkpointing.ipynb
+        status: review
+        level: advanced
+        description: Checkpoints, callbacks, and training utilities.
+        data: synthetic
+      - title: Training with Lightning & Accelerate
+        status: planned
+        file: null
+      - title: Multi-Task Architectures
+        source: S09-22
+        file: M20-Deep Learning Foundations/24-Multi-Task Architectures.ipynb
+        status: review
+        level: advanced
+        description: Multi-head and multi-task model designs.
+        data: synthetic
+      - title: Representation Learning & World Models (Contrastive, Masked, JEPA)
+        status: planned
+        file: null
+      - title: Scaling Laws
+        status: planned
+        file: null
+  - id: M21
+    name: Computer Vision
+    group: Deep Learning & Modalities
+    prereqs:
+      - M20
+    gpu: required
+    lessons:
+      - title: Pixels, Tensors & Color Spaces
+        source: S10-01
+        file: M21-Computer Vision/01-Pixels, Tensors & Color Spaces.ipynb
+        status: review
+        level: beginner
+        description: Image representation, color spaces, and pixel operations.
+        data: real
+      - title: The Math of Convolutions
+        source: S10-02
+        file: M21-Computer Vision/02-The Math of Convolutions.ipynb
+        status: review
+        level: beginner
+        description: Convolution math and filter interpretation.
+        data: real
+      - title: Pooling & Receptive Fields
+        source: S10-03
+        file: M21-Computer Vision/03-Pooling & Receptive Fields.ipynb
+        status: review
+        level: beginner
+        description: Pooling operations and receptive field concepts.
+        data: real
+      - title: Architecting CNNs in PyTorch
+        source: S10-04
+        file: M21-Computer Vision/04-Architecting CNNs in PyTorch.ipynb
+        status: review
+        level: intermediate
+        description: Building CNNs and best practices in PyTorch.
+        data: real
+      - title: Enterprise Backbones
+        source: S10-05
+        file: M21-Computer Vision/05-Enterprise Backbones.ipynb
+        status: review
+        level: advanced
+        description: Backbone architectures and pretrained models.
+        data: real
+      - title: Transfer Learning & Fine-Tuning
+        source: S10-06
+        file: M21-Computer Vision/06-Transfer Learning & Fine-Tuning.ipynb
+        status: review
+        level: advanced
+        description: Fine-tuning strategies and transfer learning workflows.
+        data: real
+      - title: Vision Data Pipelines
+        source: S10-07
+        file: M21-Computer Vision/07-Vision Data Pipelines.ipynb
+        status: review
+        level: advanced
+        description: Augmentation, dataset versioning, and loaders.
+        data: real
+      - title: 'Object Detection I: Metrics'
+        source: S10-08
+        file: M21-Computer Vision/08-Object Detection I - Metrics.ipynb
+        status: review
+        level: advanced
+        description: Detection metrics, IoU, and evaluation.
+        data: real
+      - title: 'Object Detection II: Architectures'
+        source: S10-09
+        file: M21-Computer Vision/09-Object Detection II - Architectures.ipynb
+        status: review
+        level: advanced
+        description: One-stage vs two-stage detectors and modern models.
+        data: real
+      - title: Modern Object Detection (YOLO11 & RT-DETR)
+        status: planned
+        file: null
+      - title: Semantic Segmentation
+        source: S10-10
+        file: M21-Computer Vision/11-Semantic Segmentation.ipynb
+        status: review
+        level: advanced
+        description: Pixel-wise labeling and segmentation architectures.
+        data: real
+      - title: Segment Anything (SAM 2)
+        status: planned
+        file: null
+      - title: Vision Transformers (ViT)
+        source: S10-11
+        file: M21-Computer Vision/13-Vision Transformers (ViT).ipynb
+        status: review
+        level: advanced
+        description: Transformer models for vision tasks.
+        data: real
+      - title: Self-Supervised Vision Encoders (MAE, DINOv2, I-JEPA, V-JEPA 2)
+        status: planned
+        file: null
+      - title: Vision-Language Models (CLIP, SigLIP & VLMs)
+        status: planned
+        file: null
+      - title: Document AI & OCR
+        status: planned
+        file: null
+  - id: M22
+    name: Generative Models
+    group: Deep Learning & Modalities
+    prereqs:
+      - M21
+    gpu: required
+    lessons:
+      - title: Autoencoders & Latent Space
+        source: S10-12
+        file: M22-Generative Models/01-Autoencoders & Latent Space.ipynb
+        status: review
+        level: advanced
+        description: Representation learning with autoencoders.
+        data: synthetic
+      - title: Variational Autoencoders (VAEs)
+        source: S10-13
+        file: M22-Generative Models/02-Variational Autoencoders (VAEs).ipynb
+        status: review
+        level: advanced
+        description: Probabilistic autoencoders and latent sampling.
+        data: real
+      - title: Variational Autoencoders (PyTorch)
+        source: S24-04
+        file: M22-Generative Models/03-Variational Autoencoders (PyTorch).ipynb
+        status: merge
+        level: advanced
+        description: Latent variables, reconstruction, and generative representation learning.
+        data: synthetic
+        notes: 'merge into S10-13: one VAE lesson'
+      - title: Generative Adversarial Networks
+        source: S10-14
+        file: M22-Generative Models/04-Generative Adversarial Networks.ipynb
+        status: review
+        level: advanced
+        description: GAN training, loss dynamics, and stability.
+        data: synthetic
+      - title: Advanced GANs & Pitfalls
+        source: S10-15
+        file: M22-Generative Models/05-Advanced GANs & Pitfalls.ipynb
+        status: review
+        level: expert
+        description: Improved architectures and common failure modes.
+        data: synthetic
+      - title: 'Diffusion Models I: The Math'
+        source: S10-16
+        file: M22-Generative Models/06-Diffusion Models I - The Math.ipynb
+        status: review
+        level: expert
+        description: Theory of diffusion-based generative models.
+        data: real
+      - title: Diffusion Model Fundamentals (Hugging Face Diffusers)
+        source: S24-05
+        file: M22-Generative Models/07-Diffusion Model Fundamentals (Hugging Face Diffusers).ipynb
+        status: merge
+        level: advanced
+        description: Noise schedules, denoising, and generative diffusion steps.
+        data: synthetic
+        notes: 'merge into S10-16: one diffusion-math lesson'
+      - title: 'Diffusion Models II: Latent Diffusion'
+        source: S10-17
+        file: M22-Generative Models/08-Diffusion Models II - Latent Diffusion.ipynb
+        status: realise
+        level: expert
+        description: Practical latent diffusion pipelines and training.
+        data: mock
+      - title: Flow Matching & Rectified Flow
+        status: planned
+        file: null
+      - title: Diffusion Transformers (DiT)
+        status: planned
+        file: null
+      - title: Image-to-Image & ControlNet
+        source: S10-18
+        file: M22-Generative Models/11-Image-to-Image & ControlNet.ipynb
+        status: realise
+        level: expert
+        description: Conditional generation and control mechanisms.
+        data: mock
+      - title: Generative Evaluation
+        source: S10-19
+        file: M22-Generative Models/12-Generative Evaluation.ipynb
+        status: review
+        level: expert
+        description: Metrics for generative model quality and diversity.
+        data: synthetic
+      - title: Video Generation Fundamentals
+        status: planned
+        file: null
+  - id: M23
+    name: Speech & Audio
+    group: Deep Learning & Modalities
+    prereqs:
+      - M20
+    gpu: optional
+    lessons:
+      - title: Audio Signals & Spectrograms
+        status: planned
+        file: null
+      - title: Audio Classification
+        status: planned
+        file: null
+      - title: Speech Recognition with Whisper
+        status: planned
+        file: null
+      - title: Text-to-Speech
+        status: planned
+        file: null
+      - title: Speech LLMs & Voice Agents
+        status: planned
+        file: null
+  - id: M24
+    name: Probabilistic & Bayesian Deep Learning
+    group: Deep Learning & Modalities
+    prereqs:
+      - M20
+      - M06
+    gpu: optional
+    lessons:
+      - title: Bayesian Foundations & Probabilistic Programming (PyMC)
+        source: S24-01
+        file: M24-Probabilistic & Bayesian Deep Learning/01-Bayesian Foundations & Probabilistic Programming (PyMC).ipynb
+        status: realise
+        level: beginner
+        description: Priors, posteriors, and probabilistic reasoning with a modern PPL.
+        data: synthetic
+      - title: Uncertainty Estimation (TensorFlow Probability)
+        source: S24-02
+        file: M24-Probabilistic & Bayesian Deep Learning/02-Uncertainty Estimation (TensorFlow Probability).ipynb
+        status: realise
+        level: intermediate
+        description: Aleatoric vs epistemic uncertainty and practical estimation techniques.
+        data: synthetic
+      - title: Variational Inference (Pyro)
+        source: S24-03
+        file: M24-Probabilistic & Bayesian Deep Learning/03-Variational Inference (Pyro).ipynb
+        status: realise
+        level: advanced
+        description: Approximate posterior learning and ELBO optimization.
+        data: synthetic
+      - title: Probabilistic Programming with NumPyro
+        status: planned
+        file: null
+      - title: Probabilistic Losses & Calibration (TorchUncertainty)
+        source: S24-06
+        file: M24-Probabilistic & Bayesian Deep Learning/05-Probabilistic Losses & Calibration (TorchUncertainty).ipynb
+        status: realise
+        level: advanced
+        description: Gaussian, categorical, and uncertainty-aware objectives with calibration checks.
+        data: synthetic
+      - title: Bayesian Neural Networks (Pyro - BLiTZ)
+        source: S24-07
+        file: M24-Probabilistic & Bayesian Deep Learning/06-Bayesian Neural Networks (Pyro - BLiTZ).ipynb
+        status: realise
+        level: expert
+        description: Parameter uncertainty and Monte Carlo approximation in neural nets.
+        data: synthetic
+      - title: Stochastic Training Dynamics (Monte Carlo Dropout - PyTorch)
+        source: S24-08
+        file: M24-Probabilistic & Bayesian Deep Learning/07-Stochastic Training Dynamics (Monte Carlo Dropout - PyTorch).ipynb
+        status: review
+        level: expert
+        description: Noise, regularization, and probabilistic interpretation of gradients.
+        data: synthetic
+      - title: Deep Ensembles for Uncertainty Quantification (PyTorch)
+        source: S24-09
+        file: M24-Probabilistic & Bayesian Deep Learning/08-Deep Ensembles for Uncertainty Quantification (PyTorch).ipynb
+        status: review
+        level: expert
+        description: Ensemble-based uncertainty quantification and robustness behavior.
+        data: synthetic
+      - title: Posterior Predictive & Risk-Aware Prediction (ArviZ)
+        source: S24-11
+        file: M24-Probabilistic & Bayesian Deep Learning/09-Posterior Predictive & Risk-Aware Prediction (ArviZ).ipynb
+        status: realise
+        level: expert
+        description: Estimating uncertainty bands and decision confidence under shift.
+        data: synthetic
+      - title: Decision-Theoretic Inference & Risk Communication
+        source: S24-12
+        file: M24-Probabilistic & Bayesian Deep Learning/10-Decision-Theoretic Inference & Risk Communication.ipynb
+        status: review
+        level: expert
+        description: Utility-aware prediction and uncertainty-informed action selection.
+        data: synthetic
+      - title: Normalizing Flows
+        status: planned
+        file: null
+  - id: M25
+    name: Reinforcement Learning
+    group: Deep Learning & Modalities
+    prereqs:
+      - M20
+    gpu: optional
+    lessons:
+      - title: Reinforcement Learning Fundamentals & MDPs (Gymnasium)
+        source: S25-07
+        file: M25-Reinforcement Learning/01-Reinforcement Learning Fundamentals & MDPs (Gymnasium).ipynb
+        status: realise
+        level: intermediate
+        description: Agent, environment, reward, states, actions, and Markov decision processes.
+        data: synthetic
+      - title: Value-Based Methods (Deep Q-Networks - Stable-Baselines3)
+        source: S25-08
+        file: M25-Reinforcement Learning/02-Value-Based Methods (Deep Q-Networks - Stable-Baselines3).ipynb
+        status: realise
+        level: advanced
+        description: Q-learning, SARSA, and value approximation with deep Q-networks.
+        data: synthetic
+      - title: Policy Gradient Methods (PPO - Stable-Baselines3)
+        source: S25-09
+        file: M25-Reinforcement Learning/03-Policy Gradient Methods (PPO - Stable-Baselines3).ipynb
+        status: realise
+        level: advanced
+        description: REINFORCE, actor-critic, and proximal policy optimization.
+        data: synthetic
+      - title: Exploration Strategies & Multi-Armed Bandits
+        source: S25-10
+        file: M25-Reinforcement Learning/04-Exploration Strategies & Multi-Armed Bandits.ipynb
+        status: review
+        level: advanced
+        description: Epsilon-greedy, entropy, and exploration/exploitation balance.
+        data: synthetic
+      - title: Deep RL at Scale (Ray RLlib)
+        source: S25-11
+        file: M25-Reinforcement Learning/05-Deep RL at Scale (Ray RLlib).ipynb
+        status: realise
+        level: expert
+        description: Distributed deep reinforcement learning training and scaling strategies.
+        data: synthetic
+      - title: Safe & Constrained RL
+        source: S25-12
+        file: M25-Reinforcement Learning/06-Safe & Constrained RL.ipynb
+        status: review
+        level: expert
+        description: Constraints, risk-aware policies, and deployment safeguards.
+        data: synthetic
+      - title: Sim-to-Real & Embedded RL Deployment
+        source: S25-13
+        file: M25-Reinforcement Learning/07-Sim-to-Real & Embedded RL Deployment.ipynb
+        status: review
+        level: expert
+        description: Transferring trained policies from simulation to constrained edge hardware.
+        data: synthetic
+      - title: Offline Reinforcement Learning
+        status: planned
+        file: null
+      - title: Reinforcement Learning for LLMs (RLHF, GRPO, RLVR)
+        status: planned
+        file: null
+  - id: M26
+    name: LLM Foundations
+    group: LLM & AI Applications
+    prereqs:
+      - M01
+    recommended:
+      - M20
+    gpu: optional
+    services:
+      - ollama
+    lessons:
+      - title: Tokenization & Text Math
+        source: S11-01
+        file: M26-LLM Foundations/01-Tokenization & Text Math.ipynb
+        status: review
+        level: beginner
+        description: Tokenization, vocab, and text-to-token math.
+        data: real
+      - title: Vector Semantics
+        source: S11-02
+        file: M26-LLM Foundations/02-Vector Semantics.ipynb
+        status: review
+        level: intermediate
+        description: Embedding spaces, similarity, and semantic search basics.
+        data: synthetic
+      - title: RNNs & Vanishing Gradients
+        source: S11-03
+        file: M26-LLM Foundations/03-RNNs & Vanishing Gradients.ipynb
+        status: review
+        level: advanced
+        description: Sequence models and gradient stability issues.
+        data: synthetic
+      - title: Seq2Seq & Early Attention
+        source: S11-04
+        file: M26-LLM Foundations/04-Seq2Seq & Early Attention.ipynb
+        status: review
+        level: advanced
+        description: Encoder-decoder workflows and attention intro.
+        data: synthetic
+      - title: 'Transformers I: Self-Attention'
+        source: S11-05
+        file: M26-LLM Foundations/05-Transformers I - Self-Attention.ipynb
+        status: review
+        level: advanced
+        description: Self-attention mechanisms and scaled dot-product math.
+        data: synthetic
+      - title: 'Transformers II: Architecture'
+        source: S11-06
+        file: M26-LLM Foundations/06-Transformers II - Architecture.ipynb
+        status: review
+        level: advanced
+        description: Full transformer stacks, positional encodings, and blocks.
+        data: synthetic
+      - title: Encoder Models (BERT)
+        source: S11-07
+        file: M26-LLM Foundations/07-Encoder Models (BERT).ipynb
+        status: review
+        level: advanced
+        description: Encoder-only models and masked-language pretraining.
+        data: real
+      - title: Encoder LLMs & Text Embeddings (ModernBERT)
+        status: planned
+        file: null
+      - title: Decoder Models (GPT)
+        source: S11-08
+        file: M26-LLM Foundations/09-Decoder Models (GPT).ipynb
+        status: review
+        level: advanced
+        description: Causal decoding, autoregression, and next-token modelling.
+        data: real
+      - title: Decoding Strategies
+        source: S11-09
+        file: M26-LLM Foundations/10-Decoding Strategies.ipynb
+        status: rewrite
+        level: advanced
+        description: Greedy, beam, sampling, temperature and practical tradeoffs.
+        data: synthetic
+        notes: file is a copy of lesson 08; write decoding strategies (greedy, beam, top-k/p, temperature, min-p)
+      - title: Modern LLM Architecture (RoPE, GQA, KV Cache, MoE)
+        status: planned
+        file: null
+      - title: Working with Open LLMs Locally (Ollama & Transformers)
+        status: planned
+        file: null
+      - title: Prompt & Context Engineering
+        status: planned
+        file: null
+      - title: Reasoning Models & Test-Time Compute
+        status: planned
+        file: null
+      - title: Small Language Models & Long Context
+        status: planned
+        file: null
+  - id: M27
+    name: LLM Fine-Tuning & Alignment
+    group: LLM & AI Applications
+    prereqs:
+      - M26
+    recommended:
+      - M20
+    gpu: required
+    lessons:
+      - title: Task Fine-Tuning
+        source: S11-10
+        file: M27-LLM Fine-Tuning & Alignment/01-Task Fine-Tuning.ipynb
+        status: review
+        level: advanced
+        description: Supervised fine-tuning patterns for downstream tasks.
+        data: real
+      - title: PEFT & LoRA Mathematics
+        source: S11-11
+        file: M27-LLM Fine-Tuning & Alignment/02-PEFT & LoRA Mathematics.ipynb
+        status: review
+        level: advanced
+        description: Parameter-efficient fine-tuning techniques and math.
+        data: synthetic
+      - title: Quantized LLMs (QLoRA)
+        source: S11-12
+        file: M27-LLM Fine-Tuning & Alignment/03-Quantized LLMs (QLoRA).ipynb
+        status: review
+        level: expert
+        description: Quantization strategies for LLM inference.
+        data: synthetic
+      - title: Instruction Tuning (SFT)
+        source: S11-13
+        file: M27-LLM Fine-Tuning & Alignment/04-Instruction Tuning (SFT).ipynb
+        status: review
+        level: expert
+        description: Supervised instruction datasets and tuning workflows.
+        data: real
+      - title: LLM Alignment (RLHF & DPO)
+        source: S11-14
+        file: M27-LLM Fine-Tuning & Alignment/05-LLM Alignment (RLHF & DPO).ipynb
+        status: review
+        level: expert
+        description: Alignment strategies using RLHF and direct policy optimization.
+        data: synthetic
+      - title: GRPO & RL with Verifiable Rewards
+        status: planned
+        file: null
+      - title: Synthetic Data & Distillation for LLMs
+        status: planned
+        file: null
+  - id: M28
+    name: RAG & Retrieval Systems
+    group: LLM & AI Applications
+    prereqs:
+      - M26
+    recommended:
+      - M07
+    gpu: optional
+    services:
+      - ollama
+      - postgres
+    lessons:
+      - title: The Physics of RAG
+        source: S13-01
+        file: M28-RAG & Retrieval Systems/01-The Physics of RAG.ipynb
+        status: realise
+        level: beginner
+        description: RAG conceptual workflow and system building blocks.
+        data: mock
+      - title: Document Parsing & Chunking Math
+        source: S13-02
+        file: M28-RAG & Retrieval Systems/02-Document Parsing & Chunking Math.ipynb
+        status: review
+        level: beginner
+        description: Chunking strategies, overlap, and semantic segmentation.
+        data: synthetic
+      - title: Document Parsing with Docling
+        status: planned
+        file: null
+      - title: Bi-Encoders & Dense Retrieval
+        source: S13-03
+        file: M28-RAG & Retrieval Systems/04-Bi-Encoders & Dense Retrieval.ipynb
+        status: review
+        level: intermediate
+        description: Bi-encoder training and dense retrieval pipelines.
+        data: real
+      - title: Choosing Embedding Models (MTEB & Matryoshka)
+        status: planned
+        file: null
+      - title: Vector Databases & Metadata
+        source: S13-04
+        file: M28-RAG & Retrieval Systems/06-Vector Databases & Metadata.ipynb
+        status: review
+        level: intermediate
+        description: DB choices, schema, and metadata-driven filtering.
+        data: synthetic
+      - title: pgvector in Production
+        status: planned
+        file: null
+      - title: The Mathematics of ANN (HNSW & IVF)
+        source: S13-05
+        file: M28-RAG & Retrieval Systems/08-The Mathematics of ANN (HNSW & IVF).ipynb
+        status: review
+        level: intermediate
+        description: ANN algorithms and tradeoffs for recall/latency.
+        data: synthetic
+      - title: Sparse Search & BM25
+        source: S13-06
+        file: M28-RAG & Retrieval Systems/09-Sparse Search & BM25.ipynb
+        status: review
+        level: intermediate
+        description: BM25 and sparse retrieval techniques.
+        data: synthetic
+      - title: Hybrid Search & RRF
+        source: S13-07
+        file: M28-RAG & Retrieval Systems/10-Hybrid Search & RRF.ipynb
+        status: review
+        level: advanced
+        description: Combining dense and sparse signals for robust retrieval.
+        data: synthetic
+      - title: Reranking (Cross-Encoders)
+        source: S13-08
+        file: M28-RAG & Retrieval Systems/11-Reranking (Cross-Encoders).ipynb
+        status: realise
+        level: advanced
+        description: Cross-encoder reranking and relevance calibration.
+        data: mock
+      - title: Query Transformation (HyDE)
+        source: S13-09
+        file: M28-RAG & Retrieval Systems/12-Query Transformation (HyDE).ipynb
+        status: realise
+        level: advanced
+        description: Query augmentation and hallucinated document expansion.
+        data: mock
+      - title: Contextual Retrieval & Late Chunking
+        status: planned
+        file: null
+      - title: Multi-Vector Retrieval (ColBERT & ColPali)
+        status: planned
+        file: null
+      - title: Advanced Context Topologies
+        source: S13-10
+        file: M28-RAG & Retrieval Systems/15-Advanced Context Topologies.ipynb
+        status: review
+        level: advanced
+        description: Context assembly strategies and slot-filling topologies.
+        data: synthetic
+      - title: GraphRAG Foundations
+        source: S13-11
+        file: M28-RAG & Retrieval Systems/16-GraphRAG Foundations.ipynb
+        status: review
+        level: advanced
+        description: Graph-based retrieval and knowledge augmentation.
+        data: synthetic
+  - id: M29
+    name: AI Agents & MCP
+    group: LLM & AI Applications
+    prereqs:
+      - M28
+    gpu: optional
+    services:
+      - ollama
+    lessons:
+      - title: The Physics of Agentic Workflows
+        source: S14-01
+        file: M29-AI Agents & MCP/01-The Physics of Agentic Workflows.ipynb
+        status: review
+        level: beginner
+        description: Agent lifecycle, planning loops, and orchestration basics.
+        data: real
+      - title: Function Calling & Tool Execution
+        source: S14-02
+        file: M29-AI Agents & MCP/02-Function Calling & Tool Execution.ipynb
+        status: review
+        level: intermediate
+        description: Safe function calling, tool contracts, and validations.
+        data: real
+      - title: Structured Output & Pydantic Coercion
+        source: S14-03
+        file: M29-AI Agents & MCP/03-Structured Output & Pydantic Coercion.ipynb
+        status: review
+        level: intermediate
+        description: Reliable schema outputs and coercion strategies.
+        data: real
+      - title: Model Context Protocol (MCP)
+        status: planned
+        file: null
+      - title: LangGraph Foundations (State & Nodes)
+        source: S14-04
+        file: M29-AI Agents & MCP/05-LangGraph Foundations (State & Nodes).ipynb
+        status: review
+        level: intermediate
+        description: Graph-based workflows and node-state modeling.
+        data: real
+      - title: Cyclic Routing & Conditional Edges
+        source: S14-05
+        file: M29-AI Agents & MCP/06-Cyclic Routing & Conditional Edges.ipynb
+        status: review
+        level: advanced
+        description: Routing patterns, cycles, and guard conditions.
+        data: real
+      - title: Cognitive Memory Architectures
+        source: S14-06
+        file: M29-AI Agents & MCP/07-Cognitive Memory Architectures.ipynb
+        status: review
+        level: advanced
+        description: Short/long-term memory patterns for agents.
+        data: real
+      - title: Human-in-the-Loop (HITL) Physics
+        source: S14-07
+        file: M29-AI Agents & MCP/08-Human-in-the-Loop (HITL) Physics.ipynb
+        status: review
+        level: advanced
+        description: HITL patterns, gating, and feedback loops.
+        data: real
+      - title: Agentic RAG (CRAG & Self-RAG)
+        source: S14-08
+        file: M29-AI Agents & MCP/09-Agentic RAG (CRAG & Self-RAG).ipynb
+        status: review
+        level: advanced
+        description: Combining RAG with agent orchestration patterns.
+        data: real
+      - title: Multi-Agent Network Topologies
+        source: S14-09
+        file: M29-AI Agents & MCP/10-Multi-Agent Network Topologies.ipynb
+        status: review
+        level: advanced
+        description: Topologies for agent collaboration and routing.
+        data: real
+      - title: The Supervisor Architecture
+        source: S14-10
+        file: M29-AI Agents & MCP/11-The Supervisor Architecture.ipynb
+        status: review
+        level: advanced
+        description: Supervisor patterns for orchestration and fault tolerance.
+        data: real
+      - title: Agent-to-Agent Protocol (A2A)
+        status: planned
+        file: null
+      - title: Resilient Error Handling (LLM Try-Except)
+        source: S14-11
+        file: M29-AI Agents & MCP/13-Resilient Error Handling (LLM Try-Except).ipynb
+        status: review
+        level: advanced
+        description: Robust error handling and retry strategies for agents.
+        data: real
+      - title: LangSmith Observability & Tracing
+        source: S14-12
+        file: M29-AI Agents & MCP/14-LangSmith Observability & Tracing.ipynb
+        status: review
+        level: advanced
+        description: Observability patterns and tracing agent runs.
+        data: real
+      - title: Evaluating Agentic Trajectories
+        source: S14-13
+        file: M29-AI Agents & MCP/15-Evaluating Agentic Trajectories.ipynb
+        status: review
+        level: advanced
+        description: Metrics and evaluation for multi-agent runs.
+        data: real
+      - title: Agent SDKs (OpenAI Agents SDK, Claude Agent SDK, Pydantic AI)
+        status: planned
+        file: null
+      - title: Code Agents (smolagents)
+        status: planned
+        file: null
+      - title: Computer-Use & Browser Agents
+        status: planned
+        file: null
+      - title: Agent Security & Prompt Injection
+        status: planned
+        file: null
+  - id: M30
+    name: AI Application Engineering
+    group: LLM & AI Applications
+    prereqs:
+      - M02
+      - M26
+    gpu: optional
+    services:
+      - ollama
+    lessons:
+      - title: Rapid Prototyping (Gradio)
+        source: S12-01
+        file: M30-AI Application Engineering/01-Rapid Prototyping (Gradio).ipynb
+        status: realise
+        level: beginner
+        description: Quick demo UIs and interactive prototyping with Gradio.
+        data: mock
+      - title: Stateful AI UIs (Streamlit)
+        source: S12-02
+        file: M30-AI Application Engineering/02-Stateful AI UIs (Streamlit).ipynb
+        status: realise
+        level: beginner
+        description: Building stateful interfaces for model interaction.
+        data: mock
+      - title: FastAPI & REST Physics
+        source: S12-03
+        file: M30-AI Application Engineering/03-FastAPI & REST Physics.ipynb
+        status: realise
+        level: beginner
+        description: FastAPI design patterns, routers, and endpoint best practices.
+        data: mock
+      - title: Pydantic for Machine Learning
+        source: S12-04
+        file: M30-AI Application Engineering/04-Pydantic for Machine Learning.ipynb
+        status: realise
+        level: intermediate
+        description: Validation models, schemas, and serialization for ML payloads.
+        data: mock
+      - title: Model Memory & Lifespans
+        source: S12-05
+        file: M30-AI Application Engineering/05-Model Memory & Lifespans.ipynb
+        status: realise
+        level: intermediate
+        description: Managing model lifecycle, in-memory caches and warmup strategies.
+        data: mock
+      - title: Concurrency & Blocking Inference
+        source: S12-06
+        file: M30-AI Application Engineering/06-Concurrency & Blocking Inference.ipynb
+        status: realise
+        level: advanced
+        description: Async endpoints, thread pools, and safe inference patterns.
+        data: mock
+      - title: Token Streaming (Server-Sent Events)
+        source: S12-07
+        file: M30-AI Application Engineering/07-Token Streaming (Server-Sent Events).ipynb
+        status: realise
+        level: advanced
+        description: Streaming tokens, SSE, and chunked responses.
+        data: mock
+      - title: Building MCP Servers
+        status: planned
+        file: null
+      - title: Vision Endpoints (File I-O)
+        source: S12-08
+        file: M30-AI Application Engineering/09-Vision Endpoints (File I-O).ipynb
+        status: realise
+        level: advanced
+        description: File uploads, preprocessing, and image model endpoints.
+        data: mock
+      - title: Decoupled Systems
+        source: S12-09
+        file: M30-AI Application Engineering/10-Decoupled Systems.ipynb
+        status: realise
+        level: advanced
+        description: Producer-consumer patterns and traffic shaping for ML services.
+        data: mock
+      - title: LLM Gateways & Rate Limiting (LiteLLM)
+        status: planned
+        file: null
+      - title: Semantic Caching
+        status: planned
+        file: null
+      - title: Securing GPU Endpoints
+        source: S12-10
+        file: M30-AI Application Engineering/13-Securing GPU Endpoints.ipynb
+        status: realise
+        level: expert
+        description: Auth, isolation, and secure service exposure for GPU-backed endpoints.
+        data: mock
+      - title: Background Batch Processing
+        source: S12-11
+        file: M30-AI Application Engineering/14-Background Batch Processing.ipynb
+        status: realise
+        level: advanced
+        description: Offloading heavy jobs and background task orchestration.
+        data: mock
+      - title: Mocking & Testing ML APIs
+        source: S12-12
+        file: M30-AI Application Engineering/15-Mocking & Testing ML APIs.ipynb
+        status: realise
+        level: advanced
+        description: Test patterns, mocking model responses and CI integration.
+        data: mock
+  - id: M31
+    name: Evaluation & Observability for ML and LLMs
+    group: LLM & AI Applications
+    prereqs:
+      - M28
+    gpu: optional
+    services:
+      - ollama
+    lessons:
+      - title: NLP Evaluation Metrics
+        source: S11-15
+        file: M31-Evaluation & Observability for ML and LLMs/01-NLP Evaluation Metrics.ipynb
+        status: review
+        level: advanced
+        description: BLEU, ROUGE, BERTScore and human-eval practices.
+        data: real
+      - title: Lexical & Statistical NLP Metrics
+        source: S19-01
+        file: M31-Evaluation & Observability for ML and LLMs/02-Lexical & Statistical NLP Metrics.ipynb
+        status: realise
+        level: beginner
+        description: BLEU, ROUGE, and other n-gram-overlap text evaluation metrics.
+        data: mock
+      - title: Semantic Similarity & Cross-Encoders
+        source: S19-02
+        file: M31-Evaluation & Observability for ML and LLMs/03-Semantic Similarity & Cross-Encoders.ipynb
+        status: review
+        level: beginner
+        description: Embedding-based similarity and cross-encoder scoring for text evaluation.
+        data: synthetic
+      - title: Evaluating RAG (RAGAS-TruLens)
+        source: S13-12
+        file: M31-Evaluation & Observability for ML and LLMs/04-Evaluating RAG (RAGAS-TruLens).ipynb
+        status: realise
+        level: advanced
+        description: Evaluation frameworks and reliability assessments for RAG.
+        data: mock
+      - title: The RAG Triad & LLM-as-a-Judge
+        source: S19-03
+        file: M31-Evaluation & Observability for ML and LLMs/05-The RAG Triad & LLM-as-a-Judge.ipynb
+        status: merge
+        level: intermediate
+        description: Context relevance, groundedness, and answer relevance scored via an LLM judge.
+        data: mock
+        notes: 'merge into S13-12: one RAG-triad / LLM-judge lesson'
+      - title: Hallucination Detection & Factuality
+        source: S19-04
+        file: M31-Evaluation & Observability for ML and LLMs/06-Hallucination Detection & Factuality.ipynb
+        status: review
+        level: intermediate
+        description: Detecting unsupported claims and factuality gaps in generated text.
+        data: synthetic
+      - title: RAG Hallucination Detection (TruLens)
+        source: S21-11
+        file: M31-Evaluation & Observability for ML and LLMs/07-RAG Hallucination Detection (TruLens).ipynb
+        status: merge
+        level: expert
+        description: Detecting and quantifying hallucinations in retrieval-augmented LLM outputs.
+        data: mock
+        notes: 'merge into S19-04: one hallucination-detection lesson'
+      - title: LLM Evaluation Frameworks (DeepEval, promptfoo, Inspect)
+        status: planned
+        file: null
+      - title: Benchmarks & Data Contamination
+        status: planned
+        file: null
+      - title: Data Drift & Concept Drift (Evidently AI)
+        source: S19-05
+        file: M31-Evaluation & Observability for ML and LLMs/10-Data Drift & Concept Drift (Evidently AI).ipynb
+        status: review
+        level: intermediate
+        description: Detecting distributional shift in features and model inputs over time.
+        data: synthetic
+      - title: Unlabeled Performance Estimation (NannyML)
+        source: S19-06
+        file: M31-Evaluation & Observability for ML and LLMs/11-Unlabeled Performance Estimation (NannyML).ipynb
+        status: review
+        level: intermediate
+        description: Estimating model performance in production without ground-truth labels.
+        data: synthetic
+      - title: LLM Observability (Langfuse, Phoenix, OpenTelemetry GenAI)
+        status: planned
+        file: null
+  - id: M32
+    name: Containers & Kubernetes
+    group: Ops & Systems
+    prereqs:
+      - M04
+      - M02
+    gpu: optional
+    services:
+      - docker
+      - kind
+    lessons:
+      - title: Immutable Layer Engineering (Dockerfiles & Layer Caching)
+        source: S18-08
+        file: M32-Containers & Kubernetes/01-Immutable Layer Engineering (Dockerfiles & Layer Caching).ipynb
+        status: review
+        level: advanced
+        description: Writing efficient Dockerfiles and understanding image layer caching.
+        data: synthetic
+      - title: Multi-Container Grid Topologies (Docker Compose)
+        source: S18-09
+        file: M32-Containers & Kubernetes/02-Multi-Container Grid Topologies (Docker Compose).ipynb
+        status: review
+        level: advanced
+        description: Orchestrating multi-service local stacks with Docker Compose.
+        data: synthetic
+      - title: Container Orchestration Fundamentals (kubectl & Pods)
+        source: S23-01
+        file: M32-Containers & Kubernetes/03-Container Orchestration Fundamentals (kubectl & Pods).ipynb
+        status: realise
+        level: beginner
+        description: Pods, deployments, services, and namespaces via the Kubernetes CLI.
+        data: mock
+      - title: Resource Management & Autoscaling (Kubernetes HPA-VPA)
+        source: S23-02
+        file: M32-Containers & Kubernetes/04-Resource Management & Autoscaling (Kubernetes HPA-VPA).ipynb
+        status: realise
+        level: beginner
+        description: CPU/memory limits, requests, and horizontal/vertical autoscaling behavior.
+        data: mock
+      - title: Rolling Deployments & Scaling Strategies (Kubernetes Deployments)
+        source: S23-03
+        file: M32-Containers & Kubernetes/05-Rolling Deployments & Scaling Strategies (Kubernetes Deployments).ipynb
+        status: realise
+        level: intermediate
+        description: Rollout strategies, service stability, and zero-downtime scaling.
+        data: mock
+      - title: Templated Infrastructure (Helm Charts)
+        source: S23-04
+        file: M32-Containers & Kubernetes/06-Templated Infrastructure (Helm Charts).ipynb
+        status: realise
+        level: intermediate
+        description: Packaging, templating, and repeatable deployment definitions.
+        data: mock
+      - title: GPU Scheduling & Allocation (NVIDIA GPU Operator)
+        source: S23-08
+        file: M32-Containers & Kubernetes/07-GPU Scheduling & Allocation (NVIDIA GPU Operator).ipynb
+        status: realise
+        level: advanced
+        description: Node selectors, taints, and topology-aware GPU resource planning.
+        data: mock
+      - title: GPU Scheduling with DRA & Kueue
+        status: planned
+        file: null
+      - title: Model Serving on Kubernetes (KServe & llm-d)
+        status: planned
+        file: null
+  - id: M33
+    name: Cloud & Infrastructure as Code
+    group: Ops & Systems
+    prereqs:
+      - M32
+    gpu: none
+    services:
+      - localstack
+    lessons:
+      - title: Infrastructure as Code (IaC) & Python SDKs
+        source: S17-01
+        file: M33-Cloud & Infrastructure as Code/01-Infrastructure as Code (IaC) & Python SDKs.ipynb
+        status: review
+        level: beginner
+        description: IaC patterns, SDK usage, and provisioning workflows.
+        data: synthetic
+      - title: Infrastructure as Code with OpenTofu
+        status: planned
+        file: null
+      - title: Identity & Access Management (IAM) Cryptography
+        source: S17-02
+        file: M33-Cloud & Infrastructure as Code/03-Identity & Access Management (IAM) Cryptography.ipynb
+        status: review
+        level: intermediate
+        description: IAM design, keys, and secure identity patterns.
+        data: synthetic
+      - title: The Physics of Cloud Storage (AWS S3 & EventBridge)
+        source: S17-03
+        file: M33-Cloud & Infrastructure as Code/04-The Physics of Cloud Storage (AWS S3 & EventBridge).ipynb
+        status: realise
+        level: intermediate
+        description: Storage semantics, eventing, and durable object patterns.
+        data: mock
+      - title: Virtual Private Clouds (VPC) & Network Topologies
+        source: S17-04
+        file: M33-Cloud & Infrastructure as Code/05-Virtual Private Clouds (VPC) & Network Topologies.ipynb
+        status: review
+        level: advanced
+        description: VPC design, subnets, routing and secure network patterns.
+        data: synthetic
+      - title: Event-Driven Compute (AWS Lambda & SQS)
+        source: S17-05
+        file: M33-Cloud & Infrastructure as Code/06-Event-Driven Compute (AWS Lambda & SQS).ipynb
+        status: review
+        level: advanced
+        description: Serverless compute, queues, and event-driven patterns.
+        data: synthetic
+      - title: Serverless Containers (ECR & AWS Fargate)
+        source: S17-06
+        file: M33-Cloud & Infrastructure as Code/07-Serverless Containers (ECR & AWS Fargate).ipynb
+        status: review
+        level: advanced
+        description: Container-based serverless patterns and orchestration.
+        data: synthetic
+      - title: Ephemeral ML Training (Amazon SageMaker)
+        source: S17-07
+        file: M33-Cloud & Infrastructure as Code/08-Ephemeral ML Training (Amazon SageMaker).ipynb
+        status: realise
+        level: advanced
+        description: Short-lived training jobs, managed services, and cost control.
+        data: mock
+      - title: High-Throughput Inference Endpoints
+        source: S17-08
+        file: M33-Cloud & Infrastructure as Code/09-High-Throughput Inference Endpoints.ipynb
+        status: realise
+        level: expert
+        description: Serving at scale, autoscaling, batching and latency tradeoffs.
+        data: mock
+      - title: Enterprise Generative AI (Amazon Bedrock)
+        source: S17-09
+        file: M33-Cloud & Infrastructure as Code/10-Enterprise Generative AI (Amazon Bedrock).ipynb
+        status: review
+        level: expert
+        description: Managed generative AI services and enterprise patterns.
+        data: synthetic
+      - title: Cloud FinOps & Spot Instance Physics
+        source: S17-10
+        file: M33-Cloud & Infrastructure as Code/11-Cloud FinOps & Spot Instance Physics.ipynb
+        status: realise
+        level: expert
+        description: Cost optimization, spot instances and budgeting practices.
+        data: mock
+      - title: Operational Cost & Efficiency (Spot-Preemptible GPU Nodes)
+        source: S23-12
+        file: M33-Cloud & Infrastructure as Code/12-Operational Cost & Efficiency (Spot-Preemptible GPU Nodes).ipynb
+        status: merge
+        level: expert
+        description: Throughput-cost tradeoffs and cluster utilization optimization.
+        data: mock
+        notes: 'merge into S17-10: one cost / spot-capacity lesson'
+      - title: Azure & Google Cloud AI Services Overview
+        status: planned
+        file: null
+      - title: Serverless GPU Platforms
+        status: planned
+        file: null
+  - id: M34
+    name: MLOps & LLMOps
+    group: Ops & Systems
+    prereqs:
+      - M16
+      - M32
+    gpu: none
+    services:
+      - docker
+      - prometheus
+      - grafana
+    lessons:
+      - title: 'MLOps: Serialization'
+        source: S07-21
+        file: M34-MLOps & LLMOps/01-MLOps - Serialization.ipynb
+        status: review
+        level: advanced
+        description: Model saving, loading, and deployment packaging.
+        data: synthetic
+      - title: Model Serialization
+        source: S09-21
+        file: M34-MLOps & LLMOps/02-Model Serialization.ipynb
+        status: merge
+        level: advanced
+        description: Saving/loading models and portable formats.
+        data: synthetic
+        notes: 'merge into S07-21: one serialisation lesson in M34'
+      - title: 'MLOps: Experiment Tracking'
+        source: S07-22
+        file: M34-MLOps & LLMOps/03-MLOps - Experiment Tracking.ipynb
+        status: merge
+        level: advanced
+        description: MLflow, experiment logging, and model versioning.
+        data: mock
+        notes: 'merge into S18-10: real MLflow lesson is canonical'
+      - title: Experiment Tracking & Artifact Lineage (MLflow Engine)
+        source: S18-10
+        file: M34-MLOps & LLMOps/04-Experiment Tracking & Artifact Lineage (MLflow Engine).ipynb
+        status: review
+        level: advanced
+        description: Logging runs, parameters, and artifacts for reproducible experimentation.
+        data: synthetic
+      - title: Data & Model Versioning (DVC)
+        status: planned
+        file: null
+      - title: Model Registry & Promotion
+        status: planned
+        file: null
+      - title: Local Continuous Integration (GitHub Actions Core Workflows)
+        source: S18-11
+        file: M34-MLOps & LLMOps/07-Local Continuous Integration (GitHub Actions Core Workflows).ipynb
+        status: review
+        level: advanced
+        description: Writing CI workflows that lint, test, and validate ML code on every push.
+        data: synthetic
+      - title: Production Model Serving Topologies (FastAPI & Docker)
+        source: S18-12
+        file: M34-MLOps & LLMOps/08-Production Model Serving Topologies (FastAPI & Docker).ipynb
+        status: realise
+        level: advanced
+        description: Packaging and serving a trained model behind a containerized API.
+        data: mock
+      - title: ML Workflow Orchestration on Kubernetes (Kubeflow)
+        source: S23-09
+        file: M34-MLOps & LLMOps/09-ML Workflow Orchestration on Kubernetes (Kubeflow).ipynb
+        status: realise
+        level: expert
+        description: Pipeline orchestration and experiment tracking for ML on Kubernetes.
+        data: mock
+      - title: Telemetry Scraping & Observability Metrology (Prometheus)
+        source: S18-14
+        file: M34-MLOps & LLMOps/10-Telemetry Scraping & Observability Metrology (Prometheus).ipynb
+        status: review
+        level: expert
+        description: Instrumenting services with Prometheus metrics for production observability.
+        data: synthetic
+      - title: Custom ML Metric Scraping (Prometheus)
+        source: S19-08
+        file: M34-MLOps & LLMOps/11-Custom ML Metric Scraping (Prometheus).ipynb
+        status: merge
+        level: advanced
+        description: Exposing custom model-quality metrics for Prometheus scraping.
+        data: synthetic
+        notes: 'merge into S18-14: one Prometheus lesson'
+      - title: Distributed Tracing & Latency (OpenTelemetry + Jaeger)
+        source: S19-07
+        file: M34-MLOps & LLMOps/12-Distributed Tracing & Latency (OpenTelemetry + Jaeger).ipynb
+        status: review
+        level: advanced
+        description: Tracing requests across services to localize latency bottlenecks.
+        data: synthetic
+      - title: High-Definition Observability (Grafana)
+        source: S19-09
+        file: M34-MLOps & LLMOps/13-High-Definition Observability (Grafana).ipynb
+        status: realise
+        level: advanced
+        description: Building dashboards that surface model health at a glance.
+        data: mock
+      - title: High-Volume Log Aggregation (Grafana Loki)
+        source: S19-10
+        file: M34-MLOps & LLMOps/14-High-Volume Log Aggregation (Grafana Loki).ipynb
+        status: realise
+        level: advanced
+        description: Centralizing and querying logs at scale with Loki.
+        data: mock
+      - title: SLOs, Error Budgets & Alerting (Alertmanager)
+        source: S19-11
+        file: M34-MLOps & LLMOps/15-SLOs, Error Budgets & Alerting (Alertmanager).ipynb
+        status: realise
+        level: expert
+        description: Defining service-level objectives and routing alerts on error-budget burn.
+        data: mock
+      - title: Cluster Debugging & Observability (Prometheus & Grafana)
+        source: S23-11
+        file: M34-MLOps & LLMOps/16-Cluster Debugging & Observability (Prometheus & Grafana).ipynb
+        status: merge
+        level: expert
+        description: Scheduling issues, networking, logs, and runtime failure diagnosis.
+        data: mock
+        notes: 'merge into S19-11: one SLO / alerting lesson'
+      - title: Shadow Deployments & Traffic Mirroring
+        source: S19-12
+        file: M34-MLOps & LLMOps/17-Shadow Deployments & Traffic Mirroring.ipynb
+        status: realise
+        level: expert
+        description: Testing new models against production traffic without serving live responses.
+        data: mock
+      - title: Statistical Canary Testing & Rollbacks
+        source: S19-13
+        file: M34-MLOps & LLMOps/18-Statistical Canary Testing & Rollbacks.ipynb
+        status: review
+        level: expert
+        description: Statistically validating canary releases before a full rollout.
+        data: synthetic
+      - title: Enterprise Secrets Security & Hardening Boundarie
+        source: S18-15
+        file: M34-MLOps & LLMOps/19-Enterprise Secrets Security & Hardening Boundarie.ipynb
+        status: review
+        level: expert
+        description: Secrets management, least-privilege boundaries, and system hardening practices.
+        data: synthetic
+      - title: 'LLMOps: Prompt Versioning & Release Management'
+        status: planned
+        file: null
+  - id: M35
+    name: Model Optimization & Edge AI
+    group: Ops & Systems
+    prereqs:
+      - M20
+    gpu: optional
+    lessons:
+      - title: Graph Compilation & Execution (ONNX Runtime)
+        source: S20-05
+        file: M35-Model Optimization & Edge AI/01-Graph Compilation & Execution (ONNX Runtime).ipynb
+        status: review
+        level: advanced
+        description: Compiling models to a portable graph format for optimized inference.
+        data: synthetic
+      - title: Edge AI Fundamentals & Model Conversion (ONNX)
+        source: S25-01
+        file: M35-Model Optimization & Edge AI/02-Edge AI Fundamentals & Model Conversion (ONNX).ipynb
+        status: merge
+        level: intermediate
+        description: Latency constraints, offline inference, and cross-framework model conversion.
+        data: synthetic
+        notes: 'merge into S20-05: one ONNX lesson'
+      - title: Post-Training Quantization (PTQ & INT8)
+        source: S20-06
+        file: M35-Model Optimization & Edge AI/03-Post-Training Quantization (PTQ & INT8).ipynb
+        status: realise
+        level: advanced
+        description: Reducing model precision after training for faster, smaller inference.
+        data: mock
+      - title: Model Compression Pruning & Quantization (TensorFlow Lite)
+        source: S25-02
+        file: M35-Model Optimization & Edge AI/04-Model Compression Pruning & Quantization (TensorFlow Lite).ipynb
+        status: merge
+        level: advanced
+        description: Quantization, pruning, distillation, and sparse deployment.
+        data: synthetic
+        notes: 'merge into S20-06: split into quantisation / pruning / distillation canonical lessons'
+      - title: Network Pruning & Sparsity Mechanics
+        source: S20-07
+        file: M35-Model Optimization & Edge AI/05-Network Pruning & Sparsity Mechanics.ipynb
+        status: review
+        level: advanced
+        description: Removing redundant weights and connections to shrink and speed up models.
+        data: synthetic
+      - title: Knowledge Distillation (Teacher-Student)
+        source: S20-08
+        file: M35-Model Optimization & Edge AI/06-Knowledge Distillation (Teacher-Student).ipynb
+        status: review
+        level: expert
+        description: Training a compact student model to mimic a larger teacher model.
+        data: synthetic
+      - title: Massive Model Compression (bitsandbytes & GGUF)
+        source: S20-09
+        file: M35-Model Optimization & Edge AI/07-Massive Model Compression (bitsandbytes & GGUF).ipynb
+        status: realise
+        level: expert
+        description: Extreme quantization and compact serialization formats for large models.
+        data: mock
+      - title: Low-Bit Formats (FP8, FP4, MXFP4)
+        status: planned
+        file: null
+      - title: Bare-Metal Hardware Acceleration (OpenVINO)
+        source: S20-10
+        file: M35-Model Optimization & Edge AI/09-Bare-Metal Hardware Acceleration (OpenVINO).ipynb
+        status: review
+        level: expert
+        description: Compiling models for optimized inference on specific hardware targets.
+        data: synthetic
+      - title: Edge Vision & Quantization
+        source: S10-20
+        file: M35-Model Optimization & Edge AI/10-Edge Vision & Quantization.ipynb
+        status: review
+        level: expert
+        description: Compression, quantization, and on-device inference.
+        data: real
+      - title: TinyML Toolchains for Microcontrollers (Edge Impulse)
+        source: S25-03
+        file: M35-Model Optimization & Edge AI/11-TinyML Toolchains for Microcontrollers (Edge Impulse).ipynb
+        status: realise
+        level: advanced
+        description: Embedded workflows, interpreters, and runtime toolchains for MCUs.
+        data: synthetic
+      - title: Sensor Data Processing & Signal Pipelines (TinyML)
+        source: S25-04
+        file: M35-Model Optimization & Edge AI/12-Sensor Data Processing & Signal Pipelines (TinyML).ipynb
+        status: review
+        level: advanced
+        description: Signal collection, filtering, preprocessing, and feature extraction.
+        data: synthetic
+      - title: Low-Power Inference Optimization (TensorFlow Lite Micro)
+        source: S25-05
+        file: M35-Model Optimization & Edge AI/13-Low-Power Inference Optimization (TensorFlow Lite Micro).ipynb
+        status: review
+        level: advanced
+        description: Memory footprint, energy efficiency, and device-level tuning.
+        data: synthetic
+      - title: Edge Deployment Patterns (NVIDIA Jetson & ONNX Runtime)
+        source: S25-06
+        file: M35-Model Optimization & Edge AI/14-Edge Deployment Patterns (NVIDIA Jetson & ONNX Runtime).ipynb
+        status: review
+        level: advanced
+        description: OTA updates, model versioning, and fleet management for edge devices.
+        data: synthetic
+      - title: LiteRT & ExecuTorch
+        status: planned
+        file: null
+      - title: On-Device LLMs (llama.cpp, MLX, Core ML)
+        status: planned
+        file: null
+  - id: M36
+    name: LLM Serving & Inference Systems
+    group: Ops & Systems
+    prereqs:
+      - M26
+      - M32
+    gpu: required
+    services:
+      - docker
+    lessons:
+      - title: LLM Serving Fundamentals (Hugging Face Text Generation Inference)
+        source: S26-03
+        file: M36-LLM Serving & Inference Systems/01-LLM Serving Fundamentals (Hugging Face Text Generation Inference).ipynb
+        status: review
+        level: intermediate
+        description: Throughput, latency, batching, and token streaming behavior.
+        data: synthetic
+      - title: High-Throughput Serving Architecture (vLLM)
+        source: S26-04
+        file: M36-LLM Serving & Inference Systems/02-High-Throughput Serving Architecture (vLLM).ipynb
+        status: realise
+        level: advanced
+        description: Paged attention, continuous batching, and high-throughput inference internals.
+        data: mock
+      - title: Concurrent Inference Scheduling (vLLM PagedAttention & Continuous Batching)
+        source: S26-07
+        file: M36-LLM Serving & Inference Systems/03-Concurrent Inference Scheduling (vLLM PagedAttention & Continuous Batching).ipynb
+        status: merge
+        level: advanced
+        description: Queueing models, prioritization, and fairness in serving workloads.
+        data: mock
+        notes: 'merge into S26-04: one vLLM internals lesson'
+      - title: High-Throughput Serving & Engine Optimization (vLLM - Triton)
+        source: S18-13
+        file: M36-LLM Serving & Inference Systems/04-High-Throughput Serving & Engine Optimization (vLLM - Triton).ipynb
+        status: merge
+        level: expert
+        description: Comparing serving engines for high-throughput inference workloads.
+        data: mock
+        notes: 'merge into S26-04: serving engines live in M36'
+      - title: Kernel-Level Inference Optimization (TensorRT-LLM)
+        source: S26-05
+        file: M36-LLM Serving & Inference Systems/05-Kernel-Level Inference Optimization (TensorRT-LLM).ipynb
+        status: realise
+        level: advanced
+        description: Engine building, kernel fusion, and precision-aware optimization.
+        data: mock
+      - title: Tokenizer & Runtime Integration (Hugging Face Tokenizers & ONNX Runtime)
+        source: S26-06
+        file: M36-LLM Serving & Inference Systems/06-Tokenizer & Runtime Integration (Hugging Face Tokenizers & ONNX Runtime).ipynb
+        status: realise
+        level: advanced
+        description: Efficient tokenization pipelines and cross-runtime interoperability.
+        data: mock
+      - title: Quantization for Production Serving (GPTQ - AWQ)
+        source: S26-08
+        file: M36-LLM Serving & Inference Systems/07-Quantization for Production Serving (GPTQ - AWQ).ipynb
+        status: realise
+        level: expert
+        description: INT8/FP8 tradeoffs and deployment-time calibration strategies.
+        data: mock
+      - title: Multi-Model Serving Infrastructure (NVIDIA Triton Inference Server)
+        source: S26-09
+        file: M36-LLM Serving & Inference Systems/08-Multi-Model Serving Infrastructure (NVIDIA Triton Inference Server).ipynb
+        status: realise
+        level: expert
+        description: Routing, model isolation, and shared GPU resource management.
+        data: mock
+      - title: Observability in LLM Serving (Prometheus & OpenTelemetry)
+        source: S26-10
+        file: M36-LLM Serving & Inference Systems/09-Observability in LLM Serving (Prometheus & OpenTelemetry).ipynb
+        status: realise
+        level: expert
+        description: Metrics, tracing, tail-latency analysis, and SLA tracking.
+        data: mock
+      - title: Fault Tolerance & Recovery for Inference Endpoints
+        source: S26-11
+        file: M36-LLM Serving & Inference Systems/10-Fault Tolerance & Recovery for Inference Endpoints.ipynb
+        status: realise
+        level: expert
+        description: Graceful degradation, retries, and resilient inference operations.
+        data: mock
+      - title: Production Cost-Performance Engineering
+        source: S26-12
+        file: M36-LLM Serving & Inference Systems/11-Production Cost-Performance Engineering.ipynb
+        status: realise
+        level: expert
+        description: Throughput-per-dollar optimization and capacity planning for scale.
+        data: mock
+      - title: SGLang & Structured Generation
+        status: planned
+        file: null
+      - title: Speculative Decoding
+        status: planned
+        file: null
+      - title: Prefix Caching & Disaggregated Prefill-Decode
+        status: planned
+        file: null
+      - title: Local Serving with llama.cpp & Ollama
+        status: planned
+        file: null
+  - id: M37
+    name: Distributed Training
+    group: Ops & Systems
+    prereqs:
+      - M20
+      - M32
+    gpu: required
+    lessons:
+      - title: Data-Parallel Training (PyTorch DDP)
+        source: S23-05
+        file: M37-Distributed Training/01-Data-Parallel Training (PyTorch DDP).ipynb
+        status: realise
+        level: advanced
+        description: Synchronous gradient training across multiple devices with DistributedDataParallel.
+        data: mock
+      - title: Model Parallelism & Sharding (DeepSpeed ZeRO)
+        source: S23-06
+        file: M37-Distributed Training/02-Model Parallelism & Sharding (DeepSpeed ZeRO).ipynb
+        status: realise
+        level: advanced
+        description: Splitting model computation and memory across devices with ZeRO stages.
+        data: mock
+      - title: Distributed Checkpointing & Fault Recovery (Torch Distributed Checkpoint)
+        source: S23-07
+        file: M37-Distributed Training/03-Distributed Checkpointing & Fault Recovery (Torch Distributed Checkpoint).ipynb
+        status: realise
+        level: advanced
+        description: Saving, restoring, and syncing distributed training state reliably.
+        data: mock
+      - title: FSDP2 & torchtitan
+        status: planned
+        file: null
+      - title: Pipeline & Tensor Parallelism
+        status: planned
+        file: null
+      - title: Distributed Training at Scale (Ray Train)
+        source: S23-10
+        file: M37-Distributed Training/06-Distributed Training at Scale (Ray Train).ipynb
+        status: realise
+        level: expert
+        description: Cluster-wide distributed training orchestration and scale strategy selection.
+        data: mock
+  - id: M38
+    name: GPU Programming & Kernels
+    group: Ops & Systems
+    prereqs:
+      - M20
+    recommended:
+      - M39
+    gpu: required
+    lessons:
+      - title: CUDA Programming Basics (CUDA C++)
+        source: S27-01
+        file: M38-GPU Programming & Kernels/01-CUDA Programming Basics (CUDA C++).ipynb
+        status: review
+        level: intermediate
+        description: Kernels, threads, blocks, and execution model fundamentals.
+        data: synthetic
+      - title: GPU Memory Hierarchy & Bandwidth Optimization (CUDA)
+        source: S27-02
+        file: M38-GPU Programming & Kernels/02-GPU Memory Hierarchy & Bandwidth Optimization (CUDA).ipynb
+        status: review
+        level: intermediate
+        description: Global, shared, registers, and bandwidth-aware programming.
+        data: synthetic
+      - title: Warp Divergence & Occupancy Tuning (Nsight Compute)
+        source: S27-03
+        file: M38-GPU Programming & Kernels/03-Warp Divergence & Occupancy Tuning (Nsight Compute).ipynb
+        status: realise
+        level: advanced
+        description: SIMT behavior, occupancy tuning, and branch efficiency profiling.
+        data: synthetic
+      - title: Hopper & Blackwell Features (TMA, FP8, FP4)
+        status: planned
+        file: null
+      - title: Writing GPU Kernels in Python (Triton)
+        source: S27-04
+        file: M38-GPU Programming & Kernels/05-Writing GPU Kernels in Python (Triton).ipynb
+        status: review
+        level: advanced
+        description: Python-based custom kernels and performance-oriented implementation.
+        data: synthetic
+      - title: CUDA Python
+        status: planned
+        file: null
+      - title: Custom CUDA Kernel Development (PyTorch C++-CUDA Extensions)
+        source: S27-05
+        file: M38-GPU Programming & Kernels/07-Custom CUDA Kernel Development (PyTorch C++-CUDA Extensions).ipynb
+        status: realise
+        level: advanced
+        description: Fused operations, tiling, and profiling-guided kernel optimization.
+        data: synthetic
+      - title: Kernel Fusion Strategies (Triton & torch.compile)
+        source: S27-06
+        file: M38-GPU Programming & Kernels/08-Kernel Fusion Strategies (Triton & torch.compile).ipynb
+        status: review
+        level: advanced
+        description: Combining operators to reduce memory traffic and latency overhead.
+        data: synthetic
+      - title: CUTLASS & CuTe DSL
+        status: planned
+        file: null
+      - title: Flash Attention & Attention Optimization (FlashAttention)
+        source: S27-07
+        file: M38-GPU Programming & Kernels/10-Flash Attention & Attention Optimization (FlashAttention).ipynb
+        status: review
+        level: expert
+        description: IO-aware attention, sparse attention, and sliding-window methods.
+        data: synthetic
+      - title: FlashAttention-3
+        status: planned
+        file: null
+      - title: Memory-Bound vs Compute-Bound Optimization (Nsight - CUDA Profiling)
+        source: S27-08
+        file: M38-GPU Programming & Kernels/12-Memory-Bound vs Compute-Bound Optimization (Nsight - CUDA Profiling).ipynb
+        status: review
+        level: expert
+        description: Roofline analysis, coalesced access, and cache-aware kernel design.
+        data: synthetic
+      - title: Distributed Attention for Long-Context Models (Ring Attention)
+        source: S27-09
+        file: M38-GPU Programming & Kernels/13-Distributed Attention for Long-Context Models (Ring Attention).ipynb
+        status: realise
+        level: expert
+        description: Multi-GPU attention scaling and communication-efficient kernel pipelines.
+        data: synthetic
+      - title: Pretraining Systems Engineering at Scale (Megatron-LM)
+        source: S27-10
+        file: M38-GPU Programming & Kernels/14-Pretraining Systems Engineering at Scale (Megatron-LM).ipynb
+        status: realise
+        level: expert
+        description: Tokenizer design, data pipelines, scaling laws, and MoE basics at scale.
+        data: synthetic
+      - title: Inference Runtime Engineering (CUDA Graphs - TensorRT)
+        source: S27-11
+        file: M38-GPU Programming & Kernels/15-Inference Runtime Engineering (CUDA Graphs - TensorRT).ipynb
+        status: review
+        level: expert
+        description: Scheduler-aware serving optimization and runtime graph capture.
+        data: synthetic
+  - id: M39
+    name: Systems Languages for AI (C++ & Rust)
+    group: Ops & Systems
+    prereqs:
+      - M01
+    gpu: none
+    lessons:
+      - title: Modern C++ Foundations for AI Systems
+        source: S26-01
+        file: M39-Systems Languages for AI (C++ & Rust)/01-Modern C++ Foundations for AI Systems.ipynb
+        status: review
+        level: intermediate
+        description: Memory management, RAII, templates, and performance-oriented design.
+        data: synthetic
+      - title: Rust Foundations for Safe Systems
+        source: S26-02
+        file: M39-Systems Languages for AI (C++ & Rust)/02-Rust Foundations for Safe Systems.ipynb
+        status: realise
+        level: intermediate
+        description: Ownership, borrowing, and concurrency-safe service development.
+        data: mock
+      - title: Python Extensions in Rust (PyO3 & maturin)
+        status: planned
+        file: null
+  - id: M40
+    name: AutoML & Hyperparameter Optimization
+    group: Ops & Systems
+    prereqs:
+      - M16
+    gpu: optional
+    lessons:
+      - title: Hyperparameter Tuning
+        source: S07-16
+        file: M40-AutoML & Hyperparameter Optimization/01-Hyperparameter Tuning.ipynb
+        status: review
+        level: advanced
+        description: Grid search, random search, and Bayesian optimization.
+        data: synthetic
+      - title: Advanced HPO & Bayesian Search (Optuna)
+        source: S20-01
+        file: M40-AutoML & Hyperparameter Optimization/02-Advanced HPO & Bayesian Search (Optuna).ipynb
+        status: review
+        level: beginner
+        description: Bayesian hyperparameter search beyond grid and random search.
+        data: synthetic
+      - title: Bayesian Optimization for Training (Optuna - BoTorch)
+        source: S24-10
+        file: M40-AutoML & Hyperparameter Optimization/03-Bayesian Optimization for Training (Optuna - BoTorch).ipynb
+        status: merge
+        level: expert
+        description: Hyperparameter search guided by probabilistic surrogate models.
+        data: synthetic
+        notes: 'merge into S20-01: one Bayesian HPO lesson'
+      - title: High-Speed Tabular AutoML (FLAML)
+        source: S20-02
+        file: M40-AutoML & Hyperparameter Optimization/04-High-Speed Tabular AutoML (FLAML).ipynb
+        status: realise
+        level: intermediate
+        description: Fast, resource-aware automated model selection for tabular data.
+        data: mock
+      - title: State-of-the-Art Ensembling (AutoGluon)
+        source: S20-03
+        file: M40-AutoML & Hyperparameter Optimization/05-State-of-the-Art Ensembling (AutoGluon).ipynb
+        status: review
+        level: intermediate
+        description: Automated stacked ensembling for maximal predictive performance.
+        data: synthetic
+      - title: Neural Architecture Search & Hyperband
+        source: S20-04
+        file: M40-AutoML & Hyperparameter Optimization/06-Neural Architecture Search & Hyperband.ipynb
+        status: realise
+        level: advanced
+        description: Automated architecture search with early-stopping-based budget allocation.
+        data: mock
+  - id: M41
+    name: Responsible AI, AI Security & Governance
+    group: Responsibility
+    prereqs:
+      - M16
+      - M26
+    gpu: optional
+    lessons:
+      - title: Interpretable Glassbox Models (InterpretML)
+        source: S21-01
+        file: M41-Responsible AI, AI Security & Governance/01-Interpretable Glassbox Models (InterpretML).ipynb
+        status: review
+        level: beginner
+        description: Inherently interpretable model families and their transparency tradeoffs.
+        data: real
+      - title: Game Theory XAI (SHAP)
+        source: S21-02
+        file: M41-Responsible AI, AI Security & Governance/02-Game Theory XAI (SHAP).ipynb
+        status: review
+        level: intermediate
+        description: Shapley-value-based feature attribution grounded in cooperative game theory.
+        data: real
+      - title: Model Interpretability
+        source: S07-20
+        file: M41-Responsible AI, AI Security & Governance/03-Model Interpretability.ipynb
+        status: merge
+        level: expert
+        description: Feature importance, SHAP, LIME, and explainability.
+        data: real
+        notes: 'merge into S21-02: SHAP canonical home is M41; keep a short pointer in M16'
+      - title: Local Surrogate Perturbation (LIME)
+        source: S21-03
+        file: M41-Responsible AI, AI Security & Governance/04-Local Surrogate Perturbation (LIME).ipynb
+        status: review
+        level: intermediate
+        description: Explaining individual predictions via local surrogate models.
+        data: synthetic
+      - title: Deep Learning Attribution (Captum)
+        source: S21-04
+        file: M41-Responsible AI, AI Security & Governance/05-Deep Learning Attribution (Captum).ipynb
+        status: review
+        level: advanced
+        description: Gradient- and attribution-based explainability for neural networks.
+        data: synthetic
+      - title: Mechanistic Interpretability (Sparse Autoencoders)
+        status: planned
+        file: null
+      - title: Counterfactual Reasoning (Alibi Explain)
+        source: S21-05
+        file: M41-Responsible AI, AI Security & Governance/07-Counterfactual Reasoning (Alibi Explain).ipynb
+        status: review
+        level: advanced
+        description: Generating counterfactual examples to explain decision boundaries.
+        data: synthetic
+      - title: Statistical Fairness Auditing (Fairlearn)
+        source: S21-06
+        file: M41-Responsible AI, AI Security & Governance/08-Statistical Fairness Auditing (Fairlearn).ipynb
+        status: review
+        level: advanced
+        description: Measuring and auditing fairness metrics across protected groups.
+        data: synthetic
+      - title: Algorithmic Bias Mitigation (AIF360)
+        source: S21-07
+        file: M41-Responsible AI, AI Security & Governance/09-Algorithmic Bias Mitigation (AIF360).ipynb
+        status: realise
+        level: advanced
+        description: Bias mitigation techniques applied pre-, in-, and post-processing.
+        data: mock
+      - title: Differential Privacy in DL (Opacus)
+        source: S21-08
+        file: M41-Responsible AI, AI Security & Governance/10-Differential Privacy in DL (Opacus).ipynb
+        status: review
+        level: expert
+        description: Training neural networks with differential privacy guarantees.
+        data: synthetic
+      - title: Real-Time PII Sanitization (Presidio)
+        source: S21-09
+        file: M41-Responsible AI, AI Security & Governance/11-Real-Time PII Sanitization (Presidio).ipynb
+        status: review
+        level: expert
+        description: Detecting and anonymizing personally identifiable information in text.
+        data: synthetic
+      - title: LLM Guardrails & Jailbreak Defense (NeMo)
+        source: S21-10
+        file: M41-Responsible AI, AI Security & Governance/12-LLM Guardrails & Jailbreak Defense (NeMo).ipynb
+        status: realise
+        level: expert
+        description: Guardrail policies and jailbreak-resistant LLM application design.
+        data: mock
+      - title: Safety Classifiers (Llama Guard)
+        status: planned
+        file: null
+      - title: LLM Red Teaming (garak & PyRIT)
+        status: planned
+        file: null
+      - title: Watermarking & Content Provenance (SynthID, C2PA)
+        status: planned
+        file: null
+      - title: Automated Model Governance (Model Cards)
+        source: S21-12
+        file: M41-Responsible AI, AI Security & Governance/16-Automated Model Governance (Model Cards).ipynb
+        status: realise
+        level: expert
+        description: Automated documentation, compliance tracking, and model card generation for governance.
+        data: mock
+      - title: EU AI Act & AI Governance Frameworks (NIST AI RMF, ISO 42001)
+        status: planned
+        file: null
+  - id: M42
+    name: Capstone Projects
+    group: Capstones
+    prereqs: []
+    gpu: optional
+    lessons:
+      - title: 'Capstone: Python Developer'
+        status: planned
+        file: null
+      - title: 'Capstone: Software Engineer (Python Backend)'
+        status: planned
+        file: null
+      - title: 'Capstone: Data Analyst & BI'
+        status: planned
+        file: null
+      - title: 'Capstone: Data Scientist'
+        status: planned
+        file: null
+      - title: 'Capstone: Machine Learning Engineer'
+        status: planned
+        file: null
+      - title: 'Capstone: Deep Learning & Computer Vision'
+        status: planned
+        file: null
+      - title: 'Capstone: NLP & LLM Engineer'
+        status: planned
+        file: null
+      - title: 'Capstone: AI Application Engineer'
+        status: planned
+        file: null
+      - title: 'Capstone: Data Engineer'
+        status: planned
+        file: null
+      - title: 'Capstone: MLOps & ML Platform Engineer'
+        status: planned
+        file: null
+      - title: 'Capstone: AI Infrastructure & GPU Systems'
+        status: planned
+        file: null
+      - title: 'Capstone: Responsible AI & AI Security'
+        status: planned
+        file: null
+      - title: 'Capstone: Edge AI & Reinforcement Learning'
+        status: planned
+        file: null
+  - id: M43
+    name: AI Solution Design & Delivery
+    group: Delivery
+    prereqs:
+      - M30
+      - M33
+    gpu: none
+    lessons:
+      - title: Problem Framing with Stakeholders
+        status: planned
+        file: null
+      - title: Scoping, Success Metrics & Risk
+        status: planned
+        file: null
+      - title: ML & LLM System Design (Design Docs)
+        status: planned
+        file: null
+      - title: Cost & Latency Estimation
+        status: planned
+        file: null
+      - title: Rapid Prototyping & Demos
+        status: planned
+        file: null
+      - title: Deployment Hand-off & Documentation
+        status: planned
+        file: null
+      - title: System Design Interview Practice
+        status: planned
+        file: null
+paths:
+  - id: python-developer
+    name: Python Developer
+    modules:
+      - M01
+      - M03
+      - M04
+      - M02
+    capstone: 'Capstone: Python Developer'
+  - id: software-engineer
+    name: Software Engineer (Python Backend)
+    modules:
+      - M01
+      - M03
+      - M04
+      - M02
+      - M07
+      - M32
+      - M33
+    capstone: 'Capstone: Software Engineer (Python Backend)'
+  - id: data-analyst
+    name: Data Analyst & BI
+    modules:
+      - M01
+      - M03
+      - M04
+      - M05
+      - M06
+      - M07
+      - M08
+      - M09
+      - M14
+    capstone: 'Capstone: Data Analyst & BI'
+  - id: data-scientist
+    name: Data Scientist
+    modules:
+      - M01
+      - M03
+      - M04
+      - M05
+      - M06
+      - M07
+      - M08
+      - M09
+      - M10
+      - M14
+      - M15
+      - M16
+      - M17
+      - M18
+      - M19
+    capstone: 'Capstone: Data Scientist'
+  - id: ml-engineer
+    name: Machine Learning Engineer
+    modules:
+      - M01
+      - M03
+      - M04
+      - M02
+      - M05
+      - M06
+      - M08
+      - M10
+      - M16
+      - M40
+      - M20
+      - M32
+      - M34
+      - M35
+    capstone: 'Capstone: Machine Learning Engineer'
+  - id: deep-learning-cv
+    name: Deep Learning & Computer Vision
+    modules:
+      - M01
+      - M03
+      - M04
+      - M05
+      - M06
+      - M08
+      - M16
+      - M20
+      - M21
+      - M22
+      - M23
+      - M24
+    capstone: 'Capstone: Deep Learning & Computer Vision'
+  - id: nlp-llm
+    name: NLP & LLM Engineer
+    modules:
+      - M01
+      - M03
+      - M04
+      - M05
+      - M08
+      - M16
+      - M20
+      - M26
+      - M27
+      - M28
+      - M31
+    capstone: 'Capstone: NLP & LLM Engineer'
+  - id: ai-app-engineer
+    name: AI Application Engineer
+    modules:
+      - M01
+      - M03
+      - M04
+      - M02
+      - M07
+      - M26
+      - M28
+      - M29
+      - M30
+      - M31
+    capstone: 'Capstone: AI Application Engineer'
+  - id: data-engineer
+    name: Data Engineer
+    modules:
+      - M01
+      - M03
+      - M04
+      - M02
+      - M07
+      - M08
+      - M11
+      - M12
+      - M13
+      - M32
+      - M33
+    capstone: 'Capstone: Data Engineer'
+  - id: mlops
+    name: MLOps & ML Platform Engineer
+    modules:
+      - M01
+      - M03
+      - M04
+      - M02
+      - M05
+      - M08
+      - M16
+      - M40
+      - M32
+      - M33
+      - M34
+    capstone: 'Capstone: MLOps & ML Platform Engineer'
+  - id: ai-infra-gpu
+    name: AI Infrastructure & GPU Systems
+    modules:
+      - M01
+      - M03
+      - M04
+      - M02
+      - M05
+      - M08
+      - M16
+      - M20
+      - M32
+      - M39
+      - M38
+      - M37
+      - M26
+      - M36
+      - M35
+    capstone: 'Capstone: AI Infrastructure & GPU Systems'
+  - id: responsible-ai
+    name: Responsible AI & AI Security
+    modules:
+      - M01
+      - M03
+      - M04
+      - M05
+      - M06
+      - M08
+      - M16
+      - M26
+      - M28
+      - M31
+      - M41
+    capstone: 'Capstone: Responsible AI & AI Security'
+  - id: edge-ai-rl
+    name: Edge AI & Reinforcement Learning
+    modules:
+      - M01
+      - M03
+      - M04
+      - M05
+      - M08
+      - M16
+      - M20
+      - M35
+      - M25
+    capstone: 'Capstone: Edge AI & Reinforcement Learning'
+roles:
+  - id: forward-deployed-engineer
+    name: Forward Deployed Engineer (FDE)
+    paths:
+      - software-engineer
+      - ai-app-engineer
+    extra_modules:
+      - M11
+      - M43
+    summary: 'Embeds with customers to turn an AI product into a working solution: discovery, data integration, prototyping,
+      deployment.'
+  - id: ai-engineer
+    name: AI Engineer
+    paths:
+      - software-engineer
+      - ai-app-engineer
+    extra_modules: []
+    summary: 'Builds LLM-powered products: RAG, agents, tools/MCP, evaluation and production APIs.'
+  - id: ml-engineer
+    name: Machine Learning Engineer
+    paths:
+      - ml-engineer
+    extra_modules: []
+    summary: Trains, optimises and ships classical and deep learning models into production.
+  - id: applied-scientist
+    name: Applied Scientist / Research Engineer
+    paths:
+      - data-scientist
+      - deep-learning-cv
+      - nlp-llm
+    extra_modules: []
+    summary: Designs and evaluates new models and methods; strong statistics and deep learning.
+  - id: product-data-scientist
+    name: Product Data Scientist
+    paths:
+      - data-analyst
+      - data-scientist
+    extra_modules: []
+    summary: Drives product decisions with experiments, causal inference and modelling.
+  - id: analytics-engineer
+    name: Analytics Engineer
+    paths:
+      - data-analyst
+    extra_modules:
+      - M02
+      - M11
+    summary: Builds tested, documented data models (dbt) between raw data and BI.
+  - id: data-engineer
+    name: Data Engineer
+    paths:
+      - data-engineer
+    extra_modules: []
+    summary: Builds and operates batch and streaming pipelines, warehouses and lakehouses.
+  - id: ai-platform-engineer
+    name: MLOps / AI Platform Engineer
+    paths:
+      - mlops
+    extra_modules:
+      - M26
+      - M36
+    summary: Owns the platform for training, serving, monitoring and governing models, including LLMs.
+  - id: inference-engineer
+    name: Inference & Performance Engineer
+    paths:
+      - ai-infra-gpu
+    extra_modules: []
+    summary: 'Makes models fast and cheap: kernels, quantisation, serving engines, distributed systems.'
+  - id: cv-engineer
+    name: Computer Vision / Perception Engineer
+    paths:
+      - deep-learning-cv
+      - edge-ai-rl
+    extra_modules: []
+    summary: Builds vision and multimodal systems, often deployed on edge devices or robots.
+  - id: ai-security-engineer
+    name: AI Security Engineer / Red Teamer
+    paths:
+      - responsible-ai
+      - ai-app-engineer
+    extra_modules: []
+    summary: 'Attacks and defends AI systems: prompt injection, jailbreaks, data leakage, governance.'
+  - id: ai-solutions-architect
+    name: AI Solutions Architect
+    paths:
+      - ai-app-engineer
+      - mlops
+    extra_modules:
+      - M43
+    summary: Designs end-to-end AI architectures and guides customers or internal teams through adoption.
