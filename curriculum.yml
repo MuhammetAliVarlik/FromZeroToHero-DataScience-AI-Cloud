@@ -1040,108 +1040,136 @@ modules:
       - title: Data Profiling and Quality Checks
         source: S05-01
         file: M10-Feature Engineering & Data Preprocessing/01-Data Profiling and Quality Checks.ipynb
-        status: review
+        status: done
         level: beginner
-        description: Data types, uniqueness, duplicates, nulls, and summary statistics.
-        data: synthetic
+        description: Column profiles, disguised missing values (0, '?', 'No_...'), duplicates, constant and redundant columns,
+          range and consistency rules on Adult and Ames.
+        data: real
       - title: Missing Value Treatment
         source: S05-02
         file: M10-Feature Engineering & Data Preprocessing/02-Missing Value Treatment.ipynb
-        status: review
-        level: beginner
-        description: Deletion, imputation, and model-specific strategies for nulls.
-        data: synthetic
+        status: done
+        level: intermediate
+        description: MCAR/MAR/MNAR, imputation error measured on hidden values (mean, group median, KNN, iterative), 'missing'
+          categories and indicators in pipelines.
+        data: real
       - title: Outlier Detection and Robust Handling
         source: S05-03
         file: M10-Feature Engineering & Data Preprocessing/03-Outlier Detection and Robust Handling.ipynb
-        status: review
+        status: done
         level: intermediate
-        description: IQR, z-score, winsorization, and anomaly-aware preprocessing.
-        data: synthetic
+        description: z-score, IQR and robust MAD rules, Isolation Forest, the Ames Partial sales, and the measured effect
+          of removal, winsorising and Huber loss.
+        data: real
       - title: Scaling and Normalization
         source: S05-04
         file: M10-Feature Engineering & Data Preprocessing/04-Scaling and Normalization.ipynb
-        status: review
+        status: done
         level: intermediate
-        description: Standardization, min-max scaling, robust scaling, and their tradeoffs.
-        data: synthetic
+        description: Standard/min-max/robust/max-abs scalers, log, Yeo-Johnson and quantile transforms, which models need
+          scaling (measured), log-target regression.
+        data: real
       - title: Categorical Encoding
         source: S05-05
         file: M10-Feature Engineering & Data Preprocessing/05-Categorical Encoding.ipynb
-        status: review
+        status: done
         level: intermediate
-        description: One-hot, ordinal, target, hashing, and embedding-style encoding.
-        data: synthetic
+        description: One-hot, ordinal with the true order, frequency, cross-fitted target encoding (leakage demo), hashing,
+          rare and unseen categories.
+        data: real
       - title: Binning and Discretization
         source: S05-06
         file: M10-Feature Engineering & Data Preprocessing/06-Binning and Discretization.ipynb
-        status: review
-        level: advanced
-        description: Turning continuous variables into informative buckets.
-        data: synthetic
+        status: done
+        level: intermediate
+        description: Equal-width, quantile, k-means and tree binning, splines vs bins for non-linear effects, weight of evidence
+          and information value.
+        data: real
       - title: Feature Construction
         source: S05-07
         file: M10-Feature Engineering & Data Preprocessing/07-Feature Construction.ipynb
-        status: review
-        level: advanced
-        description: Polynomial terms, interactions, ratios, and domain-driven features.
-        data: synthetic
+        status: done
+        level: intermediate
+        description: Domain features for house prices, feature groups measured with CV, interactions and polynomial terms
+          (and when they do not help).
+        data: real
       - title: Feature Selection & PCA
         source: S05-08
         file: M10-Feature Engineering & Data Preprocessing/08-Feature Selection & PCA.ipynb
-        status: review
-        level: advanced
-        description: Filter, wrapper, and embedded methods for reducing dimensionality.
-        data: synthetic
+        status: done
+        level: intermediate
+        description: Variance, correlation and mutual information filters, Lasso, RFECV, permutation importance, selection
+          bias on noise, PCA trade-offs.
+        data: real
       - title: Target Leakage Prevention
         source: S05-09
         file: M10-Feature Engineering & Data Preprocessing/09-Target Leakage Prevention.ipynb
-        status: review
-        level: advanced
-        description: Leakage patterns, time-aware splits, and safer pipeline design.
-        data: synthetic
+        status: done
+        level: intermediate
+        description: The Bank Marketing duration leak, preprocessing leakage with feature selection, random vs time-ordered
+          splits, a leakage checklist.
+        data: real
       - title: Pipeline Engineering (scikit-learn)
         source: S05-10
         file: M10-Feature Engineering & Data Preprocessing/10-Pipeline Engineering (scikit-learn).ipynb
-        status: review
-        level: advanced
-        description: Reusable transformations, train/test consistency, and reproducibility.
-        data: synthetic
+        status: done
+        level: intermediate
+        description: ColumnTransformer, a custom transformer, joint grid search over preprocessing and models, saving pipelines
+          with metadata, unseen inputs.
+        data: real
       - title: Handling Imbalanced Data
         source: S05-11
         file: M10-Feature Engineering & Data Preprocessing/11-Handling Imbalanced Data.ipynb
-        status: review
-        level: expert
-        description: Resampling, class weights, and preprocessing for skewed targets.
-        data: synthetic
+        status: done
+        level: intermediate
+        description: PR AUC vs accuracy, class weights, over/under-sampling and SMOTE in pipelines, profit-based threshold
+          tuning with TunedThresholdClassifierCV.
+        data: real
       - title: Temporal Feature Engineering
         source: S05-12
         file: M10-Feature Engineering & Data Preprocessing/12-Temporal Feature Engineering.ipynb
-        status: merge
-        level: advanced
-        description: Lag features, rolling statistics, and date-derived signals.
-        data: synthetic
-        notes: 'merge into S08-06: temporal features live in M17; keep a pointer here'
+        status: done
+        level: intermediate
+        description: Calendar and cyclical features, lags and rolling windows without future data, time-ordered CV, a centred-window
+          leak, when lags do not help.
+        data: real
       - title: Text and Categorical Cleaning (Advanced)
         source: S05-13
         file: M10-Feature Engineering & Data Preprocessing/13-Text and Categorical Cleaning (Advanced).ipynb
-        status: review
-        level: expert
-        description: Standardizing labels, handling rare categories, and normalization.
-        data: synthetic
+        status: done
+        level: intermediate
+        description: Unicode/case/whitespace normalisation, aliases, fuzzy matching with measured threshold trade-offs, rare
+          categories, multi-valued fields.
+        data: real
       - title: Data Validation with pandera
-        status: planned
-        file: null
+        status: done
+        file: M10-Feature Engineering & Data Preprocessing/14-Data Validation with pandera.ipynb
+        level: intermediate
+        description: pandera schemas and DataFrameModels, cross-column checks, lazy validation reports, schemas as gates before
+          training and prediction.
+        data: real
       - title: Embeddings as Features
-        status: planned
-        file: null
+        status: done
+        file: M10-Feature Engineering & Data Preprocessing/15-Embeddings as Features.ipynb
+        level: intermediate
+        description: TF-IDF vs nomic-embed-text embeddings on 20 Newsgroups, label efficiency, embedding space, combining
+          with tabular features, costs and risks.
+        data: real
       - title: Feature Stores and Reuse
         source: S05-14
         file: M10-Feature Engineering & Data Preprocessing/16-Feature Stores and Reuse.ipynb
-        status: realise
-        level: expert
-        description: Persisting engineered features for repeatable model training.
-        data: mock
+        status: done
+        level: advanced
+        description: Feature views and event timestamps, point-in-time joins, a Redis online store, training/serving consistency
+          checks, Feast concepts.
+        data: real
+    assignments:
+      - title: Campaign Targeting Pipeline
+        file: M10-Feature Engineering & Data Preprocessing/assignments/01-Campaign-Targeting-Pipeline.ipynb
+        solution: M10-Feature Engineering & Data Preprocessing/assignments/01-Campaign-Targeting-Pipeline-solution.ipynb
+      - title: House Price Feature Lab
+        file: M10-Feature Engineering & Data Preprocessing/assignments/02-House-Price-Feature-Lab.ipynb
+        solution: M10-Feature Engineering & Data Preprocessing/assignments/02-House-Price-Feature-Lab-solution.ipynb
   - id: M11
     name: Data Engineering & Orchestration
     group: Data

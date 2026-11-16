@@ -53,6 +53,16 @@ DATASETS = {
     "taxi_zones.zip": (TLC + "misc/taxi_zones.zip",
                        "f6d711917bb4340f8f644d5366c51665489eb2d426dd1a4a55677721ae5adf17",
                        "NYC TLC taxi zone boundaries (shapefile, NAD83 / New York Long Island ftUS)"),
+    # tabular machine-learning datasets
+    "adult.zip": ("https://archive.ics.uci.edu/static/public/2/adult.zip",
+                  "7537312dd56c2b98035880805ce99e68183a30ee468aa5329d6df0fbb3cc21bb",
+                  "Adult / Census Income (Becker & Kohavi 1996), UCI ML Repository, CC BY 4.0"),
+    "bank_marketing.zip": ("https://archive.ics.uci.edu/static/public/222/bank+marketing.zip",
+                           "e0bf5f5de5b846e2f18e9d90606637267d46dfa260e0f17bb12e605db5efbeb4",
+                           "Bank Marketing (Moro, Rita & Cortez 2014), UCI ML Repository, CC BY 4.0"),
+    "ames_housing.parquet": ("https://data.openml.org/datasets/0004/43926/dataset_43926.pq",
+                             "8dc6b3cb2d2c5d1ee625bd74304e0ca8ddc550cae9c509d8a105e7ac23fb8c50",
+                             "Ames Housing (De Cock 2011), OpenML 43926 (AmesHousing R package version), public"),
     "yellow_tripdata_2024-01.parquet": (TLC + "trip-data/yellow_tripdata_2024-01.parquet",
                                         "c4d59da7bbc8abaeeeb1727947ee93d9891a71acb42854bd80db1571b2030510",
                                         "NYC TLC yellow taxi trips, January 2024 (~3.0 million rows)"),
@@ -90,6 +100,50 @@ def _sha256(path: Path) -> str:
 def taxi(month: str = "2024-01") -> Path:
     """Path of one month of NYC yellow taxi trips (Parquet)."""
     return fetch(f"yellow_tripdata_{month}.parquet")
+
+
+ADULT_COLUMNS = ["age", "workclass", "fnlwgt", "education", "education_num", "marital_status", "occupation",
+                 "relationship", "race", "sex", "capital_gain", "capital_loss", "hours_per_week", "native_country", "income"]
+
+
+def adult(split: str = "train"):
+    """Adult census income data as a DataFrame ("train" = adult.data, "test" = adult.test). Missing values are NaN."""
+    import io
+    import zipfile
+
+    import pandas as pd
+    member = "adult.data" if split == "train" else "adult.test"
+    raw = zipfile.ZipFile(fetch("adult.zip")).read(member)
+    df = pd.read_csv(io.BytesIO(raw), header=None, names=ADULT_COLUMNS, skipinitialspace=True, na_values="?",
+                     skiprows=1 if split == "test" else 0)
+    df["income"] = df["income"].str.rstrip(".")
+    return df
+
+
+def bank_marketing():
+    """Bank Marketing (bank-additional-full.csv): 41,188 phone calls, target column `y` (yes/no)."""
+    import io
+    import zipfile
+
+    import pandas as pd
+    outer = zipfile.ZipFile(fetch("bank_marketing.zip"))
+    inner = zipfile.ZipFile(io.BytesIO(outer.read("bank-additional.zip")))
+    return pd.read_csv(io.BytesIO(inner.read("bank-additional/bank-additional-full.csv")), sep=";")
+
+
+def ames():
+    """Ames Housing: 2,930 house sales with 80 features and Sale_Price.
+
+    The source file marks every text column as an *ordered* category in alphabetical order (Excellent < Fair < Good),
+    which is wrong; the columns are returned as plain text so that each lesson defines the real order itself.
+    """
+    import pandas as pd
+    df = pd.read_parquet(fetch("ames_housing.parquet"))
+    for col in df.select_dtypes("category").columns:
+        df[col] = df[col].astype(str)
+    int_cols = df.select_dtypes("uint8").columns
+    df[int_cols] = df[int_cols].astype("int64")
+    return df
 
 
 # ------------------------------------------------------------------ docker helpers
