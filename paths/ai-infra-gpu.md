@@ -7,8 +7,8 @@ Take the modules in order. Each module lists its lessons; skip lessons you alrea
 | Step | Module | Lessons | Verified | GPU |
 | :-: | :--- | :-: | :-: | :-: |
 | 1 | [M01 · Python](../M01-Python/README.md) | 18 | 18/18 | — |
-| 2 | [M03 · Git & Collaboration](../M03-Git%20%26%20Collaboration/README.md) | 4 | 0/4 | — |
-| 3 | [M04 · Linux & Shell](../M04-Linux%20%26%20Shell/README.md) | 7 | 0/7 | — |
+| 2 | [M03 · Git & Collaboration](../M03-Git%20%26%20Collaboration/README.md) | 4 | 4/4 | — |
+| 3 | [M04 · Linux & Shell](../M04-Linux%20%26%20Shell/README.md) | 7 | 7/7 | — |
 | 4 | [M02 · Software Engineering Practices](../M02-Software%20Engineering%20Practices/README.md) | 10 | 10/10 | — |
 | 5 | [M05 · Mathematics for Data Science (R)](../M05-Mathematics%20for%20Data%20Science%20%28R%29/README.md) | 7 | 7/7 | — |
 | 6 | [M08 · NumPy, Pandas & Polars](../M08-NumPy%2C%20Pandas%20%26%20Polars/README.md) | 18 | 0/18 | — |
@@ -22,6 +22,6 @@ Take the modules in order. Each module lists its lessons; skip lessons you alrea
 | 14 | [M36 · LLM Serving & Inference Systems](../M36-LLM%20Serving%20%26%20Inference%20Systems/README.md) | 15 | 0/15 | required |
 | 15 | [M35 · Model Optimization & Edge AI](../M35-Model%20Optimization%20%26%20Edge%20AI/README.md) | 16 | 0/16 | optional |
 
-**Total:** 191 lessons (37 still planned). **Capstone:** Capstone: AI Infrastructure & GPU Systems (module M42).
+**Total:** 191 lessons (35 still planned). **Capstone:** Capstone: AI Infrastructure & GPU Systems (module M42).
 
 **Used by roles:** [Inference & Performance Engineer](../roles/inference-engineer.md)

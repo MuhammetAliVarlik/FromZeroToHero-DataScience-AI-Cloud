@@ -240,77 +240,90 @@ modules:
       - title: Git Fundamentals
         source: S01-19
         file: M03-Git & Collaboration/01-Git Fundamentals.ipynb
-        status: deepen
+        status: done
         level: beginner
-        description: 'Version control basics: init, add, commit, status, branching, and merging.'
-        data: synthetic
+        description: Working directory, staging area and commits; diff, log, restore, revert; Git's content-addressed objects;
+          this repository's history as data.
+        data: real
       - title: Github & Collaboration
         source: S01-20
         file: M03-Git & Collaboration/02-Github & Collaboration.ipynb
-        status: deepen
-        level: intermediate
-        description: Remote repositories, push, pull, cloning, .gitignore, and Pull Request workflows.
+        status: done
+        level: beginner
+        description: Remotes, clone/push/fetch/pull with two developers, rejected pushes, .gitignore, the GitHub flow and
+          pull requests, git blame.
         data: synthetic
       - title: Branching Strategies, Rebase & Conflict Resolution
-        status: planned
-        file: null
+        status: done
+        file: M03-Git & Collaboration/03-Branching Strategies, Rebase & Conflict Resolution.ipynb
+        level: intermediate
+        description: Fast-forward and merge commits, resolving a conflict, rebase, fixup/autosquash, git bisect run, branching
+          strategies.
+        data: synthetic
       - title: Pre-commit Hooks & Code Review
-        status: planned
-        file: null
+        status: done
+        file: M03-Git & Collaboration/04-Pre-commit Hooks & Code Review.ipynb
+        level: intermediate
+        description: Git hooks that block secrets, the pre-commit framework with Ruff, Conventional Commits, and a code-review
+          checklist.
+        data: synthetic
   - id: M04
     name: Linux & Shell
     group: Foundations
     prereqs: []
     gpu: none
     lessons:
-      - title: POSIX Storage Physics & Directory Topologies
+      - title: Files, Directories & Permissions
         source: S18-01
-        file: M04-Linux & Shell/01-POSIX Storage Physics & Directory Topologies.ipynb
-        status: review
+        file: M04-Linux & Shell/01-Files, Directories & Permissions.ipynb
+        status: done
         level: beginner
-        description: Filesystem hierarchy, permission bits, and inode-level storage mechanics.
-        data: synthetic
-      - title: The Linux Stream Matrix (I-O Redirection & Pipes)
+        description: File-system hierarchy, navigation, permissions and octal modes, inodes and links, find, du and df on
+          this repository.
+        data: real
+      - title: Streams, Redirection & Pipes
         source: S18-02
-        file: M04-Linux & Shell/02-The Linux Stream Matrix (I-O Redirection & Pipes).ipynb
-        status: review
+        file: M04-Linux & Shell/02-Streams, Redirection & Pipes.ipynb
+        status: done
         level: beginner
-        description: stdin/stdout/stderr redirection, pipes, and composing shell commands.
-        data: synthetic
-      - title: Hardware Telemetry & Kernel Resource Management
+        description: stdin/stdout/stderr, redirection, pipes, tee, xargs, exit codes and pipefail, here-documents, process
+          substitution.
+        data: real
+      - title: Processes & System Resources
         source: S18-03
-        file: M04-Linux & Shell/03-Hardware Telemetry & Kernel Resource Management.ipynb
-        status: realise
-        level: beginner
-        description: CPU, memory, and process introspection via /proc and kernel resource accounting.
-        data: mock
-      - title: Text Processing Mechanics (grep, sed, awk)
+        file: M04-Linux & Shell/03-Processes & System Resources.ipynb
+        status: done
+        level: intermediate
+        description: PID/PPID, background jobs and signals, /proc, free, psutil, and a measured memory leak of a real process.
+        data: real
+      - title: Text Processing with grep, sed & awk
         source: S18-04
-        file: M04-Linux & Shell/04-Text Processing Mechanics (grep, sed, awk).ipynb
-        status: review
+        file: M04-Linux & Shell/04-Text Processing with grep, sed & awk.ipynb
+        status: done
         level: intermediate
-        description: Pattern matching, stream editing, and field-based text processing at the command line.
-        data: synthetic
-      - title: Structured Log Extraction & Telemetry Parsing (jq)
+        description: Regular expressions with grep, editing with sed, field calculations with awk on the real dpkg log.
+        data: real
+      - title: JSON on the Command Line with jq
         source: S18-05
-        file: M04-Linux & Shell/05-Structured Log Extraction & Telemetry Parsing (jq).ipynb
-        status: review
+        file: M04-Linux & Shell/05-JSON on the Command Line with jq.ipynb
+        status: done
         level: intermediate
-        description: Querying and reshaping JSON log streams directly from the shell.
-        data: synthetic
-      - title: Automated Batch Scripts & Network Cron Daemon
+        description: jq paths, select/map/group_by, analysing every course notebook as JSON, JSON Lines logs.
+        data: real
+      - title: Shell Scripts & Scheduling with cron
         source: S18-06
-        file: M04-Linux & Shell/06-Automated Batch Scripts & Network Cron Daemon.ipynb
-        status: review
+        file: M04-Linux & Shell/06-Shell Scripts & Scheduling with cron.ipynb
+        status: done
         level: intermediate
-        description: Scheduling recurring jobs and building resilient batch automation scripts.
+        description: Robust bash (set -euo pipefail, quoting, trap), a rotating backup script, cron syntax and a real cron
+          job.
         data: synthetic
-      - title: Network Socket Physics, SSH & Remote Automation
+      - title: Networking, SSH & Remote File Sync
         source: S18-07
-        file: M04-Linux & Shell/07-Network Socket Physics, SSH & Remote Automation.ipynb
-        status: review
+        file: M04-Linux & Shell/07-Networking, SSH & Remote File Sync.ipynb
+        status: done
         level: intermediate
-        description: TCP/socket fundamentals, SSH key-based access, and remote command execution.
+        description: IP, ports, DNS, ss and curl against a local server, SSH keys and config, rsync delta transfer measured.
         data: synthetic
   - id: M05
     name: Mathematics for Data Science (R)

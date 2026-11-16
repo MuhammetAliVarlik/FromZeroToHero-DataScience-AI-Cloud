@@ -2,7 +2,7 @@
 
 > Generated from `curriculum.yml` by `tools/build_curriculum.py`. Do not edit by hand.
 
-**Group:** Foundations · **Lessons:** 7 existing + 0 planned (0 verified) · **GPU:** —
+**Group:** Foundations · **Lessons:** 7 existing + 0 planned (7 verified) · **GPU:** —
 
 **Prerequisites:** none
 
@@ -10,12 +10,12 @@
 
 | # | Lesson | Level | Status | Description |
 | :-: | :--- | :--- | :-: | :--- |
-| 01 | [POSIX Storage Physics & Directory Topologies](01-POSIX%20Storage%20Physics%20&%20Directory%20Topologies.ipynb) | 🟢 Beginner | 🔍 | Filesystem hierarchy, permission bits, and inode-level storage mechanics. |
-| 02 | [The Linux Stream Matrix (I-O Redirection & Pipes)](02-The%20Linux%20Stream%20Matrix%20(I-O%20Redirection%20&%20Pipes).ipynb) | 🟢 Beginner | 🔍 | stdin/stdout/stderr redirection, pipes, and composing shell commands. |
-| 03 | [Hardware Telemetry & Kernel Resource Management](03-Hardware%20Telemetry%20&%20Kernel%20Resource%20Management.ipynb) | 🟢 Beginner | ⚙️ | CPU, memory, and process introspection via /proc and kernel resource accounting. |
-| 04 | [Text Processing Mechanics (grep, sed, awk)](04-Text%20Processing%20Mechanics%20(grep,%20sed,%20awk).ipynb) | 🟡 Intermediate | 🔍 | Pattern matching, stream editing, and field-based text processing at the command line. |
-| 05 | [Structured Log Extraction & Telemetry Parsing (jq)](05-Structured%20Log%20Extraction%20&%20Telemetry%20Parsing%20(jq).ipynb) | 🟡 Intermediate | 🔍 | Querying and reshaping JSON log streams directly from the shell. |
-| 06 | [Automated Batch Scripts & Network Cron Daemon](06-Automated%20Batch%20Scripts%20&%20Network%20Cron%20Daemon.ipynb) | 🟡 Intermediate | 🔍 | Scheduling recurring jobs and building resilient batch automation scripts. |
-| 07 | [Network Socket Physics, SSH & Remote Automation](07-Network%20Socket%20Physics,%20SSH%20&%20Remote%20Automation.ipynb) | 🟡 Intermediate | 🔍 | TCP/socket fundamentals, SSH key-based access, and remote command execution. |
+| 01 | [Files, Directories & Permissions](01-Files,%20Directories%20&%20Permissions.ipynb) | 🟢 Beginner | ✅ | File-system hierarchy, navigation, permissions and octal modes, inodes and links, find, du and df on this repository. |
+| 02 | [Streams, Redirection & Pipes](02-Streams,%20Redirection%20&%20Pipes.ipynb) | 🟢 Beginner | ✅ | stdin/stdout/stderr, redirection, pipes, tee, xargs, exit codes and pipefail, here-documents, process substitution. |
+| 03 | [Processes & System Resources](03-Processes%20&%20System%20Resources.ipynb) | 🟡 Intermediate | ✅ | PID/PPID, background jobs and signals, /proc, free, psutil, and a measured memory leak of a real process. |
+| 04 | [Text Processing with grep, sed & awk](04-Text%20Processing%20with%20grep,%20sed%20&%20awk.ipynb) | 🟡 Intermediate | ✅ | Regular expressions with grep, editing with sed, field calculations with awk on the real dpkg log. |
+| 05 | [JSON on the Command Line with jq](05-JSON%20on%20the%20Command%20Line%20with%20jq.ipynb) | 🟡 Intermediate | ✅ | jq paths, select/map/group_by, analysing every course notebook as JSON, JSON Lines logs. |
+| 06 | [Shell Scripts & Scheduling with cron](06-Shell%20Scripts%20&%20Scheduling%20with%20cron.ipynb) | 🟡 Intermediate | ✅ | Robust bash (set -euo pipefail, quoting, trap), a rotating backup script, cron syntax and a real cron job. |
+| 07 | [Networking, SSH & Remote File Sync](07-Networking,%20SSH%20&%20Remote%20File%20Sync.ipynb) | 🟡 Intermediate | ✅ | IP, ports, DNS, ss and curl against a local server, SSH keys and config, rsync delta transfer measured. |
 
 Status legend: ✅ done · 🔍 review · 📈 deepen · ⚙️ realise · 🔀 merge · ✏️ rewrite · 🆕 planned

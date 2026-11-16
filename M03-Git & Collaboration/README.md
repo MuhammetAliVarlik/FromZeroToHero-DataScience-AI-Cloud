@@ -2,7 +2,7 @@
 
 > Generated from `curriculum.yml` by `tools/build_curriculum.py`. Do not edit by hand.
 
-**Group:** Foundations · **Lessons:** 2 existing + 2 planned (0 verified) · **GPU:** —
+**Group:** Foundations · **Lessons:** 4 existing + 0 planned (4 verified) · **GPU:** —
 
 **Prerequisites:** none
 
@@ -10,9 +10,9 @@
 
 | # | Lesson | Level | Status | Description |
 | :-: | :--- | :--- | :-: | :--- |
-| 01 | [Git Fundamentals](01-Git%20Fundamentals.ipynb) | 🟢 Beginner | 📈 | Version control basics: init, add, commit, status, branching, and merging. |
-| 02 | [Github & Collaboration](02-Github%20&%20Collaboration.ipynb) | 🟡 Intermediate | 📈 | Remote repositories, push, pull, cloning, .gitignore, and Pull Request workflows. |
-| 03 | Branching Strategies, Rebase & Conflict Resolution |  | 🆕 |  |
-| 04 | Pre-commit Hooks & Code Review |  | 🆕 |  |
+| 01 | [Git Fundamentals](01-Git%20Fundamentals.ipynb) | 🟢 Beginner | ✅ | Working directory, staging area and commits; diff, log, restore, revert; Git's content-addressed objects; this repository's history as data. |
+| 02 | [Github & Collaboration](02-Github%20&%20Collaboration.ipynb) | 🟢 Beginner | ✅ | Remotes, clone/push/fetch/pull with two developers, rejected pushes, .gitignore, the GitHub flow and pull requests, git blame. |
+| 03 | [Branching Strategies, Rebase & Conflict Resolution](03-Branching%20Strategies,%20Rebase%20&%20Conflict%20Resolution.ipynb) | 🟡 Intermediate | ✅ | Fast-forward and merge commits, resolving a conflict, rebase, fixup/autosquash, git bisect run, branching strategies. |
+| 04 | [Pre-commit Hooks & Code Review](04-Pre-commit%20Hooks%20&%20Code%20Review.ipynb) | 🟡 Intermediate | ✅ | Git hooks that block secrets, the pre-commit framework with Ruff, Conventional Commits, and a code-review checklist. |
 
 Status legend: ✅ done · 🔍 review · 📈 deepen · ⚙️ realise · 🔀 merge · ✏️ rewrite · 🆕 planned

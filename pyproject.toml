@@ -42,6 +42,7 @@ foundations = [
     "pydantic>=2.9",
     "rich>=13.9",
     "typer>=0.15",
+    "pre-commit>=4.0",
 ]
 # M07-M10, M14 Data, BI, feature engineering, experimentation
 data = [

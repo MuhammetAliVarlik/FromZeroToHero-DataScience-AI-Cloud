@@ -161,7 +161,7 @@ cp .env.example .env
 <!-- BEGIN GENERATED:catalogue -->
 ## 🛣️ Module Catalogue
 
-**43 modules · 553 lessons** (408 written, 145 planned, 59 fully verified). Each module folder has its own README with the lesson list. Status per lesson: ✅ done · 🔍 review · 📈 deepen · ⚙️ realise · 🔀 merge · ✏️ rewrite · 🆕 planned.
+**43 modules · 553 lessons** (410 written, 143 planned, 70 fully verified). Each module folder has its own README with the lesson list. Status per lesson: ✅ done · 🔍 review · 📈 deepen · ⚙️ realise · 🔀 merge · ✏️ rewrite · 🆕 planned.
 
 ### 🧱 Foundations
 
@@ -169,8 +169,8 @@ cp .env.example .env
 | :--- | :-: | :-: | :--- | :-: |
 | [M01 · Python](M01-Python/README.md) | 18 + 0 planned | 18 | — | — |
 | [M02 · Software Engineering Practices](M02-Software%20Engineering%20Practices/README.md) | 10 + 0 planned | 10 | M01 | — |
-| [M03 · Git & Collaboration](M03-Git%20%26%20Collaboration/README.md) | 2 + 2 planned | 0 | — | — |
-| [M04 · Linux & Shell](M04-Linux%20%26%20Shell/README.md) | 7 + 0 planned | 0 | — | — |
+| [M03 · Git & Collaboration](M03-Git%20%26%20Collaboration/README.md) | 4 + 0 planned | 4 | — | — |
+| [M04 · Linux & Shell](M04-Linux%20%26%20Shell/README.md) | 7 + 0 planned | 7 | — | — |
 | [M05 · Mathematics for Data Science (R)](M05-Mathematics%20for%20Data%20Science%20%28R%29/README.md) | 7 + 0 planned | 7 | — | — |
 | [M06 · Statistics & Inference (R)](M06-Statistics%20%26%20Inference%20%28R%29/README.md) | 23 + 0 planned | 23 | M05 | — |
 
