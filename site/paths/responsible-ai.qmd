@@ -1,4 +1,5 @@
 ---
+format: html
 title: "Path: Responsible AI & AI Security"
 ---
 

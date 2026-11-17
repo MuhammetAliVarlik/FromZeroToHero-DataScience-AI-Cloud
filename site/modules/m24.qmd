@@ -1,4 +1,5 @@
 ---
+format: html
 title: "M24 · Probabilistic & Bayesian Deep Learning"
 subtitle: "Deep Learning & Modalities · 0 of 11 lessons ready"
 ---

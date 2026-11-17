@@ -1,29 +1,31 @@
 /*-- scss:defaults --*/
+// "Engineering pad" theme, light: pale-green engineering grid, graphite ink, red pencil, marker highlights.
 $font-family-sans-serif: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
-$font-family-monospace: "JetBrains Mono", "Fira Code", Consolas, monospace;
-$headings-font-family: "Patrick Hand", "Comic Neue", cursive;
-$body-bg: #fbfaf4;
-$body-color: #2b2b2b;
-$link-color: #1a5fb4;
-$primary: #1a5fb4;
-$code-bg: #f3f1e7;
-$navbar-bg: #fbfaf4;
-$navbar-fg: #2b2b2b;
+$font-family-monospace: "JetBrains Mono", Consolas, monospace;
+$headings-font-family: "Shantell Sans", "Kalam", cursive;
+$body-bg: #f7f5ee;
+$body-color: #2a2c2e;
+$link-color: #0e6b66;
+$primary: #0e6b66;
+$code-bg: #fffdf6;
+$navbar-bg: #f7f5ee;
+$navbar-fg: #2a2c2e;
 $sidebar-bg: transparent;
-$grid-line: rgba(70, 130, 200, 0.10);
-$marker: rgba(255, 221, 0, 0.55);
-$note-ink: #1a5fb4;
+$footer-bg: transparent;
 
 /*-- scss:rules --*/
-@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Caveat:wght@500;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Kalam:wght@400;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;600&display=swap");
 
-body {
-  background-color: $body-bg;
-  background-image:
-    linear-gradient($grid-line 1px, transparent 1px),
-    linear-gradient(90deg, $grid-line 1px, transparent 1px);
-  background-size: 24px 24px;
+:root {
+  --pad-paper: #{$body-bg};
+  --pad-grid-minor: rgba(46, 125, 80, 0.075);
+  --pad-grid-major: rgba(46, 125, 80, 0.16);
+  --pad-margin: rgba(200, 69, 60, 0.42);
+  --pad-ink: #3a3c3f;          /* graphite */
+  --pad-red: #c8453c;          /* red pencil */
+  --pad-card: #fffcf0;         /* index card */
+  --pad-card-rule: rgba(60, 60, 60, 0.07);
+  --pad-tape: rgba(214, 200, 150, 0.62);
+  --pad-shadow: rgba(40, 40, 30, 0.10);
+  --pad-hl-alpha: 0.55;
 }
-:root { --fzth-marker: #{$marker}; }
-strong { background: linear-gradient(transparent 55%, $marker 55%); padding: 0 2px; }
-.insight { color: $note-ink; border-left-color: $note-ink; }

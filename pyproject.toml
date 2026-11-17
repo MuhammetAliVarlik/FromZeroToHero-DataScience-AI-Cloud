@@ -184,6 +184,10 @@ gpu = [
     "numba>=0.60",
 ]
 
+site = [                                  # Quarto website and PDF books (tools/build_site.py, tools/build_books.py)
+    "pypdf>=5.1",
+]
+
 [tool.uv]
 # Install all groups together only when you ask for them.
 default-groups = []

@@ -1,0 +1,31 @@
+<script>
+(function () {
+  const MODS = {"M01": {"name": "Python", "hl": "255 210 0"}, "M02": {"name": "Software Engineering Practices", "hl": "255 210 0"}, "M03": {"name": "Git & Collaboration", "hl": "255 210 0"}, "M04": {"name": "Linux & Shell", "hl": "255 210 0"}, "M05": {"name": "Mathematics for Data Science (R)", "hl": "255 210 0"}, "M06": {"name": "Statistics & Inference (R)", "hl": "255 210 0"}, "M07": {"name": "SQL & Databases", "hl": "255 150 40"}, "M08": {"name": "NumPy, Pandas & Polars", "hl": "255 150 40"}, "M09": {"name": "Data Visualization & BI", "hl": "255 150 40"}, "M10": {"name": "Feature Engineering & Data Preprocessing", "hl": "255 150 40"}, "M11": {"name": "Data Engineering & Orchestration", "hl": "255 150 40"}, "M12": {"name": "Streaming & Lakehouse", "hl": "255 150 40"}, "M13": {"name": "Spark & Distributed Data Processing", "hl": "255 150 40"}, "M14": {"name": "Experimentation & A/B Testing", "hl": "110 205 90"}, "M15": {"name": "Causal Inference", "hl": "110 205 90"}, "M16": {"name": "Classical Machine Learning", "hl": "110 205 90"}, "M17": {"name": "Time Series & Forecasting", "hl": "110 205 90"}, "M18": {"name": "Recommender Systems", "hl": "110 205 90"}, "M19": {"name": "Graph Data Science", "hl": "110 205 90"}, "M20": {"name": "Deep Learning Foundations", "hl": "70 190 230"}, "M21": {"name": "Computer Vision", "hl": "70 190 230"}, "M22": {"name": "Generative Models", "hl": "70 190 230"}, "M23": {"name": "Speech & Audio", "hl": "70 190 230"}, "M24": {"name": "Probabilistic & Bayesian Deep Learning", "hl": "70 190 230"}, "M25": {"name": "Reinforcement Learning", "hl": "70 190 230"}, "M26": {"name": "LLM Foundations", "hl": "255 120 190"}, "M27": {"name": "LLM Fine-Tuning & Alignment", "hl": "255 120 190"}, "M28": {"name": "RAG & Retrieval Systems", "hl": "255 120 190"}, "M29": {"name": "AI Agents & MCP", "hl": "255 120 190"}, "M30": {"name": "AI Application Engineering", "hl": "255 120 190"}, "M31": {"name": "Evaluation & Observability for ML and LLMs", "hl": "255 120 190"}, "M32": {"name": "Containers & Kubernetes", "hl": "170 140 255"}, "M33": {"name": "Cloud & Infrastructure as Code", "hl": "170 140 255"}, "M34": {"name": "MLOps & LLMOps", "hl": "170 140 255"}, "M35": {"name": "Model Optimization & Edge AI", "hl": "170 140 255"}, "M36": {"name": "LLM Serving & Inference Systems", "hl": "170 140 255"}, "M37": {"name": "Distributed Training", "hl": "170 140 255"}, "M38": {"name": "GPU Programming & Kernels", "hl": "170 140 255"}, "M39": {"name": "Systems Languages for AI (C++ & Rust)", "hl": "170 140 255"}, "M40": {"name": "AutoML & Hyperparameter Optimization", "hl": "170 140 255"}, "M41": {"name": "Responsible AI, AI Security & Governance", "hl": "255 110 90"}, "M42": {"name": "Capstone Projects", "hl": "200 220 60"}, "M43": {"name": "AI Solution Design & Delivery", "hl": "60 210 190"}};
+  const path = decodeURIComponent(location.pathname);
+  const lesson = path.match(/\/(M\d\d)-[^\/]+\/(assignments\/)?([^\/]+)$/);
+  const modpage = path.match(/\/site\/modules\/m(\d\d)\.html$/);
+  const mod = lesson ? lesson[1] : (modpage ? "M" + modpage[1] : null);
+  if (!mod || !MODS[mod]) return;
+  document.documentElement.style.setProperty("--pad-hl", MODS[mod].hl);
+  if (!lesson) return;
+  const num = (lesson[3].match(/^(\d\d)-/) || [])[1];
+  const h1 = document.querySelector("h1.title");
+  if (!num || !h1) return;
+  const eyebrow = document.createElement("div");
+  eyebrow.className = "pad-eyebrow";
+  const chapter = document.createElement("span");
+  chapter.className = "pad-chapter";
+  chapter.textContent = lesson[2] ? "Mission " + num + (/-solution\.html$/.test(lesson[3]) ? " · solution" : "")
+                                  : "Chapter " + num;
+  const where = document.createElement("span");
+  where.textContent = mod + " · " + MODS[mod].name;
+  eyebrow.append(chapter, where);
+  const pdf = document.querySelector('.quarto-alternate-formats a[href$=".pdf"]');
+  if (pdf) {
+    const a = document.createElement("a");
+    a.className = "pad-pdf"; a.href = pdf.getAttribute("href"); a.textContent = "⤓ PDF";
+    eyebrow.append(a);
+  }
+  h1.parentElement.insertBefore(eyebrow, h1);
+})();
+</script>

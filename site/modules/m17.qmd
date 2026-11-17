@@ -1,4 +1,5 @@
 ---
+format: html
 title: "M17 · Time Series & Forecasting"
 subtitle: "Data Science · 0 of 25 lessons ready"
 ---

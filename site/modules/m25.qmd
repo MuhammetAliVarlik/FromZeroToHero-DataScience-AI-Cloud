@@ -1,4 +1,5 @@
 ---
+format: html
 title: "M25 · Reinforcement Learning"
 subtitle: "Deep Learning & Modalities · 0 of 9 lessons ready"
 ---

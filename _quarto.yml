@@ -738,6 +738,11 @@ format:
     css: site/notebook.css
     toc: true
     toc-depth: 2
+    format-links:
+    - format: typst
+      text: PDF
+      icon: file-pdf
+    - none
     code-copy: true
     code-overflow: wrap
     highlight-style:
@@ -745,5 +750,23 @@ format:
       dark: nord
     filters:
     - site/insight.lua
+    include-after-body: site/book-script.html
     fig-responsive: true
     smooth-scroll: true
+  typst:
+    include-in-header: site/book.typ
+    include-before-body: site/book-body.typ
+    font-paths:
+    - site/fonts
+    mainfont: Atkinson Hyperlegible
+    fontsize: 10.5pt
+    papersize: a4
+    margin:
+      left: 27mm
+      right: 17mm
+      top: 18mm
+      bottom: 20mm
+    filters:
+    - site/insight.lua
+    toc: false
+    fig-format: png

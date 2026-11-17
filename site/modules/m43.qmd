@@ -1,4 +1,5 @@
 ---
+format: html
 title: "M43 · AI Solution Design & Delivery"
 subtitle: "Delivery · 0 of 7 lessons ready"
 ---

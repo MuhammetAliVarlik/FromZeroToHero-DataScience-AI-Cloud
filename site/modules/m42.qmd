@@ -1,4 +1,5 @@
 ---
+format: html
 title: "M42 · Capstone Projects"
 subtitle: "Capstones · 0 of 13 lessons ready"
 ---

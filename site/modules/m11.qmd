@@ -1,7 +1,10 @@
 ---
+format: html
 title: "M11 · Data Engineering & Orchestration"
 subtitle: "Data · 10 of 10 lessons ready"
 ---
+
+[⤓ Download this module as a book (PDF)](../../pdf/m11.pdf){.book-download}
 
 **Prerequisites:** [M07 SQL & Databases](m07.qmd), [M02 Software Engineering Practices](m02.qmd) · **GPU:** none
 

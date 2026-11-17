@@ -1,4 +1,5 @@
 ---
+format: html
 title: "M41 · Responsible AI, AI Security & Governance"
 subtitle: "Responsibility · 0 of 17 lessons ready"
 ---

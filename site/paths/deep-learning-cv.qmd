@@ -1,4 +1,5 @@
 ---
+format: html
 title: "Path: Deep Learning & Computer Vision"
 ---
 

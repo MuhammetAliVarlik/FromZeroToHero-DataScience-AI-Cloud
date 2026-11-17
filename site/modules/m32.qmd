@@ -1,4 +1,5 @@
 ---
+format: html
 title: "M32 · Containers & Kubernetes"
 subtitle: "Ops & Systems · 0 of 9 lessons ready"
 ---

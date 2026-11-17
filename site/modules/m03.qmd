@@ -1,7 +1,10 @@
 ---
+format: html
 title: "M03 · Git & Collaboration"
 subtitle: "Foundations · 4 of 4 lessons ready"
 ---
+
+[⤓ Download this module as a book (PDF)](../../pdf/m03.pdf){.book-download}
 
 **Prerequisites:** none · **GPU:** none
 

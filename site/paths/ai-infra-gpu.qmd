@@ -1,4 +1,5 @@
 ---
+format: html
 title: "Path: AI Infrastructure & GPU Systems"
 ---
 

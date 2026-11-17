@@ -1,4 +1,5 @@
 ---
+format: html
 title: "From Zero to Hero"
 subtitle: "Data Science · AI · Data Engineering · MLOps · GPU — a free notebook course"
 page-layout: full
@@ -49,7 +50,7 @@ with real public data wherever it matters. **152 of 553 lessons** are ready; the
 ## Modules
 
 :::: {.module-grid}
-::: {.module-card}
+::: {.module-card style="--card-hl: 255 210 0"}
 ### Foundations
 
 - [M01 · Python](site/modules/m01.qmd) <span class='ready'>18/18</span>
@@ -59,7 +60,7 @@ with real public data wherever it matters. **152 of 553 lessons** are ready; the
 - [M05 · Mathematics for Data Science (R)](site/modules/m05.qmd) <span class='ready'>7/7</span>
 - [M06 · Statistics & Inference (R)](site/modules/m06.qmd) <span class='ready'>23/23</span>
 :::
-::: {.module-card}
+::: {.module-card style="--card-hl: 255 150 40"}
 ### Data
 
 - [M07 · SQL & Databases](site/modules/m07.qmd) <span class='ready'>20/20</span>
@@ -70,7 +71,7 @@ with real public data wherever it matters. **152 of 553 lessons** are ready; the
 - [M12 · Streaming & Lakehouse](site/modules/m12.qmd) <span class='ready'>0/7</span>
 - [M13 · Spark & Distributed Data Processing](site/modules/m13.qmd) <span class='ready'>0/12</span>
 :::
-::: {.module-card}
+::: {.module-card style="--card-hl: 110 205 90"}
 ### Data Science
 
 - [M14 · Experimentation & A/B Testing](site/modules/m14.qmd) <span class='ready'>0/6</span>
@@ -80,7 +81,7 @@ with real public data wherever it matters. **152 of 553 lessons** are ready; the
 - [M18 · Recommender Systems](site/modules/m18.qmd) <span class='ready'>0/6</span>
 - [M19 · Graph Data Science](site/modules/m19.qmd) <span class='ready'>0/13</span>
 :::
-::: {.module-card}
+::: {.module-card style="--card-hl: 70 190 230"}
 ### Deep Learning & Modalities
 
 - [M20 · Deep Learning Foundations](site/modules/m20.qmd) <span class='ready'>0/26</span>
@@ -90,7 +91,7 @@ with real public data wherever it matters. **152 of 553 lessons** are ready; the
 - [M24 · Probabilistic & Bayesian Deep Learning](site/modules/m24.qmd) <span class='ready'>0/11</span>
 - [M25 · Reinforcement Learning](site/modules/m25.qmd) <span class='ready'>0/9</span>
 :::
-::: {.module-card}
+::: {.module-card style="--card-hl: 255 120 190"}
 ### LLM & AI Applications
 
 - [M26 · LLM Foundations](site/modules/m26.qmd) <span class='ready'>1/15</span>
@@ -100,7 +101,7 @@ with real public data wherever it matters. **152 of 553 lessons** are ready; the
 - [M30 · AI Application Engineering](site/modules/m30.qmd) <span class='ready'>0/15</span>
 - [M31 · Evaluation & Observability for ML and LLMs](site/modules/m31.qmd) <span class='ready'>0/12</span>
 :::
-::: {.module-card}
+::: {.module-card style="--card-hl: 170 140 255"}
 ### Ops & Systems
 
 - [M32 · Containers & Kubernetes](site/modules/m32.qmd) <span class='ready'>0/9</span>
@@ -113,17 +114,17 @@ with real public data wherever it matters. **152 of 553 lessons** are ready; the
 - [M39 · Systems Languages for AI (C++ & Rust)](site/modules/m39.qmd) <span class='ready'>0/3</span>
 - [M40 · AutoML & Hyperparameter Optimization](site/modules/m40.qmd) <span class='ready'>0/6</span>
 :::
-::: {.module-card}
+::: {.module-card style="--card-hl: 255 110 90"}
 ### Responsibility
 
 - [M41 · Responsible AI, AI Security & Governance](site/modules/m41.qmd) <span class='ready'>0/17</span>
 :::
-::: {.module-card}
+::: {.module-card style="--card-hl: 200 220 60"}
 ### Capstones
 
 - [M42 · Capstone Projects](site/modules/m42.qmd) <span class='ready'>0/13</span>
 :::
-::: {.module-card}
+::: {.module-card style="--card-hl: 60 210 190"}
 ### Delivery
 
 - [M43 · AI Solution Design & Delivery](site/modules/m43.qmd) <span class='ready'>0/7</span>

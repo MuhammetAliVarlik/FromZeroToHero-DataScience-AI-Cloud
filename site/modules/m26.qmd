@@ -1,7 +1,10 @@
 ---
+format: html
 title: "M26 · LLM Foundations"
 subtitle: "LLM & AI Applications · 1 of 15 lessons ready"
 ---
+
+[⤓ Download this module as a book (PDF)](../../pdf/m26.pdf){.book-download}
 
 **Prerequisites:** [M01 Python](m01.qmd) · **GPU:** optional
 

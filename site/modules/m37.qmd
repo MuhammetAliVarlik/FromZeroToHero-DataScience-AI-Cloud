@@ -1,4 +1,5 @@
 ---
+format: html
 title: "M37 · Distributed Training"
 subtitle: "Ops & Systems · 0 of 6 lessons ready"
 ---

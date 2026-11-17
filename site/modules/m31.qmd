@@ -1,4 +1,5 @@
 ---
+format: html
 title: "M31 · Evaluation & Observability for ML and LLMs"
 subtitle: "LLM & AI Applications · 0 of 12 lessons ready"
 ---

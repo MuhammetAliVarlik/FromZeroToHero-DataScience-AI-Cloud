@@ -1,7 +1,10 @@
 ---
+format: html
 title: "M02 · Software Engineering Practices"
 subtitle: "Foundations · 10 of 10 lessons ready"
 ---
+
+[⤓ Download this module as a book (PDF)](../../pdf/m02.pdf){.book-download}
 
 **Prerequisites:** [M01 Python](m01.qmd) · **GPU:** none
 

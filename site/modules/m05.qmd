@@ -1,7 +1,10 @@
 ---
+format: html
 title: "M05 · Mathematics for Data Science (R)"
 subtitle: "Foundations · 7 of 7 lessons ready"
 ---
+
+[⤓ Download this module as a book (PDF)](../../pdf/m05.pdf){.book-download}
 
 **Prerequisites:** none · **GPU:** none
 

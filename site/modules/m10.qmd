@@ -1,7 +1,10 @@
 ---
+format: html
 title: "M10 · Feature Engineering & Data Preprocessing"
 subtitle: "Data · 16 of 16 lessons ready"
 ---
+
+[⤓ Download this module as a book (PDF)](../../pdf/m10.pdf){.book-download}
 
 **Prerequisites:** [M08 NumPy, Pandas & Polars](m08.qmd) · **GPU:** none
 

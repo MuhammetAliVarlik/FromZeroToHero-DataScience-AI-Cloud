@@ -1,4 +1,5 @@
 ---
+format: html
 title: "M15 · Causal Inference"
 subtitle: "Data Science · 0 of 6 lessons ready"
 ---

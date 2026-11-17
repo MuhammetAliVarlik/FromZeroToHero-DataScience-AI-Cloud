@@ -1,4 +1,5 @@
 ---
+format: html
 title: "M39 · Systems Languages for AI (C++ & Rust)"
 subtitle: "Ops & Systems · 0 of 3 lessons ready"
 ---

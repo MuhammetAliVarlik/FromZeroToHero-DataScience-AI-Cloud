@@ -1,4 +1,5 @@
 ---
+format: html
 title: "M21 · Computer Vision"
 subtitle: "Deep Learning & Modalities · 0 of 16 lessons ready"
 ---

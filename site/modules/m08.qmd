@@ -1,7 +1,10 @@
 ---
+format: html
 title: "M08 · NumPy, Pandas & Polars"
 subtitle: "Data · 18 of 18 lessons ready"
 ---
+
+[⤓ Download this module as a book (PDF)](../../pdf/m08.pdf){.book-download}
 
 **Prerequisites:** [M01 Python](m01.qmd) · **GPU:** none
 

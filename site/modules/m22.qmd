@@ -1,4 +1,5 @@
 ---
+format: html
 title: "M22 · Generative Models"
 subtitle: "Deep Learning & Modalities · 0 of 13 lessons ready"
 ---

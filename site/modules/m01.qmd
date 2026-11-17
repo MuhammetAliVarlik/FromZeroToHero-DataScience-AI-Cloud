@@ -1,7 +1,10 @@
 ---
+format: html
 title: "M01 · Python"
 subtitle: "Foundations · 18 of 18 lessons ready"
 ---
+
+[⤓ Download this module as a book (PDF)](../../pdf/m01.pdf){.book-download}
 
 **Prerequisites:** none · **GPU:** none
 

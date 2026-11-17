@@ -1,4 +1,5 @@
 ---
+format: html
 title: "M34 · MLOps & LLMOps"
 subtitle: "Ops & Systems · 0 of 20 lessons ready"
 ---

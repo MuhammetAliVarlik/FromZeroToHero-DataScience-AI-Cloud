@@ -1,4 +1,5 @@
 ---
+format: html
 title: "M28 · RAG & Retrieval Systems"
 subtitle: "LLM & AI Applications · 0 of 16 lessons ready"
 ---

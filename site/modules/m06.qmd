@@ -1,7 +1,10 @@
 ---
+format: html
 title: "M06 · Statistics & Inference (R)"
 subtitle: "Foundations · 23 of 23 lessons ready"
 ---
+
+[⤓ Download this module as a book (PDF)](../../pdf/m06.pdf){.book-download}
 
 **Prerequisites:** [M05 Mathematics for Data Science (R)](m05.qmd) · **GPU:** none
 

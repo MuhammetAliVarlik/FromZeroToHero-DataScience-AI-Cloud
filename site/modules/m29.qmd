@@ -1,4 +1,5 @@
 ---
+format: html
 title: "M29 · AI Agents & MCP"
 subtitle: "LLM & AI Applications · 0 of 19 lessons ready"
 ---

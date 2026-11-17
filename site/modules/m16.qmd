@@ -1,4 +1,5 @@
 ---
+format: html
 title: "M16 · Classical Machine Learning"
 subtitle: "Data Science · 0 of 22 lessons ready"
 ---

@@ -1,4 +1,5 @@
 ---
+format: html
 title: "M33 · Cloud & Infrastructure as Code"
 subtitle: "Ops & Systems · 0 of 14 lessons ready"
 ---

@@ -1,4 +1,5 @@
 ---
+format: html
 title: "M19 · Graph Data Science"
 subtitle: "Data Science · 0 of 13 lessons ready"
 ---

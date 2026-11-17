@@ -1,4 +1,5 @@
 ---
+format: html
 title: "M40 · AutoML & Hyperparameter Optimization"
 subtitle: "Ops & Systems · 0 of 6 lessons ready"
 ---

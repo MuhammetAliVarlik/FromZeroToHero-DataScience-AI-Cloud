@@ -1,4 +1,5 @@
 ---
+format: html
 title: "M18 · Recommender Systems"
 subtitle: "Data Science · 0 of 6 lessons ready"
 ---
