@@ -2723,7 +2723,9 @@ data-eng = [
     { name = "deltalake" },
     { name = "dlt", extra = ["duckdb"] },
     { name = "fastavro" },
+    { name = "googleapis-common-protos" },
     { name = "great-expectations" },
+    { name = "grpcio-status" },
     { name = "openlineage-python" },
     { name = "pyiceberg", extra = ["pyarrow", "sql-sqlite"] },
     { name = "pyspark" },
@@ -2884,7 +2886,9 @@ data-eng = [
     { name = "deltalake", specifier = ">=0.22" },
     { name = "dlt", extras = ["duckdb"], specifier = ">=1.4" },
     { name = "fastavro", specifier = ">=1.9" },
+    { name = "googleapis-common-protos", specifier = ">=1.65" },
     { name = "great-expectations", specifier = ">=1.2" },
+    { name = "grpcio-status", specifier = ">=1.62" },
     { name = "openlineage-python", specifier = ">=1.25" },
     { name = "pyiceberg", extras = ["sql-sqlite", "pyarrow"], specifier = ">=0.8" },
     { name = "pyspark", specifier = ">=3.5" },
@@ -3187,6 +3191,18 @@ wheels = [
 ]
 
 [[package]]
+name = "googleapis-common-protos"
+version = "1.76.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "protobuf" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/62/b6/bc095b23a3e0d978e75c8c18cabe4c11f791837410670e4486f0d539bfba/googleapis_common_protos-1.76.0.tar.gz", hash = "sha256:71db0e44a1d4c2dd024ebad44ca67129cc1e2892e4861df466764749d5ef8642", size = 156250, upload-time = "2026-10-22T23:43:36.263Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/05/6d/78dc67a9e779e594b49bf62604034d3a6aa428a55afc729cafda4b7333e1/googleapis_common_protos-1.76.0-py3-none-any.whl", hash = "sha256:59e13344a9f3651aa201a03e2bee815a3bf43a4baf1f9ff8a9b62a840ce25fac", size = 307707, upload-time = "2026-10-22T23:43:10.445Z" },
+]
+
+[[package]]
 name = "gradio"
 version = "6.32.0"
 source = { registry = "https://pypi.org/simple" }
@@ -3408,6 +3424,20 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/fa/76/618c37326e22ec642e731f9059dd659d9c284c7856ce740d240b198d3068/grpcio_health_checking-1.81.2.tar.gz", hash = "sha256:3b19df77e25c2a4eadf6fcfd789a577b58ae794308a4cba152063752aead3f24", size = 17283, upload-time = "2026-11-09T01:58:49.849Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/33/11/b86334d5fb75f68d3fec2d69e692a9af2017c16434a4fdb64a62215d5b81/grpcio_health_checking-1.81.2-py3-none-any.whl", hash = "sha256:b078fcc4bcd9fda7968e87302716e914ed70df274c3c6a534e500cc591ead905", size = 19276, upload-time = "2026-11-09T01:57:33.97Z" },
+]
+
+[[package]]
+name = "grpcio-status"
+version = "1.85.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "googleapis-common-protos" },
+    { name = "grpcio" },
+    { name = "protobuf" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/fe/16/0a161d0016f6e318ebf217780a91e007a67d9d244a06f79caeef689f5f02/grpcio_status-1.85.1.tar.gz", hash = "sha256:3f6ba6090d794b7148b23f03355addd56bee2b78174a12784c4d9b4e28c8928e", size = 13982, upload-time = "2026-10-30T16:05:25.631Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f1/e9/5e34e2543b586ffddf90721ab242e7b662c063484ee3978bf61ca90d7579/grpcio_status-1.85.1-py3-none-any.whl", hash = "sha256:ef84cb262c7a05fd7c27e61bb70c9f63bce4484ce8b3366585a381fed738fcb0", size = 14640, upload-time = "2026-10-30T16:05:11.252Z" },
 ]
 
 [[package]]

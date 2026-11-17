@@ -1184,61 +1184,87 @@ modules:
       - title: The Modern Data Stack & ELT Physics
         source: S15-01
         file: M11-Data Engineering & Orchestration/01-The Modern Data Stack & ELT Physics.ipynb
-        status: review
+        status: done
         level: beginner
-        description: Modern ELT stacks and data flow architectures.
+        description: ETL vs ELT, warehouse layers (raw/staging/marts), a complete measured ELT pipeline into DuckDB, and the
+          cost of moving vs. transforming data.
         data: real
       - title: Dimensional Data Modeling (Kimball)
         source: S15-02
         file: M11-Data Engineering & Orchestration/02-Dimensional Data Modeling (Kimball).ipynb
-        status: review
+        status: done
         level: intermediate
-        description: Star schemas, facts, dimensions, and modeling tradeoffs.
-        data: synthetic
+        description: Bus matrix and conformed dimensions, transaction/snapshot/accumulating facts, SCD types 1-3 in SQL, degenerate
+          and junk dimensions on Chinook.
+        data: real
       - title: Transformations with dbt (Data Build Tool)
         source: S15-03
         file: M11-Data Engineering & Orchestration/03-Transformations with dbt (Data Build Tool).ipynb
-        status: realise
+        status: done
         level: intermediate
-        description: dbt patterns, models, testing and CI.
-        data: mock
+        description: 'A real dbt project on DuckDB: sources, seeds, staging and mart models, ref(), generic and singular tests,
+          incremental models, docs and run results.'
+        data: real
       - title: Data Ingestion with dlt
-        status: planned
-        file: null
+        status: done
+        file: M11-Data Engineering & Orchestration/04-Data Ingestion with dlt.ipynb
+        level: intermediate
+        description: 'REST API ingestion with dlt resources and pipelines: schema inference, nested-data normalisation, schema
+          evolution, incremental cursors and merge loads.'
+        data: real
       - title: Apache Airflow Foundations
         source: S15-04
         file: M11-Data Engineering & Orchestration/05-Apache Airflow Foundations.ipynb
-        status: review
+        status: done
         level: intermediate
-        description: DAG design, scheduling, and orchestration basics.
-        data: synthetic
+        description: 'A real Airflow 3 instance in Docker: TaskFlow DAGs, scheduler and executors, XComs, triggering and monitoring
+          runs through the REST API, catchup and retries.'
+        data: real
       - title: Advanced Airflow Orchestration
         source: S15-05
         file: M11-Data Engineering & Orchestration/06-Advanced Airflow Orchestration.ipynb
-        status: review
+        status: done
         level: advanced
-        description: Complex DAG patterns, sensors, and backfills.
-        data: synthetic
+        description: Dynamic task mapping, branching and trigger rules, reschedule-mode sensors, retries and scheduler-managed
+          backfills on Airflow 3.
+        data: real
       - title: 'Airflow 3: What Changed'
-        status: planned
-        file: null
+        status: done
+        file: M11-Data Engineering & Orchestration/07-Airflow 3 - What Changed.ipynb
+        level: intermediate
+        description: Task SDK, API-based task execution, asset-triggered DAGs, DAG versioning through REST API v2, and an
+          Airflow 2 to 3 migration checklist.
+        data: real
       - title: Asset-Based Orchestration with Dagster
-        status: planned
-        file: null
+        status: done
+        file: M11-Data Engineering & Orchestration/08-Asset-Based Orchestration with Dagster.ipynb
+        level: advanced
+        description: Software-defined assets and dependencies, materialisation metadata, asset checks, daily partitions and
+          backfills, asset- vs task-based orchestration.
+        data: real
       - title: Incremental Data Loading Physics
         source: S15-06
         file: M11-Data Engineering & Orchestration/09-Incremental Data Loading Physics.ipynb
-        status: review
+        status: done
         level: advanced
-        description: CDC, idempotency, and incremental ingestion techniques.
-        data: synthetic
+        description: High-water marks vs. full reloads (measured), idempotent MERGE and delete-insert loads, CDC inserts/updates/deletes,
+          and lookback windows for late data.
+        data: real
       - title: Data Quality via Great Expectations
         source: S15-07
         file: M11-Data Engineering & Orchestration/10-Data Quality via Great Expectations.ipynb
-        status: review
+        status: done
         level: advanced
-        description: Data validation, expectations, and test-driven QA.
-        data: synthetic
+        description: GX data context, sources and batches, expectation suites for completeness, validity, uniqueness and distribution,
+          checkpoints and failing a pipeline on bad data.
+        data: real
+    assignments:
+      - title: Taxi Analytics dbt Project
+        file: M11-Data Engineering & Orchestration/assignments/01-Taxi-Analytics-dbt-Project.ipynb
+        solution: M11-Data Engineering & Orchestration/assignments/01-Taxi-Analytics-dbt-Project-solution.ipynb
+      - title: Weather-Aware Demand Pipeline
+        file: M11-Data Engineering & Orchestration/assignments/02-Weather-Aware-Demand-Pipeline.ipynb
+        solution: M11-Data Engineering & Orchestration/assignments/02-Weather-Aware-Demand-Pipeline-solution.ipynb
   - id: M12
     name: Streaming & Lakehouse
     group: Data

@@ -10,6 +10,7 @@
 #   docker compose -f docker/compose.yml --profile graph up -d       # Neo4j
 #   docker compose -f docker/compose.yml --profile vector up -d      # Qdrant
 #   docker compose -f docker/compose.yml --profile bi up -d          # Apache Superset (+ PostgreSQL as a data source)
+#   docker compose -f docker/compose.yml --profile orchestration up -d   # Apache Airflow 3 (standalone, http://localhost:8080)
 # Stop:   docker compose -f docker/compose.yml --profile <name> down
 # Reset data (deletes volumes):  docker compose -f docker/compose.yml --profile <name> down -v
 #
@@ -20,7 +21,7 @@ name: fromzerotohero
 services:
   postgres:
     image: pgvector/pgvector:pg17
-    profiles: [db, rag, bi]
+    profiles: [db, rag, bi, orchestration]
     environment:
       POSTGRES_USER: course
       POSTGRES_PASSWORD: course
@@ -55,6 +56,40 @@ services:
       test: ["CMD-SHELL", "curl -fs http://localhost:8088/health || exit 1"]
       interval: 10s
       retries: 30
+
+  airflow:
+    image: apache/airflow:3.1.0
+    profiles: [orchestration]
+    depends_on:
+      postgres: {condition: service_healthy}
+    # create the metadata database in the course PostgreSQL (SQLite cannot handle parallel tasks), then start
+    # scheduler + API server + DAG processor + triggerer in one container (standalone mode, local learning)
+    command:
+      - bash
+      - -c
+      - >-
+        python -c "import psycopg2;
+        c = psycopg2.connect(host='postgres', user='course', password='course', dbname='course'); c.autocommit = True;
+        cur = c.cursor(); cur.execute(\"SELECT 1 FROM pg_database WHERE datname = 'airflow'\");
+        cur.fetchone() or cur.execute('CREATE DATABASE airflow')" &&
+        airflow standalone
+    environment:
+      CONNECTION_CHECK_MAX_COUNT: "0"     # skip the entrypoint's DB check: the command creates the database first
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://course:course@postgres:5432/airflow
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+      AIRFLOW__CORE__SIMPLE_AUTH_MANAGER_ALL_ADMINS: "True"   # no login for local learning only
+      AIRFLOW__DAG_PROCESSOR__REFRESH_INTERVAL: "10"          # pick up new DAG files quickly
+      _PIP_ADDITIONAL_REQUIREMENTS: "duckdb==1.5.6"            # same version as the course venv; installed at start
+    ports: ["8080:8080"]
+    volumes:
+      - ../data/cache/airflow/dags:/opt/airflow/dags          # notebooks write DAG files here
+      - ../data/cache:/opt/airflow/course_data:ro            # course datasets (read-only)
+      - ../data/cache/airflow/output:/opt/airflow/output     # task outputs
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fs http://localhost:8080/api/v2/monitor/health || exit 1"]
+      interval: 10s
+      retries: 60
 
   mongodb:
     image: mongo:8

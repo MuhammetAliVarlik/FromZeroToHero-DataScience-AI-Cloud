@@ -38,9 +38,10 @@ GPU_ICON = {"none": "—", "optional": "optional", "required": "required"}
 # service name in curriculum.yml -> docker/compose.yml profile (None = not a compose service)
 SERVICE_PROFILE = {"postgres": "db", "mongodb": "db", "redis": "db", "kafka": "streaming", "minio": "streaming",
                    "localstack": "cloud", "prometheus": "observability", "grafana": "observability",
-                   "neo4j": "graph", "qdrant": "vector", "ollama": "ollama"}
+                   "neo4j": "graph", "qdrant": "vector", "ollama": "ollama",
+                   "airflow": "orchestration", "superset": "bi"}
 SERVICE_NOTE = {"ollama": "or native Ollama on http://localhost:11434", "kind": "kind CLI (local Kubernetes in Docker)",
-                "docker": "Docker Engine", "airflow": "separate environment, see the lesson"}
+                "docker": "Docker Engine"}
 
 
 def services_md(services):

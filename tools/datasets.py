@@ -152,7 +152,7 @@ def compose(*args: str, check: bool = True) -> subprocess.CompletedProcess:
                           check=check)
 
 
-HEALTHCHECKED = {"postgres", "superset"}       # services with a Docker health check: wait until "healthy"
+HEALTHCHECKED = {"postgres", "superset", "airflow"}       # services with a Docker health check: wait until "healthy"
 
 
 def ensure_service(profile: str, service: str, timeout: int = 120) -> None:
