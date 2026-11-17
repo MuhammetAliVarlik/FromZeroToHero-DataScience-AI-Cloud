@@ -14,6 +14,8 @@ if [[ "$ROOT" == /mnt/* ]]; then
         --exclude='_legacy_untracked/' --include='*/' --include='*.ipynb' --include='*.qmd' --include='*.yml' \
         --include='*.scss' --include='*.css' --include='*.lua' --include='site/*.typ' \
         --include='site/*.html' --include='site/fonts/*' \
+        --include='M[0-9][0-9]-*/**.png' --include='M[0-9][0-9]-*/**.jpg' --include='M[0-9][0-9]-*/**.svg' \
+        --include='M[0-9][0-9]-*/**.gif' \
         --exclude='*' --prune-empty-dirs "$ROOT/" "$MIRROR/"
   cd "$MIRROR"
 else

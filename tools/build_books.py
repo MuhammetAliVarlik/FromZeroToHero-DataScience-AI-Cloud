@@ -68,7 +68,7 @@ real runs; the online version links every chapter to its notebook.]
 #heading(level: 1, outlined: false)[Contents]
 #v(4mm)
 #let entries = (
-    {rows}
+    {rows},
 )
 #for (label, title, page) in entries [
   #grid(columns: (24mm, 1fr, auto), column-gutter: 3mm, row-gutter: 0mm,
@@ -120,10 +120,10 @@ def build_module(m: dict, site: Path, out_dir: Path) -> Path | None:
         w.append(front)
         for (lbl, t, _), r, (_, _, first) in zip(items, readers, entries):
             w.append(r, import_outline=False)
-            parent = w.add_outline_item(f"{lbl} · {t}", first - 1)
+            parent = w.add_outline_item(title=f"{lbl} · {t}", page_number=first - 1)
             for o in r.outline:                    # the lesson's own top-level headings, nested under its chapter
                 if not isinstance(o, list):
-                    w.add_outline_item(o.title, first - 1 + r.get_destination_page_number(o), parent=parent)
+                    w.add_outline_item(title=o.title, page_number=first - 1 + r.get_destination_page_number(o), parent=parent)
         w.add_metadata({"/Title": f"{m['id']} · {m['name']}", "/Author": "From Zero to Hero"})
         out = out_dir / f"{m['id'].lower()}.pdf"
         out_dir.mkdir(parents=True, exist_ok=True)
