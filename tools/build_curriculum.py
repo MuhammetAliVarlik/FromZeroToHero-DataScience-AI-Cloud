@@ -36,10 +36,11 @@ LEVEL_ICON = {"beginner": "🟢 Beginner", "intermediate": "🟡 Intermediate",
               "advanced": "🟠 Advanced", "expert": "🔴 Expert"}
 GPU_ICON = {"none": "—", "optional": "optional", "required": "required"}
 # service name in curriculum.yml -> docker/compose.yml profile (None = not a compose service)
-SERVICE_PROFILE = {"postgres": "db", "mongodb": "db", "redis": "db", "kafka": "streaming", "minio": "streaming",
+SERVICE_PROFILE = {"postgres": "db", "mongodb": "db", "redis": "db", "kafka": "streaming", "rustfs": "streaming",
                    "localstack": "cloud", "prometheus": "observability", "grafana": "observability",
                    "neo4j": "graph", "qdrant": "vector", "ollama": "ollama",
-                   "airflow": "orchestration", "superset": "bi"}
+                   "airflow": "orchestration", "superset": "bi", "connect": "cdc", "flink": "flink",
+                   "schema-registry": "streaming", "iceberg-rest": "lakehouse", "marquez": "lineage"}
 SERVICE_NOTE = {"ollama": "or native Ollama on http://localhost:11434", "kind": "kind CLI (local Kubernetes in Docker)",
                 "docker": "Docker Engine"}
 

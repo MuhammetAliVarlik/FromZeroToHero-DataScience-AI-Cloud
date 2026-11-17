@@ -1272,50 +1272,76 @@ modules:
       - M11
     gpu: none
     services:
+      - postgres
       - kafka
-      - minio
+      - connect
+      - flink
+      - schema-registry
+      - rustfs
+      - iceberg-rest
+      - marquez
     lessons:
       - title: Change Data Capture (CDC) with Debezium
         source: S15-08
         file: M12-Streaming & Lakehouse/01-Change Data Capture (CDC) with Debezium.ipynb
-        status: realise
+        status: done
         level: advanced
-        description: CDC patterns and Debezium integration.
-        data: mock
+        description: Log-based CDC from PostgreSQL through Debezium and Kafka Connect, an idempotent replica, capture latency,
+          why polling misses deletes, and replication slot (WAL) monitoring.
+        data: real
       - title: Event Streaming with Apache Kafka
         source: S15-09
         file: M12-Streaming & Lakehouse/02-Event Streaming with Apache Kafka.ipynb
-        status: review
+        status: done
         level: advanced
-        description: Kafka topics, partitions, and stream processing basics.
-        data: synthetic
+        description: Topics, partitions and keys, consumer groups and rebalancing, delivery guarantees, idempotent and transactional
+          producers, retention and log compaction, measured throughput and lag.
+        data: real
       - title: Stream Processing with Apache Flink
-        status: planned
-        file: null
+        file: M12-Streaming & Lakehouse/03-Stream Processing with Apache Flink.ipynb
+        status: done
+        level: advanced
+        description: Flink SQL through the SQL Gateway, event time and watermarks, late events and the latency/completeness trade-off,
+          window Top-N, state and checkpoints.
+        data: real
       - title: The Lakehouse Architecture (Iceberg - Delta)
         source: S15-10
         file: M12-Streaming & Lakehouse/04-The Lakehouse Architecture (Iceberg - Delta).ipynb
-        status: review
+        status: done
         level: expert
-        description: Lakehouse design, ACID tables and formats.
-        data: synthetic
+        description: Delta Lake on S3 (transaction log, merge, time travel, schema enforcement, compaction, vacuum) and Apache
+          Iceberg (hidden partitioning, snapshots, schema evolution).
+        data: real
       - title: Open Table Catalogs (Iceberg REST)
-        status: planned
-        file: null
+        file: M12-Streaming & Lakehouse/05-Open Table Catalogs (Iceberg REST).ipynb
+        status: done
+        level: expert
+        description: The Iceberg REST catalog protocol, PyIceberg and DuckDB on one table, optimistic concurrency, branches and
+          tags for write-audit-publish, partition evolution.
+        data: real
       - title: Data Contracts & Schema Registries
         source: S15-11
         file: M12-Streaming & Lakehouse/06-Data Contracts & Schema Registries.ipynb
-        status: review
+        status: done
         level: expert
-        description: Contracts, schema evolution, and governance patterns.
-        data: synthetic
+        description: Avro with the Schema Registry wire format, compatibility modes measured on six schema changes, blocked
+          producers, and a data contract checked as code.
+        data: real
       - title: Data Observability & Lineage
         source: S15-12
         file: M12-Streaming & Lakehouse/07-Data Observability & Lineage.ipynb
-        status: realise
+        status: done
         level: expert
-        description: Lineage, observability tooling and alerting for data.
-        data: mock
+        description: OpenLineage events into Marquez, upstream/downstream impact from the lineage graph, and freshness, volume
+          and schema monitors that find three built-in incidents.
+        data: real
+    assignments:
+      - title: CDC into the Lakehouse
+        file: M12-Streaming & Lakehouse/assignments/01-CDC-into-the-Lakehouse.ipynb
+        solution: M12-Streaming & Lakehouse/assignments/01-CDC-into-the-Lakehouse-solution.ipynb
+      - title: A Governed Taxi Feed
+        file: M12-Streaming & Lakehouse/assignments/02-Governed-Taxi-Feed.ipynb
+        solution: M12-Streaming & Lakehouse/assignments/02-Governed-Taxi-Feed-solution.ipynb
   - id: M13
     name: Spark & Distributed Data Processing
     group: Data

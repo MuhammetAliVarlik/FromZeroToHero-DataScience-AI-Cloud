@@ -189,6 +189,17 @@ project:
   - M11-Data Engineering & Orchestration/assignments/01-Taxi-Analytics-dbt-Project-solution.ipynb
   - M11-Data Engineering & Orchestration/assignments/02-Weather-Aware-Demand-Pipeline.ipynb
   - M11-Data Engineering & Orchestration/assignments/02-Weather-Aware-Demand-Pipeline-solution.ipynb
+  - M12-Streaming & Lakehouse/01-Change Data Capture (CDC) with Debezium.ipynb
+  - M12-Streaming & Lakehouse/02-Event Streaming with Apache Kafka.ipynb
+  - M12-Streaming & Lakehouse/03-Stream Processing with Apache Flink.ipynb
+  - M12-Streaming & Lakehouse/04-The Lakehouse Architecture (Iceberg - Delta).ipynb
+  - M12-Streaming & Lakehouse/05-Open Table Catalogs (Iceberg REST).ipynb
+  - M12-Streaming & Lakehouse/06-Data Contracts & Schema Registries.ipynb
+  - M12-Streaming & Lakehouse/07-Data Observability & Lineage.ipynb
+  - M12-Streaming & Lakehouse/assignments/01-CDC-into-the-Lakehouse.ipynb
+  - M12-Streaming & Lakehouse/assignments/01-CDC-into-the-Lakehouse-solution.ipynb
+  - M12-Streaming & Lakehouse/assignments/02-Governed-Taxi-Feed.ipynb
+  - M12-Streaming & Lakehouse/assignments/02-Governed-Taxi-Feed-solution.ipynb
   - M26-LLM Foundations/10-Decoding Strategies.ipynb
 execute:
   enabled: false
@@ -643,8 +654,27 @@ website:
           text: ✍️ Taxi Analytics dbt Project
         - href: M11-Data Engineering & Orchestration/assignments/02-Weather-Aware-Demand-Pipeline.ipynb
           text: ✍️ Weather-Aware Demand Pipeline
-      - href: site/modules/m12.qmd
-        text: M12 · Streaming & Lakehouse 🛠️
+      - section: M12 · Streaming & Lakehouse
+        href: site/modules/m12.qmd
+        contents:
+        - href: M12-Streaming & Lakehouse/01-Change Data Capture (CDC) with Debezium.ipynb
+          text: Change Data Capture (CDC) with Debezium
+        - href: M12-Streaming & Lakehouse/02-Event Streaming with Apache Kafka.ipynb
+          text: Event Streaming with Apache Kafka
+        - href: M12-Streaming & Lakehouse/03-Stream Processing with Apache Flink.ipynb
+          text: Stream Processing with Apache Flink
+        - href: M12-Streaming & Lakehouse/04-The Lakehouse Architecture (Iceberg - Delta).ipynb
+          text: The Lakehouse Architecture (Iceberg - Delta)
+        - href: M12-Streaming & Lakehouse/05-Open Table Catalogs (Iceberg REST).ipynb
+          text: Open Table Catalogs (Iceberg REST)
+        - href: M12-Streaming & Lakehouse/06-Data Contracts & Schema Registries.ipynb
+          text: Data Contracts & Schema Registries
+        - href: M12-Streaming & Lakehouse/07-Data Observability & Lineage.ipynb
+          text: Data Observability & Lineage
+        - href: M12-Streaming & Lakehouse/assignments/01-CDC-into-the-Lakehouse.ipynb
+          text: ✍️ CDC into the Lakehouse
+        - href: M12-Streaming & Lakehouse/assignments/02-Governed-Taxi-Feed.ipynb
+          text: ✍️ A Governed Taxi Feed
       - href: site/modules/m13.qmd
         text: M13 · Spark & Distributed Data Processing 🛠️
     - section: Data Science

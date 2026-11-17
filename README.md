@@ -137,7 +137,7 @@ docker compose -f docker/compose.yml --profile db up -d     # PostgreSQL + pgvec
 docker compose -f docker/compose.yml --profile db down      # stop when you are done
 ```
 
-Profiles: `db`, `rag`, `vector`, `streaming`, `cloud` (LocalStack AWS emulator + MinIO), `observability` (Prometheus + Grafana), `graph` (Neo4j), `ollama`. For local LLMs you can also install [Ollama](https://ollama.com) natively; the lessons use `http://localhost:11434` either way.
+Profiles: `db`, `rag`, `vector`, `streaming`, `cloud` (LocalStack AWS emulator + RustFS, S3-compatible), `observability` (Prometheus + Grafana), `graph` (Neo4j), `ollama`. For local LLMs you can also install [Ollama](https://ollama.com) natively; the lessons use `http://localhost:11434` either way.
 
 ### 5. Launch Jupyter and start learning
 
@@ -161,7 +161,7 @@ cp .env.example .env
 <!-- BEGIN GENERATED:catalogue -->
 ## 🛣️ Module Catalogue
 
-**43 modules · 553 lessons** (429 written, 124 planned, 152 fully verified). Each module folder has its own README with the lesson list. Status per lesson: ✅ done · 🔍 review · 📈 deepen · ⚙️ realise · 🔀 merge · ✏️ rewrite · 🆕 planned.
+**43 modules · 553 lessons** (431 written, 122 planned, 159 fully verified). Each module folder has its own README with the lesson list. Status per lesson: ✅ done · 🔍 review · 📈 deepen · ⚙️ realise · 🔀 merge · ✏️ rewrite · 🆕 planned.
 
 ### 🧱 Foundations
 
@@ -183,7 +183,7 @@ cp .env.example .env
 | [M09 · Data Visualization & BI](M09-Data%20Visualization%20%26%20BI/README.md) | 18 + 0 planned | 18 | M08 | — |
 | [M10 · Feature Engineering & Data Preprocessing](M10-Feature%20Engineering%20%26%20Data%20Preprocessing/README.md) | 16 + 0 planned | 16 | M08 | — |
 | [M11 · Data Engineering & Orchestration](M11-Data%20Engineering%20%26%20Orchestration/README.md) | 10 + 0 planned | 10 | M07, M02 | — |
-| [M12 · Streaming & Lakehouse](M12-Streaming%20%26%20Lakehouse/README.md) | 5 + 2 planned | 0 | M11 | — |
+| [M12 · Streaming & Lakehouse](M12-Streaming%20%26%20Lakehouse/README.md) | 7 + 0 planned | 7 | M11 | — |
 | [M13 · Spark & Distributed Data Processing](M13-Spark%20%26%20Distributed%20Data%20Processing/README.md) | 10 + 2 planned | 0 | M08, M11 | — |
 
 ### 🔬 Data Science

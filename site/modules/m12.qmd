@@ -1,17 +1,24 @@
 ---
 format: html
 title: "M12 · Streaming & Lakehouse"
-subtitle: "Data · 0 of 7 lessons ready"
+subtitle: "Data · 7 of 7 lessons ready"
 ---
+
+[⤓ Download this module as a book (PDF)](../../pdf/m12.pdf){.book-download}
 
 **Prerequisites:** [M11 Data Engineering & Orchestration](m11.qmd) · **GPU:** none
 
 | # | Lesson | Level | Status | What you learn |
 | :-: | :--- | :--- | :-: | :--- |
-| 01 | Change Data Capture (CDC) with Debezium | 🟠 Advanced | 🛠️ in progress | CDC patterns and Debezium integration. |
-| 02 | Event Streaming with Apache Kafka | 🟠 Advanced | 🛠️ in progress | Kafka topics, partitions, and stream processing basics. |
-| 03 | Stream Processing with Apache Flink |  | 🛠️ in progress |  |
-| 04 | The Lakehouse Architecture (Iceberg - Delta) | 🔴 Expert | 🛠️ in progress | Lakehouse design, ACID tables and formats. |
-| 05 | Open Table Catalogs (Iceberg REST) |  | 🛠️ in progress |  |
-| 06 | Data Contracts & Schema Registries | 🔴 Expert | 🛠️ in progress | Contracts, schema evolution, and governance patterns. |
-| 07 | Data Observability & Lineage | 🔴 Expert | 🛠️ in progress | Lineage, observability tooling and alerting for data. |
+| 01 | [Change Data Capture (CDC) with Debezium](../../M12-Streaming%20&%20Lakehouse/01-Change%20Data%20Capture%20(CDC)%20with%20Debezium.ipynb) | 🟠 Advanced | ✅ | Log-based CDC from PostgreSQL through Debezium and Kafka Connect, an idempotent replica, capture latency, why polling misses deletes, and replication slot (WAL) monitoring. |
+| 02 | [Event Streaming with Apache Kafka](../../M12-Streaming%20&%20Lakehouse/02-Event%20Streaming%20with%20Apache%20Kafka.ipynb) | 🟠 Advanced | ✅ | Topics, partitions and keys, consumer groups and rebalancing, delivery guarantees, idempotent and transactional producers, retention and log compaction, measured throughput and lag. |
+| 03 | [Stream Processing with Apache Flink](../../M12-Streaming%20&%20Lakehouse/03-Stream%20Processing%20with%20Apache%20Flink.ipynb) | 🟠 Advanced | ✅ | Flink SQL through the SQL Gateway, event time and watermarks, late events and the latency/completeness trade-off, window Top-N, state and checkpoints. |
+| 04 | [The Lakehouse Architecture (Iceberg - Delta)](../../M12-Streaming%20&%20Lakehouse/04-The%20Lakehouse%20Architecture%20(Iceberg%20-%20Delta).ipynb) | 🔴 Expert | ✅ | Delta Lake on S3 (transaction log, merge, time travel, schema enforcement, compaction, vacuum) and Apache Iceberg (hidden partitioning, snapshots, schema evolution). |
+| 05 | [Open Table Catalogs (Iceberg REST)](../../M12-Streaming%20&%20Lakehouse/05-Open%20Table%20Catalogs%20(Iceberg%20REST).ipynb) | 🔴 Expert | ✅ | The Iceberg REST catalog protocol, PyIceberg and DuckDB on one table, optimistic concurrency, branches and tags for write-audit-publish, partition evolution. |
+| 06 | [Data Contracts & Schema Registries](../../M12-Streaming%20&%20Lakehouse/06-Data%20Contracts%20&%20Schema%20Registries.ipynb) | 🔴 Expert | ✅ | Avro with the Schema Registry wire format, compatibility modes measured on six schema changes, blocked producers, and a data contract checked as code. |
+| 07 | [Data Observability & Lineage](../../M12-Streaming%20&%20Lakehouse/07-Data%20Observability%20&%20Lineage.ipynb) | 🔴 Expert | ✅ | OpenLineage events into Marquez, upstream/downstream impact from the lineage graph, and freshness, volume and schema monitors that find three built-in incidents. |
+
+## Assignments
+
+- [CDC into the Lakehouse](../../M12-Streaming%20&%20Lakehouse/assignments/01-CDC-into-the-Lakehouse.ipynb) · [solution](../../M12-Streaming%20&%20Lakehouse/assignments/01-CDC-into-the-Lakehouse-solution.ipynb)
+- [A Governed Taxi Feed](../../M12-Streaming%20&%20Lakehouse/assignments/02-Governed-Taxi-Feed.ipynb) · [solution](../../M12-Streaming%20&%20Lakehouse/assignments/02-Governed-Taxi-Feed-solution.ipynb)

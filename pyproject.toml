@@ -72,12 +72,12 @@ data-eng = [
     "great-expectations>=1.2",
     "googleapis-common-protos>=1.65",    # pyspark connect deps: without them, importing
     "grpcio-status>=1.62",               # great_expectations exits the process (via pyspark)
-    "confluent-kafka>=2.6",
+    "confluent-kafka[schemaregistry,avro]>=2.6",   # extras: Schema Registry client + Avro serializers (M12 L06)
     "fastavro>=1.9",
     "openlineage-python>=1.25",
     "pyspark>=3.5",
     "deltalake>=0.22",
-    "pyiceberg[sql-sqlite,pyarrow]>=0.8",
+    "pyiceberg[sql-sqlite,pyarrow,pyiceberg-core]>=0.8",   # pyiceberg-core: partition transforms (M12 L04-L05)
     "boto3>=1.35",
 ]
 # M14-M19 Data science: causal inference, classical ML, time series, recommenders, graphs
