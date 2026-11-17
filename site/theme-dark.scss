@@ -1,0 +1,28 @@
+/*-- scss:defaults --*/
+$font-family-sans-serif: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+$font-family-monospace: "JetBrains Mono", "Fira Code", Consolas, monospace;
+$headings-font-family: "Patrick Hand", "Comic Neue", cursive;
+$body-bg: #1d1f24;
+$body-color: #e6e3d8;
+$link-color: #8ab4f8;
+$primary: #8ab4f8;
+$code-bg: #262932;
+$navbar-bg: #1d1f24;
+$grid-line: rgba(138, 180, 248, 0.07);
+$marker: rgba(255, 200, 0, 0.30);
+$note-ink: #8ab4f8;
+
+/*-- scss:rules --*/
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Caveat:wght@500;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap");
+
+body {
+  background-color: $body-bg;
+  background-image:
+    linear-gradient($grid-line 1px, transparent 1px),
+    linear-gradient(90deg, $grid-line 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+:root { --fzth-marker: #{$marker}; }
+strong { background: linear-gradient(transparent 55%, $marker 55%); padding: 0 2px; }
+.insight { color: $note-ink; border-left-color: $note-ink; }
+.cell-output-display img { background: #fbfaf4; border-radius: 6px; padding: 4px; }   /* white matplotlib figures on dark paper */

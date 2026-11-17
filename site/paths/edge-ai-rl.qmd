@@ -1,0 +1,17 @@
+---
+title: "Path: Edge AI & Reinforcement Learning"
+---
+
+Take the modules in order; skip lessons you already know.
+
+| Step | Module | Ready |
+| :-: | :--- | :-: |
+| 1 | [M01 · Python](../modules/m01.qmd) | 18/18 |
+| 2 | [M03 · Git & Collaboration](../modules/m03.qmd) | 4/4 |
+| 3 | [M04 · Linux & Shell](../modules/m04.qmd) | 7/7 |
+| 4 | [M05 · Mathematics for Data Science (R)](../modules/m05.qmd) | 7/7 |
+| 5 | [M08 · NumPy, Pandas & Polars](../modules/m08.qmd) | 18/18 |
+| 6 | [M16 · Classical Machine Learning](../modules/m16.qmd) | 0/22 |
+| 7 | [M20 · Deep Learning Foundations](../modules/m20.qmd) | 0/26 |
+| 8 | [M35 · Model Optimization & Edge AI](../modules/m35.qmd) | 0/16 |
+| 9 | [M25 · Reinforcement Learning](../modules/m25.qmd) | 0/9 |

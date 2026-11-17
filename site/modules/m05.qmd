@@ -1,0 +1,16 @@
+---
+title: "M05 · Mathematics for Data Science (R)"
+subtitle: "Foundations · 7 of 7 lessons ready"
+---
+
+**Prerequisites:** none · **GPU:** none
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | [R & Visual Studio Code Installation](../../M05-Mathematics%20for%20Data%20Science%20(R)/01-R%20&%20Visual%20Studio%20Code%20Installation.ipynb) | 🟢 Beginner | ✅ | Installing R, VS Code, and preparing a statistical computing environment. |
+| 02 | [Getting Started with R](../../M05-Mathematics%20for%20Data%20Science%20(R)/02-Getting%20Started%20with%20R.ipynb) | 🟢 Beginner | ✅ | Syntax, vectors, lists, factors, and working with the R console. |
+| 03 | [Mathematical Notation in R](../../M05-Mathematics%20for%20Data%20Science%20(R)/03-Mathematical%20Notation%20in%20R.ipynb) | 🟡 Intermediate | ✅ | Expression writing, operator usage, and mathematical conventions. |
+| 04 | [Basic Arithmetic and Algebra](../../M05-Mathematics%20for%20Data%20Science%20(R)/04-Basic%20Arithmetic%20and%20Algebra.ipynb) | 🟢 Beginner | ✅ | Arithmetic review, algebraic identities, and statistical notation. |
+| 05 | [Functions, Graphs, and Transformations](../../M05-Mathematics%20for%20Data%20Science%20(R)/05-Functions,%20Graphs,%20and%20Transformations.ipynb) | 🟡 Intermediate | ✅ | Function behavior, graphical interpretation, and transformation rules. |
+| 06 | [Basics of Linear Algebra](../../M05-Mathematics%20for%20Data%20Science%20(R)/06-Basics%20of%20Linear%20Algebra.ipynb) | 🟡 Intermediate | ✅ | Vectors, matrices, matrix multiplication, and linear systems. |
+| 07 | [Calculus and Optimization](../../M05-Mathematics%20for%20Data%20Science%20(R)/07-Calculus%20and%20Optimization.ipynb) | 🟠 Advanced | ✅ | Derivatives, integrals, gradient intuition, and optimization methods. |

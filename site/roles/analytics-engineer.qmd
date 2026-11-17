@@ -1,0 +1,9 @@
+---
+title: "Role: Analytics Engineer"
+---
+
+Builds tested, documented data models (dbt) between raw data and BI.
+
+**Paths:** [Data Analyst & BI](../paths/data-analyst.qmd)
+
+**Extra modules:** [M02 · Software Engineering Practices](../modules/m02.qmd), [M11 · Data Engineering & Orchestration](../modules/m11.qmd)

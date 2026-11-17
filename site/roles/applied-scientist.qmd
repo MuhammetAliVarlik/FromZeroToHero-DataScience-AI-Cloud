@@ -1,0 +1,9 @@
+---
+title: "Role: Applied Scientist / Research Engineer"
+---
+
+Designs and evaluates new models and methods; strong statistics and deep learning.
+
+**Paths:** [Data Scientist](../paths/data-scientist.qmd), [Deep Learning & Computer Vision](../paths/deep-learning-cv.qmd), [NLP & LLM Engineer](../paths/nlp-llm.qmd)
+
+**Extra modules:** —

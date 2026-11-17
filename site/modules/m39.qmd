@@ -1,0 +1,12 @@
+---
+title: "M39 · Systems Languages for AI (C++ & Rust)"
+subtitle: "Ops & Systems · 0 of 3 lessons ready"
+---
+
+**Prerequisites:** [M01 Python](m01.qmd) · **GPU:** none
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | Modern C++ Foundations for AI Systems | 🟡 Intermediate | 🛠️ in progress | Memory management, RAII, templates, and performance-oriented design. |
+| 02 | Rust Foundations for Safe Systems | 🟡 Intermediate | 🛠️ in progress | Ownership, borrowing, and concurrency-safe service development. |
+| 03 | Python Extensions in Rust (PyO3 & maturin) |  | 🛠️ in progress |  |

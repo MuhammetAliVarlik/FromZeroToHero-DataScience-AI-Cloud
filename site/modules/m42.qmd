@@ -1,0 +1,22 @@
+---
+title: "M42 · Capstone Projects"
+subtitle: "Capstones · 0 of 13 lessons ready"
+---
+
+**Prerequisites:** none · **GPU:** optional
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | Capstone: Python Developer |  | 🛠️ in progress |  |
+| 02 | Capstone: Software Engineer (Python Backend) |  | 🛠️ in progress |  |
+| 03 | Capstone: Data Analyst & BI |  | 🛠️ in progress |  |
+| 04 | Capstone: Data Scientist |  | 🛠️ in progress |  |
+| 05 | Capstone: Machine Learning Engineer |  | 🛠️ in progress |  |
+| 06 | Capstone: Deep Learning & Computer Vision |  | 🛠️ in progress |  |
+| 07 | Capstone: NLP & LLM Engineer |  | 🛠️ in progress |  |
+| 08 | Capstone: AI Application Engineer |  | 🛠️ in progress |  |
+| 09 | Capstone: Data Engineer |  | 🛠️ in progress |  |
+| 10 | Capstone: MLOps & ML Platform Engineer |  | 🛠️ in progress |  |
+| 11 | Capstone: AI Infrastructure & GPU Systems |  | 🛠️ in progress |  |
+| 12 | Capstone: Responsible AI & AI Security |  | 🛠️ in progress |  |
+| 13 | Capstone: Edge AI & Reinforcement Learning |  | 🛠️ in progress |  |

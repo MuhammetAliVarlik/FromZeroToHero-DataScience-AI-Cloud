@@ -1,0 +1,25 @@
+---
+title: "M21 · Computer Vision"
+subtitle: "Deep Learning & Modalities · 0 of 16 lessons ready"
+---
+
+**Prerequisites:** [M20 Deep Learning Foundations](m20.qmd) · **GPU:** required
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | Pixels, Tensors & Color Spaces | 🟢 Beginner | 🛠️ in progress | Image representation, color spaces, and pixel operations. |
+| 02 | The Math of Convolutions | 🟢 Beginner | 🛠️ in progress | Convolution math and filter interpretation. |
+| 03 | Pooling & Receptive Fields | 🟢 Beginner | 🛠️ in progress | Pooling operations and receptive field concepts. |
+| 04 | Architecting CNNs in PyTorch | 🟡 Intermediate | 🛠️ in progress | Building CNNs and best practices in PyTorch. |
+| 05 | Enterprise Backbones | 🟠 Advanced | 🛠️ in progress | Backbone architectures and pretrained models. |
+| 06 | Transfer Learning & Fine-Tuning | 🟠 Advanced | 🛠️ in progress | Fine-tuning strategies and transfer learning workflows. |
+| 07 | Vision Data Pipelines | 🟠 Advanced | 🛠️ in progress | Augmentation, dataset versioning, and loaders. |
+| 08 | Object Detection I: Metrics | 🟠 Advanced | 🛠️ in progress | Detection metrics, IoU, and evaluation. |
+| 09 | Object Detection II: Architectures | 🟠 Advanced | 🛠️ in progress | One-stage vs two-stage detectors and modern models. |
+| 10 | Modern Object Detection (YOLO11 & RT-DETR) |  | 🛠️ in progress |  |
+| 11 | Semantic Segmentation | 🟠 Advanced | 🛠️ in progress | Pixel-wise labeling and segmentation architectures. |
+| 12 | Segment Anything (SAM 2) |  | 🛠️ in progress |  |
+| 13 | Vision Transformers (ViT) | 🟠 Advanced | 🛠️ in progress | Transformer models for vision tasks. |
+| 14 | Self-Supervised Vision Encoders (MAE, DINOv2, I-JEPA, V-JEPA 2) |  | 🛠️ in progress |  |
+| 15 | Vision-Language Models (CLIP, SigLIP & VLMs) |  | 🛠️ in progress |  |
+| 16 | Document AI & OCR |  | 🛠️ in progress |  |

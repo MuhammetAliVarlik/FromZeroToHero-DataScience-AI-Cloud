@@ -1,0 +1,19 @@
+---
+title: "Path: MLOps & ML Platform Engineer"
+---
+
+Take the modules in order; skip lessons you already know.
+
+| Step | Module | Ready |
+| :-: | :--- | :-: |
+| 1 | [M01 · Python](../modules/m01.qmd) | 18/18 |
+| 2 | [M03 · Git & Collaboration](../modules/m03.qmd) | 4/4 |
+| 3 | [M04 · Linux & Shell](../modules/m04.qmd) | 7/7 |
+| 4 | [M02 · Software Engineering Practices](../modules/m02.qmd) | 10/10 |
+| 5 | [M05 · Mathematics for Data Science (R)](../modules/m05.qmd) | 7/7 |
+| 6 | [M08 · NumPy, Pandas & Polars](../modules/m08.qmd) | 18/18 |
+| 7 | [M16 · Classical Machine Learning](../modules/m16.qmd) | 0/22 |
+| 8 | [M40 · AutoML & Hyperparameter Optimization](../modules/m40.qmd) | 0/6 |
+| 9 | [M32 · Containers & Kubernetes](../modules/m32.qmd) | 0/9 |
+| 10 | [M33 · Cloud & Infrastructure as Code](../modules/m33.qmd) | 0/14 |
+| 11 | [M34 · MLOps & LLMOps](../modules/m34.qmd) | 0/20 |

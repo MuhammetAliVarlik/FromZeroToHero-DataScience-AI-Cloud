@@ -1,0 +1,9 @@
+---
+title: "Role: Inference & Performance Engineer"
+---
+
+Makes models fast and cheap: kernels, quantisation, serving engines, distributed systems.
+
+**Paths:** [AI Infrastructure & GPU Systems](../paths/ai-infra-gpu.qmd)
+
+**Extra modules:** —

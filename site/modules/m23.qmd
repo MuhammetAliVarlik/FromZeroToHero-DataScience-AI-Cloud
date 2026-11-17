@@ -1,0 +1,14 @@
+---
+title: "M23 · Speech & Audio"
+subtitle: "Deep Learning & Modalities · 0 of 5 lessons ready"
+---
+
+**Prerequisites:** [M20 Deep Learning Foundations](m20.qmd) · **GPU:** optional
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | Audio Signals & Spectrograms |  | 🛠️ in progress |  |
+| 02 | Audio Classification |  | 🛠️ in progress |  |
+| 03 | Speech Recognition with Whisper |  | 🛠️ in progress |  |
+| 04 | Text-to-Speech |  | 🛠️ in progress |  |
+| 05 | Speech LLMs & Voice Agents |  | 🛠️ in progress |  |

@@ -1,0 +1,16 @@
+---
+title: "M04 · Linux & Shell"
+subtitle: "Foundations · 7 of 7 lessons ready"
+---
+
+**Prerequisites:** none · **GPU:** none
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | [Files, Directories & Permissions](../../M04-Linux%20&%20Shell/01-Files,%20Directories%20&%20Permissions.ipynb) | 🟢 Beginner | ✅ | File-system hierarchy, navigation, permissions and octal modes, inodes and links, find, du and df on this repository. |
+| 02 | [Streams, Redirection & Pipes](../../M04-Linux%20&%20Shell/02-Streams,%20Redirection%20&%20Pipes.ipynb) | 🟢 Beginner | ✅ | stdin/stdout/stderr, redirection, pipes, tee, xargs, exit codes and pipefail, here-documents, process substitution. |
+| 03 | [Processes & System Resources](../../M04-Linux%20&%20Shell/03-Processes%20&%20System%20Resources.ipynb) | 🟡 Intermediate | ✅ | PID/PPID, background jobs and signals, /proc, free, psutil, and a measured memory leak of a real process. |
+| 04 | [Text Processing with grep, sed & awk](../../M04-Linux%20&%20Shell/04-Text%20Processing%20with%20grep,%20sed%20&%20awk.ipynb) | 🟡 Intermediate | ✅ | Regular expressions with grep, editing with sed, field calculations with awk on the real dpkg log. |
+| 05 | [JSON on the Command Line with jq](../../M04-Linux%20&%20Shell/05-JSON%20on%20the%20Command%20Line%20with%20jq.ipynb) | 🟡 Intermediate | ✅ | jq paths, select/map/group_by, analysing every course notebook as JSON, JSON Lines logs. |
+| 06 | [Shell Scripts & Scheduling with cron](../../M04-Linux%20&%20Shell/06-Shell%20Scripts%20&%20Scheduling%20with%20cron.ipynb) | 🟡 Intermediate | ✅ | Robust bash (set -euo pipefail, quoting, trap), a rotating backup script, cron syntax and a real cron job. |
+| 07 | [Networking, SSH & Remote File Sync](../../M04-Linux%20&%20Shell/07-Networking,%20SSH%20&%20Remote%20File%20Sync.ipynb) | 🟡 Intermediate | ✅ | IP, ports, DNS, ss and curl against a local server, SSH keys and config, rsync delta transfer measured. |

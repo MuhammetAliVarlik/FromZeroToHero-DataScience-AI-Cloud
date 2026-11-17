@@ -1,0 +1,15 @@
+---
+title: "M40 · AutoML & Hyperparameter Optimization"
+subtitle: "Ops & Systems · 0 of 6 lessons ready"
+---
+
+**Prerequisites:** [M16 Classical Machine Learning](m16.qmd) · **GPU:** optional
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | Hyperparameter Tuning | 🟠 Advanced | 🛠️ in progress | Grid search, random search, and Bayesian optimization. |
+| 02 | Advanced HPO & Bayesian Search (Optuna) | 🟢 Beginner | 🛠️ in progress | Bayesian hyperparameter search beyond grid and random search. |
+| 03 | Bayesian Optimization for Training (Optuna - BoTorch) | 🔴 Expert | 🛠️ in progress | Hyperparameter search guided by probabilistic surrogate models. |
+| 04 | High-Speed Tabular AutoML (FLAML) | 🟡 Intermediate | 🛠️ in progress | Fast, resource-aware automated model selection for tabular data. |
+| 05 | State-of-the-Art Ensembling (AutoGluon) | 🟡 Intermediate | 🛠️ in progress | Automated stacked ensembling for maximal predictive performance. |
+| 06 | Neural Architecture Search & Hyperband | 🟠 Advanced | 🛠️ in progress | Automated architecture search with early-stopping-based budget allocation. |

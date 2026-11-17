@@ -1,0 +1,9 @@
+---
+title: "Role: MLOps / AI Platform Engineer"
+---
+
+Owns the platform for training, serving, monitoring and governing models, including LLMs.
+
+**Paths:** [MLOps & ML Platform Engineer](../paths/mlops.qmd)
+
+**Extra modules:** [M26 · LLM Foundations](../modules/m26.qmd), [M36 · LLM Serving & Inference Systems](../modules/m36.qmd)

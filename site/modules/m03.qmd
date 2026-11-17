@@ -1,0 +1,13 @@
+---
+title: "M03 · Git & Collaboration"
+subtitle: "Foundations · 4 of 4 lessons ready"
+---
+
+**Prerequisites:** none · **GPU:** none
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | [Git Fundamentals](../../M03-Git%20&%20Collaboration/01-Git%20Fundamentals.ipynb) | 🟢 Beginner | ✅ | Working directory, staging area and commits; diff, log, restore, revert; Git's content-addressed objects; this repository's history as data. |
+| 02 | [Github & Collaboration](../../M03-Git%20&%20Collaboration/02-Github%20&%20Collaboration.ipynb) | 🟢 Beginner | ✅ | Remotes, clone/push/fetch/pull with two developers, rejected pushes, .gitignore, the GitHub flow and pull requests, git blame. |
+| 03 | [Branching Strategies, Rebase & Conflict Resolution](../../M03-Git%20&%20Collaboration/03-Branching%20Strategies,%20Rebase%20&%20Conflict%20Resolution.ipynb) | 🟡 Intermediate | ✅ | Fast-forward and merge commits, resolving a conflict, rebase, fixup/autosquash, git bisect run, branching strategies. |
+| 04 | [Pre-commit Hooks & Code Review](../../M03-Git%20&%20Collaboration/04-Pre-commit%20Hooks%20&%20Code%20Review.ipynb) | 🟡 Intermediate | ✅ | Git hooks that block secrets, the pre-commit framework with Ruff, Conventional Commits, and a code-review checklist. |

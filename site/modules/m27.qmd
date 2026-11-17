@@ -1,0 +1,16 @@
+---
+title: "M27 · LLM Fine-Tuning & Alignment"
+subtitle: "LLM & AI Applications · 0 of 7 lessons ready"
+---
+
+**Prerequisites:** [M26 LLM Foundations](m26.qmd) · **GPU:** required
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | Task Fine-Tuning | 🟠 Advanced | 🛠️ in progress | Supervised fine-tuning patterns for downstream tasks. |
+| 02 | PEFT & LoRA Mathematics | 🟠 Advanced | 🛠️ in progress | Parameter-efficient fine-tuning techniques and math. |
+| 03 | Quantized LLMs (QLoRA) | 🔴 Expert | 🛠️ in progress | Quantization strategies for LLM inference. |
+| 04 | Instruction Tuning (SFT) | 🔴 Expert | 🛠️ in progress | Supervised instruction datasets and tuning workflows. |
+| 05 | LLM Alignment (RLHF & DPO) | 🔴 Expert | 🛠️ in progress | Alignment strategies using RLHF and direct policy optimization. |
+| 06 | GRPO & RL with Verifiable Rewards |  | 🛠️ in progress |  |
+| 07 | Synthetic Data & Distillation for LLMs |  | 🛠️ in progress |  |

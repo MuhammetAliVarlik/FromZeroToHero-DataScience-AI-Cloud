@@ -1,0 +1,24 @@
+---
+title: "M36 · LLM Serving & Inference Systems"
+subtitle: "Ops & Systems · 0 of 15 lessons ready"
+---
+
+**Prerequisites:** [M26 LLM Foundations](m26.qmd), [M32 Containers & Kubernetes](m32.qmd) · **GPU:** required
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | LLM Serving Fundamentals (Hugging Face Text Generation Inference) | 🟡 Intermediate | 🛠️ in progress | Throughput, latency, batching, and token streaming behavior. |
+| 02 | High-Throughput Serving Architecture (vLLM) | 🟠 Advanced | 🛠️ in progress | Paged attention, continuous batching, and high-throughput inference internals. |
+| 03 | Concurrent Inference Scheduling (vLLM PagedAttention & Continuous Batching) | 🟠 Advanced | 🛠️ in progress | Queueing models, prioritization, and fairness in serving workloads. |
+| 04 | High-Throughput Serving & Engine Optimization (vLLM - Triton) | 🔴 Expert | 🛠️ in progress | Comparing serving engines for high-throughput inference workloads. |
+| 05 | Kernel-Level Inference Optimization (TensorRT-LLM) | 🟠 Advanced | 🛠️ in progress | Engine building, kernel fusion, and precision-aware optimization. |
+| 06 | Tokenizer & Runtime Integration (Hugging Face Tokenizers & ONNX Runtime) | 🟠 Advanced | 🛠️ in progress | Efficient tokenization pipelines and cross-runtime interoperability. |
+| 07 | Quantization for Production Serving (GPTQ - AWQ) | 🔴 Expert | 🛠️ in progress | INT8/FP8 tradeoffs and deployment-time calibration strategies. |
+| 08 | Multi-Model Serving Infrastructure (NVIDIA Triton Inference Server) | 🔴 Expert | 🛠️ in progress | Routing, model isolation, and shared GPU resource management. |
+| 09 | Observability in LLM Serving (Prometheus & OpenTelemetry) | 🔴 Expert | 🛠️ in progress | Metrics, tracing, tail-latency analysis, and SLA tracking. |
+| 10 | Fault Tolerance & Recovery for Inference Endpoints | 🔴 Expert | 🛠️ in progress | Graceful degradation, retries, and resilient inference operations. |
+| 11 | Production Cost-Performance Engineering | 🔴 Expert | 🛠️ in progress | Throughput-per-dollar optimization and capacity planning for scale. |
+| 12 | SGLang & Structured Generation |  | 🛠️ in progress |  |
+| 13 | Speculative Decoding |  | 🛠️ in progress |  |
+| 14 | Prefix Caching & Disaggregated Prefill-Decode |  | 🛠️ in progress |  |
+| 15 | Local Serving with llama.cpp & Ollama |  | 🛠️ in progress |  |

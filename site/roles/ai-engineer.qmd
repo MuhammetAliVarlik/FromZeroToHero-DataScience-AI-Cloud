@@ -1,0 +1,9 @@
+---
+title: "Role: AI Engineer"
+---
+
+Builds LLM-powered products: RAG, agents, tools/MCP, evaluation and production APIs.
+
+**Paths:** [Software Engineer (Python Backend)](../paths/software-engineer.qmd), [AI Application Engineer](../paths/ai-app-engineer.qmd)
+
+**Extra modules:** —

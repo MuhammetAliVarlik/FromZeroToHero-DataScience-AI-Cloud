@@ -1,0 +1,22 @@
+---
+title: "Path: Machine Learning Engineer"
+---
+
+Take the modules in order; skip lessons you already know.
+
+| Step | Module | Ready |
+| :-: | :--- | :-: |
+| 1 | [M01 · Python](../modules/m01.qmd) | 18/18 |
+| 2 | [M03 · Git & Collaboration](../modules/m03.qmd) | 4/4 |
+| 3 | [M04 · Linux & Shell](../modules/m04.qmd) | 7/7 |
+| 4 | [M02 · Software Engineering Practices](../modules/m02.qmd) | 10/10 |
+| 5 | [M05 · Mathematics for Data Science (R)](../modules/m05.qmd) | 7/7 |
+| 6 | [M06 · Statistics & Inference (R)](../modules/m06.qmd) | 23/23 |
+| 7 | [M08 · NumPy, Pandas & Polars](../modules/m08.qmd) | 18/18 |
+| 8 | [M10 · Feature Engineering & Data Preprocessing](../modules/m10.qmd) | 16/16 |
+| 9 | [M16 · Classical Machine Learning](../modules/m16.qmd) | 0/22 |
+| 10 | [M40 · AutoML & Hyperparameter Optimization](../modules/m40.qmd) | 0/6 |
+| 11 | [M20 · Deep Learning Foundations](../modules/m20.qmd) | 0/26 |
+| 12 | [M32 · Containers & Kubernetes](../modules/m32.qmd) | 0/9 |
+| 13 | [M34 · MLOps & LLMOps](../modules/m34.qmd) | 0/20 |
+| 14 | [M35 · Model Optimization & Edge AI](../modules/m35.qmd) | 0/16 |

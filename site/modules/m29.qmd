@@ -1,0 +1,28 @@
+---
+title: "M29 · AI Agents & MCP"
+subtitle: "LLM & AI Applications · 0 of 19 lessons ready"
+---
+
+**Prerequisites:** [M28 RAG & Retrieval Systems](m28.qmd) · **GPU:** optional
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | The Physics of Agentic Workflows | 🟢 Beginner | 🛠️ in progress | Agent lifecycle, planning loops, and orchestration basics. |
+| 02 | Function Calling & Tool Execution | 🟡 Intermediate | 🛠️ in progress | Safe function calling, tool contracts, and validations. |
+| 03 | Structured Output & Pydantic Coercion | 🟡 Intermediate | 🛠️ in progress | Reliable schema outputs and coercion strategies. |
+| 04 | Model Context Protocol (MCP) |  | 🛠️ in progress |  |
+| 05 | LangGraph Foundations (State & Nodes) | 🟡 Intermediate | 🛠️ in progress | Graph-based workflows and node-state modeling. |
+| 06 | Cyclic Routing & Conditional Edges | 🟠 Advanced | 🛠️ in progress | Routing patterns, cycles, and guard conditions. |
+| 07 | Cognitive Memory Architectures | 🟠 Advanced | 🛠️ in progress | Short/long-term memory patterns for agents. |
+| 08 | Human-in-the-Loop (HITL) Physics | 🟠 Advanced | 🛠️ in progress | HITL patterns, gating, and feedback loops. |
+| 09 | Agentic RAG (CRAG & Self-RAG) | 🟠 Advanced | 🛠️ in progress | Combining RAG with agent orchestration patterns. |
+| 10 | Multi-Agent Network Topologies | 🟠 Advanced | 🛠️ in progress | Topologies for agent collaboration and routing. |
+| 11 | The Supervisor Architecture | 🟠 Advanced | 🛠️ in progress | Supervisor patterns for orchestration and fault tolerance. |
+| 12 | Agent-to-Agent Protocol (A2A) |  | 🛠️ in progress |  |
+| 13 | Resilient Error Handling (LLM Try-Except) | 🟠 Advanced | 🛠️ in progress | Robust error handling and retry strategies for agents. |
+| 14 | LangSmith Observability & Tracing | 🟠 Advanced | 🛠️ in progress | Observability patterns and tracing agent runs. |
+| 15 | Evaluating Agentic Trajectories | 🟠 Advanced | 🛠️ in progress | Metrics and evaluation for multi-agent runs. |
+| 16 | Agent SDKs (OpenAI Agents SDK, Claude Agent SDK, Pydantic AI) |  | 🛠️ in progress |  |
+| 17 | Code Agents (smolagents) |  | 🛠️ in progress |  |
+| 18 | Computer-Use & Browser Agents |  | 🛠️ in progress |  |
+| 19 | Agent Security & Prompt Injection |  | 🛠️ in progress |  |

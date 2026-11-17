@@ -1,0 +1,29 @@
+/*-- scss:defaults --*/
+$font-family-sans-serif: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+$font-family-monospace: "JetBrains Mono", "Fira Code", Consolas, monospace;
+$headings-font-family: "Patrick Hand", "Comic Neue", cursive;
+$body-bg: #fbfaf4;
+$body-color: #2b2b2b;
+$link-color: #1a5fb4;
+$primary: #1a5fb4;
+$code-bg: #f3f1e7;
+$navbar-bg: #fbfaf4;
+$navbar-fg: #2b2b2b;
+$sidebar-bg: transparent;
+$grid-line: rgba(70, 130, 200, 0.10);
+$marker: rgba(255, 221, 0, 0.55);
+$note-ink: #1a5fb4;
+
+/*-- scss:rules --*/
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Caveat:wght@500;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap");
+
+body {
+  background-color: $body-bg;
+  background-image:
+    linear-gradient($grid-line 1px, transparent 1px),
+    linear-gradient(90deg, $grid-line 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+:root { --fzth-marker: #{$marker}; }
+strong { background: linear-gradient(transparent 55%, $marker 55%); padding: 0 2px; }
+.insight { color: $note-ink; border-left-color: $note-ink; }

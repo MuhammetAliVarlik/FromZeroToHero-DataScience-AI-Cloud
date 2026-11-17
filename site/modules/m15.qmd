@@ -1,0 +1,15 @@
+---
+title: "M15 · Causal Inference"
+subtitle: "Data Science · 0 of 6 lessons ready"
+---
+
+**Prerequisites:** [M14 Experimentation & A/B Testing](m14.qmd) · **GPU:** none
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | Causal Questions & Directed Acyclic Graphs |  | 🛠️ in progress |  |
+| 02 | Potential Outcomes & Confounding |  | 🛠️ in progress |  |
+| 03 | Propensity Scores & Matching |  | 🛠️ in progress |  |
+| 04 | Difference-in-Differences & Synthetic Control |  | 🛠️ in progress |  |
+| 05 | Causal Inference Workflow with DoWhy |  | 🛠️ in progress |  |
+| 06 | Heterogeneous Effects & Uplift Modeling (EconML) |  | 🛠️ in progress |  |

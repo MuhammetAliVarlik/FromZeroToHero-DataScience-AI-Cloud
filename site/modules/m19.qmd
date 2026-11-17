@@ -1,0 +1,22 @@
+---
+title: "M19 · Graph Data Science"
+subtitle: "Data Science · 0 of 13 lessons ready"
+---
+
+**Prerequisites:** [M16 Classical Machine Learning](m16.qmd) · **GPU:** optional
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | Graph Fundamentals & Network Construction (NetworkX) | 🟡 Intermediate | 🛠️ in progress | Nodes, edges, adjacency representations, and graph construction in Python. |
+| 02 | Centrality & Network Metrics (NetworkX) | 🟡 Intermediate | 🛠️ in progress | Degree, betweenness, closeness, and eigenvector centrality measures. |
+| 03 | Path Finding & Traversal Algorithms (NetworkX - igraph) | 🟠 Advanced | 🛠️ in progress | BFS, DFS, shortest paths, and traversal logic across graph libraries. |
+| 04 | Community Detection (Louvain & Leiden - python-igraph) | 🟠 Advanced | 🛠️ in progress | Modularity optimization, clustering, and network segmentation algorithms. |
+| 05 | Graph Databases & Cypher Queries (Neo4j) | 🟠 Advanced | 🛠️ in progress | Native graph storage, Cypher query language, and relationship-first modeling. |
+| 06 | Graph Data Modeling at Scale (Neo4j Graph Data Science Library) | 🟠 Advanced | 🛠️ in progress | Schema design, projection, and scalable graph algorithms in production. |
+| 07 | Graph Embeddings (Node2Vec) | 🔴 Expert | 🛠️ in progress | Random-walk-based structural embeddings and similarity learning. |
+| 08 | Graph Neural Network Foundations (PyTorch Geometric) | 🔴 Expert | 🛠️ in progress | Message passing, node classification, and link prediction with GNNs. |
+| 09 | Graph Machine Learning at Scale (DGL - Deep Graph Library) | 🔴 Expert | 🛠️ in progress | Distributed graph learning and large-scale GNN training pipelines. |
+| 10 | Temporal & Dynamic Graphs (PyTorch Geometric Temporal) | 🔴 Expert | 🛠️ in progress | Evolving networks, event streams, and time-aware graph representation learning. |
+| 11 | Graph Visualization (Gephi - PyVis) | 🔴 Expert | 🛠️ in progress | Layouts, readability, and interactive storytelling with network graphs. |
+| 12 | Enterprise Graph Applications & Governance (Neo4j) | 🔴 Expert | 🛠️ in progress | Knowledge graphs, fraud rings, recommendation systems, and data governance. |
+| 13 | Knowledge Graphs for LLM Applications |  | 🛠️ in progress |  |

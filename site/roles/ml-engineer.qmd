@@ -1,0 +1,9 @@
+---
+title: "Role: Machine Learning Engineer"
+---
+
+Trains, optimises and ships classical and deep learning models into production.
+
+**Paths:** [Machine Learning Engineer](../paths/ml-engineer.qmd)
+
+**Extra modules:** —

@@ -1,0 +1,24 @@
+---
+title: "M38 · GPU Programming & Kernels"
+subtitle: "Ops & Systems · 0 of 15 lessons ready"
+---
+
+**Prerequisites:** [M20 Deep Learning Foundations](m20.qmd) · **GPU:** required
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | CUDA Programming Basics (CUDA C++) | 🟡 Intermediate | 🛠️ in progress | Kernels, threads, blocks, and execution model fundamentals. |
+| 02 | GPU Memory Hierarchy & Bandwidth Optimization (CUDA) | 🟡 Intermediate | 🛠️ in progress | Global, shared, registers, and bandwidth-aware programming. |
+| 03 | Warp Divergence & Occupancy Tuning (Nsight Compute) | 🟠 Advanced | 🛠️ in progress | SIMT behavior, occupancy tuning, and branch efficiency profiling. |
+| 04 | Hopper & Blackwell Features (TMA, FP8, FP4) |  | 🛠️ in progress |  |
+| 05 | Writing GPU Kernels in Python (Triton) | 🟠 Advanced | 🛠️ in progress | Python-based custom kernels and performance-oriented implementation. |
+| 06 | CUDA Python |  | 🛠️ in progress |  |
+| 07 | Custom CUDA Kernel Development (PyTorch C++-CUDA Extensions) | 🟠 Advanced | 🛠️ in progress | Fused operations, tiling, and profiling-guided kernel optimization. |
+| 08 | Kernel Fusion Strategies (Triton & torch.compile) | 🟠 Advanced | 🛠️ in progress | Combining operators to reduce memory traffic and latency overhead. |
+| 09 | CUTLASS & CuTe DSL |  | 🛠️ in progress |  |
+| 10 | Flash Attention & Attention Optimization (FlashAttention) | 🔴 Expert | 🛠️ in progress | IO-aware attention, sparse attention, and sliding-window methods. |
+| 11 | FlashAttention-3 |  | 🛠️ in progress |  |
+| 12 | Memory-Bound vs Compute-Bound Optimization (Nsight - CUDA Profiling) | 🔴 Expert | 🛠️ in progress | Roofline analysis, coalesced access, and cache-aware kernel design. |
+| 13 | Distributed Attention for Long-Context Models (Ring Attention) | 🔴 Expert | 🛠️ in progress | Multi-GPU attention scaling and communication-efficient kernel pipelines. |
+| 14 | Pretraining Systems Engineering at Scale (Megatron-LM) | 🔴 Expert | 🛠️ in progress | Tokenizer design, data pipelines, scaling laws, and MoE basics at scale. |
+| 15 | Inference Runtime Engineering (CUDA Graphs - TensorRT) | 🔴 Expert | 🛠️ in progress | Scheduler-aware serving optimization and runtime graph capture. |

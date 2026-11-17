@@ -1,0 +1,15 @@
+---
+title: "Path: Software Engineer (Python Backend)"
+---
+
+Take the modules in order; skip lessons you already know.
+
+| Step | Module | Ready |
+| :-: | :--- | :-: |
+| 1 | [M01 · Python](../modules/m01.qmd) | 18/18 |
+| 2 | [M03 · Git & Collaboration](../modules/m03.qmd) | 4/4 |
+| 3 | [M04 · Linux & Shell](../modules/m04.qmd) | 7/7 |
+| 4 | [M02 · Software Engineering Practices](../modules/m02.qmd) | 10/10 |
+| 5 | [M07 · SQL & Databases](../modules/m07.qmd) | 20/20 |
+| 6 | [M32 · Containers & Kubernetes](../modules/m32.qmd) | 0/9 |
+| 7 | [M33 · Cloud & Infrastructure as Code](../modules/m33.qmd) | 0/14 |

@@ -1,0 +1,20 @@
+---
+title: "Path: Deep Learning & Computer Vision"
+---
+
+Take the modules in order; skip lessons you already know.
+
+| Step | Module | Ready |
+| :-: | :--- | :-: |
+| 1 | [M01 · Python](../modules/m01.qmd) | 18/18 |
+| 2 | [M03 · Git & Collaboration](../modules/m03.qmd) | 4/4 |
+| 3 | [M04 · Linux & Shell](../modules/m04.qmd) | 7/7 |
+| 4 | [M05 · Mathematics for Data Science (R)](../modules/m05.qmd) | 7/7 |
+| 5 | [M06 · Statistics & Inference (R)](../modules/m06.qmd) | 23/23 |
+| 6 | [M08 · NumPy, Pandas & Polars](../modules/m08.qmd) | 18/18 |
+| 7 | [M16 · Classical Machine Learning](../modules/m16.qmd) | 0/22 |
+| 8 | [M20 · Deep Learning Foundations](../modules/m20.qmd) | 0/26 |
+| 9 | [M21 · Computer Vision](../modules/m21.qmd) | 0/16 |
+| 10 | [M22 · Generative Models](../modules/m22.qmd) | 0/13 |
+| 11 | [M23 · Speech & Audio](../modules/m23.qmd) | 0/5 |
+| 12 | [M24 · Probabilistic & Bayesian Deep Learning](../modules/m24.qmd) | 0/11 |

@@ -1,0 +1,22 @@
+---
+title: "M22 · Generative Models"
+subtitle: "Deep Learning & Modalities · 0 of 13 lessons ready"
+---
+
+**Prerequisites:** [M21 Computer Vision](m21.qmd) · **GPU:** required
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | Autoencoders & Latent Space | 🟠 Advanced | 🛠️ in progress | Representation learning with autoencoders. |
+| 02 | Variational Autoencoders (VAEs) | 🟠 Advanced | 🛠️ in progress | Probabilistic autoencoders and latent sampling. |
+| 03 | Variational Autoencoders (PyTorch) | 🟠 Advanced | 🛠️ in progress | Latent variables, reconstruction, and generative representation learning. |
+| 04 | Generative Adversarial Networks | 🟠 Advanced | 🛠️ in progress | GAN training, loss dynamics, and stability. |
+| 05 | Advanced GANs & Pitfalls | 🔴 Expert | 🛠️ in progress | Improved architectures and common failure modes. |
+| 06 | Diffusion Models I: The Math | 🔴 Expert | 🛠️ in progress | Theory of diffusion-based generative models. |
+| 07 | Diffusion Model Fundamentals (Hugging Face Diffusers) | 🟠 Advanced | 🛠️ in progress | Noise schedules, denoising, and generative diffusion steps. |
+| 08 | Diffusion Models II: Latent Diffusion | 🔴 Expert | 🛠️ in progress | Practical latent diffusion pipelines and training. |
+| 09 | Flow Matching & Rectified Flow |  | 🛠️ in progress |  |
+| 10 | Diffusion Transformers (DiT) |  | 🛠️ in progress |  |
+| 11 | Image-to-Image & ControlNet | 🔴 Expert | 🛠️ in progress | Conditional generation and control mechanisms. |
+| 12 | Generative Evaluation | 🔴 Expert | 🛠️ in progress | Metrics for generative model quality and diversity. |
+| 13 | Video Generation Fundamentals |  | 🛠️ in progress |  |

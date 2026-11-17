@@ -143,9 +143,6 @@ venv.bak/
 # Rope project settings
 .ropeproject
 
-# mkdocs documentation
-/site
-
 # mypy
 .mypy_cache/
 .dmypy.json
@@ -226,3 +223,8 @@ _legacy_untracked/
 
 # downloaded datasets (tools/datasets.py)
 data/cache/
+
+# Quarto website
+/_site/
+/.quarto/
+**/*.quarto_ipynb

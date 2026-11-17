@@ -1,0 +1,24 @@
+---
+title: "M26 · LLM Foundations"
+subtitle: "LLM & AI Applications · 1 of 15 lessons ready"
+---
+
+**Prerequisites:** [M01 Python](m01.qmd) · **GPU:** optional
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | Tokenization & Text Math | 🟢 Beginner | 🛠️ in progress | Tokenization, vocab, and text-to-token math. |
+| 02 | Vector Semantics | 🟡 Intermediate | 🛠️ in progress | Embedding spaces, similarity, and semantic search basics. |
+| 03 | RNNs & Vanishing Gradients | 🟠 Advanced | 🛠️ in progress | Sequence models and gradient stability issues. |
+| 04 | Seq2Seq & Early Attention | 🟠 Advanced | 🛠️ in progress | Encoder-decoder workflows and attention intro. |
+| 05 | Transformers I: Self-Attention | 🟠 Advanced | 🛠️ in progress | Self-attention mechanisms and scaled dot-product math. |
+| 06 | Transformers II: Architecture | 🟠 Advanced | 🛠️ in progress | Full transformer stacks, positional encodings, and blocks. |
+| 07 | Encoder Models (BERT) | 🟠 Advanced | 🛠️ in progress | Encoder-only models and masked-language pretraining. |
+| 08 | Encoder LLMs & Text Embeddings (ModernBERT) |  | 🛠️ in progress |  |
+| 09 | Decoder Models (GPT) | 🟠 Advanced | 🛠️ in progress | Causal decoding, autoregression, and next-token modelling. |
+| 10 | [Decoding Strategies](../../M26-LLM%20Foundations/10-Decoding%20Strategies.ipynb) | 🟡 Intermediate | ✅ | Greedy, beam search, temperature, top-k, top-p and min-p implemented on GPT-2; diversity vs likelihood. |
+| 11 | Modern LLM Architecture (RoPE, GQA, KV Cache, MoE) |  | 🛠️ in progress |  |
+| 12 | Working with Open LLMs Locally (Ollama & Transformers) |  | 🛠️ in progress |  |
+| 13 | Prompt & Context Engineering |  | 🛠️ in progress |  |
+| 14 | Reasoning Models & Test-Time Compute |  | 🛠️ in progress |  |
+| 15 | Small Language Models & Long Context |  | 🛠️ in progress |  |

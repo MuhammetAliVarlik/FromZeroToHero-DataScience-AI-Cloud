@@ -1,0 +1,24 @@
+---
+title: "M30 · AI Application Engineering"
+subtitle: "LLM & AI Applications · 0 of 15 lessons ready"
+---
+
+**Prerequisites:** [M02 Software Engineering Practices](m02.qmd), [M26 LLM Foundations](m26.qmd) · **GPU:** optional
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | Rapid Prototyping (Gradio) | 🟢 Beginner | 🛠️ in progress | Quick demo UIs and interactive prototyping with Gradio. |
+| 02 | Stateful AI UIs (Streamlit) | 🟢 Beginner | 🛠️ in progress | Building stateful interfaces for model interaction. |
+| 03 | FastAPI & REST Physics | 🟢 Beginner | 🛠️ in progress | FastAPI design patterns, routers, and endpoint best practices. |
+| 04 | Pydantic for Machine Learning | 🟡 Intermediate | 🛠️ in progress | Validation models, schemas, and serialization for ML payloads. |
+| 05 | Model Memory & Lifespans | 🟡 Intermediate | 🛠️ in progress | Managing model lifecycle, in-memory caches and warmup strategies. |
+| 06 | Concurrency & Blocking Inference | 🟠 Advanced | 🛠️ in progress | Async endpoints, thread pools, and safe inference patterns. |
+| 07 | Token Streaming (Server-Sent Events) | 🟠 Advanced | 🛠️ in progress | Streaming tokens, SSE, and chunked responses. |
+| 08 | Building MCP Servers |  | 🛠️ in progress |  |
+| 09 | Vision Endpoints (File I-O) | 🟠 Advanced | 🛠️ in progress | File uploads, preprocessing, and image model endpoints. |
+| 10 | Decoupled Systems | 🟠 Advanced | 🛠️ in progress | Producer-consumer patterns and traffic shaping for ML services. |
+| 11 | LLM Gateways & Rate Limiting (LiteLLM) |  | 🛠️ in progress |  |
+| 12 | Semantic Caching |  | 🛠️ in progress |  |
+| 13 | Securing GPU Endpoints | 🔴 Expert | 🛠️ in progress | Auth, isolation, and secure service exposure for GPU-backed endpoints. |
+| 14 | Background Batch Processing | 🟠 Advanced | 🛠️ in progress | Offloading heavy jobs and background task orchestration. |
+| 15 | Mocking & Testing ML APIs | 🟠 Advanced | 🛠️ in progress | Test patterns, mocking model responses and CI integration. |

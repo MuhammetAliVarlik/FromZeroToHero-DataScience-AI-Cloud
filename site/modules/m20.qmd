@@ -1,0 +1,35 @@
+---
+title: "M20 · Deep Learning Foundations"
+subtitle: "Deep Learning & Modalities · 0 of 26 lessons ready"
+---
+
+**Prerequisites:** [M05 Mathematics for Data Science (R)](m05.qmd), [M01 Python](m01.qmd) · **GPU:** optional
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | Tensor Mathematics | 🟢 Beginner | 🛠️ in progress | Tensor operations and linear algebra foundations for DL. |
+| 02 | The Artificial Neuron | 🟢 Beginner | 🛠️ in progress | Neuron model, weights, bias, and activation intuition. |
+| 03 | Activation Functions | 🟢 Beginner | 🛠️ in progress | Common activations and their properties. |
+| 04 | Multi-Layer Perceptrons | 🟡 Intermediate | 🛠️ in progress | MLP architectures and feedforward networks. |
+| 05 | Loss Functions | 🟡 Intermediate | 🛠️ in progress | Loss choices and their effects on training. |
+| 06 | Gradient Descent | 🟡 Intermediate | 🛠️ in progress | Optimization basics and learning dynamics. |
+| 07 | Backpropagation | 🟡 Intermediate | 🛠️ in progress | Backprop algorithm and computational graph derivatives. |
+| 08 | Auto-Differentiation | 🟡 Intermediate | 🛠️ in progress | Autograd mechanics and practical tips. |
+| 09 | Batches & DataLoaders | 🟡 Intermediate | 🛠️ in progress | Mini-batching, loaders, and efficient data pipelines. |
+| 10 | Advanced Optimizers | 🟠 Advanced | 🛠️ in progress | Adam, RMSProp, and optimizer variants. |
+| 11 | The Training Loop | 🟠 Advanced | 🛠️ in progress | Epochs, steps, evaluation, and debugging loops. |
+| 12 | Gradient Instability | 🟠 Advanced | 🛠️ in progress | Vanishing/exploding gradients and remedies. |
+| 13 | Weight Initialization | 🟠 Advanced | 🛠️ in progress | Initialization schemes and their impact. |
+| 14 | Regularization: Dropout | 🟠 Advanced | 🛠️ in progress | Dropout and other regularization techniques. |
+| 15 | Normalization Layers | 🟠 Advanced | 🛠️ in progress | BatchNorm, LayerNorm and training stability. |
+| 16 | Learning Rate Scheduling | 🟠 Advanced | 🛠️ in progress | Schedulers, warmup, and cyclic strategies. |
+| 17 | Residual Connections & Modern Building Blocks |  | 🛠️ in progress |  |
+| 18 | Handling Imbalanced Data | 🟠 Advanced | 🛠️ in progress | Techniques for class imbalance in DL. |
+| 19 | Deep Learning Diagnostics | 🟠 Advanced | 🛠️ in progress | Training diagnostics, visualizations, and fixes. |
+| 20 | Hardware Acceleration | 🔴 Expert | 🛠️ in progress | GPUs, mixed precision, and performance tips. |
+| 21 | torch.compile & Mixed Precision (bf16, FP8) |  | 🛠️ in progress |  |
+| 22 | Callbacks & Checkpointing | 🟠 Advanced | 🛠️ in progress | Checkpoints, callbacks, and training utilities. |
+| 23 | Training with Lightning & Accelerate |  | 🛠️ in progress |  |
+| 24 | Multi-Task Architectures | 🟠 Advanced | 🛠️ in progress | Multi-head and multi-task model designs. |
+| 25 | Representation Learning & World Models (Contrastive, Masked, JEPA) |  | 🛠️ in progress |  |
+| 26 | Scaling Laws |  | 🛠️ in progress |  |

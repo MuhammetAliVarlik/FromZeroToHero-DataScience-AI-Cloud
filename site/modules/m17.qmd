@@ -1,0 +1,34 @@
+---
+title: "M17 · Time Series & Forecasting"
+subtitle: "Data Science · 0 of 25 lessons ready"
+---
+
+**Prerequisites:** [M16 Classical Machine Learning](m16.qmd) · **GPU:** optional
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | Time Series Problem Framing | 🟢 Beginner | 🛠️ in progress | Problem definition, horizons, and baseline strategies. |
+| 02 | Components & Decomposition | 🟡 Intermediate | 🛠️ in progress | Trend/seasonality decomposition and component analysis. |
+| 03 | Exploratory Time Series Analysis | 🟡 Intermediate | 🛠️ in progress | Decomposition, ACF/PACF inspection, and diagnostics. |
+| 04 | Autocorrelation (ACF-PACF) | 🟡 Intermediate | 🛠️ in progress | ACF/PACF interpretation and lag selection. |
+| 05 | Stationarity & Differencing | 🟡 Intermediate | 🛠️ in progress | Unit roots, tests, and differencing strategies. |
+| 06 | Temporal Feature Engineering | 🟠 Advanced | 🛠️ in progress | Lag/window features, calendar effects, and encodings. |
+| 07 | Lag & Window Features | 🟠 Advanced | 🛠️ in progress | Rolling statistics, expanding windows, and feature lags. |
+| 08 | Classic: Exponential Smoothing | 🟠 Advanced | 🛠️ in progress | Simple/seasonal exponential smoothing and Holt-Winters. |
+| 09 | Classic: ARIMA Models | 🟠 Advanced | 🛠️ in progress | ARIMA identification, estimation, and forecasting. |
+| 10 | Classic: SARIMAX | 🟠 Advanced | 🛠️ in progress | Seasonal ARIMA with exogenous regressors. |
+| 11 | Time Series Validation Strategies | 🟠 Advanced | 🛠️ in progress | Walk-forward validation, backtesting, and horizons. |
+| 12 | Forecasting Metrics | 🟠 Advanced | 🛠️ in progress | MAPE, RMSE, MAE, and probabilistic metrics. |
+| 13 | ML Forecasting (Tabularization) | 🟠 Advanced | 🛠️ in progress | Converting series to supervised tabular format for ML. |
+| 14 | Global vs. Local Models | 🟠 Advanced | 🛠️ in progress | Model per-series vs pooled/global approaches. |
+| 15 | Forecasting with Nixtla (statsforecast & mlforecast) |  | 🛠️ in progress |  |
+| 16 | Multivariate Forecasting (VAR) | 🟠 Advanced | 🛠️ in progress | VAR models and multivariate temporal dependencies. |
+| 17 | Deep Learning: LSTMs | 🟠 Advanced | 🛠️ in progress | Sequence models, LSTM architectures, and training tips. |
+| 18 | Deep Learning: Transformers | 🟠 Advanced | 🛠️ in progress | Transformer-based time series models and attention. |
+| 19 | Neural Forecasting (N-HiTS, PatchTST) |  | 🛠️ in progress |  |
+| 20 | Time Series Foundation Models (Chronos, TimesFM) |  | 🛠️ in progress |  |
+| 21 | Hierarchical Forecasting | 🔴 Expert | 🛠️ in progress | Reconciliation, aggregation, and bottom-up/top-down methods. |
+| 22 | Uncertainty Quantification | 🔴 Expert | 🛠️ in progress | Prediction intervals, quantiles, and probabilistic forecasts. |
+| 23 | Anomaly Detection in Time | 🔴 Expert | 🛠️ in progress | Detecting temporal anomalies and change points. |
+| 24 | MLOps: Continuous Backtesting | 🔴 Expert | 🛠️ in progress | Automated backtests, scheduling, and monitoring. |
+| 25 | MLOps: Operationalization | 🔴 Expert | 🛠️ in progress | Serving, retraining, and production considerations. |

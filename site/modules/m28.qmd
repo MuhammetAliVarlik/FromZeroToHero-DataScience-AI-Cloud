@@ -1,0 +1,25 @@
+---
+title: "M28 · RAG & Retrieval Systems"
+subtitle: "LLM & AI Applications · 0 of 16 lessons ready"
+---
+
+**Prerequisites:** [M26 LLM Foundations](m26.qmd) · **GPU:** optional
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | The Physics of RAG | 🟢 Beginner | 🛠️ in progress | RAG conceptual workflow and system building blocks. |
+| 02 | Document Parsing & Chunking Math | 🟢 Beginner | 🛠️ in progress | Chunking strategies, overlap, and semantic segmentation. |
+| 03 | Document Parsing with Docling |  | 🛠️ in progress |  |
+| 04 | Bi-Encoders & Dense Retrieval | 🟡 Intermediate | 🛠️ in progress | Bi-encoder training and dense retrieval pipelines. |
+| 05 | Choosing Embedding Models (MTEB & Matryoshka) |  | 🛠️ in progress |  |
+| 06 | Vector Databases & Metadata | 🟡 Intermediate | 🛠️ in progress | DB choices, schema, and metadata-driven filtering. |
+| 07 | pgvector in Production |  | 🛠️ in progress |  |
+| 08 | The Mathematics of ANN (HNSW & IVF) | 🟡 Intermediate | 🛠️ in progress | ANN algorithms and tradeoffs for recall/latency. |
+| 09 | Sparse Search & BM25 | 🟡 Intermediate | 🛠️ in progress | BM25 and sparse retrieval techniques. |
+| 10 | Hybrid Search & RRF | 🟠 Advanced | 🛠️ in progress | Combining dense and sparse signals for robust retrieval. |
+| 11 | Reranking (Cross-Encoders) | 🟠 Advanced | 🛠️ in progress | Cross-encoder reranking and relevance calibration. |
+| 12 | Query Transformation (HyDE) | 🟠 Advanced | 🛠️ in progress | Query augmentation and hallucinated document expansion. |
+| 13 | Contextual Retrieval & Late Chunking |  | 🛠️ in progress |  |
+| 14 | Multi-Vector Retrieval (ColBERT & ColPali) |  | 🛠️ in progress |  |
+| 15 | Advanced Context Topologies | 🟠 Advanced | 🛠️ in progress | Context assembly strategies and slot-filling topologies. |
+| 16 | GraphRAG Foundations | 🟠 Advanced | 🛠️ in progress | Graph-based retrieval and knowledge augmentation. |

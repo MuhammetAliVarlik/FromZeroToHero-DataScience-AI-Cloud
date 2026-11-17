@@ -1,0 +1,9 @@
+---
+title: "Role: AI Solutions Architect"
+---
+
+Designs end-to-end AI architectures and guides customers or internal teams through adoption.
+
+**Paths:** [AI Application Engineer](../paths/ai-app-engineer.qmd), [MLOps & ML Platform Engineer](../paths/mlops.qmd)
+
+**Extra modules:** [M43 · AI Solution Design & Delivery](../modules/m43.qmd)

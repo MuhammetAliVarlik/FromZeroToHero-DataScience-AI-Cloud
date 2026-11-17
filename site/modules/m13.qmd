@@ -1,0 +1,21 @@
+---
+title: "M13 · Spark & Distributed Data Processing"
+subtitle: "Data · 0 of 12 lessons ready"
+---
+
+**Prerequisites:** [M08 NumPy, Pandas & Polars](m08.qmd), [M11 Data Engineering & Orchestration](m11.qmd) · **GPU:** none
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | The Physics of Distributed Compute | 🟢 Beginner | 🛠️ in progress | Cluster compute fundamentals and execution models. |
+| 02 | The Catalyst Optimizer & Execution Plans | 🟡 Intermediate | 🛠️ in progress | Query planning, logical/physical plans and optimization. |
+| 03 | Partitioning & The Shuffle Penalty | 🟡 Intermediate | 🛠️ in progress | Partitioning strategies and the cost of shuffles. |
+| 04 | Distributed Joins & Broadcast Physics | 🟠 Advanced | 🛠️ in progress | Join strategies and broadcast join tradeoffs. |
+| 05 | Vectorized Computation (Apache Arrow) | 🟠 Advanced | 🛠️ in progress | Arrow-based vectorized execution and IO performance. |
+| 06 | Window Functions & Stateful Bounding | 🟠 Advanced | 🛠️ in progress | Windowed analytics and stateful computation patterns. |
+| 07 | Data Skew & Cryptographic Salting | 🟠 Advanced | 🛠️ in progress | Skew detection and salting strategies for joins. |
+| 08 | Structured Streaming & Watermarks | 🟠 Advanced | 🛠️ in progress | Streaming processing, watermarks, and time handling. |
+| 09 | Delta Lake Integration (Lakehouse Scaling) | 🔴 Expert | 🛠️ in progress | Delta Lake usage patterns and ACID table integration. |
+| 10 | Cluster Optimization & The Spark UI | 🔴 Expert | 🛠️ in progress | Tuning clusters, executors, and using the Spark UI effectively. |
+| 11 | Spark 4.0 (Spark Connect, ANSI Mode, VARIANT) |  | 🛠️ in progress |  |
+| 12 | Beyond Spark: Polars, DuckDB, Ray Data & Daft |  | 🛠️ in progress |  |

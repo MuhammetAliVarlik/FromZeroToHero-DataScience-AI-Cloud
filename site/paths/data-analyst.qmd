@@ -1,0 +1,17 @@
+---
+title: "Path: Data Analyst & BI"
+---
+
+Take the modules in order; skip lessons you already know.
+
+| Step | Module | Ready |
+| :-: | :--- | :-: |
+| 1 | [M01 · Python](../modules/m01.qmd) | 18/18 |
+| 2 | [M03 · Git & Collaboration](../modules/m03.qmd) | 4/4 |
+| 3 | [M04 · Linux & Shell](../modules/m04.qmd) | 7/7 |
+| 4 | [M05 · Mathematics for Data Science (R)](../modules/m05.qmd) | 7/7 |
+| 5 | [M06 · Statistics & Inference (R)](../modules/m06.qmd) | 23/23 |
+| 6 | [M07 · SQL & Databases](../modules/m07.qmd) | 20/20 |
+| 7 | [M08 · NumPy, Pandas & Polars](../modules/m08.qmd) | 18/18 |
+| 8 | [M09 · Data Visualization & BI](../modules/m09.qmd) | 18/18 |
+| 9 | [M14 · Experimentation & A/B Testing](../modules/m14.qmd) | 0/6 |

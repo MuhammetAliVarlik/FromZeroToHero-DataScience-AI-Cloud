@@ -1,0 +1,23 @@
+---
+title: "M02 · Software Engineering Practices"
+subtitle: "Foundations · 10 of 10 lessons ready"
+---
+
+**Prerequisites:** [M01 Python](m01.qmd) · **GPU:** none
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | [Modern Packaging & Environments with uv](../../M02-Software%20Engineering%20Practices/01-Modern%20Packaging%20&%20Environments%20with%20uv.ipynb) | 🟢 Beginner | ✅ | venv, pyproject.toml, lock files, uv init/add/run/build, pip vs uv speed, uv vs Poetry vs conda. |
+| 02 | [Linting & Formatting with Ruff](../../M02-Software%20Engineering%20Practices/02-Linting%20&%20Formatting%20with%20Ruff.ipynb) | 🟢 Beginner | ✅ | Ruff rule families, automatic fixes, formatting, and configuration in pyproject.toml. |
+| 03 | [Best Practices (PEP8, docstring, clean code)](../../M02-Software%20Engineering%20Practices/03-Best%20Practices%20(PEP8,%20docstring,%20clean%20code).ipynb) | 🟢 Beginner | ✅ | PEP 8 naming, Google-style docstrings, refactoring a long function, complexity, project layout, secrets. |
+| 04 | [Testing with pytest](../../M02-Software%20Engineering%20Practices/04-Testing%20with%20pytest.ipynb) | 🟡 Intermediate | ✅ | pytest tests, fixtures, parametrize, raises, tmp_path, monkeypatch, JUnit reports, the test pyramid. |
+| 05 | [Logging & Configuration](../../M02-Software%20Engineering%20Practices/05-Logging%20&%20Configuration.ipynb) | 🟡 Intermediate | ✅ | logging levels, handlers, JSON logs, exception logging, and validated configuration from the environment. |
+| 06 | [Async Programming with asyncio](../../M02-Software%20Engineering%20Practices/06-Async%20Programming%20with%20asyncio.ipynb) | 🟡 Intermediate | ✅ | Coroutines, gather, TaskGroup, semaphores, timeouts, measured on real HTTP requests to a local server. |
+| 07 | [SOLID Principles](../../M02-Software%20Engineering%20Practices/07-SOLID%20Principles.ipynb) | 🟡 Intermediate | ✅ | The five SOLID principles with violations and refactorings in data-pipeline code. |
+| 08 | [Design Patterns for Data & AI Code](../../M02-Software%20Engineering%20Practices/08-Design%20Patterns%20for%20Data%20&%20AI%20Code.ipynb) | 🟡 Intermediate | ✅ | Strategy, registry/factory, adapter, pipeline, repository and circuit breaker in Python. |
+| 09 | [Building Command-Line Tools](../../M02-Software%20Engineering%20Practices/09-Building%20Command-Line%20Tools.ipynb) | 🟡 Intermediate | ✅ | argparse and Typer CLIs, exit codes, stdout/stderr, JSON output, [project.scripts]. |
+| 10 | [API Design Fundamentals (HTTP, REST, OpenAPI)](../../M02-Software%20Engineering%20Practices/10-API%20Design%20Fundamentals%20(HTTP,%20REST,%20OpenAPI).ipynb) | 🟡 Intermediate | ✅ | HTTP methods and status codes, REST design, idempotency keys, Problem Details, OpenAPI, latency percentiles. |
+
+## Assignments
+
+- [Release-Ready Toolkit](../../M02-Software%20Engineering%20Practices/assignments/01-Release-Ready-Toolkit.ipynb) · [solution](../../M02-Software%20Engineering%20Practices/assignments/01-Release-Ready-Toolkit-solution.ipynb)

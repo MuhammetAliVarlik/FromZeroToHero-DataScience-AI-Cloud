@@ -1,0 +1,21 @@
+---
+title: "M31 · Evaluation & Observability for ML and LLMs"
+subtitle: "LLM & AI Applications · 0 of 12 lessons ready"
+---
+
+**Prerequisites:** [M28 RAG & Retrieval Systems](m28.qmd) · **GPU:** optional
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | NLP Evaluation Metrics | 🟠 Advanced | 🛠️ in progress | BLEU, ROUGE, BERTScore and human-eval practices. |
+| 02 | Lexical & Statistical NLP Metrics | 🟢 Beginner | 🛠️ in progress | BLEU, ROUGE, and other n-gram-overlap text evaluation metrics. |
+| 03 | Semantic Similarity & Cross-Encoders | 🟢 Beginner | 🛠️ in progress | Embedding-based similarity and cross-encoder scoring for text evaluation. |
+| 04 | Evaluating RAG (RAGAS-TruLens) | 🟠 Advanced | 🛠️ in progress | Evaluation frameworks and reliability assessments for RAG. |
+| 05 | The RAG Triad & LLM-as-a-Judge | 🟡 Intermediate | 🛠️ in progress | Context relevance, groundedness, and answer relevance scored via an LLM judge. |
+| 06 | Hallucination Detection & Factuality | 🟡 Intermediate | 🛠️ in progress | Detecting unsupported claims and factuality gaps in generated text. |
+| 07 | RAG Hallucination Detection (TruLens) | 🔴 Expert | 🛠️ in progress | Detecting and quantifying hallucinations in retrieval-augmented LLM outputs. |
+| 08 | LLM Evaluation Frameworks (DeepEval, promptfoo, Inspect) |  | 🛠️ in progress |  |
+| 09 | Benchmarks & Data Contamination |  | 🛠️ in progress |  |
+| 10 | Data Drift & Concept Drift (Evidently AI) | 🟡 Intermediate | 🛠️ in progress | Detecting distributional shift in features and model inputs over time. |
+| 11 | Unlabeled Performance Estimation (NannyML) | 🟡 Intermediate | 🛠️ in progress | Estimating model performance in production without ground-truth labels. |
+| 12 | LLM Observability (Langfuse, Phoenix, OpenTelemetry GenAI) |  | 🛠️ in progress |  |

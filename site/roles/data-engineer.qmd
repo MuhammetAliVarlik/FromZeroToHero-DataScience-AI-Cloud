@@ -1,0 +1,9 @@
+---
+title: "Role: Data Engineer"
+---
+
+Builds and operates batch and streaming pipelines, warehouses and lakehouses.
+
+**Paths:** [Data Engineer](../paths/data-engineer.qmd)
+
+**Extra modules:** —

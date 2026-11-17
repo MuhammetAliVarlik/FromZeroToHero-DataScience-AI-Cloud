@@ -1,0 +1,23 @@
+---
+title: "M33 · Cloud & Infrastructure as Code"
+subtitle: "Ops & Systems · 0 of 14 lessons ready"
+---
+
+**Prerequisites:** [M32 Containers & Kubernetes](m32.qmd) · **GPU:** none
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | Infrastructure as Code (IaC) & Python SDKs | 🟢 Beginner | 🛠️ in progress | IaC patterns, SDK usage, and provisioning workflows. |
+| 02 | Infrastructure as Code with OpenTofu |  | 🛠️ in progress |  |
+| 03 | Identity & Access Management (IAM) Cryptography | 🟡 Intermediate | 🛠️ in progress | IAM design, keys, and secure identity patterns. |
+| 04 | The Physics of Cloud Storage (AWS S3 & EventBridge) | 🟡 Intermediate | 🛠️ in progress | Storage semantics, eventing, and durable object patterns. |
+| 05 | Virtual Private Clouds (VPC) & Network Topologies | 🟠 Advanced | 🛠️ in progress | VPC design, subnets, routing and secure network patterns. |
+| 06 | Event-Driven Compute (AWS Lambda & SQS) | 🟠 Advanced | 🛠️ in progress | Serverless compute, queues, and event-driven patterns. |
+| 07 | Serverless Containers (ECR & AWS Fargate) | 🟠 Advanced | 🛠️ in progress | Container-based serverless patterns and orchestration. |
+| 08 | Ephemeral ML Training (Amazon SageMaker) | 🟠 Advanced | 🛠️ in progress | Short-lived training jobs, managed services, and cost control. |
+| 09 | High-Throughput Inference Endpoints | 🔴 Expert | 🛠️ in progress | Serving at scale, autoscaling, batching and latency tradeoffs. |
+| 10 | Enterprise Generative AI (Amazon Bedrock) | 🔴 Expert | 🛠️ in progress | Managed generative AI services and enterprise patterns. |
+| 11 | Cloud FinOps & Spot Instance Physics | 🔴 Expert | 🛠️ in progress | Cost optimization, spot instances and budgeting practices. |
+| 12 | Operational Cost & Efficiency (Spot-Preemptible GPU Nodes) | 🔴 Expert | 🛠️ in progress | Throughput-cost tradeoffs and cluster utilization optimization. |
+| 13 | Azure & Google Cloud AI Services Overview |  | 🛠️ in progress |  |
+| 14 | Serverless GPU Platforms |  | 🛠️ in progress |  |

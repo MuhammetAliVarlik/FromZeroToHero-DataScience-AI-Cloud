@@ -1,0 +1,23 @@
+---
+title: "Path: AI Infrastructure & GPU Systems"
+---
+
+Take the modules in order; skip lessons you already know.
+
+| Step | Module | Ready |
+| :-: | :--- | :-: |
+| 1 | [M01 · Python](../modules/m01.qmd) | 18/18 |
+| 2 | [M03 · Git & Collaboration](../modules/m03.qmd) | 4/4 |
+| 3 | [M04 · Linux & Shell](../modules/m04.qmd) | 7/7 |
+| 4 | [M02 · Software Engineering Practices](../modules/m02.qmd) | 10/10 |
+| 5 | [M05 · Mathematics for Data Science (R)](../modules/m05.qmd) | 7/7 |
+| 6 | [M08 · NumPy, Pandas & Polars](../modules/m08.qmd) | 18/18 |
+| 7 | [M16 · Classical Machine Learning](../modules/m16.qmd) | 0/22 |
+| 8 | [M20 · Deep Learning Foundations](../modules/m20.qmd) | 0/26 |
+| 9 | [M32 · Containers & Kubernetes](../modules/m32.qmd) | 0/9 |
+| 10 | [M39 · Systems Languages for AI (C++ & Rust)](../modules/m39.qmd) | 0/3 |
+| 11 | [M38 · GPU Programming & Kernels](../modules/m38.qmd) | 0/15 |
+| 12 | [M37 · Distributed Training](../modules/m37.qmd) | 0/6 |
+| 13 | [M26 · LLM Foundations](../modules/m26.qmd) | 1/15 |
+| 14 | [M36 · LLM Serving & Inference Systems](../modules/m36.qmd) | 0/15 |
+| 15 | [M35 · Model Optimization & Edge AI](../modules/m35.qmd) | 0/16 |

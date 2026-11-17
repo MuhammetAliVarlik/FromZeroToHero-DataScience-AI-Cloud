@@ -1,0 +1,9 @@
+---
+title: "Role: Product Data Scientist"
+---
+
+Drives product decisions with experiments, causal inference and modelling.
+
+**Paths:** [Data Analyst & BI](../paths/data-analyst.qmd), [Data Scientist](../paths/data-scientist.qmd)
+
+**Extra modules:** —

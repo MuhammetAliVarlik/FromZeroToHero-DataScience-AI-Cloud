@@ -1,0 +1,20 @@
+---
+title: "M24 · Probabilistic & Bayesian Deep Learning"
+subtitle: "Deep Learning & Modalities · 0 of 11 lessons ready"
+---
+
+**Prerequisites:** [M20 Deep Learning Foundations](m20.qmd), [M06 Statistics & Inference (R)](m06.qmd) · **GPU:** optional
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | Bayesian Foundations & Probabilistic Programming (PyMC) | 🟢 Beginner | 🛠️ in progress | Priors, posteriors, and probabilistic reasoning with a modern PPL. |
+| 02 | Uncertainty Estimation (TensorFlow Probability) | 🟡 Intermediate | 🛠️ in progress | Aleatoric vs epistemic uncertainty and practical estimation techniques. |
+| 03 | Variational Inference (Pyro) | 🟠 Advanced | 🛠️ in progress | Approximate posterior learning and ELBO optimization. |
+| 04 | Probabilistic Programming with NumPyro |  | 🛠️ in progress |  |
+| 05 | Probabilistic Losses & Calibration (TorchUncertainty) | 🟠 Advanced | 🛠️ in progress | Gaussian, categorical, and uncertainty-aware objectives with calibration checks. |
+| 06 | Bayesian Neural Networks (Pyro - BLiTZ) | 🔴 Expert | 🛠️ in progress | Parameter uncertainty and Monte Carlo approximation in neural nets. |
+| 07 | Stochastic Training Dynamics (Monte Carlo Dropout - PyTorch) | 🔴 Expert | 🛠️ in progress | Noise, regularization, and probabilistic interpretation of gradients. |
+| 08 | Deep Ensembles for Uncertainty Quantification (PyTorch) | 🔴 Expert | 🛠️ in progress | Ensemble-based uncertainty quantification and robustness behavior. |
+| 09 | Posterior Predictive & Risk-Aware Prediction (ArviZ) | 🔴 Expert | 🛠️ in progress | Estimating uncertainty bands and decision confidence under shift. |
+| 10 | Decision-Theoretic Inference & Risk Communication | 🔴 Expert | 🛠️ in progress | Utility-aware prediction and uncertainty-informed action selection. |
+| 11 | Normalizing Flows |  | 🛠️ in progress |  |

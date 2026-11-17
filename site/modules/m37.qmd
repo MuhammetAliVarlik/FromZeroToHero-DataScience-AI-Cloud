@@ -1,0 +1,15 @@
+---
+title: "M37 · Distributed Training"
+subtitle: "Ops & Systems · 0 of 6 lessons ready"
+---
+
+**Prerequisites:** [M20 Deep Learning Foundations](m20.qmd), [M32 Containers & Kubernetes](m32.qmd) · **GPU:** required
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | Data-Parallel Training (PyTorch DDP) | 🟠 Advanced | 🛠️ in progress | Synchronous gradient training across multiple devices with DistributedDataParallel. |
+| 02 | Model Parallelism & Sharding (DeepSpeed ZeRO) | 🟠 Advanced | 🛠️ in progress | Splitting model computation and memory across devices with ZeRO stages. |
+| 03 | Distributed Checkpointing & Fault Recovery (Torch Distributed Checkpoint) | 🟠 Advanced | 🛠️ in progress | Saving, restoring, and syncing distributed training state reliably. |
+| 04 | FSDP2 & torchtitan |  | 🛠️ in progress |  |
+| 05 | Pipeline & Tensor Parallelism |  | 🛠️ in progress |  |
+| 06 | Distributed Training at Scale (Ray Train) | 🔴 Expert | 🛠️ in progress | Cluster-wide distributed training orchestration and scale strategy selection. |

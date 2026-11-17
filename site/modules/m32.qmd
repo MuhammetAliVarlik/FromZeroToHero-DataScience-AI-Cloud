@@ -1,0 +1,18 @@
+---
+title: "M32 · Containers & Kubernetes"
+subtitle: "Ops & Systems · 0 of 9 lessons ready"
+---
+
+**Prerequisites:** [M04 Linux & Shell](m04.qmd), [M02 Software Engineering Practices](m02.qmd) · **GPU:** optional
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | Immutable Layer Engineering (Dockerfiles & Layer Caching) | 🟠 Advanced | 🛠️ in progress | Writing efficient Dockerfiles and understanding image layer caching. |
+| 02 | Multi-Container Grid Topologies (Docker Compose) | 🟠 Advanced | 🛠️ in progress | Orchestrating multi-service local stacks with Docker Compose. |
+| 03 | Container Orchestration Fundamentals (kubectl & Pods) | 🟢 Beginner | 🛠️ in progress | Pods, deployments, services, and namespaces via the Kubernetes CLI. |
+| 04 | Resource Management & Autoscaling (Kubernetes HPA-VPA) | 🟢 Beginner | 🛠️ in progress | CPU/memory limits, requests, and horizontal/vertical autoscaling behavior. |
+| 05 | Rolling Deployments & Scaling Strategies (Kubernetes Deployments) | 🟡 Intermediate | 🛠️ in progress | Rollout strategies, service stability, and zero-downtime scaling. |
+| 06 | Templated Infrastructure (Helm Charts) | 🟡 Intermediate | 🛠️ in progress | Packaging, templating, and repeatable deployment definitions. |
+| 07 | GPU Scheduling & Allocation (NVIDIA GPU Operator) | 🟠 Advanced | 🛠️ in progress | Node selectors, taints, and topology-aware GPU resource planning. |
+| 08 | GPU Scheduling with DRA & Kueue |  | 🛠️ in progress |  |
+| 09 | Model Serving on Kubernetes (KServe & llm-d) |  | 🛠️ in progress |  |

@@ -1,0 +1,16 @@
+---
+title: "M12 · Streaming & Lakehouse"
+subtitle: "Data · 0 of 7 lessons ready"
+---
+
+**Prerequisites:** [M11 Data Engineering & Orchestration](m11.qmd) · **GPU:** none
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | Change Data Capture (CDC) with Debezium | 🟠 Advanced | 🛠️ in progress | CDC patterns and Debezium integration. |
+| 02 | Event Streaming with Apache Kafka | 🟠 Advanced | 🛠️ in progress | Kafka topics, partitions, and stream processing basics. |
+| 03 | Stream Processing with Apache Flink |  | 🛠️ in progress |  |
+| 04 | The Lakehouse Architecture (Iceberg - Delta) | 🔴 Expert | 🛠️ in progress | Lakehouse design, ACID tables and formats. |
+| 05 | Open Table Catalogs (Iceberg REST) |  | 🛠️ in progress |  |
+| 06 | Data Contracts & Schema Registries | 🔴 Expert | 🛠️ in progress | Contracts, schema evolution, and governance patterns. |
+| 07 | Data Observability & Lineage | 🔴 Expert | 🛠️ in progress | Lineage, observability tooling and alerting for data. |

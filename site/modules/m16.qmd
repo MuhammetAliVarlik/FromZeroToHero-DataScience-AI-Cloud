@@ -1,0 +1,31 @@
+---
+title: "M16 · Classical Machine Learning"
+subtitle: "Data Science · 0 of 22 lessons ready"
+---
+
+**Prerequisites:** [M05 Mathematics for Data Science (R)](m05.qmd), [M08 NumPy, Pandas & Polars](m08.qmd) · **GPU:** none
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | ML Problem Framing | 🟢 Beginner | 🛠️ in progress | Problem definition, success metrics, and business alignment. |
+| 02 | Gradient Descent & Optimization | 🟡 Intermediate | 🛠️ in progress | Optimization algorithms, learning rates, and convergence. |
+| 03 | Linear Regression | 🟢 Beginner | 🛠️ in progress | Regression basics, least squares, and interpretation. |
+| 04 | Logistic Regression | 🟡 Intermediate | 🛠️ in progress | Binary classification, odds, and probability calibration. |
+| 05 | Distance Models (KNN) | 🟡 Intermediate | 🛠️ in progress | Instance-based learning, distance metrics, and KNN. |
+| 06 | Support Vector Machines | 🟠 Advanced | 🛠️ in progress | Margin maximization, kernels, and SVM workflows. |
+| 07 | Naive Bayes | 🟡 Intermediate | 🛠️ in progress | Probabilistic classification and conditional independence. |
+| 08 | Decision Trees | 🟡 Intermediate | 🛠️ in progress | Tree construction, splitting criteria, and interpretability. |
+| 09 | Bias-Variance & Regularization | 🟡 Intermediate | 🛠️ in progress | Underfitting, overfitting, and generalization control. |
+| 10 | Ensemble: Bagging | 🟠 Advanced | 🛠️ in progress | Bootstrap aggregating and parallel ensemble methods. |
+| 11 | Ensemble: Boosting | 🟠 Advanced | 🛠️ in progress | Sequential ensemble building and gradient boosting. |
+| 12 | Gradient Boosting Libraries (XGBoost, LightGBM, CatBoost) |  | 🛠️ in progress |  |
+| 13 | Unsupervised: Clustering | 🟠 Advanced | 🛠️ in progress | K-means, hierarchical clustering, and cluster evaluation. |
+| 14 | Unsupervised: Dimensionality | 🟠 Advanced | 🛠️ in progress | PCA, manifold learning, and dimensionality reduction. |
+| 15 | Anomaly Detection (Isolation Forest & LOF) |  | 🛠️ in progress |  |
+| 16 | Model Evaluation & Validation | 🟡 Intermediate | 🛠️ in progress | Cross-validation, metrics, and model selection. |
+| 17 | Classification Metrics | 🟡 Intermediate | 🛠️ in progress | Precision, recall, F1, ROC-AUC, and threshold selection. |
+| 18 | Multiclass and Multilabel | 🟠 Advanced | 🛠️ in progress | Multi-class classification and multilabel strategies. |
+| 19 | Probability Calibration | 🟠 Advanced | 🛠️ in progress | Calibration methods and reliability diagrams. |
+| 20 | Conformal Prediction (MAPIE) |  | 🛠️ in progress |  |
+| 21 | Building ML Pipelines | 🟠 Advanced | 🛠️ in progress | End-to-end pipeline design and reproducibility. |
+| 22 | Tabular Foundation Models (TabPFN) |  | 🛠️ in progress |  |

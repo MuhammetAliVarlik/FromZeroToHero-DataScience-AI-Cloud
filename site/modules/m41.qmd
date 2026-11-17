@@ -1,0 +1,26 @@
+---
+title: "M41 · Responsible AI, AI Security & Governance"
+subtitle: "Responsibility · 0 of 17 lessons ready"
+---
+
+**Prerequisites:** [M16 Classical Machine Learning](m16.qmd), [M26 LLM Foundations](m26.qmd) · **GPU:** optional
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | Interpretable Glassbox Models (InterpretML) | 🟢 Beginner | 🛠️ in progress | Inherently interpretable model families and their transparency tradeoffs. |
+| 02 | Game Theory XAI (SHAP) | 🟡 Intermediate | 🛠️ in progress | Shapley-value-based feature attribution grounded in cooperative game theory. |
+| 03 | Model Interpretability | 🔴 Expert | 🛠️ in progress | Feature importance, SHAP, LIME, and explainability. |
+| 04 | Local Surrogate Perturbation (LIME) | 🟡 Intermediate | 🛠️ in progress | Explaining individual predictions via local surrogate models. |
+| 05 | Deep Learning Attribution (Captum) | 🟠 Advanced | 🛠️ in progress | Gradient- and attribution-based explainability for neural networks. |
+| 06 | Mechanistic Interpretability (Sparse Autoencoders) |  | 🛠️ in progress |  |
+| 07 | Counterfactual Reasoning (Alibi Explain) | 🟠 Advanced | 🛠️ in progress | Generating counterfactual examples to explain decision boundaries. |
+| 08 | Statistical Fairness Auditing (Fairlearn) | 🟠 Advanced | 🛠️ in progress | Measuring and auditing fairness metrics across protected groups. |
+| 09 | Algorithmic Bias Mitigation (AIF360) | 🟠 Advanced | 🛠️ in progress | Bias mitigation techniques applied pre-, in-, and post-processing. |
+| 10 | Differential Privacy in DL (Opacus) | 🔴 Expert | 🛠️ in progress | Training neural networks with differential privacy guarantees. |
+| 11 | Real-Time PII Sanitization (Presidio) | 🔴 Expert | 🛠️ in progress | Detecting and anonymizing personally identifiable information in text. |
+| 12 | LLM Guardrails & Jailbreak Defense (NeMo) | 🔴 Expert | 🛠️ in progress | Guardrail policies and jailbreak-resistant LLM application design. |
+| 13 | Safety Classifiers (Llama Guard) |  | 🛠️ in progress |  |
+| 14 | LLM Red Teaming (garak & PyRIT) |  | 🛠️ in progress |  |
+| 15 | Watermarking & Content Provenance (SynthID, C2PA) |  | 🛠️ in progress |  |
+| 16 | Automated Model Governance (Model Cards) | 🔴 Expert | 🛠️ in progress | Automated documentation, compliance tracking, and model card generation for governance. |
+| 17 | EU AI Act & AI Governance Frameworks (NIST AI RMF, ISO 42001) |  | 🛠️ in progress |  |

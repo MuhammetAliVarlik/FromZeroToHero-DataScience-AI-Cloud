@@ -1,0 +1,29 @@
+---
+title: "M34 · MLOps & LLMOps"
+subtitle: "Ops & Systems · 0 of 20 lessons ready"
+---
+
+**Prerequisites:** [M16 Classical Machine Learning](m16.qmd), [M32 Containers & Kubernetes](m32.qmd) · **GPU:** none
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | MLOps: Serialization | 🟠 Advanced | 🛠️ in progress | Model saving, loading, and deployment packaging. |
+| 02 | Model Serialization | 🟠 Advanced | 🛠️ in progress | Saving/loading models and portable formats. |
+| 03 | MLOps: Experiment Tracking | 🟠 Advanced | 🛠️ in progress | MLflow, experiment logging, and model versioning. |
+| 04 | Experiment Tracking & Artifact Lineage (MLflow Engine) | 🟠 Advanced | 🛠️ in progress | Logging runs, parameters, and artifacts for reproducible experimentation. |
+| 05 | Data & Model Versioning (DVC) |  | 🛠️ in progress |  |
+| 06 | Model Registry & Promotion |  | 🛠️ in progress |  |
+| 07 | Local Continuous Integration (GitHub Actions Core Workflows) | 🟠 Advanced | 🛠️ in progress | Writing CI workflows that lint, test, and validate ML code on every push. |
+| 08 | Production Model Serving Topologies (FastAPI & Docker) | 🟠 Advanced | 🛠️ in progress | Packaging and serving a trained model behind a containerized API. |
+| 09 | ML Workflow Orchestration on Kubernetes (Kubeflow) | 🔴 Expert | 🛠️ in progress | Pipeline orchestration and experiment tracking for ML on Kubernetes. |
+| 10 | Telemetry Scraping & Observability Metrology (Prometheus) | 🔴 Expert | 🛠️ in progress | Instrumenting services with Prometheus metrics for production observability. |
+| 11 | Custom ML Metric Scraping (Prometheus) | 🟠 Advanced | 🛠️ in progress | Exposing custom model-quality metrics for Prometheus scraping. |
+| 12 | Distributed Tracing & Latency (OpenTelemetry + Jaeger) | 🟠 Advanced | 🛠️ in progress | Tracing requests across services to localize latency bottlenecks. |
+| 13 | High-Definition Observability (Grafana) | 🟠 Advanced | 🛠️ in progress | Building dashboards that surface model health at a glance. |
+| 14 | High-Volume Log Aggregation (Grafana Loki) | 🟠 Advanced | 🛠️ in progress | Centralizing and querying logs at scale with Loki. |
+| 15 | SLOs, Error Budgets & Alerting (Alertmanager) | 🔴 Expert | 🛠️ in progress | Defining service-level objectives and routing alerts on error-budget burn. |
+| 16 | Cluster Debugging & Observability (Prometheus & Grafana) | 🔴 Expert | 🛠️ in progress | Scheduling issues, networking, logs, and runtime failure diagnosis. |
+| 17 | Shadow Deployments & Traffic Mirroring | 🔴 Expert | 🛠️ in progress | Testing new models against production traffic without serving live responses. |
+| 18 | Statistical Canary Testing & Rollbacks | 🔴 Expert | 🛠️ in progress | Statistically validating canary releases before a full rollout. |
+| 19 | Enterprise Secrets Security & Hardening Boundarie | 🔴 Expert | 🛠️ in progress | Secrets management, least-privilege boundaries, and system hardening practices. |
+| 20 | LLMOps: Prompt Versioning & Release Management |  | 🛠️ in progress |  |

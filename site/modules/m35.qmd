@@ -1,0 +1,25 @@
+---
+title: "M35 · Model Optimization & Edge AI"
+subtitle: "Ops & Systems · 0 of 16 lessons ready"
+---
+
+**Prerequisites:** [M20 Deep Learning Foundations](m20.qmd) · **GPU:** optional
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | Graph Compilation & Execution (ONNX Runtime) | 🟠 Advanced | 🛠️ in progress | Compiling models to a portable graph format for optimized inference. |
+| 02 | Edge AI Fundamentals & Model Conversion (ONNX) | 🟡 Intermediate | 🛠️ in progress | Latency constraints, offline inference, and cross-framework model conversion. |
+| 03 | Post-Training Quantization (PTQ & INT8) | 🟠 Advanced | 🛠️ in progress | Reducing model precision after training for faster, smaller inference. |
+| 04 | Model Compression Pruning & Quantization (TensorFlow Lite) | 🟠 Advanced | 🛠️ in progress | Quantization, pruning, distillation, and sparse deployment. |
+| 05 | Network Pruning & Sparsity Mechanics | 🟠 Advanced | 🛠️ in progress | Removing redundant weights and connections to shrink and speed up models. |
+| 06 | Knowledge Distillation (Teacher-Student) | 🔴 Expert | 🛠️ in progress | Training a compact student model to mimic a larger teacher model. |
+| 07 | Massive Model Compression (bitsandbytes & GGUF) | 🔴 Expert | 🛠️ in progress | Extreme quantization and compact serialization formats for large models. |
+| 08 | Low-Bit Formats (FP8, FP4, MXFP4) |  | 🛠️ in progress |  |
+| 09 | Bare-Metal Hardware Acceleration (OpenVINO) | 🔴 Expert | 🛠️ in progress | Compiling models for optimized inference on specific hardware targets. |
+| 10 | Edge Vision & Quantization | 🔴 Expert | 🛠️ in progress | Compression, quantization, and on-device inference. |
+| 11 | TinyML Toolchains for Microcontrollers (Edge Impulse) | 🟠 Advanced | 🛠️ in progress | Embedded workflows, interpreters, and runtime toolchains for MCUs. |
+| 12 | Sensor Data Processing & Signal Pipelines (TinyML) | 🟠 Advanced | 🛠️ in progress | Signal collection, filtering, preprocessing, and feature extraction. |
+| 13 | Low-Power Inference Optimization (TensorFlow Lite Micro) | 🟠 Advanced | 🛠️ in progress | Memory footprint, energy efficiency, and device-level tuning. |
+| 14 | Edge Deployment Patterns (NVIDIA Jetson & ONNX Runtime) | 🟠 Advanced | 🛠️ in progress | OTA updates, model versioning, and fleet management for edge devices. |
+| 15 | LiteRT & ExecuTorch |  | 🛠️ in progress |  |
+| 16 | On-Device LLMs (llama.cpp, MLX, Core ML) |  | 🛠️ in progress |  |

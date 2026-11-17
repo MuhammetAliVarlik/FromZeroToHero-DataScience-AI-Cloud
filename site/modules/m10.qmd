@@ -1,0 +1,30 @@
+---
+title: "M10 · Feature Engineering & Data Preprocessing"
+subtitle: "Data · 16 of 16 lessons ready"
+---
+
+**Prerequisites:** [M08 NumPy, Pandas & Polars](m08.qmd) · **GPU:** none
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | [Data Profiling and Quality Checks](../../M10-Feature%20Engineering%20&%20Data%20Preprocessing/01-Data%20Profiling%20and%20Quality%20Checks.ipynb) | 🟢 Beginner | ✅ | Column profiles, disguised missing values (0, '?', 'No_...'), duplicates, constant and redundant columns, range and consistency rules on Adult and Ames. |
+| 02 | [Missing Value Treatment](../../M10-Feature%20Engineering%20&%20Data%20Preprocessing/02-Missing%20Value%20Treatment.ipynb) | 🟡 Intermediate | ✅ | MCAR/MAR/MNAR, imputation error measured on hidden values (mean, group median, KNN, iterative), 'missing' categories and indicators in pipelines. |
+| 03 | [Outlier Detection and Robust Handling](../../M10-Feature%20Engineering%20&%20Data%20Preprocessing/03-Outlier%20Detection%20and%20Robust%20Handling.ipynb) | 🟡 Intermediate | ✅ | z-score, IQR and robust MAD rules, Isolation Forest, the Ames Partial sales, and the measured effect of removal, winsorising and Huber loss. |
+| 04 | [Scaling and Normalization](../../M10-Feature%20Engineering%20&%20Data%20Preprocessing/04-Scaling%20and%20Normalization.ipynb) | 🟡 Intermediate | ✅ | Standard/min-max/robust/max-abs scalers, log, Yeo-Johnson and quantile transforms, which models need scaling (measured), log-target regression. |
+| 05 | [Categorical Encoding](../../M10-Feature%20Engineering%20&%20Data%20Preprocessing/05-Categorical%20Encoding.ipynb) | 🟡 Intermediate | ✅ | One-hot, ordinal with the true order, frequency, cross-fitted target encoding (leakage demo), hashing, rare and unseen categories. |
+| 06 | [Binning and Discretization](../../M10-Feature%20Engineering%20&%20Data%20Preprocessing/06-Binning%20and%20Discretization.ipynb) | 🟡 Intermediate | ✅ | Equal-width, quantile, k-means and tree binning, splines vs bins for non-linear effects, weight of evidence and information value. |
+| 07 | [Feature Construction](../../M10-Feature%20Engineering%20&%20Data%20Preprocessing/07-Feature%20Construction.ipynb) | 🟡 Intermediate | ✅ | Domain features for house prices, feature groups measured with CV, interactions and polynomial terms (and when they do not help). |
+| 08 | [Feature Selection & PCA](../../M10-Feature%20Engineering%20&%20Data%20Preprocessing/08-Feature%20Selection%20&%20PCA.ipynb) | 🟡 Intermediate | ✅ | Variance, correlation and mutual information filters, Lasso, RFECV, permutation importance, selection bias on noise, PCA trade-offs. |
+| 09 | [Target Leakage Prevention](../../M10-Feature%20Engineering%20&%20Data%20Preprocessing/09-Target%20Leakage%20Prevention.ipynb) | 🟡 Intermediate | ✅ | The Bank Marketing duration leak, preprocessing leakage with feature selection, random vs time-ordered splits, a leakage checklist. |
+| 10 | [Pipeline Engineering (scikit-learn)](../../M10-Feature%20Engineering%20&%20Data%20Preprocessing/10-Pipeline%20Engineering%20(scikit-learn).ipynb) | 🟡 Intermediate | ✅ | ColumnTransformer, a custom transformer, joint grid search over preprocessing and models, saving pipelines with metadata, unseen inputs. |
+| 11 | [Handling Imbalanced Data](../../M10-Feature%20Engineering%20&%20Data%20Preprocessing/11-Handling%20Imbalanced%20Data.ipynb) | 🟡 Intermediate | ✅ | PR AUC vs accuracy, class weights, over/under-sampling and SMOTE in pipelines, profit-based threshold tuning with TunedThresholdClassifierCV. |
+| 12 | [Temporal Feature Engineering](../../M10-Feature%20Engineering%20&%20Data%20Preprocessing/12-Temporal%20Feature%20Engineering.ipynb) | 🟡 Intermediate | ✅ | Calendar and cyclical features, lags and rolling windows without future data, time-ordered CV, a centred-window leak, when lags do not help. |
+| 13 | [Text and Categorical Cleaning (Advanced)](../../M10-Feature%20Engineering%20&%20Data%20Preprocessing/13-Text%20and%20Categorical%20Cleaning%20(Advanced).ipynb) | 🟡 Intermediate | ✅ | Unicode/case/whitespace normalisation, aliases, fuzzy matching with measured threshold trade-offs, rare categories, multi-valued fields. |
+| 14 | [Data Validation with pandera](../../M10-Feature%20Engineering%20&%20Data%20Preprocessing/14-Data%20Validation%20with%20pandera.ipynb) | 🟡 Intermediate | ✅ | pandera schemas and DataFrameModels, cross-column checks, lazy validation reports, schemas as gates before training and prediction. |
+| 15 | [Embeddings as Features](../../M10-Feature%20Engineering%20&%20Data%20Preprocessing/15-Embeddings%20as%20Features.ipynb) | 🟡 Intermediate | ✅ | TF-IDF vs nomic-embed-text embeddings on 20 Newsgroups, label efficiency, embedding space, combining with tabular features, costs and risks. |
+| 16 | [Feature Stores and Reuse](../../M10-Feature%20Engineering%20&%20Data%20Preprocessing/16-Feature%20Stores%20and%20Reuse.ipynb) | 🟠 Advanced | ✅ | Feature views and event timestamps, point-in-time joins, a Redis online store, training/serving consistency checks, Feast concepts. |
+
+## Assignments
+
+- [Campaign Targeting Pipeline](../../M10-Feature%20Engineering%20&%20Data%20Preprocessing/assignments/01-Campaign-Targeting-Pipeline.ipynb) · [solution](../../M10-Feature%20Engineering%20&%20Data%20Preprocessing/assignments/01-Campaign-Targeting-Pipeline-solution.ipynb)
+- [House Price Feature Lab](../../M10-Feature%20Engineering%20&%20Data%20Preprocessing/assignments/02-House-Price-Feature-Lab.ipynb) · [solution](../../M10-Feature%20Engineering%20&%20Data%20Preprocessing/assignments/02-House-Price-Feature-Lab-solution.ipynb)

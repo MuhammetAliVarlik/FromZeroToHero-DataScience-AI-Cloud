@@ -1,0 +1,16 @@
+---
+title: "M43 · AI Solution Design & Delivery"
+subtitle: "Delivery · 0 of 7 lessons ready"
+---
+
+**Prerequisites:** [M30 AI Application Engineering](m30.qmd), [M33 Cloud & Infrastructure as Code](m33.qmd) · **GPU:** none
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | Problem Framing with Stakeholders |  | 🛠️ in progress |  |
+| 02 | Scoping, Success Metrics & Risk |  | 🛠️ in progress |  |
+| 03 | ML & LLM System Design (Design Docs) |  | 🛠️ in progress |  |
+| 04 | Cost & Latency Estimation |  | 🛠️ in progress |  |
+| 05 | Rapid Prototyping & Demos |  | 🛠️ in progress |  |
+| 06 | Deployment Hand-off & Documentation |  | 🛠️ in progress |  |
+| 07 | System Design Interview Practice |  | 🛠️ in progress |  |

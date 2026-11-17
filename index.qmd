@@ -1,0 +1,133 @@
+---
+title: "From Zero to Hero"
+subtitle: "Data Science · AI · Data Engineering · MLOps · GPU — a free notebook course"
+page-layout: full
+toc: false
+---
+
+::: {.lead}
+Every lesson is a Jupyter notebook that was **executed on a real machine** (a laptop GPU with 4 GB and Docker),
+with real public data wherever it matters. **152 of 553 lessons** are ready; the rest are in progress.
+:::
+
+*Insight: Pick a path for a skill, or a role for a job; each module page lists its lessons, and every lesson page shows the code and its real output.*
+
+:::: {.columns}
+::: {.column width="50%"}
+## Learning paths
+- [Python Developer](site/paths/python-developer.qmd)
+- [Software Engineer (Python Backend)](site/paths/software-engineer.qmd)
+- [Data Analyst & BI](site/paths/data-analyst.qmd)
+- [Data Scientist](site/paths/data-scientist.qmd)
+- [Machine Learning Engineer](site/paths/ml-engineer.qmd)
+- [Deep Learning & Computer Vision](site/paths/deep-learning-cv.qmd)
+- [NLP & LLM Engineer](site/paths/nlp-llm.qmd)
+- [AI Application Engineer](site/paths/ai-app-engineer.qmd)
+- [Data Engineer](site/paths/data-engineer.qmd)
+- [MLOps & ML Platform Engineer](site/paths/mlops.qmd)
+- [AI Infrastructure & GPU Systems](site/paths/ai-infra-gpu.qmd)
+- [Responsible AI & AI Security](site/paths/responsible-ai.qmd)
+- [Edge AI & Reinforcement Learning](site/paths/edge-ai-rl.qmd)
+:::
+::: {.column width="50%"}
+## Job roles
+- [Forward Deployed Engineer (FDE)](site/roles/forward-deployed-engineer.qmd)
+- [AI Engineer](site/roles/ai-engineer.qmd)
+- [Machine Learning Engineer](site/roles/ml-engineer.qmd)
+- [Applied Scientist / Research Engineer](site/roles/applied-scientist.qmd)
+- [Product Data Scientist](site/roles/product-data-scientist.qmd)
+- [Analytics Engineer](site/roles/analytics-engineer.qmd)
+- [Data Engineer](site/roles/data-engineer.qmd)
+- [MLOps / AI Platform Engineer](site/roles/ai-platform-engineer.qmd)
+- [Inference & Performance Engineer](site/roles/inference-engineer.qmd)
+- [Computer Vision / Perception Engineer](site/roles/cv-engineer.qmd)
+- [AI Security Engineer / Red Teamer](site/roles/ai-security-engineer.qmd)
+- [AI Solutions Architect](site/roles/ai-solutions-architect.qmd)
+:::
+::::
+
+## Modules
+
+:::: {.module-grid}
+::: {.module-card}
+### Foundations
+
+- [M01 · Python](site/modules/m01.qmd) <span class='ready'>18/18</span>
+- [M02 · Software Engineering Practices](site/modules/m02.qmd) <span class='ready'>10/10</span>
+- [M03 · Git & Collaboration](site/modules/m03.qmd) <span class='ready'>4/4</span>
+- [M04 · Linux & Shell](site/modules/m04.qmd) <span class='ready'>7/7</span>
+- [M05 · Mathematics for Data Science (R)](site/modules/m05.qmd) <span class='ready'>7/7</span>
+- [M06 · Statistics & Inference (R)](site/modules/m06.qmd) <span class='ready'>23/23</span>
+:::
+::: {.module-card}
+### Data
+
+- [M07 · SQL & Databases](site/modules/m07.qmd) <span class='ready'>20/20</span>
+- [M08 · NumPy, Pandas & Polars](site/modules/m08.qmd) <span class='ready'>18/18</span>
+- [M09 · Data Visualization & BI](site/modules/m09.qmd) <span class='ready'>18/18</span>
+- [M10 · Feature Engineering & Data Preprocessing](site/modules/m10.qmd) <span class='ready'>16/16</span>
+- [M11 · Data Engineering & Orchestration](site/modules/m11.qmd) <span class='ready'>10/10</span>
+- [M12 · Streaming & Lakehouse](site/modules/m12.qmd) <span class='ready'>0/7</span>
+- [M13 · Spark & Distributed Data Processing](site/modules/m13.qmd) <span class='ready'>0/12</span>
+:::
+::: {.module-card}
+### Data Science
+
+- [M14 · Experimentation & A/B Testing](site/modules/m14.qmd) <span class='ready'>0/6</span>
+- [M15 · Causal Inference](site/modules/m15.qmd) <span class='ready'>0/6</span>
+- [M16 · Classical Machine Learning](site/modules/m16.qmd) <span class='ready'>0/22</span>
+- [M17 · Time Series & Forecasting](site/modules/m17.qmd) <span class='ready'>0/25</span>
+- [M18 · Recommender Systems](site/modules/m18.qmd) <span class='ready'>0/6</span>
+- [M19 · Graph Data Science](site/modules/m19.qmd) <span class='ready'>0/13</span>
+:::
+::: {.module-card}
+### Deep Learning & Modalities
+
+- [M20 · Deep Learning Foundations](site/modules/m20.qmd) <span class='ready'>0/26</span>
+- [M21 · Computer Vision](site/modules/m21.qmd) <span class='ready'>0/16</span>
+- [M22 · Generative Models](site/modules/m22.qmd) <span class='ready'>0/13</span>
+- [M23 · Speech & Audio](site/modules/m23.qmd) <span class='ready'>0/5</span>
+- [M24 · Probabilistic & Bayesian Deep Learning](site/modules/m24.qmd) <span class='ready'>0/11</span>
+- [M25 · Reinforcement Learning](site/modules/m25.qmd) <span class='ready'>0/9</span>
+:::
+::: {.module-card}
+### LLM & AI Applications
+
+- [M26 · LLM Foundations](site/modules/m26.qmd) <span class='ready'>1/15</span>
+- [M27 · LLM Fine-Tuning & Alignment](site/modules/m27.qmd) <span class='ready'>0/7</span>
+- [M28 · RAG & Retrieval Systems](site/modules/m28.qmd) <span class='ready'>0/16</span>
+- [M29 · AI Agents & MCP](site/modules/m29.qmd) <span class='ready'>0/19</span>
+- [M30 · AI Application Engineering](site/modules/m30.qmd) <span class='ready'>0/15</span>
+- [M31 · Evaluation & Observability for ML and LLMs](site/modules/m31.qmd) <span class='ready'>0/12</span>
+:::
+::: {.module-card}
+### Ops & Systems
+
+- [M32 · Containers & Kubernetes](site/modules/m32.qmd) <span class='ready'>0/9</span>
+- [M33 · Cloud & Infrastructure as Code](site/modules/m33.qmd) <span class='ready'>0/14</span>
+- [M34 · MLOps & LLMOps](site/modules/m34.qmd) <span class='ready'>0/20</span>
+- [M35 · Model Optimization & Edge AI](site/modules/m35.qmd) <span class='ready'>0/16</span>
+- [M36 · LLM Serving & Inference Systems](site/modules/m36.qmd) <span class='ready'>0/15</span>
+- [M37 · Distributed Training](site/modules/m37.qmd) <span class='ready'>0/6</span>
+- [M38 · GPU Programming & Kernels](site/modules/m38.qmd) <span class='ready'>0/15</span>
+- [M39 · Systems Languages for AI (C++ & Rust)](site/modules/m39.qmd) <span class='ready'>0/3</span>
+- [M40 · AutoML & Hyperparameter Optimization](site/modules/m40.qmd) <span class='ready'>0/6</span>
+:::
+::: {.module-card}
+### Responsibility
+
+- [M41 · Responsible AI, AI Security & Governance](site/modules/m41.qmd) <span class='ready'>0/17</span>
+:::
+::: {.module-card}
+### Capstones
+
+- [M42 · Capstone Projects](site/modules/m42.qmd) <span class='ready'>0/13</span>
+:::
+::: {.module-card}
+### Delivery
+
+- [M43 · AI Solution Design & Delivery](site/modules/m43.qmd) <span class='ready'>0/7</span>
+:::
+::::
+
+<small>Lesson content is AI-assisted and reviewed; outputs come from real runs. MIT licence. [Source on GitHub](https://github.com/MuhammetAliVarlik/FromZeroToHero-DataScience-AI-Cloud).</small>

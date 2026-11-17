@@ -1,0 +1,9 @@
+---
+title: "Role: AI Security Engineer / Red Teamer"
+---
+
+Attacks and defends AI systems: prompt injection, jailbreaks, data leakage, governance.
+
+**Paths:** [Responsible AI & AI Security](../paths/responsible-ai.qmd), [AI Application Engineer](../paths/ai-app-engineer.qmd)
+
+**Extra modules:** —

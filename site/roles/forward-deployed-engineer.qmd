@@ -1,0 +1,9 @@
+---
+title: "Role: Forward Deployed Engineer (FDE)"
+---
+
+Embeds with customers to turn an AI product into a working solution: discovery, data integration, prototyping, deployment.
+
+**Paths:** [Software Engineer (Python Backend)](../paths/software-engineer.qmd), [AI Application Engineer](../paths/ai-app-engineer.qmd)
+
+**Extra modules:** [M11 · Data Engineering & Orchestration](../modules/m11.qmd), [M43 · AI Solution Design & Delivery](../modules/m43.qmd)

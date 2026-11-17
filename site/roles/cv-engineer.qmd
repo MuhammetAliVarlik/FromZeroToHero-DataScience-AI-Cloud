@@ -1,0 +1,9 @@
+---
+title: "Role: Computer Vision / Perception Engineer"
+---
+
+Builds vision and multimodal systems, often deployed on edge devices or robots.
+
+**Paths:** [Deep Learning & Computer Vision](../paths/deep-learning-cv.qmd), [Edge AI & Reinforcement Learning](../paths/edge-ai-rl.qmd)
+
+**Extra modules:** —

@@ -1,0 +1,15 @@
+---
+title: "M18 · Recommender Systems"
+subtitle: "Data Science · 0 of 6 lessons ready"
+---
+
+**Prerequisites:** [M16 Classical Machine Learning](m16.qmd) · **GPU:** optional
+
+| # | Lesson | Level | Status | What you learn |
+| :-: | :--- | :--- | :-: | :--- |
+| 01 | Recommender Systems Fundamentals & Metrics |  | 🛠️ in progress |  |
+| 02 | Collaborative Filtering & Matrix Factorization |  | 🛠️ in progress |  |
+| 03 | Implicit Feedback (ALS & BPR) |  | 🛠️ in progress |  |
+| 04 | Content-Based & Hybrid Recommenders |  | 🛠️ in progress |  |
+| 05 | Two-Tower Retrieval & Ranking |  | 🛠️ in progress |  |
+| 06 | LLM-Powered Recommendation |  | 🛠️ in progress |  |
