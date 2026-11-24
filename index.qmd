@@ -8,7 +8,7 @@ toc: false
 
 ::: {.lead}
 Every lesson is a Jupyter notebook that was **executed on a real machine** (a laptop GPU with 4 GB and Docker),
-with real public data wherever it matters. **159 of 553 lessons** are ready; the rest are in progress.
+with real public data wherever it matters. **171 of 553 lessons** are ready; the rest are in progress.
 :::
 
 *Insight: Pick a path for a skill, or a role for a job; each module page lists its lessons, and every lesson page shows the code and its real output.*
@@ -69,7 +69,7 @@ with real public data wherever it matters. **159 of 553 lessons** are ready; the
 - [M10 · Feature Engineering & Data Preprocessing](site/modules/m10.qmd) <span class='ready'>16/16</span>
 - [M11 · Data Engineering & Orchestration](site/modules/m11.qmd) <span class='ready'>10/10</span>
 - [M12 · Streaming & Lakehouse](site/modules/m12.qmd) <span class='ready'>7/7</span>
-- [M13 · Spark & Distributed Data Processing](site/modules/m13.qmd) <span class='ready'>0/12</span>
+- [M13 · Spark & Distributed Data Processing](site/modules/m13.qmd) <span class='ready'>12/12</span>
 :::
 ::: {.module-card style="--card-hl: 110 205 90"}
 ### Data Science

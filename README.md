@@ -161,7 +161,7 @@ cp .env.example .env
 <!-- BEGIN GENERATED:catalogue -->
 ## 🛣️ Module Catalogue
 
-**43 modules · 553 lessons** (431 written, 122 planned, 159 fully verified). Each module folder has its own README with the lesson list. Status per lesson: ✅ done · 🔍 review · 📈 deepen · ⚙️ realise · 🔀 merge · ✏️ rewrite · 🆕 planned.
+**43 modules · 553 lessons** (433 written, 120 planned, 171 fully verified). Each module folder has its own README with the lesson list. Status per lesson: ✅ done · 🔍 review · 📈 deepen · ⚙️ realise · 🔀 merge · ✏️ rewrite · 🆕 planned.
 
 ### 🧱 Foundations
 
@@ -184,13 +184,13 @@ cp .env.example .env
 | [M10 · Feature Engineering & Data Preprocessing](M10-Feature%20Engineering%20%26%20Data%20Preprocessing/README.md) | 16 + 0 planned | 16 | M08 | — |
 | [M11 · Data Engineering & Orchestration](M11-Data%20Engineering%20%26%20Orchestration/README.md) | 10 + 0 planned | 10 | M07, M02 | — |
 | [M12 · Streaming & Lakehouse](M12-Streaming%20%26%20Lakehouse/README.md) | 7 + 0 planned | 7 | M11 | — |
-| [M13 · Spark & Distributed Data Processing](M13-Spark%20%26%20Distributed%20Data%20Processing/README.md) | 10 + 2 planned | 0 | M08, M11 | — |
+| [M13 · Spark & Distributed Data Processing](M13-Spark%20%26%20Distributed%20Data%20Processing/README.md) | 12 + 0 planned | 12 | M08, M11 | — |
 
 ### 🔬 Data Science
 
 | Module | Lessons | Verified | Prerequisites | GPU |
 | :--- | :-: | :-: | :--- | :-: |
-| [M14 · Experimentation & A/B Testing](M14-Experimentation%20%26%20A/B%20Testing/README.md) | 0 + 6 planned | 0 | M06, M08 | — |
+| [M14 · Experimentation & A/B Testing](M14-Experimentation%20%26%20A-B%20Testing/README.md) | 0 + 6 planned | 0 | M06, M08 | — |
 | [M15 · Causal Inference](M15-Causal%20Inference/README.md) | 0 + 6 planned | 0 | M14 | — |
 | [M16 · Classical Machine Learning](M16-Classical%20Machine%20Learning/README.md) | 18 + 4 planned | 0 | M05, M08 | — |
 | [M17 · Time Series & Forecasting](M17-Time%20Series%20%26%20Forecasting/README.md) | 22 + 3 planned | 0 | M16 | optional |

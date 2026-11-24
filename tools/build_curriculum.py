@@ -78,7 +78,7 @@ def save(doc: dict) -> None:
 
 
 def module_dir(m: dict) -> str:
-    return f"{m['id']}-{m['name']}"
+    return f"{m['id']}-{safe_title(m['name'])}"
 
 
 def safe_title(t: str) -> str:

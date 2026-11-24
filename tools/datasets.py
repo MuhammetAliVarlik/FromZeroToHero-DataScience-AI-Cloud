@@ -63,6 +63,11 @@ DATASETS = {
     "ames_housing.parquet": ("https://data.openml.org/datasets/0004/43926/dataset_43926.pq",
                              "8dc6b3cb2d2c5d1ee625bd74304e0ca8ddc550cae9c509d8a105e7ac23fb8c50",
                              "Ames Housing (De Cock 2011), OpenML 43926 (AmesHousing R package version), public"),
+    # randomized experiments
+    "hillstrom_email.csv": ("http://www.minethatdata.com/Kevin_Hillstrom_MineThatData_E-MailAnalytics_DataMiningChallenge_2008.03.20.csv",
+                            "0e5893329d8b93cefecc571777672028290ab69865718020c78c7284f291aece",
+                            "MineThatData E-Mail Analytics Challenge (K. Hillstrom 2008): 64,000 customers randomized "
+                            "to men's e-mail, women's e-mail or no e-mail; public challenge data"),
     "yellow_tripdata_2024-01.parquet": (TLC + "trip-data/yellow_tripdata_2024-01.parquet",
                                         "c4d59da7bbc8abaeeeb1727947ee93d9891a71acb42854bd80db1571b2030510",
                                         "NYC TLC yellow taxi trips, January 2024 (~3.0 million rows)"),

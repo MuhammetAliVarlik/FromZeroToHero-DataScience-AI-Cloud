@@ -1350,82 +1350,107 @@ modules:
       - M11
     gpu: none
     lessons:
-      - title: The Physics of Distributed Compute
+      - title: Spark Architecture & Lazy Evaluation (PySpark)
         source: S16-01
-        file: M13-Spark & Distributed Data Processing/01-The Physics of Distributed Compute.ipynb
-        status: review
+        file: M13-Spark & Distributed Data Processing/01-Spark Architecture & Lazy Evaluation (PySpark).ipynb
+        status: done
         level: beginner
-        description: Cluster compute fundamentals and execution models.
-        data: synthetic
+        description: 'Driver, executors, partitions and tasks; transformations vs. actions, lazy DAGs, jobs and stages,
+          measured on taxi data.'
+        data: real
       - title: The Catalyst Optimizer & Execution Plans
         source: S16-02
         file: M13-Spark & Distributed Data Processing/02-The Catalyst Optimizer & Execution Plans.ipynb
-        status: review
+        status: done
         level: intermediate
-        description: Query planning, logical/physical plans and optimization.
-        data: synthetic
-      - title: Partitioning & The Shuffle Penalty
+        description: 'Reading logical and physical plans with explain(), predicate and projection pushdown, constant
+          folding, and AQE plan changes at run time.'
+        data: real
+      - title: Partitioning & the Shuffle
         source: S16-03
-        file: M13-Spark & Distributed Data Processing/03-Partitioning & The Shuffle Penalty.ipynb
-        status: review
+        file: M13-Spark & Distributed Data Processing/03-Partitioning & the Shuffle.ipynb
+        status: done
         level: intermediate
-        description: Partitioning strategies and the cost of shuffles.
-        data: synthetic
-      - title: Distributed Joins & Broadcast Physics
+        description: 'Narrow vs. wide transformations, shuffle bytes measured per stage, repartition vs. coalesce,
+          spark.sql.shuffle.partitions and partitioned Parquet layouts.'
+        data: real
+      - title: Distributed Joins (Broadcast vs. Sort-Merge)
         source: S16-04
-        file: M13-Spark & Distributed Data Processing/04-Distributed Joins & Broadcast Physics.ipynb
-        status: review
+        file: M13-Spark & Distributed Data Processing/04-Distributed Joins (Broadcast vs. Sort-Merge).ipynb
+        status: done
         level: advanced
-        description: Join strategies and broadcast join tradeoffs.
-        data: synthetic
-      - title: Vectorized Computation (Apache Arrow)
+        description: 'Broadcast hash, sort-merge and shuffle hash joins, join hints and the broadcast threshold, with
+          network bytes and run time compared.'
+        data: real
+      - title: Vectorized UDFs (Apache Arrow & Pandas UDFs)
         source: S16-05
-        file: M13-Spark & Distributed Data Processing/05-Vectorized Computation (Apache Arrow).ipynb
-        status: review
+        file: M13-Spark & Distributed Data Processing/05-Vectorized UDFs (Apache Arrow & Pandas UDFs).ipynb
+        status: done
         level: advanced
-        description: Arrow-based vectorized execution and IO performance.
-        data: synthetic
-      - title: Window Functions & Stateful Bounding
+        description: 'Row-at-a-time Python UDFs vs. Arrow-backed pandas UDFs and built-in functions, mapInPandas and
+          applyInPandas, and the cost of crossing the JVM boundary.'
+        data: real
+      - title: Window Functions (Spark SQL)
         source: S16-06
-        file: M13-Spark & Distributed Data Processing/06-Window Functions & Stateful Bounding.ipynb
-        status: review
+        file: M13-Spark & Distributed Data Processing/06-Window Functions (Spark SQL).ipynb
+        status: done
         level: advanced
-        description: Windowed analytics and stateful computation patterns.
-        data: synthetic
-      - title: Data Skew & Cryptographic Salting
+        description: 'Ranking, lag/lead, running totals and moving averages over partitions and frames in Spark SQL,
+          and the shuffle and sort each window needs.'
+        data: real
+      - title: Data Skew, Salting & Adaptive Query Execution
         source: S16-07
-        file: M13-Spark & Distributed Data Processing/07-Data Skew & Cryptographic Salting.ipynb
-        status: review
+        file: M13-Spark & Distributed Data Processing/07-Data Skew, Salting & Adaptive Query Execution.ipynb
+        status: done
         level: advanced
-        description: Skew detection and salting strategies for joins.
-        data: synthetic
-      - title: Structured Streaming & Watermarks
+        description: 'Measuring key skew in taxi data, its effect on task times through the Spark REST API, and fixing
+          it with salting and AQE skew-join handling.'
+        data: real
+      - title: Structured Streaming & Watermarks (Spark)
         source: S16-08
-        file: M13-Spark & Distributed Data Processing/08-Structured Streaming & Watermarks.ipynb
-        status: review
+        file: M13-Spark & Distributed Data Processing/08-Structured Streaming & Watermarks (Spark).ipynb
+        status: done
         level: advanced
-        description: Streaming processing, watermarks, and time handling.
-        data: synthetic
-      - title: Delta Lake Integration (Lakehouse Scaling)
+        description: 'Micro-batches, event-time windows, watermarks for late data, output modes, and checkpoints that
+          make a restart exactly-once.'
+        data: real
+      - title: Delta Lake with Spark (delta-spark)
         source: S16-09
-        file: M13-Spark & Distributed Data Processing/09-Delta Lake Integration (Lakehouse Scaling).ipynb
-        status: review
+        file: M13-Spark & Distributed Data Processing/09-Delta Lake with Spark (delta-spark).ipynb
+        status: done
         level: expert
-        description: Delta Lake usage patterns and ACID table integration.
-        data: synthetic
-      - title: Cluster Optimization & The Spark UI
+        description: 'MERGE INTO, time travel and RESTORE, OPTIMIZE with ZORDER, constraints and the Change Data Feed,
+          then the same table read by other engines.'
+        data: real
+      - title: Tuning & the Spark UI
         source: S16-10
-        file: M13-Spark & Distributed Data Processing/10-Cluster Optimization & The Spark UI.ipynb
-        status: review
+        file: M13-Spark & Distributed Data Processing/10-Tuning & the Spark UI.ipynb
+        status: done
         level: expert
-        description: Tuning clusters, executors, and using the Spark UI effectively.
-        data: synthetic
-      - title: Spark 4.0 (Spark Connect, ANSI Mode, VARIANT)
-        status: planned
-        file: null
-      - title: 'Beyond Spark: Polars, DuckDB, Ray Data & Daft'
-        status: planned
-        file: null
+        description: 'Jobs, stages, executors and SQL tabs of the Spark UI; spill, caching, file formats and partition
+          counts tuned one setting at a time with measurements.'
+        data: real
+      - title: Spark 4 (Spark Connect, ANSI Mode, VARIANT)
+        file: M13-Spark & Distributed Data Processing/11-Spark 4 (Spark Connect, ANSI Mode, VARIANT).ipynb
+        status: done
+        level: expert
+        description: 'Spark Connect client/server, ANSI mode on by default, the VARIANT type for semi-structured data,
+          and Python data sources, checked in pyspark 4.2.'
+        data: real
+      - title: Beyond Spark (Polars, DuckDB, Ray Data & Daft)
+        file: M13-Spark & Distributed Data Processing/12-Beyond Spark (Polars, DuckDB, Ray Data & Daft).ipynb
+        status: done
+        level: advanced
+        description: 'The same taxi queries in Spark, Polars, DuckDB, Daft and Ray Data, with time and memory measured,
+          and when a single machine is enough.'
+        data: real
+    assignments:
+      - title: A Taxi Batch Pipeline at Scale
+        file: M13-Spark & Distributed Data Processing/assignments/01-Taxi-Batch-Pipeline-at-Scale.ipynb
+        solution: M13-Spark & Distributed Data Processing/assignments/01-Taxi-Batch-Pipeline-at-Scale-solution.ipynb
+      - title: Streaming Revenue into Delta Lake
+        file: M13-Spark & Distributed Data Processing/assignments/02-Streaming-Revenue-into-Delta.ipynb
+        solution: M13-Spark & Distributed Data Processing/assignments/02-Streaming-Revenue-into-Delta-solution.ipynb
   - id: M14
     name: Experimentation & A/B Testing
     group: Data Science

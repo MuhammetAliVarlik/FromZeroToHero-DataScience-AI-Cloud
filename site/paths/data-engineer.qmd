@@ -15,6 +15,6 @@ Take the modules in order; skip lessons you already know.
 | 6 | [M08 · NumPy, Pandas & Polars](../modules/m08.qmd) | 18/18 |
 | 7 | [M11 · Data Engineering & Orchestration](../modules/m11.qmd) | 10/10 |
 | 8 | [M12 · Streaming & Lakehouse](../modules/m12.qmd) | 7/7 |
-| 9 | [M13 · Spark & Distributed Data Processing](../modules/m13.qmd) | 0/12 |
+| 9 | [M13 · Spark & Distributed Data Processing](../modules/m13.qmd) | 12/12 |
 | 10 | [M32 · Containers & Kubernetes](../modules/m32.qmd) | 0/9 |
 | 11 | [M33 · Cloud & Infrastructure as Code](../modules/m33.qmd) | 0/14 |

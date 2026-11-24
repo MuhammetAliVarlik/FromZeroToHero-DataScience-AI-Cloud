@@ -4,7 +4,7 @@
 
 **Group:** Data Science · **Lessons:** 0 existing + 6 planned (0 verified) · **GPU:** —
 
-**Prerequisites:** [M14 Experimentation & A/B Testing](../M14-Experimentation%20%26%20A/B%20Testing/README.md)
+**Prerequisites:** [M14 Experimentation & A/B Testing](../M14-Experimentation%20%26%20A-B%20Testing/README.md)
 
 **Part of paths:** [Data Scientist](../paths/data-scientist.md)
 

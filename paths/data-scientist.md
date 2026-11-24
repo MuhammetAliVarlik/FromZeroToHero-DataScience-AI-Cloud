@@ -15,7 +15,7 @@ Take the modules in order. Each module lists its lessons; skip lessons you alrea
 | 7 | [M08 · NumPy, Pandas & Polars](../M08-NumPy%2C%20Pandas%20%26%20Polars/README.md) | 18 | 18/18 | — |
 | 8 | [M09 · Data Visualization & BI](../M09-Data%20Visualization%20%26%20BI/README.md) | 18 | 18/18 | — |
 | 9 | [M10 · Feature Engineering & Data Preprocessing](../M10-Feature%20Engineering%20%26%20Data%20Preprocessing/README.md) | 16 | 16/16 | — |
-| 10 | [M14 · Experimentation & A/B Testing](../M14-Experimentation%20%26%20A/B%20Testing/README.md) | 6 | 0/6 | — |
+| 10 | [M14 · Experimentation & A/B Testing](../M14-Experimentation%20%26%20A-B%20Testing/README.md) | 6 | 0/6 | — |
 | 11 | [M15 · Causal Inference](../M15-Causal%20Inference/README.md) | 6 | 0/6 | — |
 | 12 | [M16 · Classical Machine Learning](../M16-Classical%20Machine%20Learning/README.md) | 22 | 0/22 | — |
 | 13 | [M17 · Time Series & Forecasting](../M17-Time%20Series%20%26%20Forecasting/README.md) | 25 | 0/25 | optional |

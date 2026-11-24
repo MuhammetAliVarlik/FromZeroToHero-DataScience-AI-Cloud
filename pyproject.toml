@@ -63,6 +63,7 @@ data = [
     "imbalanced-learn>=0.12",
     "pandera>=0.21",
     "pingouin>=0.5.5",
+    "tea-tasting>=1.0",
 ]
 # M11-M13 Data engineering, streaming, lakehouse, Spark
 data-eng = [
@@ -75,7 +76,10 @@ data-eng = [
     "confluent-kafka[schemaregistry,avro]>=2.6",   # extras: Schema Registry client + Avro serializers (M12 L06)
     "fastavro>=1.9",
     "openlineage-python>=1.25",
-    "pyspark>=3.5",
+    "pyspark>=4.0,<4.3",                  # delta-spark 4.4 supports Spark <= 4.2 (M13)
+    "delta-spark>=4.0",
+    "daft>=0.7",
+    "ray[data]>=2.40",
     "deltalake>=0.22",
     "pyiceberg[sql-sqlite,pyarrow,pyiceberg-core]>=0.8",   # pyiceberg-core: partition transforms (M12 L04-L05)
     "boto3>=1.35",
