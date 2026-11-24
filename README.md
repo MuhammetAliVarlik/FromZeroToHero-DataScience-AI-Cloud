@@ -47,9 +47,9 @@ The course is a catalogue of **modules**. A **path** is an ordered list of modul
 | [Forward Deployed Engineer (FDE)](roles/forward-deployed-engineer.md) | Software Engineer (Python Backend) + AI Application Engineer + M11, M43 | 14 | 176 |
 | [AI Engineer](roles/ai-engineer.md) | Software Engineer (Python Backend) + AI Application Engineer | 12 | 159 |
 | [Machine Learning Engineer](roles/ml-engineer.md) | Machine Learning Engineer | 14 | 202 |
-| [Applied Scientist / Research Engineer](roles/applied-scientist.md) | Data Scientist + Deep Learning & Computer Vision + NLP & LLM Engineer | 24 | 330 |
-| [Product Data Scientist](roles/product-data-scientist.md) | Data Analyst & BI + Data Scientist | 15 | 209 |
-| [Analytics Engineer](roles/analytics-engineer.md) | Data Analyst & BI + M02, M11 | 11 | 141 |
+| [Applied Scientist / Research Engineer](roles/applied-scientist.md) | Data Scientist + Deep Learning & Computer Vision + NLP & LLM Engineer | 24 | 332 |
+| [Product Data Scientist](roles/product-data-scientist.md) | Data Analyst & BI + Data Scientist | 15 | 211 |
+| [Analytics Engineer](roles/analytics-engineer.md) | Data Analyst & BI + M02, M11 | 11 | 143 |
 | [Data Engineer](roles/data-engineer.md) | Data Engineer | 11 | 129 |
 | [MLOps / AI Platform Engineer](roles/ai-platform-engineer.md) | MLOps & ML Platform Engineer + M26, M36 | 13 | 165 |
 | [Inference & Performance Engineer](roles/inference-engineer.md) | AI Infrastructure & GPU Systems | 15 | 191 |
@@ -63,8 +63,8 @@ The course is a catalogue of **modules**. A **path** is an ordered list of modul
 | :--- | :--- | :-: |
 | [Python Developer](paths/python-developer.md) | M01 → M03 → M04 → M02 | 39 |
 | [Software Engineer (Python Backend)](paths/software-engineer.md) | M01 → M03 → M04 → M02 → M07 → M32 → M33 | 82 |
-| [Data Analyst & BI](paths/data-analyst.md) | M01 → M03 → M04 → M05 → M06 → M07 → M08 → M09 → M14 | 121 |
-| [Data Scientist](paths/data-scientist.md) | M01 → M03 → M04 → M05 → M06 → M07 → M08 → M09 → M10 → M14 → M15 → M16 → M17 → M18 → M19 | 209 |
+| [Data Analyst & BI](paths/data-analyst.md) | M01 → M03 → M04 → M05 → M06 → M07 → M08 → M09 → M14 | 123 |
+| [Data Scientist](paths/data-scientist.md) | M01 → M03 → M04 → M05 → M06 → M07 → M08 → M09 → M10 → M14 → M15 → M16 → M17 → M18 → M19 | 211 |
 | [Machine Learning Engineer](paths/ml-engineer.md) | M01 → M03 → M04 → M02 → M05 → M06 → M08 → M10 → M16 → M40 → M20 → M32 → M34 → M35 | 202 |
 | [Deep Learning & Computer Vision](paths/deep-learning-cv.md) | M01 → M03 → M04 → M05 → M06 → M08 → M16 → M20 → M21 → M22 → M23 → M24 | 170 |
 | [NLP & LLM Engineer](paths/nlp-llm.md) | M01 → M03 → M04 → M05 → M08 → M16 → M20 → M26 → M27 → M28 → M31 | 152 |
@@ -161,7 +161,7 @@ cp .env.example .env
 <!-- BEGIN GENERATED:catalogue -->
 ## 🛣️ Module Catalogue
 
-**43 modules · 553 lessons** (433 written, 120 planned, 171 fully verified). Each module folder has its own README with the lesson list. Status per lesson: ✅ done · 🔍 review · 📈 deepen · ⚙️ realise · 🔀 merge · ✏️ rewrite · 🆕 planned.
+**43 modules · 555 lessons** (441 written, 114 planned, 179 fully verified). Each module folder has its own README with the lesson list. Status per lesson: ✅ done · 🔍 review · 📈 deepen · ⚙️ realise · 🔀 merge · ✏️ rewrite · 🆕 planned.
 
 ### 🧱 Foundations
 
@@ -190,7 +190,7 @@ cp .env.example .env
 
 | Module | Lessons | Verified | Prerequisites | GPU |
 | :--- | :-: | :-: | :--- | :-: |
-| [M14 · Experimentation & A/B Testing](M14-Experimentation%20%26%20A-B%20Testing/README.md) | 0 + 6 planned | 0 | M06, M08 | — |
+| [M14 · Experimentation & A/B Testing](M14-Experimentation%20%26%20A-B%20Testing/README.md) | 8 + 0 planned | 8 | M06, M08 | — |
 | [M15 · Causal Inference](M15-Causal%20Inference/README.md) | 0 + 6 planned | 0 | M14 | — |
 | [M16 · Classical Machine Learning](M16-Classical%20Machine%20Learning/README.md) | 18 + 4 planned | 0 | M05, M08 | — |
 | [M17 · Time Series & Forecasting](M17-Time%20Series%20%26%20Forecasting/README.md) | 22 + 3 planned | 0 | M16 | optional |

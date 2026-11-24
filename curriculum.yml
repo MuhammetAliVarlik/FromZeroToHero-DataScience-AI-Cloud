@@ -1460,23 +1460,73 @@ modules:
     gpu: none
     lessons:
       - title: Python Statistics Toolkit (SciPy, statsmodels, pingouin)
-        status: planned
-        file: null
-      - title: Experiment Design & Metric Selection
-        status: planned
-        file: null
-      - title: A/B Testing End to End in Python
-        status: planned
-        file: null
+        file: M14-Experimentation & A-B Testing/01-Python Statistics Toolkit (SciPy, statsmodels, pingouin).ipynb
+        status: done
+        level: beginner
+        description: 'The hypothesis-testing toolbox for A/B tests: z-test, Welch t-test, chi-square, Mann-Whitney U,
+          bootstrap and permutation tests on the Hillstrom e-mail experiment, the same comparison in SciPy, statsmodels
+          and pingouin, A/A simulations with uniform p-values, and Bonferroni/Holm/BH corrections.'
+        data: real
+      - title: Experiment Design & Power Analysis (statsmodels)
+        file: M14-Experimentation & A-B Testing/02-Experiment Design & Power Analysis (statsmodels).ipynb
+        status: done
+        level: intermediate
+        description: 'Hypothesis, unit of randomization, primary/secondary/guardrail metrics and OEC; sample size from
+          MDE, alpha and power with real Hillstrom baselines; test duration, a simulation check, why heavy-tailed spend
+          needs 37 times more users, unequal splits, and a pre-registration checklist.'
+        data: real
+      - title: A/B Testing End to End (tea-tasting)
+        file: M14-Experimentation & A-B Testing/03-A-B Testing End to End (tea-tasting).ipynb
+        status: done
+        level: intermediate
+        description: 'A full A/B analysis of the Hillstrom e-mail test: SRM and covariate balance checks, lift CIs by
+          hand and with tea-tasting, practical significance against a break-even threshold, three arms with Holm, a
+          scorecard and a forest plot.'
+        data: real
+      - title: Ratio Metrics & the Delta Method
+        file: M14-Experimentation & A-B Testing/04-Ratio Metrics & the Delta Method.ipynb
+        status: done
+        level: advanced
+        description: 'Ratio metrics where the analysis unit differs from the randomization unit: the delta method from
+          a Taylor expansion, Fieller vs bootstrap CIs for the relative lift, and an A/A simulation where a naive
+          session-level test reaches an 18.7 % false positive rate.'
+        data: real
       - title: Variance Reduction with CUPED
-        status: planned
-        file: null
-      - title: Sequential Testing & Safe Peeking
-        status: planned
-        file: null
-      - title: Multi-Armed Bandits for Online Experiments
-        status: planned
-        file: null
+        file: M14-Experimentation & A-B Testing/05-Variance Reduction with CUPED.ipynb
+        status: done
+        level: advanced
+        description: 'CUPED: theta, rho-squared variance reduction, the OLS equivalence, regression adjustment and
+          CUPAC, bias and false positive rate checks, sample size savings, and the post-treatment covariate trap; small
+          real gain on two-week spend vs a halved variance on a stable repeat metric.'
+        data: real
+      - title: Trustworthy Experiments (SRM, A/A Tests & Guardrails)
+        file: M14-Experimentation & A-B Testing/06-Trustworthy Experiments (SRM, A-A Tests & Guardrails).ipynb
+        status: done
+        level: advanced
+        description: 'The chi-square SRM test on real and deliberately corrupted data, 2,000 A/A tests and what breaks
+          them (unit mismatch, heavy tails at small n), guardrail metrics with non-inferiority tests, and a
+          trustworthiness checklist.'
+        data: real
+      - title: Sequential Testing & Safe Peeking (mSPRT)
+        file: M14-Experimentation & A-B Testing/07-Sequential Testing & Safe Peeking (mSPRT).ipynb
+        status: done
+        level: advanced
+        description: 'How peeking inflates the false positive rate (5 % to 42 %), group sequential designs with
+          O''Brien-Fleming/Pocock alpha spending, and the mSPRT with always-valid p-values and confidence sequences,
+          replayed on the real Hillstrom stream.'
+        data: real
+      - title: Multi-Armed Bandits (Thompson Sampling)
+        file: M14-Experimentation & A-B Testing/08-Multi-Armed Bandits (Thompson Sampling).ipynb
+        status: done
+        level: advanced
+        description: 'Epsilon-greedy, UCB1 and Beta-Bernoulli Thompson sampling with regret analysis, offline replay
+          evaluation on the randomized Hillstrom logs, the bias of estimates under adaptive allocation, and a simple
+          contextual bandit.'
+        data: real
+    assignments:
+      - title: Which E-Mail, to Whom?
+        file: M14-Experimentation & A-B Testing/assignments/01-Email-Campaign-Experiment.ipynb
+        solution: M14-Experimentation & A-B Testing/assignments/01-Email-Campaign-Experiment-solution.ipynb
   - id: M15
     name: Causal Inference
     group: Data Science

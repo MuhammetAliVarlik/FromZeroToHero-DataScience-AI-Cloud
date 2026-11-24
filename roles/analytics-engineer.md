@@ -18,7 +18,7 @@ Builds tested, documented data models (dbt) between raw data and BI.
 | 6 | [M07 · SQL & Databases](../M07-SQL%20%26%20Databases/README.md) | 20 |
 | 7 | [M08 · NumPy, Pandas & Polars](../M08-NumPy%2C%20Pandas%20%26%20Polars/README.md) | 18 |
 | 8 | [M09 · Data Visualization & BI](../M09-Data%20Visualization%20%26%20BI/README.md) | 18 |
-| 9 | [M14 · Experimentation & A/B Testing](../M14-Experimentation%20%26%20A-B%20Testing/README.md) | 6 |
+| 9 | [M14 · Experimentation & A/B Testing](../M14-Experimentation%20%26%20A-B%20Testing/README.md) | 8 |
 | 10 | [M02 · Software Engineering Practices](../M02-Software%20Engineering%20Practices/README.md) | 10 |
 | 11 | [M11 · Data Engineering & Orchestration](../M11-Data%20Engineering%20%26%20Orchestration/README.md) | 10 |
 

@@ -14,8 +14,8 @@ Take the modules in order. Each module lists its lessons; skip lessons you alrea
 | 6 | [M07 · SQL & Databases](../M07-SQL%20%26%20Databases/README.md) | 20 | 20/20 | — |
 | 7 | [M08 · NumPy, Pandas & Polars](../M08-NumPy%2C%20Pandas%20%26%20Polars/README.md) | 18 | 18/18 | — |
 | 8 | [M09 · Data Visualization & BI](../M09-Data%20Visualization%20%26%20BI/README.md) | 18 | 18/18 | — |
-| 9 | [M14 · Experimentation & A/B Testing](../M14-Experimentation%20%26%20A-B%20Testing/README.md) | 6 | 0/6 | — |
+| 9 | [M14 · Experimentation & A/B Testing](../M14-Experimentation%20%26%20A-B%20Testing/README.md) | 8 | 8/8 | — |
 
-**Total:** 121 lessons (6 still planned). **Capstone:** Capstone: Data Analyst & BI (module M42).
+**Total:** 123 lessons (0 still planned). **Capstone:** Capstone: Data Analyst & BI (module M42).
 
 **Used by roles:** [Product Data Scientist](../roles/product-data-scientist.md), [Analytics Engineer](../roles/analytics-engineer.md)

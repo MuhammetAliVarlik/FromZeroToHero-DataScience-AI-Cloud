@@ -8,7 +8,7 @@ toc: false
 
 ::: {.lead}
 Every lesson is a Jupyter notebook that was **executed on a real machine** (a laptop GPU with 4 GB and Docker),
-with real public data wherever it matters. **171 of 553 lessons** are ready; the rest are in progress.
+with real public data wherever it matters. **179 of 555 lessons** are ready; the rest are in progress.
 :::
 
 *Insight: Pick a path for a skill, or a role for a job; each module page lists its lessons, and every lesson page shows the code and its real output.*
@@ -74,7 +74,7 @@ with real public data wherever it matters. **171 of 553 lessons** are ready; the
 ::: {.module-card style="--card-hl: 110 205 90"}
 ### Data Science
 
-- [M14 · Experimentation & A/B Testing](site/modules/m14.qmd) <span class='ready'>0/6</span>
+- [M14 · Experimentation & A/B Testing](site/modules/m14.qmd) <span class='ready'>8/8</span>
 - [M15 · Causal Inference](site/modules/m15.qmd) <span class='ready'>0/6</span>
 - [M16 · Classical Machine Learning](site/modules/m16.qmd) <span class='ready'>0/22</span>
 - [M17 · Time Series & Forecasting](site/modules/m17.qmd) <span class='ready'>0/25</span>
